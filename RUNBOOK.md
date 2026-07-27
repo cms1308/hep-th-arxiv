@@ -14,7 +14,16 @@
 `WebFetch` 도구만 사용합니다. 이 컨테이너의 bash/curl로는 arxiv.org에 접근할 수 없습니다.
 (필요하면 `ToolSearch` 로 `select:WebFetch` 먼저 로드)
 
-URL: `https://rss.arxiv.org/rss/hep-th`
+URL: `https://rss.arxiv.org/rss/hep-th?d=<오늘 날짜 YYYY-MM-DD>`
+
+> **`?d=` 를 반드시 붙일 것.** WebFetch 계층이 URL 단위로 응답을 오래 캐시합니다.
+> 파라미터 없이 부르면 몇 주 전 피드가 그대로 돌아옵니다(실측: 7월 27일에 6월 30일자 피드 반환).
+> 날짜를 파라미터로 넣으면 매일 새 캐시 키가 되어 항상 당일 피드를 받습니다.
+> 받은 뒤 `lastBuildDate` 가 오늘인지 확인하세요. 오늘이 아니면 `?d=` 값에 시각까지 덧붙여 다시 부릅니다.
+> 2~5단계에서 같은 피드를 다시 부를 때는 **1단계와 똑같은 `?d=` 값**을 써야 같은 스냅샷을 봅니다.
+
+arXiv는 이 피드를 매일 **04:00 UTC(13:00 KST)** 에 새로 빌드합니다. 그 전에 부르면 전날/주말 피드가 옵니다.
+주말(토·일) 피드는 항목이 0개입니다 — 정상입니다.
 
 WebFetch prompt:
 
@@ -27,11 +36,11 @@ WebFetch prompt:
 ## 2단계 — 병렬 서브에이전트로 추출 + 한국어 번역
 
 ID를 **6개씩** 묶고, 청크마다 `Agent`(subagent_type: `general-purpose`)를 **한 메시지에서 동시에** 띄웁니다.
-서브에이전트 프롬프트는 아래를 그대로 쓰되 `{IDS}` 와 `{N}` 만 채웁니다.
+서브에이전트 프롬프트는 아래를 그대로 쓰되 `{IDS}`, `{N}`, `{DATE}`(1단계와 같은 `?d=` 값) 만 채웁니다.
 
 > You are extracting arXiv hep-th paper data and translating abstracts to Korean.
 >
-> STEP 1. Call WebFetch (load via ToolSearch `select:WebFetch` if needed) on `https://rss.arxiv.org/rss/hep-th` with this prompt:
+> STEP 1. Call WebFetch (load via ToolSearch `select:WebFetch` if needed) on `https://rss.arxiv.org/rss/hep-th?d={DATE}` — use the exact same `?d=` value the caller gives you — with this prompt:
 >
 > "For ONLY these arXiv IDs: {IDS} — output verbatim from the feed, no summarizing, no paraphrasing, for each ID in this exact block format:
 > ID: <id>
@@ -111,6 +120,8 @@ RSS 피드는 **최신 공지 하나만** 담고 있어서 과거 날짜는 위 
 
 ## 문제 발생 시
 
-- arXiv 공지가 아직 갱신되지 않아 목록이 비어 있으면 → 그 사실만 알리고 종료.
-- `FEED_PUBDATE` 가 오늘과 크게 어긋나면(예: 한 달 전) → 그대로 진행하되 마지막 메시지에 그 사실을 한 줄 덧붙일 것.
+- 항목이 0개면 → 주말이거나 공지 전입니다. 그 사실만 알리고 종료 (커밋하지 말 것).
+- `FEED_PUBDATE` 가 오늘과 어긋나면 → **거의 확실히 캐시 문제입니다.** `?d=` 값에 시각을 덧붙여
+  (`?d=2026-07-27T1330`) 다시 부르세요. 그래도 안 고쳐지면 그대로 진행하되 마지막 메시지에
+  "피드가 X일자로 잡혔다"고 한 줄 덧붙일 것.
 - git push 실패 (401/403) → 토큰 만료 가능성. HTML은 `SendUserFile` 로 보내고, 토큰 재발급이 필요하다고 알릴 것.
