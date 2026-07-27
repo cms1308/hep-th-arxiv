@@ -85,6 +85,30 @@ cd /home/claude/work && GH_TOKEN=$GH_TOKEN python3 /home/claude/repo/scripts/syn
 3. 마지막 메시지는 한국어 2~3문장: 공지 날짜, 신규 편수, 눈에 띄는 주제 흐름 한 줄, 그리고 Pages 링크
    `https://cms1308.github.io/hep-th-arxiv/`. 논문을 하나하나 나열하지는 마세요.
 
+---
+
+## 부록 — 과거 날짜 백필 (수동)
+
+RSS 피드는 **최신 공지 하나만** 담고 있어서 과거 날짜는 위 절차로 못 만듭니다.
+과거분은 alphaXiv MCP 커넥터를 써서 아래처럼 합니다. (자동 실행이 아니라 사람이 요청할 때만)
+
+1. **메타데이터** — `WebFetch` 로 `https://arxiv.org/list/hep-th/recent?skip=0&show=<N>` 을 열고,
+   원하는 날짜 heading 아래의 `New submissions` / `Cross-lists` 구분과 각 항목의
+   ID · TITLE · AUTHORS · SUBJECTS 를 verbatim으로 받습니다. **New submissions만** 씁니다.
+   (더 과거는 `?skip=` 을 늘려 페이지를 넘깁니다. 이 페이지에는 abstract가 없습니다.)
+   Subjects 줄을 짧은 코드(`hep-th, gr-qc` 형태)로 정리해 `/home/claude/work/meta.json` 에 저장.
+
+2. **abstract** — 논문 2편씩 묶어 서브에이전트를 병렬로 띄우고, 각자
+   `mcp__alphaXiv__get_paper_content` (url `https://arxiv.org/abs/<id>`) 로 본문을 받아
+   Abstract 문단만 추출합니다. PDF 추출 텍스트라 줄바꿈·하이픈 분리·수식 공백이 깨져 있으니
+   문장은 그대로 두고 그 아티팩트만 복원하도록 지시할 것. 번역 규칙은 2단계와 동일.
+   title/authors/categories 는 `meta.json` 에서 **verbatim으로 복사**하게 합니다.
+
+3. 이후 3~5단계는 동일합니다.
+
+주의: `arxiv.org` 는 자주 429 rate limit에 걸립니다. WebFetch 호출은 아껴 쓰고, 걸리면 60~90초 대기 후 재시도.
+`export.arxiv.org` API는 이 환경에서 두 경로 모두 막혀 있습니다(컨테이너 egress 미허용 + robots.txt 거부).
+
 ## 문제 발생 시
 
 - arXiv 공지가 아직 갱신되지 않아 목록이 비어 있으면 → 그 사실만 알리고 종료.

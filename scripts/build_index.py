@@ -6,8 +6,29 @@ manifest.json = list of {"date":"2026-06-30","datestr":"2026년 6월 30일 (화)
                          "preview":["title1","title2","title3"]}
 Usage: python3 build_index.py manifest.json index.html
 """
-import json, sys, html
+import json, sys, html, re
 from collections import OrderedDict
+
+_GREEK = {
+    "alpha": "α", "beta": "β", "gamma": "γ", "Gamma": "Γ", "delta": "δ", "Delta": "Δ",
+    "epsilon": "ε", "zeta": "ζ", "eta": "η", "theta": "θ", "Theta": "Θ", "iota": "ι",
+    "kappa": "κ", "lambda": "λ", "Lambda": "Λ", "mu": "μ", "nu": "ν", "xi": "ξ",
+    "Xi": "Ξ", "pi": "π", "Pi": "Π", "rho": "ρ", "sigma": "σ", "Sigma": "Σ",
+    "tau": "τ", "phi": "φ", "Phi": "Φ", "chi": "χ", "psi": "ψ", "Psi": "Ψ",
+    "omega": "ω", "Omega": "Ω", "infty": "∞", "times": "×", "to": "→", "bar": "",
+}
+_SUP = str.maketrans("0123456789+-n", "⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻ⁿ")
+_SUB = str.maketrans("0123456789+-", "₀₁₂₃₄₅₆₇₈₉₊₋")
+
+def detex(s):
+    """Best-effort LaTeX -> readable plain text, for index previews only."""
+    s = re.sub(r"\\([A-Za-z]+)", lambda m: _GREEK.get(m.group(1), m.group(1)), s)
+    s = re.sub(r"\^\{([0-9+\-n]+)\}|\^([0-9+\-n])",
+               lambda m: (m.group(1) or m.group(2)).translate(_SUP), s)
+    s = re.sub(r"_\{([0-9+\-]+)\}|_([0-9+\-])",
+               lambda m: (m.group(1) or m.group(2)).translate(_SUB), s)
+    s = s.replace("$", "").replace("{", "").replace("}", "")
+    return re.sub(r"\s+", " ", s).strip()
 
 items = json.load(open(sys.argv[1]))
 outpath = sys.argv[2]
@@ -25,7 +46,7 @@ rows = []
 for ym, group in months.items():
     rows.append(f'<h2 class="mon">{month_label(ym)} <span>{sum(g["count"] for g in group)}편</span></h2>')
     for it in group:
-        prev = " · ".join(html.escape(t) for t in it.get("preview", [])[:3])
+        prev = " · ".join(html.escape(detex(t)) for t in it.get("preview", [])[:3])
         rows.append(f"""<a class="row" href="{html.escape(it['file'])}">
   <div class="d">{html.escape(it['datestr'])}</div>
   <div class="p">{prev}</div>
