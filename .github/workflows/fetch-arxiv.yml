@@ -1,10 +1,12 @@
 name: arXiv hep-th 수집
 
-# 매 평일 04:05 UTC (13:05 KST) — arXiv가 04:00 UTC에 피드를 새로 빌드한 직후.
-# 브리핑 예약 작업은 이보다 뒤(13:30 KST)에 돌면서 이 결과를 읽는다.
+# 매 평일 04:45 UTC (13:45 KST).
+# 실측: 04:00 UTC 에는 아직 전날 피드가 온다. 04:38 UTC 에는 당일 피드가 왔다.
+# 시각에만 의존하지 않도록 --expect 로 당일 공지가 나올 때까지 재시도한다(최대 +20분).
+# 브리핑 예약 작업은 이보다 뒤(14:15 KST)에 돌면서 이 결과를 읽는다.
 on:
   schedule:
-    - cron: "5 4 * * 1-5"
+    - cron: "45 4 * * 1-5"
   workflow_dispatch:
     inputs:
       date:
@@ -36,7 +38,7 @@ jobs:
           if [ -n "${{ inputs.date }}" ]; then
             python3 scripts/fetch_arxiv.py --api --date "${{ inputs.date }}"
           else
-            python3 scripts/fetch_arxiv.py --rss
+            python3 scripts/fetch_arxiv.py --rss --expect "$(TZ=Asia/Seoul date +%F)"
           fi
 
       - name: 커밋

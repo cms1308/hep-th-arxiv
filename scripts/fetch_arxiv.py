@@ -158,6 +158,9 @@ def main():
     ap.add_argument("--from", dest="lo")
     ap.add_argument("--to", dest="hi")
     ap.add_argument("--outdir", default="data")
+    ap.add_argument("--expect", help="기대 공지일 YYYY-MM-DD. 다르면 재시도한다.")
+    ap.add_argument("--retries", type=int, default=4)
+    ap.add_argument("--retry-wait", dest="retry_wait", type=int, default=300)
     a = ap.parse_args()
 
     if a.api:
@@ -167,10 +170,20 @@ def main():
         print(f"API 백필: {a.date}  제출창 {lo} ~ {hi} (UTC)")
         date, built, papers = a.date, f"api:{lo}-{hi}", fetch_api(lo, hi)
     else:
-        date, built, papers = fetch_rss()
-        print(f"RSS 수집: 공지일 {date}  lastBuildDate={built}")
-        if a.date and a.date != date:
-            print(f"::warning::요청 날짜 {a.date} 와 피드 공지일 {date} 가 다릅니다")
+        # arXiv는 04:00~04:40 UTC 사이 어딘가에서 당일 공지를 올린다(실측: 04:00 미반영, 04:38 반영).
+        # --expect 를 주면 그 날짜가 나올 때까지 재시도해, cron 시각을 정확히 맞추지 않아도 되게 한다.
+        for attempt in range(1, a.retries + 2):
+            date, built, papers = fetch_rss()
+            print(f"RSS 수집 {attempt}회차: 공지일 {date}  lastBuildDate={built}  신규 {len(papers)}편")
+            if not a.expect or date == a.expect:
+                break
+            if attempt > a.retries:
+                print(f"::warning::기대 날짜 {a.expect} 를 못 받고 {date} 로 종료합니다")
+                break
+            print(f"  기대={a.expect} 불일치 — {a.retry_wait}s 후 재시도")
+            time.sleep(a.retry_wait)
+        if a.expect and date != a.expect:
+            print(f"::warning::피드 공지일({date})이 기대 날짜({a.expect})와 다릅니다")
 
     papers.sort(key=lambda p: p["id"])
     print(f"신규 {len(papers)}편")
