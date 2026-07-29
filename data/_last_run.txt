@@ -1,11 +1,10 @@
-run       = #6  (push)
-utc       = 2026-07-29T04:19:44Z
-kst       = 2026-07-29T13:19:44
-args      = --new --expect 2026-07-29 --outdir data/_test2 --dump-html data/_debug/list-new.html
+run       = #7  (push)
+utc       = 2026-07-29T04:21:45Z
+kst       = 2026-07-29T13:21:45
+args      = --new --expect 2026-07-29
 outcome   = success
 --------- 출력 ---------
-  [dump] data/_debug/list-new.html (217763 bytes 원본)
-  [parse] 본문 구간 4262~4296 (34 bytes)
-/list/new 수집: 0편 (공지일 2026-07-29 로 기록)
-신규 0편
-항목 0편 — 주말이거나 공지 전입니다. 커밋하지 않습니다.
+  [parse] 본문 61534 bytes, 페이지 표기 23편
+/list/new 수집: 23편 (공지일 2026-07-29 로 기록)
+신규 23편
+wrote data/2026-07-29.json
