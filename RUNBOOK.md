@@ -11,12 +11,14 @@
 
 ## 1단계 — 오늘의 신규 논문 목록
 
-**경로 A (기본).** GitHub Actions 워크플로 `arXiv hep-th 수집`이 매 평일 **09:35 KST**에
+**경로 A (기본).** GitHub Actions 워크플로 `arXiv hep-th 수집`이 매 평일 **09:35 및 10:35 KST**에
 `arxiv.org/list/hep-th/new`(공지 확정 목록)를 파싱해 `data/<공지날짜>.json` 을 커밋해 둡니다.
 이 파일이 있으면 그대로 씁니다 — WebFetch도, 캐시 회피도, 추출 서브에이전트도 필요 없습니다.
 
 > RSS는 13:00~13:06 KST에야 빌드되지만 `/list/new` 는 공지 시각(09:00 KST)에 갱신됩니다.
-> 그래서 브리핑을 오전으로 당길 수 있습니다. 실측 대조: 2026-07-29분 23편, RSS와 ID 23/23 일치.
+> 그래서 브리핑을 오전(11:00 KST)으로 당길 수 있습니다.
+> cron이 두 개인 것은 서머타임 때문입니다 — 공지가 EDT면 09:00, EST면 10:00 KST라
+> 유효하지 않은 쪽은 전날 목록과 동일하다고 판정돼 커밋 없이 끝납니다. 실측 대조: 2026-07-29분 23편, RSS와 ID 23/23 일치.
 > 실행 로그는 `data/_last_run.txt` 에 매번 커밋되니 문제 시 이 파일부터 볼 것.
 
 ```bash
@@ -32,7 +34,7 @@ python3 /home/claude/repo/scripts/split_chunks.py /home/claude/repo/data/$TODAY.
 **경로 B (폴백).** `data/$TODAY.json` 이 없으면 먼저 `data/_last_run.txt` 로 수집 실패 원인을 확인합니다.
 그다음 `WebFetch` 로 **`https://arxiv.org/list/hep-th/new`** 를 직접 읽어 `New submissions` 절만 추출합니다.
 
-> ⚠️ **이 시간대에 RSS를 쓰면 안 됩니다.** 브리핑은 10:15 KST에 도는데 RSS 피드는 13:00~13:06 KST에야
+> ⚠️ **이 시간대에 RSS를 쓰면 안 됩니다.** 브리핑은 11:00 KST에 도는데 RSS 피드는 13:00~13:06 KST에야
 > 빌드되므로, 그 전에 부르면 **전날 목록**이 옵니다. 아래 RSS 절차는 13:00 KST 이후 재시도할 때만 유효합니다.
 > arxiv.org는 429가 잦으니 걸리면 60~90초 대기 후 재시도할 것.
 
