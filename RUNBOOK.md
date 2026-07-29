@@ -29,9 +29,14 @@ python3 /home/claude/repo/scripts/split_chunks.py /home/claude/repo/data/$TODAY.
 이 편수가 곧 `TOTAL_NEW` 이고, 파일 안의 `date` 가 공지 날짜입니다.
 성공했으면 **2단계-A** 로 갑니다.
 
-**경로 B (폴백).** `data/$TODAY.json` 이 없으면 Action이 아직 안 돌았거나 실패한 것입니다.
-아래 기존 WebFetch 절차로 진행하고, 마지막 메시지에 "Actions 수집이 없어 RSS 폴백을 썼다"고 한 줄 덧붙입니다.
-(Actions 탭에서 실패 원인을 확인하도록 함께 알릴 것.)
+**경로 B (폴백).** `data/$TODAY.json` 이 없으면 먼저 `data/_last_run.txt` 로 수집 실패 원인을 확인합니다.
+그다음 `WebFetch` 로 **`https://arxiv.org/list/hep-th/new`** 를 직접 읽어 `New submissions` 절만 추출합니다.
+
+> ⚠️ **이 시간대에 RSS를 쓰면 안 됩니다.** 브리핑은 10:15 KST에 도는데 RSS 피드는 13:00~13:06 KST에야
+> 빌드되므로, 그 전에 부르면 **전날 목록**이 옵니다. 아래 RSS 절차는 13:00 KST 이후 재시도할 때만 유효합니다.
+> arxiv.org는 429가 잦으니 걸리면 60~90초 대기 후 재시도할 것.
+
+마지막 메시지에 "Actions 수집이 없어 폴백을 썼다"와 그 원인을 한 줄 덧붙입니다.
 
 `WebFetch` 도구만 사용합니다. 이 컨테이너의 bash/curl로는 arxiv.org에 접근할 수 없습니다.
 (필요하면 `ToolSearch` 로 `select:WebFetch` 먼저 로드)
