@@ -1,0 +1,162 @@
+{
+ "date": "2026-07-29",
+ "source": "api",
+ "built": "api:202607271800-202607281800",
+ "count": 22,
+ "papers": [
+  {
+   "id": "2607.24909",
+   "title": "OPE = QNM",
+   "authors": "Paolo Arnaudo, Cristoforo Iossa, Robin Karlsson, Benjamin Withers",
+   "categories": "hep-th, cond-mat.stat-mech, cond-mat.str-el, gr-qc",
+   "abstract": "At microscopic scales the linear response of thermal states of large-$N$ CFTs is governed by a thermal operator product expansion (OPE), while at large scales response is governed by collective excitations known as quasinormal modes (QNM). We show that the OPE and QNM representations of the retarded correlator in mixed time and spatial momentum coordinates have an overlapping region of convergence in the complex time plane, giving a map between OPE and QNM data. We show that large-overtone QNM asymptotics are related to OPE singularities, while low-overtone QNM data appear in analytic continuation from short to large times. Using this approach we obtain new analytic results for QNM asymptotics, and numerically obtain low-overtone QNMs from OPE data for the Schwarzschild-AdS$_5$ black brane. We further show that the OPE spectrum is intimately related to QNM data through a set of sum rules which we derive in Mellin space. Finally, using the lightcone OPE, we argue that stress tensor correlators at large spatial momentum thermalise slower as the conformal collider bounds approach saturation. This work points to a new thermal bootstrap programme where OPE and QNM data constrain each other."
+  },
+  {
+   "id": "2607.24913",
+   "title": "Neural Spectral Bias and Conformal Correlators II: Modular and Annulus Bootstrap",
+   "authors": "Kausik Ghosh, Sidhaarth Kumar, Vasilis Niarchos, Andreas Stergiou",
+   "categories": "hep-th",
+   "abstract": "We develop a neural network bootstrap framework for reconstructing partition functions of two-dimensional conformal field theories (CFTs) based on modular invariance and the Cardy condition, which are recast as crossing equations for four-point correlators. For torus partition functions, we use the twist-field representation in the symmetric-orbifold description to map modular S-invariance to four-point crossing and focus on the diagonal kinematics of four insertions on a line. For annulus partition functions, we formulate open/closed channel duality as crossing symmetry for mixed four-point functions of defect-changing operators in interface CFT. In both cases, the reconstruction problem is formulated in the anchored-bootstrap form, where the crossing constraints are supplemented by minimal spectral input (a gap) and anchor data. We solve this under-determined problem by using lightweight feed-forward neural networks to parametrise the correlators and their corresponding partition functions. A key ingredient of this approach is the spectral bias of the neural networks in the lazy training regime, which selects specific crossing-symmetric configurations. This reformulation unifies standard modular and annulus constraints in two dimensions with the anchored neural approach for CFT correlators, providing a new way to reconstruct full partition functions from sparse data with remarkable accuracy."
+  },
+  {
+   "id": "2607.24914",
+   "title": "Kaluza-Klein Perturbation Theory from Exceptional Field Theory",
+   "authors": "Camille Eloy, Olaf Hohm, Camilla Lavino, Henning Samtleben, Yehudi Simon",
+   "categories": "hep-th",
+   "abstract": "We develop the perturbation theory of ten and eleven-dimensional supergravities on a large class of Kaluza-Klein backgrounds including familiar AdS examples such as AdS$_5\\times S^5$, but also more general manifolds such as black hole geometries. Employing ${\\rm E}_{6(6)}$ exceptional field theory with the backgrounds characterized by a generalized Scherk-Schwarz ansatz, we determine the first order field equations for the fluctuations that are gauge invariant under linearized generalized diffeomorphisms. We then present the details of the Higgs mechanism for all fields including spin-2 for the subset of backgrounds in which higher-form gauge fields vanish. We use a recently established machinery based on homotopy transfer that allows one to separate the fields into gauge invariant physical modes and pure gauge unphysical modes to all orders in perturbation theory. Finally, as a first application for backgrounds with higher-form gauge fields switched on, we analyze part of the spectrum of ten-dimensional Kaluza-Klein modes of type IIB supergravity around a Kerr-Newman AdS$_5$ black hole that in the near horizon limit becomes a fibered product of AdS$_2$ and a squashed three-sphere."
+  },
+  {
+   "id": "2607.24915",
+   "title": "The Tachyon Chern-Simons action with a generic tachyon field, and baryons in V-QCD",
+   "authors": "Jean-Loup Raymond, Matti Järvinen, Elias Kiritsis, Francesco Nitti, Edwan Préau",
+   "categories": "hep-th, hep-ph, math-ph",
+   "abstract": "Consistency with global flavor anomalies requires the presence of Chern-Simons terms in holographic models of QCD. Such terms are analyzed in a setup arising in the holographic V-QCD model, where chiral symmetry breaking is implemented through the condensation of a complex scalar field, the tachyon. Using the superconnection formalism, the Tachyon-Chern-Simons terms are constructed explicitly in the general case, where the tachyon is any complex matrix in flavor space. This general case covers, among other things, backgrounds where different quark flavors have different masses. These new results are used to analyze the structure of the baryon solutions in the presence of nonzero quark masses. Expressions for the baryon number current and the total baryon number are found, and the baryon number is shown to be equal to the topological instanton number of the baryon solution. The effective four-dimensional pion action is analyzed and is shown to reproduce the chiral Lagrangian, including the Skyrme and Wess-Zumino-Witten terms."
+  },
+  {
+   "id": "2607.24916",
+   "title": "Carrollian bosonic supergravity at order $α'$ and the universal cancellation of higher-curvature divergences",
+   "authors": "Eric Lescano",
+   "categories": "hep-th",
+   "abstract": "We prove that the Carrollian limit of bosonic supergravity remains finite after including the four-derivative terms arising from the $α'$-corrections, and we explicitly construct the effective action. We also establish a universal criterion to determine the finiteness of higher-curvature contributions given by powers of the Riemann tensor, ${\\rm Riem}_1 \\cdots {\\rm Riem}_N$, with $N>1$. As applications of this criterion, we prove that the purely gravitational $α'^2$- and $α'^3$-corrections admit a finite Carrollian limit, derive their explicit contributions to the action, and show that the terms proportional to $ζ(3)$ do not contribute to the Carrollian bosonic supergravity at order $α'^3$."
+  },
+  {
+   "id": "2607.24919",
+   "title": "Analytic thermal bootstrap in momentum space: From thermal OPE to QNMs",
+   "authors": "Julien Barrat, Deniz N. Bozkurt, Enrico Marchetto, Alessio Miscioscia, Elli Pomoni",
+   "categories": "hep-th",
+   "abstract": "We initiate a bootstrap program that relates ultraviolet data, encoded in the thermal OPE, to infrared observables, namely, the low-frequency behavior and quasinormal modes. Starting from KMS-symmetric completions of individual thermal OPE blocks, which play the role of thermal Polyakov blocks, we construct their Fourier transform, yielding an asymptotic expansion of retarded thermal correlators valid at any spatial momentum. We use these results to derive inversion formulae and connect thermal OPE data to the analytic structure of retarded correlators in the complex frequency plane. Under the assumption of meromorphicity, the inversion formulae express OPE coefficients in terms of the quasinormal-mode frequencies, leading to nontrivial sum rules, constraints on the quasinormal spectrum, and its asymptotics at large spatial momentum. We illustrate these results in free theories, two-dimensional CFTs, the large-$N$ limit and $\\varepsilon$-expansion of the $\\mathrm{O}(N)$ model, and the $R$-current correlator of strongly coupled $\\mathcal N = 4$ SYM at zero spatial momentum. As a byproduct, we derive universal asymptotic formulae for thermal OPE coefficients of heavy operators, resolving their dependence on spin and extending previous results at zero spatial separation. We test these formulae in the three-dimensional Ising CFT, finding good agreement between the resulting truncated correlators and Monte Carlo data."
+  },
+  {
+   "id": "2607.24920",
+   "title": "Split Heun functions via blown-up surface defects",
+   "authors": "Saebyeok Jeong, Tommaso Pedroni",
+   "categories": "hep-th, math-ph",
+   "abstract": "We study resonant solutions of the Heun equation and its confluent limits that arise in the Nekrasov--Shatashvili (NS) limit of four-dimensional $\\mathcal{N}=2$ $\\mathrm{SU}(2)$ gauge theories with fundamental hypermultiplets. At the resonant loci $2a/\\hbar\\in\\mathbb{Z}$ in the Coulomb branch parameter $a$, the Floquet multipliers coalesce and the instanton expansions of the bulk and surface defect NS functions develop poles of increasing order. We derive blow-up equations involving exclusively NS functions and use them to resum these singular expansions. The resulting resummed bulk and surface defect NS functions reveal the analytic structure of the gauge-theoretic solutions near the resonant loci, including the branch structure of the accessory parameter and of the Floquet solutions that is obscured by the term-by-term instanton expansion. At resonance, the resummed accessory parameters and suitably normalized defect wavefunctions admit finite limits that describe periodic or antiperiodic solutions at the edges of spectral gaps and allow us to construct their logarithmic companions. We then identify distinct nested mass loci governing gap closure and semisimple resonant monodromy. On the larger locus the band-edge accessory parameters coalesce, while on the smaller locus two independent resonant (anti)periodic Floquet solutions survive. We develop the general resummation procedure for $N_f=(n_0,n_1)$ theories with $n_i\\leq 2$ $(i=0,1)$, and demonstrate it explicitly for the $N_f=(1,1)$ theory."
+  },
+  {
+   "id": "2607.24922",
+   "title": "Unitary Dual-Resonance S-matrices",
+   "authors": "Claudia de Rham, Andrew J. Tolley, Zhuo-Hui Wang, Shuang-Yong Zhou",
+   "categories": "hep-th",
+   "abstract": "Dual-resonance models realize crossing symmetry, Regge behavior and infinitely many resonances in a compact analytic form but their canonical tree-level realizations fall short of genuine S-matrix unitarity. Here we explicitly construct fully unitary dual-resonance amplitudes distinct from the conventional worldsheet construction. The zero-width resonance towers are promoted into a physical absorptive spectrum that retains their characteristic crossing and Regge organization, while unitarizing the amplitude through a mechanism distinct from standard eikonalization. The resulting S-matrices are also local and analytic, and can contain controllable second-sheet Regge trajectories as well as substantial inelasticity. More broadly, our construction opens up a new route to charting the space of consistent strongly coupled S-matrices."
+  },
+  {
+   "id": "2607.24923",
+   "title": "Feynman Tree Theorem and the Gelfand--Yaglom Formula",
+   "authors": "Ipak Fadakar, Guilherme L. Pimentel, Behrang Tafreshi",
+   "categories": "hep-th",
+   "abstract": "The Gelfand--Yaglom formula equates the one-loop determinant of a Schrödinger operator with Dirichlet boundary conditions to the solution of an initial value problem. Following a suggestion by Polyakov, we provide a new diagrammatic proof of this formula as a direct application of the Feynman Tree Theorem. By cutting the one-loop determinant, we re-express it as a sum of tree diagrams. These trees explicitly encode the solution to the Gelfand--Yaglom initial value problem. We extend this diagrammatic framework to general boundary conditions and comment on a potential generalization to quantum field theory."
+  },
+  {
+   "id": "2607.24989",
+   "title": "Cross-Correlations of Metric and Monopole Perturbations from Holographic Cosmology",
+   "authors": "Matheus Cravo, Juliana Z. Finotti, Horatiu Nastase",
+   "categories": "hep-th, gr-qc",
+   "abstract": "In this paper, we present the 1-loop calculation of the three-point function $\\langle TJJ \\rangle$ of the stress-energy tensor and two insertions of $SO(3)$ global currents, using a 3d toy model for holographic cosmology. By applying the holographic dictionary that relates these QFT $n$-point functions to cosmological correlators, together with the $Sl(2,\\mathbb{Z})$ duality that maps the electric Noether current to a magnetic vortex current dual to cosmological magnetic monopoles, we relate the $\\langle TJJ \\rangle$ correlator to the cross-correlations between metric perturbations and the bulk magnetic monopole field, specifically mapping to the non-Gaussianities $\\langle ξ\\tilde{A} \\tilde{A} \\rangle$ and $\\langle γ\\tilde{A} \\tilde{A} \\rangle$. We calculate the semi-local contact terms necessary to achieve the exact factorization of the cosmological correlators in the squeezed limit, $p_1 \\to 0$. Finally, we evaluate the effective non-linear parameters, showing that the scalar-monopole cross-correlation vanishes at leading order, $f_{NL}^{ξ\\tilde{A} \\tilde{A}} = 0$, while the tensor-monopole cross-correlation yields a non-zero $f_{NL}^{γ\\tilde A\\tilde A}$. These results respect the expected amplitude hierarchy of the non-Gaussian correlators, while pointing at new directions in which holographic cosmology can be tested experimentally."
+  },
+  {
+   "id": "2607.25054",
+   "title": "Quantum Gravity Corrections to Giant Graviton Correlators",
+   "authors": "Junding Chen, Xi-Er Du, Hynek Paul, Xinan Zhou",
+   "categories": "hep-th",
+   "abstract": "We compute the leading quantum gravity correction to the correlation function of two maximal giant gravitons and two light supergravitons in the stress tensor multiplet in the supergravity limit of $\\mathcal{N}=4$ SYM theory. By viewing the giant gravitons as a zero-dimensional defect, we employ the defect version of the AdS unitarity method to reconstruct the one-loop correction from the known tree-level correlators. We obtain the one-loop result in closed form in both Mellin and position space. We also extract the quantum correction to the anomalous dimension of operators describing a bound state of a giant graviton and a light supergraviton at the leading conformal twist in the defect channel OPE."
+  },
+  {
+   "id": "2607.25067",
+   "title": "A discrete series gauge field at the late-time boundary of $dS_4$",
+   "authors": "Manizheh Botshekananfard, Elif Büşra Güraksın, Vasileios A. Letsios, Gizem Şengör",
+   "categories": "hep-th, gr-qc",
+   "abstract": "We study the free Maxwell field on the planar patch of four-dimensional de Sitter spacetime ($dS_4$). We review its bulk canonical quantization in the Bunch-Davies vacuum, and we give a representation-theoretic viewpoint by studying the transformation properties of single-particle states under infinitesimal dS transformations. By taking the late-time limit, we identify two late-time operators with scaling dimensions $Δ=1$ (leading) and $Δ=2$ (subleading). We introduce CFT-inspired inner products invariant under the dS group ($SO(4,1)$) for states created by late-time operators acting on the Bunch-Davies vacuum. We explain how the unitary discrete series representations of $SO(4,1)$ associated with the photon are furnished by both operators, in contrast with the Maxwell field on $AdS$ where the $Δ=1$ operator corresponds to a non-normalizable mode. We also explain how the corresponding discrete series representations of $SO(4,1)$ split into a direct sum of representations corresponding to two helicities $+1$ and $-1$. This is achieved by taking advantage of the dS invariance of the self-dual and anti-self-dual sectors of the photon field strength. In our outlook, we draw inspiration from a recent proposal for the microscopic description of $dS_4$ higher-spin gravity where conformal gauge fields in 3 dimensions play a central role, and we investigate a possible connection of the $Δ=1$ late-time operator with a conformal spin-1 gauge field in 3 dimensions."
+  },
+  {
+   "id": "2607.25116",
+   "title": "Derivation of the NS5-brane limit of the plane wave matrix model",
+   "authors": "Yuhma Asano, Goro Ishiki, Shinji Shimasaki",
+   "categories": "hep-th",
+   "abstract": "From the gauge/gravity duality, it was predicted that there exists a nontrivial double scaling limit of the plane wave matrix model (the BMN matrix model), which describes the type IIA little string theory (LST) on $R\\times S^5$. We show on the gauge theory side that such a limit indeed exists for the partition function and in a certain 1/4 BPS sector of the matrix model, and consequently derive an eigenvalue integral, which is expected to describe the 1/4 BPS sector of LST."
+  },
+  {
+   "id": "2607.25205",
+   "title": "Monodromy, Hidden Conformal Symmetry and Soft Hair in Kerr-MOG Black Hole",
+   "authors": "Parthapratim Pradhan",
+   "categories": "hep-th, gr-qc",
+   "abstract": "We investigate the two-dimensional conformal field theory (2D CFT) dual of the four-dimensional Kerr-MOG (Kerr-modified gravity) black hole using three complementary approaches: (i) black hole thermodynamics, (ii) monodromy analysis, and (iii) the soft-hair formalism. From these independent methods, we derive consistent expressions for the left- and right-moving temperatures and the central charge of the dual CFT. Finally, we derive the entropy product using these approaches. We show that the product is not universal as well as not quantized. We further explore the hidden conformal symmetry of the non-extremal Kerr-MOG black hole by analyzing the near-region dynamics of a massless scalar field. The resulting Kerr-MOG/CFT correspondence identifies the near-region geometry with a two-dimensional CFT characterized by the temperatures ($T_{L}, T_{R}$) derived in Sec. 3. Moreover, using the Cardy formula, we reproduce the microscopic entropy of the dual CFT and find exact agreement with the Bekenstein-Hawking entropy of the Kerr-MOG black hole. We also show that the low-frequency scalar absorption cross section~(greybody factor) in the near-region Kerr-MOG geometry precisely matches the finite-temperature absorption cross section of the dual 2D CFT. In addition, the near-region scalar wave equation exhibits a hidden $(SL(2,\\mathbb{R})_L \\times SL(2,\\mathbb{R})_R)$ conformal symmetry. These independent results provide strong evidence for the existence of a Kerr/CFT-type holographic duality for the Kerr-MOG black hole, establishing a consistent correspondence between the four-dimensional Kerr-MOG spacetime and a two-dimensional conformal field theory. Furthermore, the hidden conformal symmetry is realized in the form of $\\rm {Vir_L} \\otimes \\rm{ Vir_R}$ diffeomorphisms which act non-trivially on the black hole horizon."
+  },
+  {
+   "id": "2607.25226",
+   "title": "The quantum electrodynamics for dyons",
+   "authors": "D. O. R. Azevedo, O. M. Del Cima, T. S. Dias, E. D. Pereira",
+   "categories": "hep-th, gr-qc, hep-ex, hep-ph, math-ph",
+   "abstract": "The quantum electrodynamics for massive fermions carrying electric and magnetic charges, the dyons, is proposed based on the 1960's seminal works by Cabibbo, Ferrari, and Salam, with the gauge group being $U(1)\\times U(1)$, which is associated to a vector field (photon) and a pseudo-vector field (metaphoton), wherein the Dirac quantization is set aside. At the tree level the spectrum consistency of the model is analyzed, and all continuous and discrete symmetries are established. The quantum analysis is performed by using the Becchi-Rouet-Stora (BRS) algebraic renormalization method, which is independent on any regularization scheme. Moreover, thanks to the presence of massless gauge fields, the Lowenstein-Zimmermann (LZ) subtraction scheme is required within the framework of the Bogoliubov-Parasiuk-Hepp-Zimmermann-Lowenstein (BPHZL) renormalization procedure. Finally, it is verified that the proposed model, the dyon quantum electrodynamics (dQED), is free from any anomaly and is multiplicative renormalizable at all orders in perturbation theory, proving, therefore, its quantum consistency."
+  },
+  {
+   "id": "2607.25500",
+   "title": "String theory mathematics and matrix data analysis",
+   "authors": "Sanjaye Ramgoolam",
+   "categories": "hep-th, hep-ph",
+   "abstract": "Inspired by matrix techniques in quantum field theory and string theory, we review Permutation Invariant Gaussian Matrix Models (PIGMM), which replace the continuous symmetries of traditional Random Matrix Theory, for $ N \\times N$ matrices, with finite permutation symmetry, $S_N$. This symmetry-driven approach reduces highly multivariate $N^2$-variable matrix data analysis problems to a rich but tractable space of parameters. The representation theory of $S_N$ brings a highly correlated quadratic matrix action to a near-diagonal form with $13$ parameters. The invariant observables are parameterised by graphs and their expectation values are computed with Wick contractions implemented algorithmically. We review the successful application of PIGMM for data reduction and anomaly detection in computational linguistics, statistical finance and neural network weights. We conclude with a brief discussion of potential future applications to matrix data analysis tasks that exploit hadronization algorithms and the modular structure of collider-physics data."
+  },
+  {
+   "id": "2607.25662",
+   "title": "Toward the Structure Constants of $\\mathcal{N}=2$ Liouville Theory",
+   "authors": "Beatrix Mühlmann, Themistocles Zikopoulos",
+   "categories": "hep-th, math-ph",
+   "abstract": "We discuss the structure constants of spacelike $\\mathcal{N}=2$ Liouville theory on the two-sphere. Due to the absence of a particular $b \\leftrightarrow b^{-1}$ self-dual symmetry, where $b$ is the theory's coupling, the standard analytic bootstrap toolkit that was used to solve the bosonic and $\\mathcal{N}=1$ theories cannot be implemented in a straightforward way. Our approach, instead, relies on the fact that $\\mathcal{N}=2$ Liouville theory is dual by mirror symmetry to the $\\mathrm{SL}(2)_k/\\mathrm{U}(1)$ supercoset, whose target space is the $2$d fermionic black hole. Leveraging this duality, we obtain explicit expressions for the winding number preserving and violating structure constants on the supercoset side, and test them on the Liouville side through a semiclassical analysis finding agreement up to one-loop order. We also discuss the chiral rings of the theory and evaluate correlators of $\\frac 12$-BPS operators."
+  },
+  {
+   "id": "2607.25714",
+   "title": "The coupling flow for supergravity",
+   "authors": "Federico Arrighi, Saurish Khandelwal, Olaf Lechtenfeld",
+   "categories": "hep-th",
+   "abstract": "Quantum correlation functions in supersymmetric field theories can be encoded in the Nicolai map. The infinitesimal inverse map provides their response to a change in a coupling constant through a ``flow equation''. We investigate the flow in the gravitational constant $κ$ for four-dimensional Poincaré supergravity via its superconformal formulation. By expressing the full superconformal off-shell action as a supervariation we derive a ``flow operator'' in the effective vierbein theory, whose exponentiation yields the gauge-invariant part of an all-order (inverse) Nicolai map for supergravity. Alas, the BRST gauge fixing adds to this functional differential flow operator a multiplicative term, which ruins its derivational property and therefore jeopardizes its connection with the Nicolai map. We argue and present an example, however, that such multiplicative flow contributions might be rewritable as derivational ones with the help of Wick's theorem in the free effective theory where the Nicolai-transformed correlators are ultimately evaluated. At least in the Landau gauge, the supergravity flow equation is shown to be regular at $κ{=}0$, allowing for a perturbative expansion around Minkowski geometry. Therewith, we have overcome two of the three obstacles met in an earlier attempt towards a Nicolai map for Poincaré supergravity. Finally, we compare with the direct on-shell construction of a Nicolai map to leading order in $κ$."
+  },
+  {
+   "id": "2607.25733",
+   "title": "Balanced Metrics Know About SYZ",
+   "authors": "Per Berglund, Tristan Hübsch, Vishnu Jejjala, Viktor Mirjanić, Challenger Mishra",
+   "categories": "hep-th",
+   "abstract": "Numerical Ricci-flat metrics on Calabi-Yau manifolds are becoming increasingly accurate. However, they often lack the interpretability required to extract theoretical insights. In this paper, we introduce a novel variant of Donaldson's algorithm based on the Moore-Penrose pseudo-inverse that operates on the global sections of the ambient space rather than the manifold itself. This approach allows us to use the canonical monomial basis to compute interpretable balanced metrics even at large degrees $k$. Applying our ambient algorithm to multiple families, including the Dwork family and complete intersection Calabi-Yau manifolds, we discover that the metric parameters obey novel power laws near the Large Complex Structure Limit (LCSL). We connect these to the Gromov-Hausdorff metric collapse predicted by the SYZ conjecture."
+  },
+  {
+   "id": "2607.25833",
+   "title": "Curved momentum space and finite Landau spectrum in $κ$-Minkowski spacetime",
+   "authors": "Adrián Huamán Vargas, Vladislav Kupriyanov",
+   "categories": "hep-th, quant-ph",
+   "abstract": "It is obtained the $κ$-Poincare Casimir from the de Sitter geometry of momentum space and employed as the dynamical constraint governing charged particles within the framework of Poisson gauge theory. The resulting formalism is applied to investigate both scalar and spin-1/2 particles in a constant magnetic field. Exact energy spectra are obtained, including all orders in the deformation parameter $1/κ$. The curvature of momentum space implies a maximal invariant momentum, which in turn leads to a finite Landau spectrum characterized by the existence of a Highest Landau Level (HLL). In the fermionic case, the truncation becomes spin dependent, resulting in a polarized HLL. Possible implications of this ultraviolet truncation and its relation to anomaly-related phenomena are briefly discussed."
+  },
+  {
+   "id": "2607.25952",
+   "title": "Maximal $D=5$ trombone supergravity from M5-branes and $\\mathrm{SU}(2)$-flavoured $\\mathcal{N}=1$ class $\\mathcal{S}$ operator spectra",
+   "authors": "Ritabrata Bhattacharya, Abhay Katyal, Oscar Varela",
+   "categories": "hep-th",
+   "abstract": "We recently presented a new $D=5$ $\\mathcal{N}=8$ gauged supergravity involving the local trombone scaling symmetry. It arises by consistent truncation of M-theory on the internal space of the Maldacena-Núñez AdS$_5$ solution dual to the $\\mathcal{N}=2$ four-dimensional superconformal field theory (SCFT) of class $\\mathcal{S}$ associated to M5-branes wrapped on an unpunctured Riemann surface. Using exceptional generalised geometry/field theory, we extend that construction to show that the same $D=5$ $\\mathcal{N}=8$ supergravity also arises by consistent truncation of $D=11$ supergravity on the family of $\\mathcal{N}=1$ M5-brane-wrapped solutions of Bah-Beem-Bobev-Wecht, including the $\\mathcal{N}=1$ Maldacena-Núñez (MN1) configuration. Then, using recently derived mass matrices, we compute universal sectors of the Kaluza-Klein spectrum on the MN1 solution. In general, this universal spectrum is only locally defined, and we give a prescription for extracting globally defined subsectors thereof. This globally defined universal Kaluza-Klein spectrum is dual to a universal sector of the light operator spectrum of the SU(2)-flavoured $\\mathcal{N}=1$ class $\\mathcal{S}$ SCFT dual to MN1."
+  },
+  {
+   "id": "2607.26011",
+   "title": "Krylov-Space Memory Cores",
+   "authors": "Mohsen Alishahiha, Mohammad Javad Vasli",
+   "categories": "hep-th, cond-mat.stat-mech, quant-ph",
+   "abstract": "We introduce Krylov-space memory cores as stationary, depth-resolved structures that reveal how anomalous initial-state memory is organized inside the Krylov space of otherwise thermalizing nonintegrable systems. The stationary occupation profile identifies where late-time probability is concentrated along the Krylov chain, while complementary diagnostics of residual equilibration fluctuations, deviation from the Gibbs reference, and long-time Krylov-current fluctuations determine the physical character of that region. Across weak thermalization, confinement-induced anomalous dynamics, and many-body scarring, anomalous initial states develop compact low-depth memory cores that carry appreciable residual fluctuations, Gibbs mismatch, and persistent current-fluctuation activity. These cores are often embedded within substantially broader stationary occupation halos. Generic reference states, by contrast, do not exhibit a comparable combination of signal strength and spatial compactness. An auxiliary integrable comparison further shows that compact Krylov memory is state selective rather than a generic consequence of integrability. Krylov-space memory cores therefore provide a stationary framework for identifying where structured quantum memory resides and how it remains dynamically encoded."
+  }
+ ]
+}
