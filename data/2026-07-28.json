@@ -1,0 +1,155 @@
+{
+ "date": "2026-07-28",
+ "source": "rss",
+ "built": "Wed, 29 Jul 2026 01:53:29 +0000",
+ "count": 21,
+ "papers": [
+  {
+   "id": "2607.22775",
+   "title": "Exact Holomorphic Cayley Lumps in Eight Dimensions",
+   "authors": "Graeme Donald Robertson",
+   "categories": "hep-th",
+   "abstract": "A class of exact self-dual solutions is constructed for an eight-dimensional sigma model describing four-dimensional embeddings in Euclidean space. The theory admits a Spin(7)-invariant Cayley four-form that generates a Bogomolny-type bound for the Nambu-Goto action. The saturation of this bound leads to a first-order self-duality equation for embedding coordinates. A quaternionic polynomial ansatz has been shown to fail systematically by a residual sign mismatch, indicating an intrinsic algebraic obstruction. By contrast, the holomorphic embeddings of C^2 into C^4 satisfy the self-duality equation identically. The relationship between the present construction and the earlier work of Corrigan et al. on higher-dimensional self-duality and Gauntlett et al. on calibrated branes is discussed. Computer algebraic calculations using all 480 admissible octonionic bases show that only a small subset calibrates a given holomorphic embedding."
+  },
+  {
+   "id": "2607.22791",
+   "title": "Comments on deformed phase-space cosmology, SUSY and black holes",
+   "authors": "O. L\\'opez-Aguayo, J. C. L\\'opez-Dom\\'inguez, G. E. P\\'erez-Cu\\'ellar, M. Sabido",
+   "categories": "hep-th, gr-qc",
+   "abstract": "This paper presents the construction of the supersymmetric (SUSY) deformed version of the time dependent metric that describes the interior of the Schwarzschild BH. First, the noncommutative bosonic model is constructed by inducing the deformation in the minisuperspace coordinates and the associated canonical momentum. Following the methods of SUSY quantum mechanics, the supercharges of the deformed models are constructed and the deformed SUSY Wheeler-DeWitt equation is obtained. The classical dynamics are also obtained using the WKB approximation, we find the classical solutions and the conditions to satisfy the Hamiltonian constraint for both the SUSY and bosonic cases. Finally, the effects of the deformation in the context of deformed phase space cosmology and black holes are discussed."
+  },
+  {
+   "id": "2607.22914",
+   "title": "Tensor Catalyzed Decoherence of Primordial Scalar Fluctuations",
+   "authors": "C. P. Burgess, D. Dineen, R. Holman, Greg Kaplanek",
+   "categories": "hep-th",
+   "abstract": "We provide the first complete calculation of the leading contribution to the decoherence of primordial fluctuations in the scalar part of the metric fluctuations within simplest, single-clock, inflationary models, assuming decoherence comes from gravitational interactions with an environment made up of the other, unmeasured, short-wavelength scalar and tensor modes. We include the contributions from {\\it all} of the contributing interactions at leading order in powers of $(H/M_p)^2$ and of the slow-roll parameter $\\epsilon_1$. Unlike all extant calculations in the literature we find a result that is {\\it not} slow-roll suppressed (and so is the same order of magnitude as tensor-mode decoherence). The difference arises because the dominant decoherence comes from interactions that involve {\\it both} the tensor and scalar environments simultaneously (and so are missed when they are examined separately). We verify that the leading contributions to decoherence are UV finite (as they must be). We confirm that the interactions driving decoherence become time-local and Gaussian in the deep super-Hubble inflationary regime and show how this can be used to reliably compute the evolution of the purity in the late-time regime relevant for observations (where naive perturbation theory is known to break down). The same derivation shows explicitly why the effects that undermine perturbation theory for decoherence do not also undermine the basic inflationary prediction for the amplitude of primordial fluctuations (in agreement with general arguments).2"
+  },
+  {
+   "id": "2607.22938",
+   "title": "Mass/electric versus NUT/magnetic charges: duality from scattering amplitudes in $D\\geq4$ and for all bosonic spins",
+   "authors": "Ricardo Monteiro, Lecheng Ren, Daniel Siretanu",
+   "categories": "hep-th, gr-qc",
+   "abstract": "We revisit Kerr-NUT metrics and related spin-$s$ fields in $D\\geq4$, and study their associated scattering amplitudes. Starting in position space, we highlight the interpretation of mass and (multiple) NUT charges as being associated to distinct solutions of the rotation-deformed radial equation, which is made explicit in Cartesian multi-Kerr-Schild coordinates. This interpretation extends to electromagnetism with magnetic-type charges, and also extends to higher-spin counterparts, in accordance with the classical double or multi copy. We then establish a notion of ``electric-magnetic\" duality in higher dimensions, relating mass/electric to NUT/magnetic charges, which generalises the $D=4$ case in a novel manner. For $D\\geq6$, this involves the choice where the multiple magnetic charges are equal. The duality is revealed in momentum space, by the 3-point scattering amplitudes that generate the solutions. For all spins, these amplitudes are constructed from a spin-raising operator $\\mathcal S_\\mu$ and take the form $\\varepsilon^{\\mu_1\\cdots\\mu_s}{\\mathcal S}_{\\mu_1}\\cdots {\\mathcal S}_{\\mu_s}$ acting on a scalar seed. The scalar seed of the electric sector is dual to that of the magnetic sector: where the former's rotation dependence resums to a Bessel function $J_{\\frac{D-5}{2}}$, the latter resums to a Bessel function $J_{-\\frac{D-5}{2}}$. Finally, we explore the notion of self-duality that arises from this picture. Studying the classical $2\\!\\mapsto\\!2$ amplitudes that determine leading-order scattering, we find no evidence of a higher-dimensional analogue of the integrability of $D=4$ self-dual gravity."
+  },
+  {
+   "id": "2607.23025",
+   "title": "Overcrowding and the Finite-$N$ Hilbert Space",
+   "authors": "Robert de Mello Koch, Anik Rudra, Augustine Larweh Mahu",
+   "categories": "hep-th",
+   "abstract": "Finite-$N$ trace relations reorganize the Hilbert space of gauge-invariant operators beyond the freely generated large-$N$ description. We study this structure using the Hironaka decomposition of the invariant ring of $d$ Hermitian $N\\times N$ matrices. We first prove that the primary invariants may always be chosen to be homogeneous single-trace operators. We then show that, for any such choice, a nontrivial secondary invariant must appear by degree $L_{N,d}=2\\log_d N+\\log_d\\log_d N+\\mathcal{O}_d(1)$, which is parametrically below the first universal trace identity at degree $N+1$. This is a global overcrowding effect: exponentially many independent short single traces compete for only $1+(d-1)N^2$ algebraically independent coordinates. The overcrowding scale matches the fastest scrambling times expected for fast scramblers. We argue that this agreement of scales is not accidental: overcrowding provides a microscopic algebraic picture of scrambling in matrix models. Low-rank examples show that secondary invariants can distinguish configurations with identical primary data and, for suitable dynamics, label semiclassical sectors connected by instantons. These results identify the Hironaka decomposition as a natural framework for organizing perturbative and intrinsically finite-$N$ information in collective descriptions of gauge theories."
+  },
+  {
+   "id": "2607.23172",
+   "title": "Horava Stars Revisited: New Phases of Incompressible Stars and Black Holes, and Buchdahl's Theorem",
+   "authors": "Mu-In Park",
+   "categories": "hep-th, gr-qc",
+   "abstract": "I study a particular exact solution for static stars in four-dimensional non-projectable Horava gravity, which has been proposed as a renormalizable gravity model without the ghost problem by abandoning Einstein's equal-footing treatment of space and time through anisotropic scaling with z > 1. Considering the spherically symmetric static black-hole solutions in z = 3 Horava gravity as the exterior spacetimes of stars, I obtain an exact solution for incompressible (i.e., uniform-density) static stars with an arbitrary cosmological constant and isotropic pressure, and lambda=1, in which Birkhoff's theorem holds. For a vanishing cosmological constant, I obtain a modified Buchdahl bound on the maximum compactness for uniform-density stars, which ranges from 4/9 to 1. By contrast, I find that Ultra-Compact Objects (UCOs) with compactness C > 1 also exist with negative pressure while, surprisingly, satisfying all four standard energy conditions. UCOs include the regular (non-singular) black-hole solutions with masses above the extremal black-hole mass. In these solutions, the matter is localized at the timelike core region bounded by the inner horizon, while their exterior metrics are unaffected by the core matter and identical to the corresponding vacuum Horava black-hole solutions. These long-sought regular black-hole solutions are essential manifestations of Birkhoff's theorem in Horava gravity. I also find negative-mass stars with positive pressure that violate all standard energy conditions. Finally, I prove Buchdahl's theorem in non-projectable Horava gravity. The proof uses a weight-monotonicity condition on the average density and Birkhoff's theorem, together with the usual assumption that average density is non-increasing."
+  },
+  {
+   "id": "2607.23253",
+   "title": "On the Nucleon Effective Mass in Neutron Stars Cooling",
+   "authors": "Yuuki Sugiyama, Akira Dohi",
+   "categories": "hep-th",
+   "abstract": "The cooling of neutrons stars, which are composed of ultra-high-density nuclear matter, strongly depends on the equation of state because the dominant cooling sources are neutrinos produced in their interiors. Here, we investigate the cooling properties of neutron stars, focusing on effective nucleon masses, whose impacts have been recently examined in supernova explosion and proto-neutron star cooling. The uncertainties of effective masses originate from the difference in the attractive interaction of scalar meson and the definition of the Dirac and Landau masses. At first, we employ so-called Walecka models that allow these two masses to be introduced within a unified framework and evaluate the resulting cooling curves. Based on the Walecka model, we compute the emissivity of the neutrons and the direct Urca process and their cooling curves. We demonstrate that the Dirac and Landau masses affect cooling of massive neutron stars, although most previous cooling simulations do not distinguish them. We also perform cooling simulations with two realistic equation of states based on relativistic mean-field (RMF) theory, whose differences arise from properties of only effective masses among characteristic parameters. These results are broadly consistent with those obtained from the Walecka models, indicating that the treatment of effective nucleon masses may be an important source of uncertainty in neutron-star cooling."
+  },
+  {
+   "id": "2607.23331",
+   "title": "Effects of Curvature-Scalar Coupling on Vacuum Energy in Flat (3+1)-Dimensional Space-Time",
+   "authors": "Volodymyr Gorkavenko, Oleh Barabash, Pavlo Nakaznyi, Mariia Tsarenkova, Nazar Yakovenko, Andrii Zaporozhchenko",
+   "categories": "hep-th, math-ph, math.MP, quant-ph",
+   "abstract": "We investigated how a magnetic topological defect affects the vacuum polarization of a charged massive scalar field in a flat $(3+1)$-dimensional space-time. The defect was modeled as an impenetrable to matter field finite-thickness tube with magnetic flux inside. We implemented the most general form of the Robin boundary condition on the surface of the magnetic tube, which enables a fully general analysis of the problem. We have found that in flat spacetime, the total vacuum energy generated by a magnetic topological defect depends on the curvature $\\xi$, except for special cases corresponding to the Dirichlet and Neumann boundary conditions. By contrast, when Robin's general boundary conditions are imposed, the induced vacuum energy acquires an explicit dependence on the curvature coupling $\\xi$, which is significant even in flat space-time. A detailed study of the dependence of the effect on the boundary condition parameter has been carried out. The obtained results highlight the nontrivial role played by boundary conditions in vacuum polarization phenomena."
+  },
+  {
+   "id": "2607.23616",
+   "title": "Standard Model Effective Field Theory and Oscillons",
+   "authors": "Z. Drogosz, E. I. Sfakianakis, K. Slawinska, A. Wereszczynski",
+   "categories": "hep-th, hep-ph, nlin.PS",
+   "abstract": "We show that the inclusion of a dimension-six operator in the Higgs potential has a dramatic impact on the stability of oscillons in the $SU(2)$ bosonic sector of the Standard Model, extending their lifetime by orders of magnitude. This happens for the physical value of the ratio between the Higgs and W boson masses, $m_H/m_W=1.556$ and for the dimension-six operator $O_6 = (\\Phi^\\dagger \\Phi)^3$ whose coupling constant is below the current upper bound."
+  },
+  {
+   "id": "2607.23620",
+   "title": "$\\mathcal{N}=2$ supersymmetric Yang-Mills thermodynamics from effective field theory",
+   "authors": "Ubaid Tantary, Qianqian Du",
+   "categories": "hep-th",
+   "abstract": "We compute the weak-coupling free energy density of pure four-dimensional $\\mathcal{N}=2$ supersymmetric Yang-Mills (SYM) theory through second order in the 't Hooft coupling $\\lambda$ at finite temperature using effective-field-theory methods. The contribution from the hard scale $T$ is obtained from massless three-loop vacuum diagrams in the full theory, and that from the electric scale $\\sqrt{\\lambda}\\,T$ from a two-loop calculation in the dimensionally reduced three-dimensional effective theory. In contrast to $\\mathcal{N}=4$ SYM, the theory is asymptotically free: the coupling-renormalization counterterm, together with the EFT unit-operator counterterm, cancels all $1/\\epsilon$ poles. The remaining renormalization-scale dependence is fixed by the one-loop beta function. The expansion reproduces earlier results through order $\\lambda^{3/2}$, and the order-$\\lambda^2$ term is new."
+  },
+  {
+   "id": "2607.23659",
+   "title": "Stability and Chaotic Dynamics in a Nonlinearly Confined ghost-sector Hamiltonian",
+   "authors": "Zahra Molaee, Soleyman Fatholahzadeh",
+   "categories": "hep-th",
+   "abstract": "We investigate the nonlinear dynamics of a Hamiltonian system containing a ghost degree of freedom coupled to a canonical sector through nonlinear interactions. The model consists of one positive-energy and one negative-energy mode, augmented by quartic and sextic nonlinearities that regularize the large-amplitude behavior of the system. Unlike conventional ghost models, which typically exhibit runaway trajectories due to the indefinite nature of the kinetic energy, the present Hamiltonian possesses a confining nonlinear structure that renders the accessible energy surfaces compact for finite total energy. We derive the equations of motion and analyze the geometric properties of the Hamiltonian flow. Particular attention is devoted to the interplay between local ghost-induced instability and global nonlinear confinement. We show that the sextic contribution dominates the asymptotic dynamics and prevents escape to infinity despite the presence of a negative-energy sector. As a consequence, the model provides a controlled framework for studying bounded dynamics in ghost-coupled systems. The phase-space structure is investigated through numerical integration, Poincar\\'e surfaces of section, and Lyapunov analysis. Depending on the interaction strength and nonlinear couplings, the system exhibits a transition from regular quasi-periodic motion to chaotic dynamics characterized by positive maximal Lyapunov exponents. Remarkably, chaotic trajectories remain confined within compact regions of phase space, yielding a realization of bounded chaotic motion in a ghost-containing Hamiltonian system. These results provide a concrete example of how nonlinear self-interactions can regularize ghost dynamics at the classical level and indicate a useful prototype for studying stability, confinement, and chaos in nonstandard Hamiltonian theories."
+  },
+  {
+   "id": "2607.23747",
+   "title": "Freezing Swampland: A Krylov Complexity Criterion for the Weak Gravity Conjecture",
+   "authors": "Amin Faraji Astaneh, Reza Ghomi Shurkaie",
+   "categories": "hep-th, quant-ph",
+   "abstract": "We propose a quantum-information-theoretic perspective on the Weak Gravity Conjecture through the behavior of Krylov spread complexity. For a charged thermofield double state holographically dual to an AdS Reissner--Nordstr\\\"om black hole, we show that the extremal limit on the black-hole side is accompanied by an effective freezing of Krylov spreading. In this regime, the return amplitude becomes effectively a pure phase, and the dual quantum state ceases to spread nontrivially in Krylov space. We then incorporate charged matter and study the effect of Schwinger pair production in the near-horizon region. Within this semiclassical near-extremal analysis, the frozen behavior is lifted once the discharge channel is opened, and the dynamics become nontrivial again. This suggests that the Weak Gravity Conjecture may admit a complexity-based interpretation in terms of the absence of exact freezing in the presence of an available discharge channel. More broadly, our results point to a new connection between the swampland program, black-hole physics, and quantum information theory."
+  },
+  {
+   "id": "2607.23760",
+   "title": "The extremal Reissner-Nordstr\\\"om throat from non extremal near horizon expansions",
+   "authors": "Anirudhda Shinde, Mangesh Mandlik",
+   "categories": "hep-th",
+   "abstract": "The near horizon region of a non extremal black hole has a universal Rindler form, but the strict horizon limit is not an ordinary Lorentzian geometry. In the String Carroll expansion of this non extremal near horizon metric,the transverse angular directions form a base and the time-radial Rindler directions appear as a distinguished two-dimensional longitudinal sector fibered over this base. We study how this String Carroll expansion behaves for the Reissner-Nordstr\\\"om (RN) black hole as the extremal limit is approached, where the expected near horizon geometry is the Lorentzian $AdS_2 \\times S^2$ throat. We show that while for the four-dimensional non extremal RN geometry, the String Carroll expansion correctly captures the near horizon Rindler region, it is not sufficient to recover the extremal $AdS_2 \\times S^2$ throat. The reason is that the higher order terms, which are suppressed in the String Carroll expansion, become essential in the extremal limit. We show that in Eddington-Finkelstein coordinates, the required contribution appears at second order and restores the radial dependence needed for the $AdS_2$ geometry. The extremal $AdS_2 \\times S^2$ throat is then obtained as the zero-temperature limit of the scaled throat geometry. In static coordinates, the temporal sector of the extremal throat geometry can be obtained from a second order near horizon expansion, but the radial sector cannot be obtained from any finite order truncation and requires contributions from all orders in the near horizon expansion."
+  },
+  {
+   "id": "2607.24037",
+   "title": "R-Twisting, Fibered Knots, and Gauge Theories",
+   "authors": "Shi Cheng",
+   "categories": "hep-th",
+   "abstract": "We argue that R-twisting implies the Seiberg-Witten curves of 4d Argyres-Douglas theories could be combined with the R-twisted circle to form the mapping tori of torus knots, inspired by Milnor fibration theorem. Then 3d gauge theories labeled by mapping tori are generated, which in the IR capture 4d BPS spectrum and mutations. This construction addresses the boundary problem of the domain wall approach in \\cite{Cecotti:2011iy}. These 3d theories show a supersymmetry enhancement, and are related to 3d rank zero theories."
+  },
+  {
+   "id": "2607.24242",
+   "title": "Light-like retarded correlators and the horizon",
+   "authors": "Justin R. David, Leonard Schwarze",
+   "categories": "hep-th, cond-mat.other, gr-qc",
+   "abstract": "We show that retarded correlators in conformal field theories of scalar primary operators evaluated at finite temperature using $AdS/CFT$ scale anomalously at large light like momenta. The anomalous scaling depends on the curvature of the horizon. Setting the momenta equal to the frequency $\\omega$, the retarded correlator for black holes with planar horizons scales as $\\omega^{\\frac{2}{d+2} (2\\Delta - d) }$ as opposed to the scaling behaviour of $\\omega^{2\\Delta - d}$ expected by dimensional analysis at generic fixed momenta and large frequencies. $\\Delta$ is the dimension of the primary and $d$, the number of space-time dimensions. For black holes with spherical and hyperbolic horizons when the frequency squared equals the Casimir along the horizon, the retarded correlator scales as $\\omega^{\\frac{2\\Delta -d}{2} }$. We establish this using exact results in $d=2$, and a numerical analysis of the Heun equation for the $AdS_5$ planar black hole and finally using the WKB approximation in general $d$. The exact result for black holes with hyperbolic horizon as well as the analysis at large $d$ provides additional checks for the anomalous scaling behaviour. Finally we evaluate the anomalous scaling exponent for the stress tensor correlator in all its 3 channels."
+  },
+  {
+   "id": "2607.24266",
+   "title": "Dynamical Quarks in the Ensemble of Center Vortices with Monopole Defects: Color Confinement Beyond External Probes",
+   "authors": "Luis E. Oxman",
+   "categories": "hep-th, hep-lat, hep-ph",
+   "abstract": "We consider the interaction of dynamical quarks with the ensemble of oriented and nonoriented center vortices proposed to describe flux-tube formation between quark probes in pure Yang-Mills theory. The quark sector is described in terms of bosonized color currents. Within this fluid-like framework, the infrared vortex--monopole condensate restricts finite-energy configurations to be color neutral. Furthermore, neutral distributions of constituent color densities embedded in the condensate generate frustrated regions, providing a mechanism for their localization into finite-size configurations. The resulting picture is consistent with lattice evidence indicating that center vortices play a central role in shaping the hadron spectrum."
+  },
+  {
+   "id": "2607.24342",
+   "title": "General Properties of the Thermo-Metric for CV event manifolds and the magnetization combinatorial scheme",
+   "authors": "Pietro Fre, Alexander S. Sorin, Mario Trigiante",
+   "categories": "hep-th, math.DG",
+   "abstract": "Following previous results recently obtained by us, on Information Geometry versus Geometrical Thermodynamics and on the exact calculation of partition functions for extended Souriau Gibbs distributions on Calabi Vesentini manifolds, we study the differential geometry of the corresponding thermo-metrics. A general intriguing scheme is discovered and put into evidence. A small yet significant difference, distinguishes the even from the odd dimensional instance of the microscopic CV manifolds. Apart from that the complete thermo-space is flat when no constraint is introduced. Freezing the magnetic fields, which can be done according to complicated combinatorials, forces the thermo-system to evolve on curved submanifolds of the thermo--space that have a structure depending only on the length of the $n-1$ chain of frozen contiguous magnetic fields. The behavior of Riemann tensor components for such spaces is codified by a symmetric matrix with peculiar behavior along special symmetrically arranged submanifolds that, might be responsible for the generation of curvature walls and for the categorical partitioning of the thermo space. The embedding of this curved submanifold into $\\mathbb{R}^{2n-1}$ can be traced back to the vanishing of magnetic fields and, in this case, the flat metric on $\\mathbb{R}^{2n-1}$ is the $\\mathfrak{a}_{2n-1}$ simple Lie algebra Cartan matrix. In another version the flat embedding reveals the geometric interpretation of the $n$-manifold as a generalized translation hypersurface. The boundary at infinity has a hypercube structure whose face central points and vertices appear, numerically, to be the end-points of all geodesics depending only on their angular slope at the start. This general feature is reminiscent of the causal structure at infinity of Lorentzian space-times and of Penrose diagrams."
+  },
+  {
+   "id": "2607.24477",
+   "title": "Supersymmetric Moduli Space and Vacua with Vector Fields in $D=4$ Gauged $\\mathcal{N}=8$ Supergravity",
+   "authors": "Andr\\'es Anabal\\'on, Stefano Maurelli, Marcelo Oyarzo, Mario Trigiante",
+   "categories": "hep-th",
+   "abstract": "When fermions are taken to be anti-periodic along a spacelike $S^1$ in $AdS_4$, certain ground states of the supergravity theory are described by AdS-soliton-like spacetimes. We study these geometries within the purely dilatonic STU model obtained from the compactification of M-theory on $S^7$ in the presence of non-trivial gauge fields. The resulting configurations define a rich family of everywhere regular supersymmetric vacua that holographically describe strongly coupled ``confining'' gauge theories in three dimensions. We provide a complete characterization of the moduli space of supersymmetric solutions in terms of the vacuum expectation values of the dimension-one operators of the truncation."
+  },
+  {
+   "id": "2607.24499",
+   "title": "Spin-resolved double-trace thermal coefficients in holography",
+   "authors": "Ilija Buri\\'c, Ivan Gusev, Andrei Parnachev",
+   "categories": "hep-th",
+   "abstract": "It was previously shown that the stress-tensor sector of the OPE, together with the KMS condition, fixes holographic thermal two-point functions at vanishing spatial separation. We extend this construction to nonzero spatial separation, where the KMS condition leaves a residual ambiguity that depends only on the spatial separation. We show that this ambiguity is fixed by the zero-frequency bulk wave equation, which can be solved analytically in terms of Heun functions. This gives an efficient method for computing thermal coefficients of double-trace operators resolved by spin. We also study the Lorentzian analytic structure of the resulting correlator and show that complex bulk-cone singularities which appear at spacelike separation in the stress-tensor sector do not persist in the full two-point function; they are resolved by the double-trace contribution."
+  },
+  {
+   "id": "2607.24576",
+   "title": "Near-Light-Cone Nonhydrodynamic Structure from Boosted Hydrodynamics",
+   "authors": "Navid Abbasi, Jewel Kumar Ghosh, Dirk H. Rischke",
+   "categories": "hep-th, gr-qc, nucl-th",
+   "abstract": "Hydrodynamics provides a universal description of many-body systems at long wavelengths. Its long-lived collective excitations, known as hydrodynamic modes, admit long-wavelength expansions whose convergence is encoded in the analytic structure of retarded correlators of conserved quantities in thermal equilibrium. We show that a boost can change which nonhydrodynamic singularity limits such an expansion. In the large-boost limit, the relevant singularity originates in the large-momentum, near-light-cone region of the rest-frame spectrum. After factoring out the Lorentz-factor growth, the rescaled convergence scale is controlled by the microscopic spectral structure of the theory. We explicitly demonstrate this in two examples: relaxation-time kinetic theory and holography."
+  },
+  {
+   "id": "2607.24632",
+   "title": "Krylov complexity and spectral density of BMN matrix model",
+   "authors": "Dibakar Roychowdhury",
+   "categories": "hep-th, cond-mat.str-el, quant-ph",
+   "abstract": "We use Krylov complexity as a typical diagnostic of quantum many body dynamics in the context of BMN matrix model at large mass gap. We calculate several physical entities, for example, the moments and return amplitudes at large mass deformation. We calculate them for both spread complexity of states as well as Krylov growth of operators in the matrix model. We propose a general expression for the moments at any given order $n$. We also discuss orthogonal polynomials for spread as well as operator Krylov complexity. In the context of the Krylov operator growth we further compute the spectral function and the density of states. A careful analysis of the spectral function near the resonance reveals various IR divergences in addition to the physical collective modes. These collective modes appear to be exceptionally stable due to large mass gap. On the other hand, the UV of the theory appears to be extremely damped due to higher scattering rates. We carefully diagnose these IR divergences near resonance which reveals that these collective modes are in fact non-propagating and should be thought of as diffusion modes or relaxation modes with infinite relaxation time. We also calculate the Krylov variance and Krylov entropy for the matrix model and in particular at early time. The linear early time growth of the Krylov entropy confirms the onset of quantum chaos in the matrix model at large mass gap."
+  }
+ ]
+}
