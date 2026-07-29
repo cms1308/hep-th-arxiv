@@ -11,6 +11,24 @@
 
 ## 1단계 — 오늘의 신규 논문 목록
 
+**경로 A (기본).** GitHub Actions 워크플로 `arXiv hep-th 수집`이 매 평일 04:05 UTC에
+arXiv를 대신 호출해 `data/<공지날짜>.json` 을 커밋해 둡니다. 이 파일이 있으면 그대로 씁니다 —
+WebFetch도, 캐시 회피도, 추출 서브에이전트도 필요 없습니다.
+
+```bash
+TODAY=$(TZ=Asia/Seoul date +%F)
+ls -la /home/claude/repo/data/
+python3 /home/claude/repo/scripts/split_chunks.py /home/claude/repo/data/$TODAY.json 6
+```
+
+`split_chunks.py` 가 `/home/claude/work/in/chunk{N}.json` 을 만들고 편수를 출력합니다.
+이 편수가 곧 `TOTAL_NEW` 이고, 파일 안의 `date` 가 공지 날짜입니다.
+성공했으면 **2단계-A** 로 갑니다.
+
+**경로 B (폴백).** `data/$TODAY.json` 이 없으면 Action이 아직 안 돌았거나 실패한 것입니다.
+아래 기존 WebFetch 절차로 진행하고, 마지막 메시지에 "Actions 수집이 없어 RSS 폴백을 썼다"고 한 줄 덧붙입니다.
+(Actions 탭에서 실패 원인을 확인하도록 함께 알릴 것.)
+
 `WebFetch` 도구만 사용합니다. 이 컨테이너의 bash/curl로는 arxiv.org에 접근할 수 없습니다.
 (필요하면 `ToolSearch` 로 `select:WebFetch` 먼저 로드)
 
@@ -33,7 +51,31 @@ WebFetch prompt:
 - `manifest.json` 에 같은 date가 이미 있으면 갱신(덮어쓰기)됩니다. 중복 걱정 없이 진행하세요.
 - 신규 논문이 0편이면 그 사실만 짧게 알리고 종료.
 
-## 2단계 — 병렬 서브에이전트로 추출 + 한국어 번역
+## 2단계-A — 병렬 서브에이전트로 한국어 번역 (경로 A일 때)
+
+`split_chunks.py` 가 만든 청크 수만큼 `Agent`(subagent_type: `general-purpose`)를
+**한 메시지에서 동시에** 띄웁니다. 프롬프트는 아래를 그대로 쓰되 `{N}` 만 채웁니다.
+추출이 이미 끝나 있으므로 WebFetch를 쓰지 않습니다 — 번역만 합니다.
+
+> You are translating arXiv hep-th abstracts into Korean.
+>
+> STEP 1. Read `/home/claude/work/in/chunk{N}.json` — a JSON array of papers with keys
+> `id, title, authors, categories, abstract`.
+>
+> STEP 2. For each paper write a Korean translation of the abstract:
+> - Natural, fluent academic Korean ("~한다/~이다" 평서체).
+> - KEEP all technical/physics terminology in English (holography, entanglement entropy, black hole, CFT, AdS/CFT, Yang-Mills, supersymmetry, moduli, brane, S-matrix, stress tensor, gauge theory, Calabi-Yau, renormalization, ...). Keep all math notation, LaTeX, symbols and arXiv IDs exactly as in the original.
+> - Do not translate proper nouns or model names.
+> - Translate the FULL abstract sentence for sentence. Never summarize.
+>
+> STEP 3. Write `/home/claude/work/out/chunk{N}.json` — the SAME array with an added
+> `abstract_ko` key on each object. Copy `id, title, authors, categories, abstract` verbatim
+> from the input; do not edit or re-wrap them.
+> Validate: `python3 -c "import json;d=json.load(open('/home/claude/work/out/chunk{N}.json'));print(len(d), all(p.get('abstract_ko') for p in d))"`
+>
+> Return ONLY the string "chunk{N} done: N papers". Do not return paper content.
+
+## 2단계-B — 병렬 서브에이전트로 추출 + 한국어 번역 (폴백 경로 B일 때)
 
 ID를 **6개씩** 묶고, 청크마다 `Agent`(subagent_type: `general-purpose`)를 **한 메시지에서 동시에** 띄웁니다.
 서브에이전트 프롬프트는 아래를 그대로 쓰되 `{IDS}`, `{N}`, `{DATE}`(1단계와 같은 `?d=` 값) 만 채웁니다.
@@ -96,10 +138,25 @@ cd /home/claude/work && GH_TOKEN=$GH_TOKEN python3 /home/claude/repo/scripts/syn
 
 ---
 
-## 부록 — 과거 날짜 백필 (수동)
+## 부록 A — 과거 날짜 백필 (GitHub Actions, 권장)
 
-RSS 피드는 **최신 공지 하나만** 담고 있어서 과거 날짜는 위 절차로 못 만듭니다.
-과거분은 alphaXiv MCP 커넥터를 써서 아래처럼 합니다. (자동 실행이 아니라 사람이 요청할 때만)
+RSS는 최신 공지 하나만 담지만 **arXiv API는 과거를 다 줍니다.** 러너에서 API를 치므로
+이 컨테이너의 egress 제한·robots 제약과 무관합니다.
+
+1. GitHub → Actions → `arXiv hep-th 수집` → **Run workflow** → `date` 에 `YYYY-MM-DD` 입력.
+2. 끝나면 `data/<날짜>.json` 이 커밋됩니다. 레포를 다시 pull 해서 1단계 경로 A부터 그대로 진행.
+
+`--api` 모드는 공지일 D에 대해 제출시각 창을 `(D-1 직전 영업일 14:00 ET) ~ (D-1 14:00 ET)` 로
+추정합니다(실측 검증: 월요일=1일치, 화요일=주말 3일치). **공휴일은 반영하지 못하므로 편수를 눈으로 확인**하고,
+어긋나면 창을 직접 지정합니다:
+
+```
+python3 scripts/fetch_arxiv.py --api --date 2026-07-20 --from 202607161800 --to 202607171800
+```
+
+## 부록 B — 과거 날짜 백필 (alphaXiv, 대체 수단)
+
+Actions를 못 쓰는 상황에서만 씁니다. (자동 실행이 아니라 사람이 요청할 때만)
 
 1. **메타데이터** — `WebFetch` 로 `https://arxiv.org/list/hep-th/recent?skip=0&show=<N>` 을 열고,
    원하는 날짜 heading 아래의 `New submissions` / `Cross-lists` 구분과 각 항목의
@@ -120,6 +177,9 @@ RSS 피드는 **최신 공지 하나만** 담고 있어서 과거 날짜는 위 
 
 ## 문제 발생 시
 
+- `data/$TODAY.json` 이 없으면 → 1단계 경로 B(WebFetch 폴백)로 진행하고 그 사실을 보고.
+  주말이면 Action이 아예 안 도는 게 정상입니다.
+- Action이 실패했으면 → GitHub Actions 탭의 로그를 알리고, 그날은 폴백으로 처리.
 - 항목이 0개면 → 주말이거나 공지 전입니다. 그 사실만 알리고 종료 (커밋하지 말 것).
 - `FEED_PUBDATE` 가 오늘과 어긋나면 → **거의 확실히 캐시 문제입니다.** `?d=` 값에 시각을 덧붙여
   (`?d=2026-07-27T1330`) 다시 부르세요. 그래도 안 고쳐지면 그대로 진행하되 마지막 메시지에
