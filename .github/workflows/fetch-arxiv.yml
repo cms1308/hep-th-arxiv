@@ -1,11 +1,13 @@
 name: arXiv hep-th 수집
 
-# 평일 자동 실행. `.trigger` 파일이 바뀌어도 실행된다(파일 첫 줄이 그대로 인자).
+# 평일 09:35 KST(00:35 UTC) 자동 실행 — arXiv 공지(20:00 ET = 09:00 KST) 직후.
+# 갱신 전이면 전날 목록과 동일한지 검사해 5분 간격으로 재시도한다.
+# `.trigger` 파일이 바뀌어도 실행된다(파일 첫 줄이 그대로 인자).
 # 브리핑 세션은 api.github.com 을 못 쓰므로, 실행 결과를 항상 data/_last_run.txt 에
 # 커밋해 로그를 레포에서 읽을 수 있게 한다.
 on:
   schedule:
-    - cron: "45 4 * * 1-5"
+    - cron: "35 0 * * 1-5"
   push:
     paths:
       - ".trigger"

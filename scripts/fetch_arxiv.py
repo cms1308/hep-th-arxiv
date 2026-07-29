@@ -171,6 +171,24 @@ def fetch_new_listing():
     return uniq
 
 
+def stale_against(papers, outdir, date):
+    """이미 저장된 다른 날짜와 ID 집합이 동일하면 그 날짜를 돌려준다."""
+    ids = {p["id"] for p in papers}
+    if not ids:
+        return None
+    for f in sorted(pathlib.Path(outdir).glob("*.json")):
+        if f.stem == date:
+            continue
+        try:
+            prev = json.loads(f.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        pl = prev["papers"] if isinstance(prev, dict) else prev
+        if {p["id"] for p in pl} == ids:
+            return f.stem
+    return None
+
+
 # ---------------------------------------------------------------- API 모드
 def announce_window(date_str):
     """공지일 D의 신규분에 해당하는 제출 시각 창(UTC)을 추정한다.
@@ -248,8 +266,21 @@ def main():
 
     if a.new:
         date = a.expect or a.date or datetime.now(timezone(timedelta(hours=9))).date().isoformat()
-        papers, built = fetch_new_listing(), "list/new"
-        print(f"/list/new 수집: {len(papers)}편 (공지일 {date} 로 기록)")
+        built = "list/new"
+        # 공지 전에 돌면 전날 목록이 그대로 온다. 기존 날짜 파일과 ID 집합이
+        # 똑같으면 아직 갱신 전으로 보고 재시도한다.
+        for attempt in range(1, a.retries + 2):
+            papers = fetch_new_listing()
+            stale = stale_against(papers, a.outdir, date)
+            print(f"/list/new 수집 {attempt}회차: {len(papers)}편 (공지일 {date} 로 기록)")
+            if not stale:
+                break
+            if attempt > a.retries:
+                print(f"::warning::{stale} 와 동일한 목록입니다. 갱신 전일 수 있습니다.")
+                papers = []
+                break
+            print(f"  {stale} 와 동일 — 아직 갱신 전. {a.retry_wait}s 후 재시도")
+            time.sleep(a.retry_wait)
     elif a.api:
         if not a.date:
             raise SystemExit("--api 에는 --date YYYY-MM-DD 가 필요합니다")
