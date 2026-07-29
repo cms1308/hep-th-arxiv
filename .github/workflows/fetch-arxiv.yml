@@ -1,14 +1,11 @@
 name: arXiv hep-th 수집
 
-# 매 평일 04:45 UTC (13:45 KST).
-# 실측: 04:00 UTC 에는 아직 전날 피드가 온다. 04:38 UTC 에는 당일 피드가 왔다.
-# 시각에만 의존하지 않도록 --expect 로 당일 공지가 나올 때까지 재시도한다(최대 +20분).
-# 브리핑 예약 작업은 이보다 뒤(14:15 KST)에 돌면서 이 결과를 읽는다.
+# 평일 자동 실행. `.trigger` 파일이 바뀌어도 실행된다(파일 첫 줄이 그대로 인자).
+# 브리핑 세션은 api.github.com 을 못 쓰므로, 실행 결과를 항상 data/_last_run.txt 에
+# 커밋해 로그를 레포에서 읽을 수 있게 한다.
 on:
   schedule:
     - cron: "45 4 * * 1-5"
-  # `.trigger` 파일이 바뀌면 실행된다. 파일 첫 줄이 그대로 인자로 들어간다.
-  # (에이전트는 api.github.com 을 못 쓰므로 push 로 워크플로를 직접 돌리기 위한 통로)
   push:
     paths:
       - ".trigger"
@@ -17,7 +14,7 @@ on:
   workflow_dispatch:
     inputs:
       date:
-        description: "백필할 공지 날짜 (YYYY-MM-DD). 비우면 오늘 RSS를 수집."
+        description: "백필할 공지 날짜 (YYYY-MM-DD). 비우면 오늘분 수집."
         required: false
         type: string
 
@@ -33,34 +30,57 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      - name: 수집
-        id: fetch
+      - name: 인자 결정
+        id: args
         run: |
-          set -euo pipefail
           if [ -n "${{ inputs.date }}" ]; then
             ARGS="--api --date ${{ inputs.date }}"
           elif [ "${{ github.event_name }}" = "push" ] && [ -s .trigger ]; then
             ARGS="$(head -1 .trigger)"
           else
-            ARGS="--rss --expect $(TZ=Asia/Seoul date +%F)"
+            ARGS="--new --expect $(TZ=Asia/Seoul date +%F)"
           fi
+          echo "ARGS=$ARGS" >> "$GITHUB_ENV"
           echo "실행 인자: $ARGS"
-          python3 scripts/fetch_arxiv.py $ARGS
+
+      - name: 수집
+        id: fetch
+        continue-on-error: true
+        run: |
+          set -o pipefail
+          python3 scripts/fetch_arxiv.py $ARGS 2>&1 | tee /tmp/fetch.log
+
+      - name: 로그 남기기
+        if: always()
+        run: |
+          mkdir -p data
+          {
+            echo "run       = #${{ github.run_number }}  (${{ github.event_name }})"
+            echo "utc       = $(date -u +%FT%TZ)"
+            echo "kst       = $(TZ=Asia/Seoul date +%FT%T)"
+            echo "args      = $ARGS"
+            echo "outcome   = ${{ steps.fetch.outcome }}"
+            echo "--------- 출력 ---------"
+            tail -60 /tmp/fetch.log 2>/dev/null || echo "(로그 없음)"
+          } > data/_last_run.txt
+          cat data/_last_run.txt
 
       - name: 커밋
+        if: always()
         run: |
-          set -euo pipefail
           if [ -z "$(git status --porcelain data)" ]; then
-            echo "변경 없음 — 커밋 생략"
-            exit 0
+            echo "변경 없음 — 커밋 생략"; exit 0
           fi
           git config user.name  "arxiv-fetch-bot"
           git config user.email "noreply@anthropic.com"
           git add data
-          git commit -m "data: hep-th 신규 ${{ steps.fetch.outputs.count }}편 (${{ steps.fetch.outputs.date }})"
+          git commit -m "data: 수집 실행 #${{ github.run_number }} (${{ steps.fetch.outcome }})"
           git push
+
+      - name: 실패 시 종료코드 반영
+        if: steps.fetch.outcome == 'failure'
+        run: exit 1
