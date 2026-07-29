@@ -1,1 +1,1 @@
---new --expect 2026-07-29 --outdir data/_test2 --dump-html data/_debug/list-new.html
+--new --expect 2026-07-29

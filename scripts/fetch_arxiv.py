@@ -111,22 +111,24 @@ def fetch_new_listing():
         pathlib.Path(DUMP).write_text(html_text[:400000], encoding="utf-8")
         print(f"  [dump] {DUMP} ({len(html_text)} bytes 원본)")
 
-    # 'New submissions' 절의 시작을 먼저 잡는다. 페이지 상단 목차에도
-    # 'Cross submissions' 문구가 있어서, 그냥 find 하면 본문이 통째로 잘린다.
-    start = 0
-    ms = re.search(r'New submissions', html_text)
-    if ms:
-        start = ms.end()
-    cut = len(html_text)
-    for marker in ("Cross submission", "Cross-list", "Replacement submission",
-                   "Replacements for", "Cross lists"):
-        i = html_text.find(marker, start)
-        if i != -1:
-            cut = min(cut, i)
+    # 절 경계는 <h3> 로 잡는다. 페이지 상단 목차에도 'Cross-lists' 문구가 있어
+    # 단순 문자열 검색으로는 본문이 통째로 잘린다.
+    ms = re.search(r'<h3[^>]*>\s*New submissions', html_text, re.I)
+    if not ms:
+        print("::warning::'New submissions' 절을 찾지 못했습니다 (페이지 구조 변경?)")
+        return []
+    start = ms.end()
+    nxt = re.search(r'<h3[^>]*>', html_text[start:], re.I)
+    cut = start + nxt.start() if nxt else len(html_text)
     body = html_text[start:cut]
-    print(f"  [parse] 본문 구간 {start}~{cut} ({cut-start} bytes)")
 
-    # 항목 경계: arXiv:<id> 링크
+    declared = None
+    md = re.search(r'showing\s+(\d+)\s+of\s+(\d+)\s+entries', ms.group(0) + html_text[ms.end():ms.end() + 120])
+    if md:
+        declared = int(md.group(2))
+    print(f"  [parse] 본문 {cut-start} bytes, 페이지 표기 {declared}편")
+
+    # 항목 경계: <dt> ... </dd>
     chunks = re.split(r'<dt[^>]*>', body)[1:]
     papers = []
     for ch in chunks:
@@ -136,12 +138,14 @@ def fetch_new_listing():
         aid = m.group(1)
 
         def grab(cls, tag="div"):
-            mm = re.search(rf'<{tag}[^>]*class="[^"]*{cls}[^"]*"[^>]*>(.*?)</{tag}>',
+            # arXiv는 class='...' (작은따옴표) 를 쓴다. 두 방식 모두 받는다.
+            mm = re.search(rf'''<{tag}[^>]*class=["'][^"']*{cls}[^"']*["'][^>]*>(.*?)</{tag}>''',
                            ch, re.S)
             return mm.group(1) if mm else ""
 
         def detag(s):
-            s = re.sub(r'<span[^>]*class="descriptor"[^>]*>.*?</span>', ' ', s, flags=re.S)
+            s = re.sub(r'''<span[^>]*class=["']descriptor["'][^>]*>.*?</span>''',
+                       ' ', s, flags=re.S)
             s = re.sub(r'<[^>]+>', ' ', s)
             s = (s.replace("&amp;", "&").replace("&lt;", "<").replace("&gt;", ">")
                   .replace("&quot;", '"').replace("&#39;", "'").replace("&nbsp;", " "))
