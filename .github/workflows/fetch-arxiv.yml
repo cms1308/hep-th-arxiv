@@ -1,0 +1,53 @@
+name: arXiv hep-th 수집
+
+# 매 평일 04:05 UTC (13:05 KST) — arXiv가 04:00 UTC에 피드를 새로 빌드한 직후.
+# 브리핑 예약 작업은 이보다 뒤(13:30 KST)에 돌면서 이 결과를 읽는다.
+on:
+  schedule:
+    - cron: "5 4 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "백필할 공지 날짜 (YYYY-MM-DD). 비우면 오늘 RSS를 수집."
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-arxiv
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 수집
+        id: fetch
+        run: |
+          set -euo pipefail
+          if [ -n "${{ inputs.date }}" ]; then
+            python3 scripts/fetch_arxiv.py --api --date "${{ inputs.date }}"
+          else
+            python3 scripts/fetch_arxiv.py --rss
+          fi
+
+      - name: 커밋
+        run: |
+          set -euo pipefail
+          if [ -z "$(git status --porcelain data)" ]; then
+            echo "변경 없음 — 커밋 생략"
+            exit 0
+          fi
+          git config user.name  "arxiv-fetch-bot"
+          git config user.email "noreply@anthropic.com"
+          git add data
+          git commit -m "data: hep-th 신규 ${{ steps.fetch.outputs.count }}편 (${{ steps.fetch.outputs.date }})"
+          git push
