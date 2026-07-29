@@ -94,6 +94,68 @@ def fetch_rss():
     return announce, built, papers
 
 
+# ------------------------------------------------- /list/new 모드 (권장·조기)
+NEW_URL = "https://arxiv.org/list/hep-th/new"
+
+
+def fetch_new_listing():
+    """arxiv.org/list/hep-th/new 의 'New submissions' 절만 파싱한다.
+
+    이 페이지는 공지 시각(20:00 ET = 09:00 KST)에 갱신되는 확정 목록이라
+    RSS(13:00 KST 빌드)보다 4시간 빠르고, API처럼 제출시각 창을 추정할 필요가 없다.
+    """
+    html_text = get(NEW_URL).decode("utf-8", "replace")
+
+    # Cross-list / Replacement 절이 시작되기 전까지만 사용한다.
+    cut = len(html_text)
+    for marker in ("Cross submission", "Cross-list", "Replacement submission",
+                   "Replacements for"):
+        i = html_text.find(marker)
+        if i != -1:
+            cut = min(cut, i)
+    body = html_text[:cut]
+
+    # 항목 경계: arXiv:<id> 링크
+    chunks = re.split(r'<dt[^>]*>', body)[1:]
+    papers = []
+    for ch in chunks:
+        m = re.search(r'arXiv:(\d{4}\.\d{4,5})', ch)
+        if not m:
+            continue
+        aid = m.group(1)
+
+        def grab(cls, tag="div"):
+            mm = re.search(rf'<{tag}[^>]*class="[^"]*{cls}[^"]*"[^>]*>(.*?)</{tag}>',
+                           ch, re.S)
+            return mm.group(1) if mm else ""
+
+        def detag(s):
+            s = re.sub(r'<span[^>]*class="descriptor"[^>]*>.*?</span>', ' ', s, flags=re.S)
+            s = re.sub(r'<[^>]+>', ' ', s)
+            s = (s.replace("&amp;", "&").replace("&lt;", "<").replace("&gt;", ">")
+                  .replace("&quot;", '"').replace("&#39;", "'").replace("&nbsp;", " "))
+            return clean(s)
+
+        title = detag(grab("list-title"))
+        authors = detag(grab("list-authors"))
+        subjects = detag(grab("list-subjects"))
+        abstract = detag(grab("mathjax", tag="p"))
+
+        # "Subjects: High Energy Physics - Theory (hep-th); General Relativity (gr-qc)"
+        cats = re.findall(r'\(([a-zA-Z\-]+(?:\.[A-Za-z\-]+)?)\)', subjects)
+        papers.append({
+            "id": aid, "title": title, "authors": authors,
+            "categories": ", ".join(dict.fromkeys(cats)),
+            "abstract": abstract,
+        })
+
+    seen, uniq = set(), []
+    for p in papers:
+        if p["id"] not in seen:
+            seen.add(p["id"]); uniq.append(p)
+    return uniq
+
+
 # ---------------------------------------------------------------- API 모드
 def announce_window(date_str):
     """공지일 D의 신규분에 해당하는 제출 시각 창(UTC)을 추정한다.
@@ -154,6 +216,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--rss", action="store_true")
     ap.add_argument("--api", action="store_true")
+    ap.add_argument("--new", action="store_true",
+                    help="arxiv.org/list/hep-th/new 에서 확정 목록을 조기 수집")
     ap.add_argument("--date")
     ap.add_argument("--from", dest="lo")
     ap.add_argument("--to", dest="hi")
@@ -163,7 +227,11 @@ def main():
     ap.add_argument("--retry-wait", dest="retry_wait", type=int, default=300)
     a = ap.parse_args()
 
-    if a.api:
+    if a.new:
+        date = a.expect or a.date or datetime.now(timezone(timedelta(hours=9))).date().isoformat()
+        papers, built = fetch_new_listing(), "list/new"
+        print(f"/list/new 수집: {len(papers)}편 (공지일 {date} 로 기록)")
+    elif a.api:
         if not a.date:
             raise SystemExit("--api 에는 --date YYYY-MM-DD 가 필요합니다")
         lo, hi = (a.lo, a.hi) if a.lo and a.hi else announce_window(a.date)
@@ -199,7 +267,7 @@ def main():
     outdir.mkdir(parents=True, exist_ok=True)
     path = outdir / f"{date}.json"
     path.write_text(json.dumps(
-        {"date": date, "source": "api" if a.api else "rss",
+        {"date": date, "source": "new" if a.new else ("api" if a.api else "rss"),
          "built": built, "count": len(papers), "papers": papers},
         ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"wrote {path}")
