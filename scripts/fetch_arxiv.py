@@ -96,6 +96,7 @@ def fetch_rss():
 
 # ------------------------------------------------- /list/new 모드 (권장·조기)
 NEW_URL = "https://arxiv.org/list/hep-th/new"
+DUMP = None   # --dump-html 로 설정되면 원본 HTML을 저장한다
 
 
 def fetch_new_listing():
@@ -105,15 +106,25 @@ def fetch_new_listing():
     RSS(13:00 KST 빌드)보다 4시간 빠르고, API처럼 제출시각 창을 추정할 필요가 없다.
     """
     html_text = get(NEW_URL).decode("utf-8", "replace")
+    if DUMP:
+        pathlib.Path(DUMP).parent.mkdir(parents=True, exist_ok=True)
+        pathlib.Path(DUMP).write_text(html_text[:400000], encoding="utf-8")
+        print(f"  [dump] {DUMP} ({len(html_text)} bytes 원본)")
 
-    # Cross-list / Replacement 절이 시작되기 전까지만 사용한다.
+    # 'New submissions' 절의 시작을 먼저 잡는다. 페이지 상단 목차에도
+    # 'Cross submissions' 문구가 있어서, 그냥 find 하면 본문이 통째로 잘린다.
+    start = 0
+    ms = re.search(r'New submissions', html_text)
+    if ms:
+        start = ms.end()
     cut = len(html_text)
     for marker in ("Cross submission", "Cross-list", "Replacement submission",
-                   "Replacements for"):
-        i = html_text.find(marker)
+                   "Replacements for", "Cross lists"):
+        i = html_text.find(marker, start)
         if i != -1:
             cut = min(cut, i)
-    body = html_text[:cut]
+    body = html_text[start:cut]
+    print(f"  [parse] 본문 구간 {start}~{cut} ({cut-start} bytes)")
 
     # 항목 경계: arXiv:<id> 링크
     chunks = re.split(r'<dt[^>]*>', body)[1:]
@@ -225,7 +236,11 @@ def main():
     ap.add_argument("--expect", help="기대 공지일 YYYY-MM-DD. 다르면 재시도한다.")
     ap.add_argument("--retries", type=int, default=4)
     ap.add_argument("--retry-wait", dest="retry_wait", type=int, default=300)
+    ap.add_argument("--dump-html", dest="dump_html", help="원본 HTML을 이 경로에 저장(디버그)")
     a = ap.parse_args()
+
+    global DUMP
+    DUMP = a.dump_html
 
     if a.new:
         date = a.expect or a.date or datetime.now(timezone(timedelta(hours=9))).date().isoformat()
