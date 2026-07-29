@@ -7,6 +7,13 @@ name: arXiv hep-th 수집
 on:
   schedule:
     - cron: "45 4 * * 1-5"
+  # `.trigger` 파일이 바뀌면 실행된다. 파일 첫 줄이 그대로 인자로 들어간다.
+  # (에이전트는 api.github.com 을 못 쓰므로 push 로 워크플로를 직접 돌리기 위한 통로)
+  push:
+    paths:
+      - ".trigger"
+      - "scripts/fetch_arxiv.py"
+      - ".github/workflows/fetch-arxiv.yml"
   workflow_dispatch:
     inputs:
       date:
@@ -36,10 +43,14 @@ jobs:
         run: |
           set -euo pipefail
           if [ -n "${{ inputs.date }}" ]; then
-            python3 scripts/fetch_arxiv.py --api --date "${{ inputs.date }}"
+            ARGS="--api --date ${{ inputs.date }}"
+          elif [ "${{ github.event_name }}" = "push" ] && [ -s .trigger ]; then
+            ARGS="$(head -1 .trigger)"
           else
-            python3 scripts/fetch_arxiv.py --rss --expect "$(TZ=Asia/Seoul date +%F)"
+            ARGS="--rss --expect $(TZ=Asia/Seoul date +%F)"
           fi
+          echo "실행 인자: $ARGS"
+          python3 scripts/fetch_arxiv.py $ARGS
 
       - name: 커밋
         run: |
