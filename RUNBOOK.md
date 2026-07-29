@@ -11,9 +11,13 @@
 
 ## 1단계 — 오늘의 신규 논문 목록
 
-**경로 A (기본).** GitHub Actions 워크플로 `arXiv hep-th 수집`이 매 평일 04:05 UTC에
-arXiv를 대신 호출해 `data/<공지날짜>.json` 을 커밋해 둡니다. 이 파일이 있으면 그대로 씁니다 —
-WebFetch도, 캐시 회피도, 추출 서브에이전트도 필요 없습니다.
+**경로 A (기본).** GitHub Actions 워크플로 `arXiv hep-th 수집`이 매 평일 **09:35 KST**에
+`arxiv.org/list/hep-th/new`(공지 확정 목록)를 파싱해 `data/<공지날짜>.json` 을 커밋해 둡니다.
+이 파일이 있으면 그대로 씁니다 — WebFetch도, 캐시 회피도, 추출 서브에이전트도 필요 없습니다.
+
+> RSS는 13:00~13:06 KST에야 빌드되지만 `/list/new` 는 공지 시각(09:00 KST)에 갱신됩니다.
+> 그래서 브리핑을 오전으로 당길 수 있습니다. 실측 대조: 2026-07-29분 23편, RSS와 ID 23/23 일치.
+> 실행 로그는 `data/_last_run.txt` 에 매번 커밋되니 문제 시 이 파일부터 볼 것.
 
 ```bash
 TODAY=$(TZ=Asia/Seoul date +%F)

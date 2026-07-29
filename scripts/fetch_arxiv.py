@@ -5,7 +5,8 @@
 결과는 data/<공지날짜>.json 으로 커밋되고, 브리핑 세션은 그 파일만 읽습니다.
 
 모드:
-  --rss                  당일 공지분을 RSS에서 수집 (매일 자동 실행)
+  --new                  arxiv.org/list/hep-th/new 확정 목록 수집 (기본·09:35 KST)
+  --rss                  RSS에서 수집 (13:00 KST 이후에만 유효, 폴백용)
   --api --date D         과거 날짜 D의 공지분을 arXiv API로 백필 (수동 실행)
   --api --from T1 --to T2 --date D
                          제출시각 창을 직접 지정해 백필 (T = YYYYMMDDHHMM, UTC)
