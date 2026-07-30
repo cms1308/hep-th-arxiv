@@ -1,10 +1,10 @@
-run       = #10  (push)
-utc       = 2026-07-29T04:37:14Z
-kst       = 2026-07-29T13:37:14
-args      = --new --expect 2026-07-29
+run       = #11  (push)
+utc       = 2026-07-30T02:09:21Z
+kst       = 2026-07-30T11:09:21
+args      = --new --expect 2026-07-30 --retries 3 --retry-wait 120
 outcome   = success
 --------- 출력 ---------
-  [parse] 본문 61534 bytes, 페이지 표기 23편
-/list/new 수집 1회차: 23편 (공지일 2026-07-29 로 기록)
-신규 23편
-wrote data/2026-07-29.json
+  [parse] 본문 39026 bytes, 페이지 표기 15편
+/list/new 수집 1회차: 15편 (공지일 2026-07-30 로 기록)
+신규 15편
+wrote data/2026-07-30.json
