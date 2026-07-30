@@ -1,5 +1,16 @@
 [
  {
+  "date": "2026-07-30",
+  "datestr": "2026년 7월 30일 (목)",
+  "file": "briefs/2026-07-30.html",
+  "count": 15,
+  "preview": [
+   "Gravitational Waves from Multiple Cosmic Superstrings and the Overshoot Problem",
+   "Iterative Gauging is Deconstruction",
+   "CasimirRFM: A Mathematica package for Riemann-flat compactifications with Casimir energies"
+  ]
+ },
+ {
   "date": "2026-07-29",
   "datestr": "2026년 7월 29일 (수)",
   "file": "briefs/2026-07-29.html",
