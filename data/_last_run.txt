@@ -1,7 +1,7 @@
-run       = #11  (push)
-utc       = 2026-07-30T02:09:21Z
-kst       = 2026-07-30T11:09:21
-args      = --new --expect 2026-07-30 --retries 3 --retry-wait 120
+run       = #12  (schedule)
+utc       = 2026-07-30T03:41:57Z
+kst       = 2026-07-30T12:41:57
+args      = --new --expect 2026-07-30 --retries 6 --retry-wait 300
 outcome   = success
 --------- 출력 ---------
   [parse] 본문 39026 bytes, 페이지 표기 15편
