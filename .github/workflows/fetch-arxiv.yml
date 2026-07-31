@@ -1,23 +1,17 @@
 name: arXiv hep-th 수집
 
-# 평일 09:35 KST(00:35 UTC) 자동 실행 — arXiv 공지(20:00 ET = 09:00 KST) 직후.
-# 갱신 전이면 전날 목록과 동일한지 검사해 5분 간격으로 재시도한다.
-# `.trigger` 파일이 바뀌어도 실행된다(파일 첫 줄이 그대로 인자).
+# 브리핑 세션이 `scripts/collect.py` 로 .trigger 를 push 하면 실행된다.
+# cron은 쓰지 않는다 — GitHub의 schedule은 수 시간까지 밀려서 11:00 KST 브리핑 전에
+# 끝난다는 보장이 없었다(실측: 00:35 UTC cron이 03:41/04:36 UTC에 발화).
+# 세션이 직접 띄우고 결과 커밋을 기다리는 편이 빠르고 확실하다.
+#
 # 브리핑 세션은 api.github.com 을 못 쓰므로, 실행 결과를 항상 data/_last_run.txt 에
 # 커밋해 로그를 레포에서 읽을 수 있게 한다.
+
 on:
-  schedule:
-    # arXiv 공지 = 20:00 ET. 서머타임 여부로 KST 09:00 / 10:00 로 갈린다.
-    #   EDT(3~10월): 00:00 UTC = 09:00 KST  -> 아래 첫 줄이 유효
-    #   EST(11~2월): 01:00 UTC = 10:00 KST  -> 아래 둘째 줄이 유효
-    # 유효하지 않은 쪽은 전날 목록과 동일하다고 판정돼 커밋 없이 끝난다(무해).
-    - cron: "35 0 * * 1-5"
-    - cron: "35 1 * * 1-5"
   push:
     paths:
       - ".trigger"
-      - "scripts/fetch_arxiv.py"
-      - ".github/workflows/fetch-arxiv.yml"
   workflow_dispatch:
     inputs:
       date:
@@ -49,7 +43,7 @@ jobs:
           elif [ "${{ github.event_name }}" = "push" ] && [ -s .trigger ]; then
             ARGS="$(head -1 .trigger)"
           else
-            ARGS="--new --expect $(TZ=Asia/Seoul date +%F) --retries 6 --retry-wait 300"
+            ARGS="--expect $(TZ=Asia/Seoul date +%F) --retries 4 --retry-wait 120"
           fi
           echo "ARGS=$ARGS" >> "$GITHUB_ENV"
           echo "실행 인자: $ARGS"

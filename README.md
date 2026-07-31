@@ -10,3 +10,5 @@
 - `manifest.json` — 발행 메타데이터
 
 출처: https://arxiv.org/list/hep-th/new · 한국어 abstract는 기계 번역입니다.
+
+수집: GitHub Actions 워크플로 `arXiv hep-th 수집` (브리핑 세션이 `.trigger` push로 실행)

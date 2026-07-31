@@ -1,26 +1,27 @@
 #!/usr/bin/env python3
-"""arXiv hep-th 신규 논문 수집기 — GitHub Actions 러너에서 실행.
+"""arXiv hep-th 신규 논문 수집기 — GitHub Actions 러너에서만 실행한다.
 
-이 스크립트가 arXiv를 직접 호출하는 유일한 지점입니다.
-결과는 data/<공지날짜>.json 으로 커밋되고, 브리핑 세션은 그 파일만 읽습니다.
+이 스크립트가 arXiv를 직접 호출하는 유일한 지점이다.
+결과는 data/<공지날짜>.json 으로 커밋되고, 브리핑 세션은 그 파일만 읽는다.
 
 모드:
-  --new                  arxiv.org/list/hep-th/new 확정 목록 수집 (기본)
-  --api --date D         과거 날짜 D의 공지분을 arXiv API로 백필 (수동 실행)
-  --api --from T1 --to T2 --date D
-                         제출시각 창을 직접 지정해 백필 (T = YYYYMMDDHHMM, UTC)
+  (기본)                 arxiv.org/list/hep-th/new 의 확정 목록을 수집
+  --api --date D         과거 공지일 D를 arXiv API로 백필
+  --api --date D --from T1 --to T2   제출시각 창을 직접 지정 (T = YYYYMMDDHHMM, UTC)
 
-출력 스키마: [{id, title, authors, categories, abstract}, ...]
-abstract_ko 는 이후 번역 단계에서 채워집니다.
+출력 스키마: {date, source, count, papers:[{id, title, authors, categories, abstract}, ...]}
+abstract_ko 는 이후 번역 단계에서 채워진다.
 """
 import argparse, json, os, pathlib, re, sys, time, urllib.parse, urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 
 UA = "hep-th-daily-brief/1.0 (https://github.com/cms1308/hep-th-arxiv; mailto:cccms13081@gmail.com)"
+NEW_URL = "https://arxiv.org/list/hep-th/new"
 API_URL = "http://export.arxiv.org/api/query"
 ATOM = "{http://www.w3.org/2005/Atom}"
 ARX = "{http://arxiv.org/schemas/atom}"
+KST = timezone(timedelta(hours=9))
 
 
 def get(url, tries=4):
@@ -43,22 +44,13 @@ def clean(s):
     return re.sub(r"\s+", " ", (s or "")).strip()
 
 
-# ------------------------------------------------- /list/new 모드 (권장·조기)
-NEW_URL = "https://arxiv.org/list/hep-th/new"
-DUMP = None   # --dump-html 로 설정되면 원본 HTML을 저장한다
-
-
+# ------------------------------------------------------------- /list/new 모드
 def fetch_new_listing():
     """arxiv.org/list/hep-th/new 의 'New submissions' 절만 파싱한다.
 
-    이 페이지는 공지 시각(20:00 ET = 09:00 KST)에 갱신되는 확정 목록이라
-    API처럼 제출시각 창을 추정할 필요가 없다.
+    이 페이지는 공지 시각(20:00 ET = 09:00 KST)에 갱신되는 확정 목록이다.
     """
     html_text = get(NEW_URL).decode("utf-8", "replace")
-    if DUMP:
-        pathlib.Path(DUMP).parent.mkdir(parents=True, exist_ok=True)
-        pathlib.Path(DUMP).write_text(html_text[:400000], encoding="utf-8")
-        print(f"  [dump] {DUMP} ({len(html_text)} bytes 원본)")
 
     # 절 경계는 <h3> 로 잡는다. 페이지 상단 목차에도 'Cross-lists' 문구가 있어
     # 단순 문자열 검색으로는 본문이 통째로 잘린다.
@@ -72,19 +64,18 @@ def fetch_new_listing():
     body = html_text[start:cut]
 
     declared = None
-    md = re.search(r'showing\s+(\d+)\s+of\s+(\d+)\s+entries', ms.group(0) + html_text[ms.end():ms.end() + 120])
+    md = re.search(r'showing\s+(\d+)\s+of\s+(\d+)\s+entries',
+                   ms.group(0) + html_text[ms.end():ms.end() + 120])
     if md:
         declared = int(md.group(2))
     print(f"  [parse] 본문 {cut-start} bytes, 페이지 표기 {declared}편")
 
     # 항목 경계: <dt> ... </dd>
-    chunks = re.split(r'<dt[^>]*>', body)[1:]
     papers = []
-    for ch in chunks:
+    for ch in re.split(r'<dt[^>]*>', body)[1:]:
         m = re.search(r'arXiv:(\d{4}\.\d{4,5})', ch)
         if not m:
             continue
-        aid = m.group(1)
 
         def grab(cls, tag="div"):
             # arXiv는 class='...' (작은따옴표) 를 쓴다. 두 방식 모두 받는다.
@@ -100,17 +91,15 @@ def fetch_new_listing():
                   .replace("&quot;", '"').replace("&#39;", "'").replace("&nbsp;", " "))
             return clean(s)
 
-        title = detag(grab("list-title"))
-        authors = detag(grab("list-authors"))
         subjects = detag(grab("list-subjects"))
-        abstract = detag(grab("mathjax", tag="p"))
-
         # "Subjects: High Energy Physics - Theory (hep-th); General Relativity (gr-qc)"
         cats = re.findall(r'\(([a-zA-Z\-]+(?:\.[A-Za-z\-]+)?)\)', subjects)
         papers.append({
-            "id": aid, "title": title, "authors": authors,
+            "id": m.group(1),
+            "title": detag(grab("list-title")),
+            "authors": detag(grab("list-authors")),
             "categories": ", ".join(dict.fromkeys(cats)),
-            "abstract": abstract,
+            "abstract": detag(grab("mathjax", tag="p")),
         })
 
     seen, uniq = set(), []
@@ -121,7 +110,10 @@ def fetch_new_listing():
 
 
 def stale_against(papers, outdir, date):
-    """이미 저장된 다른 날짜와 ID 집합이 동일하면 그 날짜를 돌려준다."""
+    """이미 저장된 다른 날짜와 ID 집합이 동일하면 그 날짜를 돌려준다.
+
+    공지 전에 돌면 /list/new 가 전날 목록을 그대로 주기 때문에 필요하다.
+    """
     ids = {p["id"] for p in papers}
     if not ids:
         return None
@@ -138,14 +130,13 @@ def stale_against(papers, outdir, date):
     return None
 
 
-# ---------------------------------------------------------------- API 모드
+# ---------------------------------------------------------------- API 모드 (백필)
 def announce_window(date_str):
     """공지일 D의 신규분에 해당하는 제출 시각 창(UTC)을 추정한다.
 
     arXiv는 14:00 ET 마감이며 주말에는 공지하지 않는다.
     D의 목록 = (D-1 직전 영업일 14:00 ET) ~ (D-1 14:00 ET).
-    한국시간 기준 공지일을 그대로 넣으면 된다. 휴일은 반영하지 못하므로
-    백필 결과 편수는 반드시 눈으로 확인할 것.
+    휴일은 반영하지 못하므로 백필 결과 편수는 반드시 눈으로 확인할 것.
     """
     d = datetime.strptime(date_str, "%Y-%m-%d").date()
     end_day = d - timedelta(days=1)
@@ -163,18 +154,17 @@ def fetch_api(lo, hi):
     """cat:hep-th 중 제출시각이 [lo,hi]인 항목을 모두 받아온다 (100건씩 페이징)."""
     out, start, page = [], 0, 100
     while True:
-        q = (f"cat:hep-th AND submittedDate:[{lo} TO {hi}]")
         url = (f"{API_URL}?" + urllib.parse.urlencode({
-            "search_query": q, "start": start, "max_results": page,
+            "search_query": f"cat:hep-th AND submittedDate:[{lo} TO {hi}]",
+            "start": start, "max_results": page,
             "sortBy": "submittedDate", "sortOrder": "ascending"}))
-        feed = ET.fromstring(get(url))
-        entries = feed.findall(ATOM + "entry")
+        entries = ET.fromstring(get(url)).findall(ATOM + "entry")
         if not entries:
             break
         for e in entries:
             prim = e.find(ARX + "primary_category")
             prim = prim.get("term") if prim is not None else ""
-            if prim != "hep-th":          # cross-list 제외 — /list/new 의 New submissions 와 동일 기준
+            if prim != "hep-th":      # cross-list 제외 — /list/new 의 New submissions 기준과 동일
                 continue
             aid = (e.findtext(ATOM + "id") or "").rsplit("/abs/", 1)[-1]
             out.append({
@@ -196,34 +186,26 @@ def fetch_api(lo, hi):
 # ---------------------------------------------------------------- main
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--api", action="store_true")
-    ap.add_argument("--new", action="store_true",
-                    help="arxiv.org/list/hep-th/new 에서 확정 목록을 조기 수집")
-    ap.add_argument("--date")
+    ap.add_argument("--api", action="store_true", help="과거 날짜 백필 (--date 필요)")
+    ap.add_argument("--new", action="store_true", help=argparse.SUPPRESS)  # 예전 인자 호환(무시)
+    ap.add_argument("--date", help="공지일 YYYY-MM-DD")
     ap.add_argument("--from", dest="lo")
     ap.add_argument("--to", dest="hi")
     ap.add_argument("--outdir", default="data")
-    ap.add_argument("--expect", help="기대 공지일 YYYY-MM-DD. 다르면 재시도한다.")
+    ap.add_argument("--expect", help="기대 공지일 YYYY-MM-DD. 전날 목록이면 재시도한다.")
     ap.add_argument("--retries", type=int, default=4)
-    ap.add_argument("--retry-wait", dest="retry_wait", type=int, default=300)
-    ap.add_argument("--dump-html", dest="dump_html", help="원본 HTML을 이 경로에 저장(디버그)")
+    ap.add_argument("--retry-wait", dest="retry_wait", type=int, default=120)
     a = ap.parse_args()
-
-    global DUMP
-    DUMP = a.dump_html
 
     if a.api:
         if not a.date:
             raise SystemExit("--api 에는 --date YYYY-MM-DD 가 필요합니다")
         lo, hi = (a.lo, a.hi) if a.lo and a.hi else announce_window(a.date)
         print(f"API 백필: {a.date}  제출창 {lo} ~ {hi} (UTC)")
-        date, built, papers = a.date, f"api:{lo}-{hi}", fetch_api(lo, hi)
+        date, source, papers = a.date, f"api:{lo}-{hi}", fetch_api(lo, hi)
     else:
-        # 기본 경로. --new 는 명시용으로 남겨두지만 없어도 동작은 같다.
-        date = a.expect or a.date or datetime.now(timezone(timedelta(hours=9))).date().isoformat()
-        built = "list/new"
-        # 공지 전에 돌면 전날 목록이 그대로 온다. 기존 날짜 파일과 ID 집합이
-        # 똑같으면 아직 갱신 전으로 보고 재시도한다.
+        date = a.expect or a.date or datetime.now(KST).date().isoformat()
+        source = "list/new"
         for attempt in range(1, a.retries + 2):
             papers = fetch_new_listing()
             stale = stale_against(papers, a.outdir, date)
@@ -231,7 +213,7 @@ def main():
             if not stale:
                 break
             if attempt > a.retries:
-                print(f"::warning::{stale} 와 동일한 목록입니다. 갱신 전일 수 있습니다.")
+                print(f"::warning::{stale} 와 동일한 목록입니다. 아직 공지 전으로 보입니다.")
                 papers = []
                 break
             print(f"  {stale} 와 동일 — 아직 갱신 전. {a.retry_wait}s 후 재시도")
@@ -251,12 +233,10 @@ def main():
     outdir.mkdir(parents=True, exist_ok=True)
     path = outdir / f"{date}.json"
     path.write_text(json.dumps(
-        {"date": date, "source": "api" if a.api else "new",
-         "built": built, "count": len(papers), "papers": papers},
+        {"date": date, "source": source, "count": len(papers), "papers": papers},
         ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"wrote {path}")
 
-    # 워크플로 후속 스텝에서 쓰도록 출력값을 넘긴다
     if os.environ.get("GITHUB_OUTPUT"):
         with open(os.environ["GITHUB_OUTPUT"], "a") as f:
             f.write(f"date={date}\ncount={len(papers)}\npath={path}\n")
