@@ -1,0 +1,189 @@
+{
+ "date": "2026-07-24",
+ "source": "api:202607221800-202607231800",
+ "count": 26,
+ "papers": [
+  {
+   "id": "2607.20603",
+   "title": "Moduli-Space Laplacians, Asymptotic Geometry, and the Emergent String Conjecture",
+   "authors": "Christian Aoufia, Muldrow Etheredge, Bernardo Fraiman, Sanjay Raman, Alexander Stewart",
+   "categories": "hep-th, hep-ph",
+   "abstract": "At asymptotic limits of moduli spaces of quantum gravity vacua, we argue that the masses of the lightest particle towers are eigenfunctions of the moduli-space Laplacian. The associated eigenvalues are quantized by the Emergent String Conjecture and determine the exponential decay rates of axionic directions in these limits. We also connect the quantization of Laplacian eigenvalues to the spectrum of instantons for the theory. We support our claims with diverse examples that preserve between 4 and 32 supercharges."
+  },
+  {
+   "id": "2607.20607",
+   "title": "Towards Generalized Dimers for GTPs: $\\mathcal{N}=2$ Fractional Branes at Infinite Coupling",
+   "authors": "Sebastián Franco, Diego Rodríguez-Gómez",
+   "categories": "hep-th",
+   "abstract": "Generalized Toric Polygons (GTPs) extend the geometric realization of $5d$ superconformal field theories beyond toric Calabi-Yau 3-folds to general $(p,q)$ 5-brane webs ending on 7-branes. We take significant steps towards the generalization of brane tilings for GTPs, or equivalently, the corresponding quiver theories. We focus on GTPs connected to ordinary toric diagrams by polytope mutations. Parallel 5-brane legs of a $(p,q)$ web define $\\mathcal{N}=2$ fractional branes bounded by the corresponding parallel zig-zag paths in the brane tiling obtained by treating the GTP as an ordinary toric diagram. We propose that terminating multiple 5-branes on a common 7-brane, the defining feature of GTPs, translates into bringing these zig-zag paths together, thereby shrinking the corresponding $\\mathcal{N}=2$ fractional branes to zero size in a process we call $\\mathcal{N}=2$ strip condensation. We show that strip condensation follows from mirror symmetry when the coefficients in the Newton polynomial are tuned to the GTP point. We further support this proposal through several non-trivial consistency checks. In particular, it correctly reproduces the expected number of gauge groups, given equivalently by that of the mutation-related toric diagram or by the number of $T$-cones in a tessellation of the GTP. We verify this for all examples previously considered in the literature, as well as for a new infinite family of GTPs with arbitrarily large $T$-cones. Strip condensation drives the corresponding gauge groups to infinite coupling. Confinement then yields quivers that coincide with those of the mutation-related toric diagrams up to vector pairs and adjoint fields, suggesting that GTP quivers are related to those of the corresponding toric diagrams by relevant deformations, extending to GTPs the known correspondence between polytope mutations and relevant deformations."
+  },
+  {
+   "id": "2607.20613",
+   "title": "New Type IIB Poly-instanton Effects and Axion Quintessence",
+   "authors": "Luca Caraffi, Federico Carta, Michele Cicoli",
+   "categories": "hep-th, astro-ph.CO, gr-qc",
+   "abstract": "Previous studies of poly-instantons in type IIB Calabi-Yau orientifolds found that these effects arise when Euclidean D3-branes wrap rigid cycles with a Wilson line. In this work, we extend this result through a general analysis of instanton zero modes, revealing the existence of new poly-instanton effects for rigid cycles with a deformation, provided that O3-planes are localised on the worldvolume of the Euclidean D3-brane. We provide concrete Calabi-Yau examples with explicit orientifold involution and brane setup. One of them is particularly well suited for realising axion hilltop quintessence. In particular, the double exponential suppression of poly-instanton effects allows to reproduce the observed vacuum energy for natural values of the underlying parameters."
+  },
+  {
+   "id": "2607.20622",
+   "title": "Sp(4,Z) actions on 3d U(1)^2 symmetric theories: Order-five duality and bilayer quantum Hall hierarchies",
+   "authors": "Yasin F. Alam, Andreas Karch, Da-Chuan Lu, Ryan C. Spieler",
+   "categories": "hep-th, cond-mat.str-el",
+   "abstract": "The $\\mathrm{SL}(2,\\mathbb{Z})$ electromagnetic duality of 4d Maxwell theory induces theory-generating operations on 3d theories with $U(1)$ global symmetry. For theories with $U(1)^n$ symmetry, this structure generalizes to $\\mathrm{Sp}(2n,\\mathbb{Z})$. Focusing on the $U(1)^2$ case, we formulate the bulk $\\mathrm{Sp}(4,\\mathbb{Z})$ action and derive the corresponding boundary operations. We identify an intrinsically two-component element of order five, which generalizes the order-three $ST$ element of the single-$U(1)$ theory. Although its fifth power acts trivially in the bulk, the corresponding boundary operation closes only up to a decoupled $U(1)_1$ invertible phase, suggesting a mixed duality-gravitational anomaly. We realize the resulting theory-generating web for Abelian Chern-Simons theories within the $K$-matrix formalism and apply it to bilayer fractional quantum Hall systems. Recasting the Haldane--Halperin hierarchy construction as a sequence of $\\mathrm{SL}(2,\\mathbb{Z})$ operations, we generalize it to systems with charge $U(1)_c$ and pseudospin $U(1)_s$ symmetries. The resulting bilayer hierarchies contain branches terminating in an interlayer-correlated bosonic $(221)$ daughter sector, yielding candidate Abelian states at the even-denominator equal-layer fillings $3/8+3/8$ and $5/12+5/12$. Integral changes of anyon basis establish the equivalence of these states to their corresponding Abelian composite-fermion descriptions. We further discuss the spin-charge constraints that arise when the electromagnetic background field is treated as a spin-$c$ connection."
+  },
+  {
+   "id": "2607.20678",
+   "title": "Uniqueness of null-local modular flow",
+   "authors": "Gautam Satishchandran, Jonathan Sorce",
+   "categories": "hep-th, gr-qc, math-ph",
+   "abstract": "In arXiv:2306.01837, it was conjectured that one can engineer a large class of quantum field theory states for which the modular flow on a spacelike slice is \"instantaneously local.\" Here we show that on null slices, such flows are highly constrained; ultraviolet universality essentially requires null-local modular flow to be unique. Concretely, we study massless Klein-Gordon theory in Minkowski spacetime, and construct, for any sufficiently regular future-directed vector field on the past null boundary of a causal diamond, a state that has this vector field as its instantaneous modular flow. We then show by explicit computation that no two distinct states in this class can be realized in the same local Hilbert space. Using a more abstract argument, we also show that in the vacuum sector of the theory, the only null-local modular flow in a causal diamond is provided by the vacuum state itself. We also comment on the construction of null-local modular flow for massive scalars, free Maxwell fields, free gravitons, and in curved backgrounds."
+  },
+  {
+   "id": "2607.20777",
+   "title": "Flux Vacua Near the Boundary of Large Complex Structure",
+   "authors": "Aman Chauhan, Michele Cicoli, Anshuman Maharana, Pellegrino Piantadosi",
+   "categories": "hep-th, gr-qc",
+   "abstract": "Three-form fluxes generate a potential for the complex structure moduli in type IIB string compactifications on Calabi-Yau threefolds. In the large complex structure patch, the potential consists of a perturbative contribution and a convergent series of instanton corrections. We present examples of vacua near the boundary of large complex structure, where the minimum of the potential is essentially determined by the perturbative contribution and the first instanton correction, while the effect of all higher instantons is negligible. This phenomenon occurs when fluxes are such that the magnitude of the perturbative potential in certain directions in moduli space is of the same size as the first instanton contribution. Analysing an ensemble of flux vacua, we find that this phenomenon is statistically quite common. We also discover more subtle phenomena where instanton terms affect the multiplicity of the solutions and induce monodromy shifts."
+  },
+  {
+   "id": "2607.20899",
+   "title": "Quantum Mpemba effect in holography",
+   "authors": "Xian-Hui Ge, Shuta Ishigaki, Yu-Qi Lei, Yu Tian",
+   "categories": "hep-th, cond-mat.stat-mech",
+   "abstract": "We investigate the quantum Mpemba effect in a holographic superfluid, in which states with stronger initial symmetry breaking relax faster toward the symmetry-restored equilibrium. We demonstrate its emergence by identifying the shifted free energy computed from the energy flux into the black hole horizon as monotonic distance measure. By decomposing the nonlinear bulk dynamics based on quasinormal modes, we reveal that the anomalous relaxation is governed by a dynamical competition in which the slowest-decaying mode is suppressed while the second mode is amplified. These findings provide a holographic perspective on the quantum Mpemba effect in nonequilibrium relaxation involving strongly coupled degrees of freedom."
+  },
+  {
+   "id": "2607.20927",
+   "title": "Coherent states versus Glauber-Sudarshan States: Bootstrapping, Schwinger-Keldysh Contours and Lefschetz Thimbles",
+   "authors": "Heliudson Bernardo, Tatsuya Daniel, Keshav Dasgupta, Brayden Hull, Yue Katherine Lei, Yiya Selina Li",
+   "categories": "hep-th, gr-qc",
+   "abstract": "We investigate how, in a highly constrained system such as a four-dimensional diffeomorphism-invariant theory with vanishing bulk Hamiltonian and non-trivial interactions between the metric and additional degrees of freedom, transient excited states--called Glauber-Sudarshan states--can be constructed over supersymmetric minima. These states are generically non-supersymmetric and, although they are not minima of any potential, they admit positive-energy metric configurations that effectively mimic four-dimensional quasi-de Sitter backgrounds. We analyze how such states differ from conventional coherent states by studying their time evolution both in the canonical formalism--via boundary Hamiltonians--and in the in-in path-integral framework through Schwinger-Keldysh contours. We also examine the consistency of the construction across three complementary descriptions: the 1PI effective action, the Wilsonian (or exact renormalization group) effective action, and the Picard-Lefschetz (Lefschetz-thimble) decomposition of the Schwinger-Keldysh path integral, which provides the trans-series organization of the theory. In the presence of gauge-fixing and ghost sectors, we show that the dynamics of these transient configurations are governed by a nontrivial bootstrap relation that simultaneously constrains their behavior near supersymmetric Minkowski vacua and along quasi-de Sitter-like trajectories. Finally, we examine the Wheeler-DeWitt equation, the notion of time in the presence of transient excited states, and the emergence of the bulk Schrodinger equation. We further show that these states admit a natural structural interpretation analogous to the vertex operators that arise in the two-dimensional world-sheet formulation of string theory."
+  },
+  {
+   "id": "2607.20936",
+   "title": "Boundary Completion of Vacuum Persistence Probability",
+   "authors": "Yu Zhou, Hai-Qing Zhang",
+   "categories": "hep-th, gr-qc",
+   "abstract": "The vacuum persistence probability, encoded in the imaginary part of the in-out effective action, is a basic measure of vacuum instability and particle production. However, its evaluation may appear prescription-dependent: the Bogoliubov prescription and the Green's function prescription can yield different expressions. We show that this apparent ambiguity arises because the Green's function prescription omits the nontrivial contribution from the endpoint vacuum wavefunctionals, which should be present in the complete in-out amplitude. Including this contribution accomplishes the boundary completion of the Green's function prescription. The ambiguity is thereby resolved, and the complete result agrees with the Bogoliubov expression."
+  },
+  {
+   "id": "2607.20991",
+   "title": "Flavour current correlators and the non-Abelian hydrodynamic approximation: the charged sector",
+   "authors": "Thomas Apostolidis, Matti Järvinen, Elias Kiritsis, Francesco Nitti, Andrea Olzi, Edwan Préau",
+   "categories": "hep-th, cond-mat.stat-mech, cond-mat.str-el, gr-qc, nucl-th",
+   "abstract": "Flavor-current correlators are studied in strongly-coupled dense (holographic) matter, at finite quark chemical potential $μ_q$ and finite isospin asymmetry. The non-Abelian hydrodynamic description of the charged currents is derived in the presence of an isospin chemical potential $μ_3$. The two-point correlators of charged currents are then computed holographically at finite quark and isospin chemical potentials. In the near-extremal hydrodynamic regime, $ω, k, T, μ_3 \\ll μ\\equiv \\sqrt{μ_q^2+μ_3^2}$, relevant for cold strongly coupled matter, the IR properties of the correlators are studied. It is shown that in this regime, the correlators agree with the non-Abelian hydrodynamic predictions. Therefore, the traditional regime of validity of standard hydrodynamics extends beyond $ω, k \\ll T \\ll μ$ to the so-called extended hydrodynamic regime $T\\ll ω, k \\ll μ$. The holographic product formula is applied to the present non-Abelian system, and is used to propose an extended hydrodynamic approximation capturing both hydrodynamic-like poles and the leading effect of AdS$_2$ poles, by resumming the low-$ω$ logarithms. The results are verified through a detailed numerical analysis of the exact correlators and quasi-normal mode spectrum."
+  },
+  {
+   "id": "2607.21030",
+   "title": "Selecting Complex Extremal Surfaces with the Kontsevich--Segal--Witten Criterion",
+   "authors": "Wu-zhong Guo",
+   "categories": "hep-th, gr-qc",
+   "abstract": "Complex extremal surfaces naturally arise in holographic observables associated with timelike subregions in AdS/CFT and with holographic observables in dS/CFT, but their integration contours are generally ambiguous. In this work, we propose a method for constructing complex bulk metrics from families of complex extremal surfaces, thereby generating candidate complex geometries relevant to the gravitational path integral. This construction provides a concrete realization of how complex bulk geometry may emerge from timelike entanglement, extending the familiar idea that spacetime geometry is encoded in quantum entanglement. We use the Kontsevich--Segal--Witten (KSW) criterion as a strong consistency condition to constrain the corresponding contours. The same framework also explains why spacelike entanglement naturally selects a real Lorentzian section. In several AdS and dS examples, the KSW condition uniquely determines the admissible contour within the class considered. We also identify configurations for which the resulting complex geometry violates the KSW bound near the asymptotic boundary, revealing both the scope and the limitations of the construction. These results highlight KSW admissibility as a useful organizing principle for complex saddles in real-time holography."
+  },
+  {
+   "id": "2607.21052",
+   "title": "Gauge-Theoretical Method in Solving Zero-curvature Equations III --Gauge Theoretical Method and the Bäcklund Transformations for Solitons--",
+   "authors": "Takahiro Azuma, Takao Koikawa",
+   "categories": "hep-th",
+   "abstract": "In soliton theory, both the gauge-theoretical method and the Bäcklund transformation yield soliton equations from the compatibility condition of a pair of linear equations. Therefore, it is necessary to clarify the similarities and differences between these two methods. The Bäcklund transformation defines a transformation from one soliton solution to another. In particular, restricting the transformation to solutions with different soliton numbers yields interesting insights. Using several examples, we demonstrate how soliton solutions with different soliton numbers are constructed."
+  },
+  {
+   "id": "2607.21107",
+   "title": "One-point holographic correlator in the expanding universe",
+   "authors": "Souvik Paul, Gopinath Guin, Sunandan Gangopadhyay",
+   "categories": "hep-th",
+   "abstract": "In this article, we have calculated the time-dependent thermal one-point function of massive operators within an expanding universe. We employ the Randall-Sundrum II braneworld model combined with a $p$-brane gas in the bulk, enabling us to represent various matter-dominated cosmological scenarios localised on the brane. Applying the geodesic formula introduced by Grinberg and Maldacena in \\cite{Grinberg:2020fdj}, we have calculated the thermal one-point functions of massive operators within the universe. The time-dependent one-point functions for different matter-dominated universes, both single-component and multi-component, are derived from the brane's evolving radial position. The time-dependent positions of the branes have been obtained using the second Israel junction condition. Additionally, we have analyzed the early and late-time behaviors of the thermal one-point function across various matter-dominated universes."
+  },
+  {
+   "id": "2607.21124",
+   "title": "Carroll fermions of arbitrary spin",
+   "authors": "Andrea Campoleoni, Lea Mele",
+   "categories": "hep-th",
+   "abstract": "Electric and magnetic Carrollian actions for fermions of arbitrary spin in any spacetime dimension are defined as inequivalent $c \\to 0$ limits of the relativistic Fang-Fronsdal actions."
+  },
+  {
+   "id": "2607.21139",
+   "title": "Energy-Energy Correlators at Strong Coupling",
+   "authors": "Max Jackson, Lecheng Ren, Bo Wang, Congkao Wen",
+   "categories": "hep-th",
+   "abstract": "We study energy-energy correlators (EEC) in planar $\\mathcal{N}=4$ super Yang-Mills theory at strong 't Hooft coupling $λ$. We consider the EEC in states created by half-BPS operators of arbitrary dimension $p$, and determine the corresponding event-shape function up to order $λ^{-3/2}$ from the worldsheet representation of the AdS Virasoro-Shapiro amplitude with Kaluza-Klein external states. For $p=2$ we compute the second curvature correction, which completes the EEC through order $λ^{-2}$; the new contribution improves the agreement with recently derived non-perturbative bounds at intermediate coupling. We further develop a complementary method in which the strong-coupling expansion coefficients of the EEC are extracted directly from the Wilson coefficients of low-energy expansion of the AdS Virasoro-Shapiro amplitude, and find the two approaches in perfect agreement."
+  },
+  {
+   "id": "2607.21270",
+   "title": "Defect entanglement entropy for superconformal RG Interfaces",
+   "authors": "Evangelos Afxonidis, Christopher Rosen",
+   "categories": "hep-th",
+   "abstract": "We study the defect contribution to the entanglement entropy of a spherical region centred on four-dimensional superconformal RG interfaces. These interfaces are supersymmetric codimension one defects separating the Leigh--Strassler SCFT vacuum and the $\\mathcal{N}=4$ SYM theory deformed by spatially varying mass terms. Exploiting the holographic dual to these interfaces, we extract a cutoff-independent interface contribution to the entanglement entropy, $\\mathcal{C}^I$. We quantify the non-trivial dependence of $\\mathcal{C}^I$ on the supersymmetric mass deformation, and observe a scaling regime for large deformations. We further relate $\\mathcal{C}^I$ to the renormalized on-shell action and the stress-tensor one-point function of the interface theory. Our results provide the first fully backreacted holographic computation of this entanglement quantity for superconformal RG interfaces in more than two dimensions."
+  },
+  {
+   "id": "2607.21311",
+   "title": "Diagonally gauged anomaly-free 6D supergravities and their vacua",
+   "authors": "Xu Guo, Yi Pang, Henning Samtleben, Ergin Sezgin",
+   "categories": "hep-th",
+   "abstract": "We describe a bounded search for local and global anomaly-free six-dimensional $(1,0)$ models with tensor number $T=1$ and gauge group containing a diagonal abelian factor $U(1)_{R+}$. The abelian factor is the diagonal combination of the usual gauged $U(1)_R$ and a $U(1)\\subset Sp(n_H)$ acting on hypermultiplets. We have searched for locally and globally anomaly-free $G_1\\times U(1)_{R+}$ and $G_1\\times G_2\\times U(1)_{R+}$ models, subject to restrictions on the ranks of the simple factors and on the maximal charges carried by matter. We find that, unlike the case of $U(1)_R$ gauged models which are relatively rare, the diagonally gauged ones offer a rich landscape. We also study the 6D vacua of these models and find that they admit supersymmetric 6D Minkowski vacua, for which the diagonal nature of the R-symmetry gauging is necessary."
+  },
+  {
+   "id": "2607.21386",
+   "title": "High-Order Pole-Skipping in Near-Extremal Holography",
+   "authors": "Xiang Li, Haiming Yuan, Xian-Hui Ge",
+   "categories": "hep-th, gr-qc",
+   "abstract": "We develop a systematic analytic method for studying high-order pole-skipping in near-extremal holographic black holes. In the near-extremal regime, approaching the limit $T\\to0$, the near-horizon geometry develops an approximately $\\mathrm{AdS}_2 \\times \\mathbb{R}^{d-1}$ structure; we show that the mode index $q$ labeling pole-skipping points is identified with the IR conformal dimension $Δ_{\\mathrm{IR}} = q$ in the emergent $\\mathrm{AdS}_2/\\mathrm{CFT}_1$ correspondence, providing a concrete physical interpretation of the subleading pole-skipping tower. The method reorganizes the near-horizon Frobenius expansion according to powers of temperature. This reveals a temperature-graded hierarchical structure that reduces the $n$-th-order pole-skipping condition to a factorized algebraic equation:each pole-skipping momentum depends only on the mode index $q$, not on the order $n$. This $n$-independence produces a high degeneracy as $T\\to 0$, where pole-skipping momenta at all orders collapse onto a discrete set of values determined by near-horizon geometry and the scalar field mass; these values can be expressed in terms of thermodynamic quantities such as entropy density and specific heat. In the limit $n \\gg 1$ (with $nT$ remaining small), the leading pole-skipping momenta grow asymptotically as $k_{n,n} \\propto n$. We compute leading temperature corrections and verify our predictions through numerical analysis of the Dyonic Gubser--Rocha model. The results confirm that high-order pole-skipping at low temperature is governed by near-horizon physics. This provides analytic access to pole-skipping points well beyond those accessible by standard determinant methods and clarifies the structure of holographic Green's functions in the low-temperature regime."
+  },
+  {
+   "id": "2607.21397",
+   "title": "Wilson Towers as Local Bulk Fields",
+   "authors": "Vishal Gayari, Chethan Krishnan",
+   "categories": "hep-th",
+   "abstract": "Multi-winding Wilson loops (``Wilson spools'') in 2+1-dimensional gravity can reproduce one-loop partition functions of local free fields in the bulk. Bulk free fields have a second-quantized Fock space, and the AdS/CFT correspondence suggests that the associated multi-particle sectors are dual to multi-trace primaries in the CFT. In this note, we use standard symmetric-function methods to show that the Wilson spool in thermal AdS$_3$ can be recast as a sum over $single$-winding Wilson loops --- one for each multi-trace primary. In a companion paper to appear, we will view Wilson networks and TQFTs as the natural language of non-perturbative bulk quantum gravity. The present note illustrates how this can apply to $local$ bulk fields, and not just defects: a bulk (generalized free) field is to be viewed as a full tower of multi-trace Wilson lines. We further show that the $SL(2)$ descendants of each multi-trace primary, together with the boundary gravitons of the AdS$_3$ background, correctly reproduce the full Virasoro character of each module. In this language, the role of a light insertion on a heavy primary is played by a topological Verlinde line. This allows us to obtain a ``microscopic\" description of one-loop determinants on the smooth BTZ handlebody. A spatially wound probe Wilson line on a torus with a contractible $thermal$ cycle can be traded for a Verlinde line inserted on a dense family of heavy Polyakov loops --- with the roles of the two cycles exchanged, so that the $spatial$ cycle is now contractible. The vacuum row of the modular $S$-kernel acts as the (approximate) density of the heavy primaries. This reinforces the case made in arXiv:2601.18775 that a smooth horizon is a stand-in for an ensemble of quantum states, each produced by a heavy Wilson line that appears as a singular horizon in the semi-classical limit."
+  },
+  {
+   "id": "2607.21463",
+   "title": "Relational path integral, effective actions and quantum frame covariance in gravity",
+   "authors": "Sergio E. Aguilar-Gutierrez, Renata Ferrero, Philipp A. Hoehn, Luca Marchetti",
+   "categories": "hep-th, gr-qc, quant-ph",
+   "abstract": "We propose a relational bundle-geometric formulation of the gravitational path integral by invoking the new tool of quantum reference frames (QRFs), which in gravity are gauge-covariant coordinate systems constructed from the available field content. Formulated in terms of relational (frame-dressed) observables, this yields a manifestly gauge-invariant path integral without ghosts and anomalies, and in which observables and their correlators are local to a frame. While eliminating the need for gauge fixing, it is equivalent to Faddeev-Popov versions in which the QRF is gauge-fixed, recovering certain previous proposals. A key feature is its covariance under QRF changes: it is a perspective-neutral path integral which encodes all internal QRF perspectives and the transformations between them. This leads to several qualitative predictions: local correlators and time evolution of relational observables in one QRF perspective become fuzzy in another, and a new spectrum of relational vacua arises. Comprised of frame-dependent no-boundary and asymptotic ground states, a vacuum from one perspective appears generally excited in another. Finally, we construct gauge-invariant, yet frame-dependent effective actions by coupling sources exclusively to relational observables, setting the stage for a relational definition of renormalization."
+  },
+  {
+   "id": "2607.21472",
+   "title": "A universal scaling function for giant graviton OPE coefficients",
+   "authors": "Miao He, Yunfeng Jiang",
+   "categories": "hep-th",
+   "abstract": "We consider the large spin limit $S\\to\\infty$ of the OPE coefficient for two maximal giant gravitons and a spinning operator with finite twist in planar $\\mathcal{N}=4$ super-Yang-Mills theory. Up to an overall normalization factor, this OPE coefficient exhibits a power-law scaling of the form $S^{d(g)}$. We provide strong evidence that the exponent $d(g)$ is free from finite size corrections. Consequently, the all-loop asymptotic expression for the OPE coefficient can be used to determine $d(g)$ exactly. We develop a systematic method to compute the scaling function $d(g)$ for arbitrary values of the 't Hooft coupling $g$. At weak coupling, our result agrees perfectly with the available field-theoretic results up to three-loop order. At strong coupling, we present the first three orders as concrete predictions. We further provide the finite-coupling result and show that it interpolates smoothly between the weak- and strong-coupling regimes."
+  },
+  {
+   "id": "2607.21479",
+   "title": "3d-3d correspondence for knot complements with finite and large $N$",
+   "authors": "Hee-Joong Chung",
+   "categories": "hep-th, math-ph, math.GT",
+   "abstract": "For $G=SU(N)$ at finite and large $N$, with a totally symmetric representation, we realize the homological block $F_K$ for a knot complement $S^3 \\backslash K$, given in the form of the inverted Habiro series, as a half-index of a 3d $\\mathcal{N}=2$ theory $T[M_3]$ by studying some examples, which we expect to extend to general knots. From the half-index expression, it is also possible to realize the colored HOMFLY-PT polynomial by taking a certain set of poles. Through the half-index realization, we describe a method for obtaining the $G=SU(N)$ homological block and its $a$-deformed version for $S^3 \\backslash K$ from a Habiro series expression for the colored HOMFLY-PT polynomial. We also discuss some properties of partition functions for arbitrary $N$."
+  },
+  {
+   "id": "2607.21509",
+   "title": "Aspects of Closed Matricial Worlds",
+   "authors": "Dionysios Anninos, Samuel Brian",
+   "categories": "hep-th, gr-qc",
+   "abstract": "We investigate the Hilbert space structure for simple theories of gravity with $Λ>0$ on closed spatial sections. Our motivation ties to the presence of gravitational saddles in four-dimensional $Λ>0$ Einstein-Maxwell theory with $S^2\\times Σ_h$ topology, where $Σ_h$ is a genus-$h$ Riemann surface. Here, as a concrete starting point, the problem is explored for two-dimensional $Λ>0$ quantum gravity. We revisit and elaborate on exact results in the matrix model literature. We study gravitational wavefunctions from both the perspective of the Wheeler-DeWitt equation and the gravitational path integral. Though simple, the setting displays many features of general interest such as large volume effects that disrupt the perturbative expansion, topological corrections to the path-integral wavefunction that offend the exact Wheeler-DeWitt equation, and a sphere path integral ${Z}^{(0)}_{\\text{grav}}$ with non-trivial structure in $Λ$. We discuss candidate inner products for the infinite-dimensional canonical gravitational Hilbert space uncovered by Lian and Zuckerman. By establishing explicit results up to genus-six, we argue that the dominant contribution to the genus-$h$ gravitational disk path integral at large spatial size mimics the behavior of two-dimensional topological gravity. In passing, we show that for ${Z}^{(0)}_{\\text{grav}}$ to give rise to a positive counting problem for discretised Riemann surfaces, it must have a negative pre-factor. We contrast our analysis to the more realistic case of timelike Liouville theory."
+  },
+  {
+   "id": "2607.21514",
+   "title": "Revealing the conformal symmetry of the discrete series scalars in dS${}_2$",
+   "authors": "Lukas W. Lindwasser",
+   "categories": "hep-th",
+   "abstract": "On two-dimensional manifolds with nonzero constant Ricci curvature, there exists an infinite sequence of scalar fields with nonzero mass parameter that admit a pair of (anti)-holomorphic currents. After suitably defining the theory in de Sitter space ($\\mathrm{dS}_2$), correlation functions of these currents obey global conformal Ward identities. We address the question of how this global conformal symmetry manifests as an action on the scalar field. An essential step is in leveraging an equivalent description of the scalar field in terms of a conformal Killing tensor. Through this, we find a conformal symmetry transformation that acts locally on the conformal Killing tensor, but non-locally on the scalar field. We show that the equation of motion transforms covariantly with respect to these conformal transformations, and further find a traceless stress tensor in both $\\mathrm{dS}_2$ and $\\mathrm{AdS}_2$, locally defined in terms of the conformal Killing tensor, which generates the global conformal isometry transformations."
+  },
+  {
+   "id": "2607.21593",
+   "title": "On the strong coupling limit of Yang-Mills matrix models",
+   "authors": "Adrien Martina, Harish Murali",
+   "categories": "hep-th",
+   "abstract": "We study the strong coupling limit of mass deformed Yang--Mills matrix models, with the aim of understanding when the matrices become effectively commuting. The Yang--Mills interaction classically drives the matrices toward mutually commuting valleys, where the matrices can potentially be interpreted as coordinates of an emergent space. However, taking into consideration the integration measure, commutativity is not automatic since the commuting locus is entropically suppressed, and in the bosonic models with $D\\geq3$ the strong coupling limit remains non-commuting. We find that fermions change this competition in a sharp way. As the number of fermionic degrees of freedom is increased, there is a critical value $\\mathcal N_c=2(D-2)$, realized by the supersymmetric Yang--Mills matrix models, at which the matrices commute at strong coupling. The same critical models also exhibit universality under deformations by $O(N^2)$, or huge, operators: the normalized eigenvalue densities are insensitive to the microscopic details of the huge operators. Increasing the number of fermions beyond the critical point still gives commuting matrices, but the huge-operator universality is lost. Thus commutativity and universality are related but distinct: the matrix models with supersymmetric field content sit at the critical boundary where we have both."
+  },
+  {
+   "id": "2607.21700",
+   "title": "EFT (String) Tower Building",
+   "authors": "Alessandra Grieco, Ignacio Ruiz, Irene Valenzuela",
+   "categories": "hep-th",
+   "abstract": "We develop a bottom-up framework to reconstruct the asymptotic spectrum of light towers in four-dimensional $\\mathcal{N}=1$ effective field theories directly from their Kähler potential. Our construction uses the Integral Scaling Relation, which relates the mass scales of towers becoming light at infinite distance to the tensions of EFT strings, together with the Emergent String Conjecture applied recursively upon decompactification. These conditions organize the tower scaling vectors into a lattice generated by the EFT-string vectors and select the globally consistent tower polytopes. When applied to Kähler potentials arising from string compactifications, our algorithm precisely reproduces the known arrangements of towers and duality frames. We then classify the admissible polytopes for asymptotic Kähler potentials $K\\sim-\\log P(s)$, with $P(s)$ a homogeneous polynomial of degree at most seven, and show that certain apparently consistent Kähler potentials are incompatible with the assumed quantum-gravity constraints. For general polynomials, additional restrictions arise from gluing the tower arrangements across different growth sectors. Remarkably, every tower polytope allowed by our reconstruction can be obtained as a concrete slice of the polytope associated with M-theory on a Joyce $G_2$-manifold. This provides evidence for a form of string universality in which EFT strings act as the fundamental building blocks of the UV tower structure in the EFT perturbative regimes."
+  }
+ ]
+}
