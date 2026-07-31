@@ -106,7 +106,7 @@ footer{{max-width:940px;margin:0 auto;padding:0 24px 40px;color:var(--muted);fon
 </div>
 </div></header>
 <main>{''.join(cards)}</main>
-<footer>arXiv.org RSS(hep-th)에서 announce_type=new 항목만 추출. 한국어 abstract는 기계 번역이며 전문 용어는 원문 유지 — 인용 전 원문 확인 권장.</footer>
+<footer>arXiv.org hep-th 신규 제출 목록(cross-list 제외)에서 추출. 한국어 abstract는 기계 번역이며 전문 용어는 원문 유지 — 인용 전 원문 확인 권장.</footer>
 <script>
 const tko=document.getElementById('tko'),ten=document.getElementById('ten');
 tko.onclick=()=>{{document.body.classList.toggle('hide-ko');tko.classList.toggle('on')}};

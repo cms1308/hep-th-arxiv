@@ -56,7 +56,7 @@ if not readme.exists():
         f"- `index.html` — 발행 목록 (manifest.json에서 자동 생성)\n"
         f"- `briefs/YYYY-MM-DD.html` — 각 날짜 브리핑\n"
         f"- `manifest.json` — 발행 메타데이터\n\n"
-        f"출처: https://rss.arxiv.org/rss/hep-th · 한국어 abstract는 기계 번역입니다.\n",
+        f"출처: https://arxiv.org/list/hep-th/new · 한국어 abstract는 기계 번역입니다.\n",
         encoding="utf-8")
 
 run("git", "add", "-A")

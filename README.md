@@ -9,4 +9,4 @@
 - `briefs/YYYY-MM-DD.html` — 각 날짜 브리핑
 - `manifest.json` — 발행 메타데이터
 
-출처: https://rss.arxiv.org/rss/hep-th · 한국어 abstract는 기계 번역입니다.
+출처: https://arxiv.org/list/hep-th/new · 한국어 abstract는 기계 번역입니다.

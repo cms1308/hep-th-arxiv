@@ -99,7 +99,7 @@ footer a{{color:var(--accent)}}
   <div class="stat"><b>{html.escape(latest)}</b><span>최신 호</span></div>
 </div>
 {''.join(rows)}
-<footer>출처: <a href="https://arxiv.org/list/hep-th/new" target="_blank" rel="noopener">arXiv.org hep-th</a> RSS · announce_type=new 항목만 수집 (cross-list 제외).<br>
+<footer>출처: <a href="https://arxiv.org/list/hep-th/new" target="_blank" rel="noopener">arXiv.org hep-th</a> · 신규 제출만 수집 (cross-list 제외).<br>
 한국어 abstract는 기계 번역이며 전문 용어는 영어 원문을 유지합니다. 인용 전 원문 확인을 권장합니다.</footer>
 </div></body></html>"""
 
