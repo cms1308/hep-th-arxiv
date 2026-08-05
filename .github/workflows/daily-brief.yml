@@ -27,6 +27,7 @@ on:
 
 permissions:
   contents: write
+  issues: write        # 실패 시 이슈로 알림 (GitHub이 메일을 보내준다)
 
 concurrency:
   group: daily-brief
@@ -165,3 +166,27 @@ jobs:
           echo "--- in ---";  ls -1 "$BRIEF_WORK/in"  2>/dev/null || true
           echo "--- out ---"; ls -1 "$BRIEF_WORK/out" 2>/dev/null || true
           cat "$BRIEF_WORK/merge.txt" 2>/dev/null || true
+
+      # 자동 실행이라 실패해도 아무도 모른다. 이슈를 만들어 메일이 오게 한다.
+      # 같은 날짜 이슈가 이미 열려 있으면 코멘트만 달아 중복을 막는다.
+      - name: 실패 알림
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DATE: ${{ steps.day.outputs.date }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          TITLE="브리핑 실패: $DATE"
+          BODY="$RUN_URL 에서 실패했습니다.
+
+          재실행: Actions → hep-th 데일리 브리핑 → Run workflow (date=\`$DATE\`, force=true)
+
+          토큰 만료가 의심되면 로컬에서 \`claude setup-token\` 후 Secret \`CLAUDE_CODE_OAUTH_TOKEN\` 을 갱신하세요."
+          gh label create brief-failure --color B60205 --description "데일리 브리핑 워크플로 실패" 2>/dev/null || true
+          NUM=$(gh issue list --state open --label brief-failure \
+                  --search "$TITLE in:title" --json number --jq '.[0].number // empty')
+          if [ -n "$NUM" ]; then
+            gh issue comment "$NUM" --body "$BODY"
+          else
+            gh issue create --title "$TITLE" --body "$BODY" --label brief-failure
+          fi
