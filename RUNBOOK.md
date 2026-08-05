@@ -4,7 +4,7 @@
 
 | 경로 | 무엇이 | 언제 |
 |---|---|---|
-| `.github/workflows/daily-brief.yml` | 수집·번역·발행 전부 러너에서 | 매 평일 09:30 KST 목표 (schedule은 밀림). **현재 주 자동화.** |
+| `.github/workflows/daily-brief.yml` | 수집·번역·발행 전부 러너에서 | 매 평일 11:00 KST 목표 (schedule은 밀림). **현재 주 자동화.** |
 | `scripts/run_local.sh` | 같은 일을 이 맥에서 | 수동 실행 / 워크플로가 실패한 날 재실행 |
 | 아래 1~5단계 | 브리핑 컨테이너 세션 절차 | push 권한이 있을 때만 |
 

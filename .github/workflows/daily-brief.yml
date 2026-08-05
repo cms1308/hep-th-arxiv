@@ -12,7 +12,7 @@ name: hep-th 데일리 브리핑
 
 on:
   schedule:
-    - cron: "30 0 * * 1-5"        # 09:30 KST 목표 (밀릴 수 있음)
+    - cron: "0 2 * * 1-5"         # 11:00 KST 목표 (밀릴 수 있음)
   workflow_dispatch:
     inputs:
       date:
