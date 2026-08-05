@@ -1,5 +1,16 @@
 [
  {
+  "date": "2026-08-05",
+  "datestr": "2026년 8월 5일 (수)",
+  "file": "briefs/2026-08-05.html",
+  "count": 20,
+  "preview": [
+   "Size Operator and Spectral Clustering in the Two Coupled SYK Model",
+   "Krylov Complexity and $c$-function along RG Flows",
+   "$\\mathcal{N}=2$ RG flows, Non-Invertible Symmetries and Matrix Factorisations"
+  ]
+ },
+ {
   "date": "2026-08-04",
   "datestr": "2026년 8월 4일 (화)",
   "file": "briefs/2026-08-04.html",
