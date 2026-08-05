@@ -1,0 +1,167 @@
+name: hep-th 데일리 브리핑
+
+# 수집 → 한국어 번역 → 발행까지 전부 러너에서 한다. 로컬 머신이 꺼져 있어도 된다.
+#
+# GitHub의 schedule은 정시에 오지 않는다 (실측: 00:35 UTC cron이 03:41·04:36 UTC 발화,
+# 미발화한 날도 있었다). arXiv 공지는 09:00 KST에 확정되고 fetch_arxiv.py 가
+# --expect/--retries 로 "아직 전날 목록" 인 경우를 걸러내므로, 늦게 발화해도 결과는 맞다.
+# 정시 실행이 필요하면 로컬에서 scripts/run_local.sh 를 직접 돌린다.
+#
+# 번역은 Claude Max 구독 OAuth 토큰(claude setup-token 으로 발급)을 쓴다.
+# 레포 Secret 이름: CLAUDE_CODE_OAUTH_TOKEN
+
+on:
+  schedule:
+    - cron: "30 0 * * 1-5"        # 09:30 KST 목표 (밀릴 수 있음)
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "공지 날짜 YYYY-MM-DD. 비우면 오늘(KST)."
+        required: false
+        type: string
+      force:
+        description: "이미 발행된 날짜도 다시 만든다"
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-brief
+  cancel-in-progress: false
+
+jobs:
+  brief:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 날짜 결정
+        id: day
+        run: |
+          # 작업 폴더는 워크스페이스 밖에 둔다 — sync_repo.py 의 git add -A 에 걸리지 않게.
+          echo "BRIEF_WORK=$RUNNER_TEMP/brief" >> "$GITHUB_ENV"
+          DATE="${{ inputs.date }}"
+          [ -n "$DATE" ] || DATE="$(TZ=Asia/Seoul date +%F)"
+          echo "date=$DATE" >> "$GITHUB_OUTPUT"
+          if [ -f "briefs/$DATE.html" ] && [ "${{ inputs.force }}" != "true" ]; then
+            echo "published=true" >> "$GITHUB_OUTPUT"
+            echo "$DATE 는 이미 발행돼 있습니다 — 종료합니다."
+          else
+            echo "published=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: 수집
+        id: fetch
+        if: steps.day.outputs.published == 'false'
+        env:
+          DATE: ${{ steps.day.outputs.date }}
+        run: |
+          if [ ! -f "data/$DATE.json" ]; then
+            if [ -n "${{ inputs.date }}" ]; then
+              python3 scripts/fetch_arxiv.py --api --date "$DATE"
+            else
+              python3 scripts/fetch_arxiv.py --expect "$DATE" --retries 4 --retry-wait 120
+            fi
+          else
+            echo "data/$DATE.json 이 이미 있습니다 — 수집 생략"
+          fi
+          # 0편이면 fetch_arxiv.py 가 파일을 쓰지 않는다 (주말이거나 공지 전).
+          if [ -f "data/$DATE.json" ]; then
+            echo "found=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "found=false" >> "$GITHUB_OUTPUT"
+            echo "신규 0편 — 커밋 없이 종료합니다."
+          fi
+
+      - name: 청크 분할
+        id: split
+        if: steps.fetch.outputs.found == 'true'
+        env:
+          DATE: ${{ steps.day.outputs.date }}
+        run: |
+          python3 scripts/split_chunks.py "data/$DATE.json" 6
+          mkdir -p "$BRIEF_WORK/out"
+          ls -1 "$BRIEF_WORK/in"
+
+      - name: 한국어 번역
+        if: steps.fetch.outputs.found == 'true'
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          claude_args: |
+            --model sonnet
+            --fallback-model opus
+            --max-turns 120
+            --allowedTools Read,Write,Glob
+          prompt: |
+            You are translating arXiv hep-th abstracts into Korean.
+
+            The directory ${{ runner.temp }}/brief/in contains files chunk1.json,
+            chunk2.json, ... Each is a JSON array of papers with keys
+            id, title, authors, categories, abstract.
+
+            Process EVERY chunk file, one at a time. For each chunk:
+
+            STEP 1. Read ${{ runner.temp }}/brief/in/chunkN.json
+
+            STEP 2. For each paper write a Korean translation of the abstract:
+            - Natural, fluent academic Korean ("~한다/~이다" 평서체).
+            - KEEP all technical/physics terminology in English (holography,
+              entanglement entropy, black hole, CFT, AdS/CFT, Yang-Mills,
+              supersymmetry, moduli, brane, S-matrix, stress tensor, gauge theory,
+              Calabi-Yau, renormalization, ...). Keep all math notation, LaTeX,
+              symbols and arXiv IDs exactly as in the original.
+            - Do not translate proper nouns or model names.
+            - Translate the FULL abstract sentence for sentence. Never summarize.
+
+            STEP 3. Write ${{ runner.temp }}/brief/out/chunkN.json — the SAME array
+            with an added abstract_ko key on each object. Copy id, title, authors,
+            categories, abstract verbatim from the input; do not edit or re-wrap them.
+
+            Do not stop until every chunk in the in/ directory has a matching file
+            in out/. Return ONLY the string "done: N chunks". Do not return paper content.
+
+      - name: 병합·검증
+        id: merge
+        if: steps.fetch.outputs.found == 'true'
+        env:
+          DATE: ${{ steps.day.outputs.date }}
+        run: |
+          cd "$BRIEF_WORK"
+          python3 "$GITHUB_WORKSPACE/scripts/merge.py" | tee merge.txt
+          EXPECTED=$(python3 -c 'import json,sys;print(json.load(open(sys.argv[1]))["count"])' \
+                     "$GITHUB_WORKSPACE/data/$DATE.json")
+          GOT=$(python3 -c 'import json;print(len(json.load(open("papers.json"))))')
+          PROBLEMS=$(grep -cE '^(MISSING|SHORT_KO|BAD_JSON)' merge.txt || true)
+          echo "기대 ${EXPECTED}편 / 병합 ${GOT}편 / 문제 ${PROBLEMS}건"
+          if [ "$EXPECTED" != "$GOT" ] || [ "$PROBLEMS" != "0" ]; then
+            echo "::error::번역 결과가 불완전합니다 — 커밋하지 않습니다."
+            exit 1
+          fi
+          echo "count=$GOT" >> "$GITHUB_OUTPUT"
+
+      - name: 발행
+        if: steps.fetch.outputs.found == 'true'
+        env:
+          DATE: ${{ steps.day.outputs.date }}
+        run: |
+          git config user.name  "arxiv-hep-th-bot"
+          git config user.email "noreply@anthropic.com"
+          DATESTR=$(python3 -c 'import sys,datetime
+          d=datetime.date.fromisoformat(sys.argv[1])
+          print("%d년 %d월 %d일 (%s)" % (d.year, d.month, d.day, "월화수목금토일"[d.weekday()]))' "$DATE")
+          python3 scripts/sync_repo.py ${{ github.repository }} \
+            "$BRIEF_WORK/papers.json" "$DATE" "$DATESTR"
+
+      - name: 실패 시 로그 남기기
+        if: failure() && steps.fetch.outputs.found == 'true'
+        run: |
+          echo "--- in ---";  ls -1 "$BRIEF_WORK/in"  2>/dev/null || true
+          echo "--- out ---"; ls -1 "$BRIEF_WORK/out" 2>/dev/null || true
+          cat "$BRIEF_WORK/merge.txt" 2>/dev/null || true

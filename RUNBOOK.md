@@ -1,6 +1,22 @@
 # 데일리 브리핑 실행 절차 (자동 실행용)
 
-매 평일 11:00 KST에 실행되는 예약 작업이 따르는 절차입니다.
+## 실행 경로
+
+| 경로 | 무엇이 | 언제 |
+|---|---|---|
+| `.github/workflows/daily-brief.yml` | 수집·번역·발행 전부 러너에서 | 매 평일 09:30 KST 목표 (schedule은 밀림). **현재 주 자동화.** |
+| `scripts/run_local.sh` | 같은 일을 이 맥에서 | 수동 실행 / 워크플로가 실패한 날 재실행 |
+| 아래 1~5단계 | 브리핑 컨테이너 세션 절차 | push 권한이 있을 때만 |
+
+Actions 경로는 Claude Max 구독 OAuth 토큰을 씁니다. `claude setup-token` 으로 발급해
+레포 Secret `CLAUDE_CODE_OAUTH_TOKEN` 에 등록해 두어야 합니다.
+
+`run_local.sh` 는 arXiv 를 맥에서 직접 부르고(캐시 문제 없음) 청크마다 `claude -p` 를
+병렬로 띄웁니다. 작업 폴더는 `$BRIEF_WORK` (기본 `~/.hep-th-brief-work`), 로그는 그 아래 `logs/`.
+
+---
+
+아래는 브리핑 컨테이너 세션이 따르는 절차입니다.
 예약 작업 프롬프트는 이 레포를 clone한 뒤 이 파일을 읽고 그대로 수행합니다.
 절차를 바꾸려면 **이 파일과 `scripts/` 만 수정**하면 됩니다 — 예약 작업은 건드릴 필요 없습니다.
 
