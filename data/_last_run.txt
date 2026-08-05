@@ -1,10 +1,10 @@
-run       = #20  (push)
-utc       = 2026-08-04T05:31:09Z
-kst       = 2026-08-04T14:31:09
-args      = --expect 2026-08-04 --retries 4 --retry-wait 120
+run       = #21  (workflow_dispatch)
+utc       = 2026-08-05T03:44:08Z
+kst       = 2026-08-05T12:44:08
+args      = --expect 2026-08-05 --retries 4 --retry-wait 120
 outcome   = success
 --------- 출력 ---------
-  [parse] 본문 58044 bytes, 페이지 표기 22편
-/list/new 수집 1회차: 22편 (공지일 2026-08-04 로 기록)
-신규 22편
-wrote data/2026-08-04.json
+  [parse] 본문 49987 bytes, 페이지 표기 20편
+/list/new 수집 1회차: 20편 (공지일 2026-08-05 로 기록)
+신규 20편
+wrote data/2026-08-05.json
