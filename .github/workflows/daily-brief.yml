@@ -3,8 +3,9 @@ name: hep-th 데일리 브리핑
 # 수집 → 한국어 번역 → 발행까지 전부 러너에서 한다. 로컬 머신이 꺼져 있어도 된다.
 #
 # GitHub의 schedule은 정시에 오지 않는다 (실측: 00:35 UTC cron이 03:41·04:36 UTC 발화,
-# 미발화한 날도 있었다). arXiv 공지는 09:00 KST에 확정되고 fetch_arxiv.py 가
-# --expect/--retries 로 "아직 전날 목록" 인 경우를 걸러내므로, 늦게 발화해도 결과는 맞다.
+# 미발화한 날도 있었다). arXiv 공지 갱신 시각도 날마다 흔들린다. 그래서 시각을 가정하지
+# 않고, fetch_arxiv.py 가 --expect 로 기대 날짜를 확인해 전날 목록이면 재시도한다.
+# 늦게 발화하든 공지가 늦든 결과 날짜는 어긋나지 않는다.
 # 정시 실행이 필요하면 로컬에서 scripts/run_local.sh 를 직접 돌린다.
 #
 # 번역은 Claude Max 구독 OAuth 토큰(claude setup-token 으로 발급)을 쓴다.
@@ -72,7 +73,10 @@ jobs:
             if [ -n "$IN_DATE" ]; then
               python3 scripts/fetch_arxiv.py --api --date "$DATE"
             else
-              python3 scripts/fetch_arxiv.py --expect "$DATE" --retries 4 --retry-wait 120
+              # --retries N 은 초회 + 재시도 N회다. 아래는 30분 간격 3회(11:00/11:30/12:00).
+              # arXiv 공지는 20:00 ET — 서머타임에는 09:00 KST, 겨울에는 10:00 KST다.
+              # 페이지 반영 지연과 연휴 순연이 있으므로 시각을 가정하지 않고 기다린다.
+              python3 scripts/fetch_arxiv.py --expect "$DATE" --retries 2 --retry-wait 1800
             fi
           else
             echo "data/$DATE.json 이 이미 있습니다 — 수집 생략"

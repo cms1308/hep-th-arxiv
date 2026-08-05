@@ -48,7 +48,9 @@ def clean(s):
 def fetch_new_listing():
     """arxiv.org/list/hep-th/new 의 'New submissions' 절만 파싱한다.
 
-    이 페이지는 공지 시각(20:00 ET = 09:00 KST)에 갱신되는 확정 목록이다.
+    이 페이지는 공지가 나면 갱신되는 확정 목록이다. 갱신 시각은 날마다 흔들리므로
+    시각을 가정하지 않는다 — 호출 쪽에서 --expect 로 기대 날짜를 주고, 전날 목록이면
+    재시도한다 (stale_against 참고).
     """
     html_text = get(NEW_URL).decode("utf-8", "replace")
 

@@ -45,7 +45,7 @@ if [ -f "$REPO/data/$TODAY.json" ]; then
 else
   say "2/5 arXiv 수집"
   "$PY" "$REPO/scripts/fetch_arxiv.py" --expect "$TODAY" \
-        --retries 4 --retry-wait 120 --outdir "$REPO/data"
+        --retries 2 --retry-wait 1800 --outdir "$REPO/data"
 fi
 
 # fetch_arxiv.py 는 0편이면 파일을 쓰지 않는다 — 주말이거나 아직 공지 전.
