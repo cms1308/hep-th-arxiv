@@ -28,6 +28,7 @@ on:
 permissions:
   contents: write
   issues: write        # 실패 시 이슈로 알림 (GitHub이 메일을 보내준다)
+  id-token: write      # claude-code-action 이 OIDC 토큰을 GitHub 토큰으로 교환한다
 
 concurrency:
   group: daily-brief
