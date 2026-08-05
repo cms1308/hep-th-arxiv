@@ -57,7 +57,7 @@ fi
 # ---------------------------------------------------------------- 3. 번역
 say "3/5 청크 분할"
 "$PY" "$REPO/scripts/split_chunks.py" "$REPO/data/$TODAY.json" "$CHUNK_SIZE"
-rm -f "$WORK"/out/chunk*.json
+rm -f "$WORK"/out/*.txt
 
 prompt_for() {
   cat <<EOF
@@ -75,9 +75,10 @@ STEP 2. For each paper write a Korean translation of the abstract:
 - Do not translate proper nouns or model names.
 - Translate the FULL abstract sentence for sentence. Never summarize.
 
-STEP 3. Write $WORK/out/chunk$1.json — the SAME array with an added abstract_ko
-key on each object. Copy id, title, authors, categories, abstract verbatim from
-the input; do not edit or re-wrap them.
+STEP 3. Write each translation to $WORK/out/<id>.txt where <id> is that paper's
+id field (for example 2608.02696.txt). The file contains the Korean translation
+and NOTHING else — no JSON, no quotes, no title, no markdown fences. Write LaTeX
+and backslashes literally; this is plain text, so nothing needs escaping.
 
 Return ONLY the string "chunk$1 done: N papers". Do not return paper content.
 EOF
@@ -93,10 +94,16 @@ translate() {
       > "$WORK/logs/$TODAY-chunk$1.out" 2>&1
 }
 
+# 청크의 모든 논문이 비어 있지 않은 out/<id>.txt 를 갖고 있는지 확인한다.
 chunk_ok() {
-  "$PY" -c 'import json,sys
-d=json.load(open(sys.argv[1]))
-sys.exit(0 if d and all(p.get("abstract_ko") for p in d) else 1)' "$WORK/out/chunk$1.json" 2>/dev/null
+  "$PY" -c 'import json, os, sys
+papers = json.load(open(sys.argv[1]))
+outdir = sys.argv[2]
+def ok(p):
+    f = os.path.join(outdir, p["id"] + ".txt")
+    return os.path.isfile(f) and os.path.getsize(f) > 0
+sys.exit(0 if papers and all(ok(p) for p in papers) else 1)' \
+    "$WORK/in/chunk$1.json" "$WORK/out" 2>/dev/null
 }
 
 N=$(find "$WORK/in" -name 'chunk*.json' | wc -l | tr -d ' ')
@@ -114,17 +121,13 @@ done
 # ---------------------------------------------------------------- 4. 병합·검증
 say "4/5 병합"
 cd "$WORK"
-"$PY" "$REPO/scripts/merge.py" | tee "$WORK/logs/$TODAY-merge.txt"
-
-EXPECTED=$("$PY" -c 'import json,sys;print(json.load(open(sys.argv[1]))["count"])' "$REPO/data/$TODAY.json")
-GOT=$("$PY" -c 'import json;print(len(json.load(open("papers.json"))))')
-PROBLEMS=$(grep -cE '^(MISSING|SHORT_KO|BAD_JSON)' "$WORK/logs/$TODAY-merge.txt" || true)
-
-if [ "$EXPECTED" != "$GOT" ] || [ "$PROBLEMS" != "0" ]; then
-  say "중단 — 기대 ${EXPECTED}편 / 병합 ${GOT}편, 문제 ${PROBLEMS}건. 커밋하지 않습니다."
+if ! "$PY" "$REPO/scripts/merge_ko.py" "$REPO/data/$TODAY.json" out papers.json \
+        | tee "$WORK/logs/$TODAY-merge.txt"; then
+  say "중단 — 번역이 불완전합니다. 커밋하지 않습니다."
   say "청크 로그: $WORK/logs/$TODAY-chunk*.out"
   exit 1
 fi
+GOT=$("$PY" -c 'import json;print(len(json.load(open("papers.json"))))')
 
 # ---------------------------------------------------------------- 5. 커밋·푸시
 DATESTR=$("$PY" -c 'import sys,datetime

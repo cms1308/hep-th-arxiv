@@ -108,11 +108,11 @@ jobs:
             chunk2.json, ... Each is a JSON array of papers with keys
             id, title, authors, categories, abstract.
 
-            Process EVERY chunk file, one at a time. For each chunk:
+            Process EVERY chunk file, one at a time. For each paper in each chunk:
 
-            STEP 1. Read ${{ runner.temp }}/brief/in/chunkN.json
+            STEP 1. Read the chunk file.
 
-            STEP 2. For each paper write a Korean translation of the abstract:
+            STEP 2. Translate the abstract into Korean:
             - Natural, fluent academic Korean ("~한다/~이다" 평서체).
             - KEEP all technical/physics terminology in English (holography,
               entanglement entropy, black hole, CFT, AdS/CFT, Yang-Mills,
@@ -122,31 +122,75 @@ jobs:
             - Do not translate proper nouns or model names.
             - Translate the FULL abstract sentence for sentence. Never summarize.
 
-            STEP 3. Write ${{ runner.temp }}/brief/out/chunkN.json — the SAME array
-            with an added abstract_ko key on each object. Copy id, title, authors,
-            categories, abstract verbatim from the input; do not edit or re-wrap them.
+            STEP 3. Write the translation to ${{ runner.temp }}/brief/out/<id>.txt
+            where <id> is that paper's id field (for example 2608.02696.txt).
 
-            Do not stop until every chunk in the in/ directory has a matching file
-            in out/. Return ONLY the string "done: N chunks". Do not return paper content.
+            The .txt file contains the Korean translation and NOTHING else — no JSON,
+            no quotes around it, no title, no id, no markdown fences. Write the LaTeX
+            and backslashes literally as they appear; this is a plain text file, so
+            nothing needs escaping.
 
+            One .txt file per paper. Do not stop until every paper in every chunk has
+            its own file in out/. Return ONLY the string "done: N papers".
+            Do not return paper content.
+
+      # 1차 검증. 실패해도 잡을 죽이지 않고 누락 목록을 만들어 재번역으로 넘긴다.
       - name: 병합·검증
         id: merge
         if: steps.fetch.outputs.found == 'true'
+        continue-on-error: true
         env:
           DATE: ${{ steps.day.outputs.date }}
         run: |
           cd "$BRIEF_WORK"
-          python3 "$GITHUB_WORKSPACE/scripts/merge.py" | tee merge.txt
-          EXPECTED=$(python3 -c 'import json,sys;print(json.load(open(sys.argv[1]))["count"])' \
-                     "$GITHUB_WORKSPACE/data/$DATE.json")
-          GOT=$(python3 -c 'import json;print(len(json.load(open("papers.json"))))')
-          PROBLEMS=$(grep -cE '^(MISSING|SHORT_KO|BAD_JSON)' merge.txt || true)
-          echo "기대 ${EXPECTED}편 / 병합 ${GOT}편 / 문제 ${PROBLEMS}건"
-          if [ "$EXPECTED" != "$GOT" ] || [ "$PROBLEMS" != "0" ]; then
-            echo "::error::번역 결과가 불완전합니다 — 커밋하지 않습니다."
+          if python3 "$GITHUB_WORKSPACE/scripts/merge_ko.py" \
+               "$GITHUB_WORKSPACE/data/$DATE.json" out papers.json | tee merge.txt; then
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+            grep -E '^(MISSING|SHORT_KO)' merge.txt | awk '{print $2}' > missing.txt
+            echo "재번역 대상: $(wc -l < missing.txt)편"
+          fi
+
+      # 누락·부실분만 다시 돌린다. 로컬 경로의 청크 재시도와 같은 역할.
+      - name: 누락분 재번역
+        if: steps.fetch.outputs.found == 'true' && steps.merge.outputs.ok != 'true'
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          claude_args: |
+            --model sonnet
+            --fallback-model opus
+            --max-turns 60
+            --allowedTools Read,Write,Glob
+          prompt: |
+            Some arXiv hep-th abstracts were not translated, or the translation came
+            out too short.
+
+            ${{ runner.temp }}/brief/missing.txt lists the arXiv ids that need work,
+            one per line. For EACH id in that file:
+
+            1. Find that paper in the chunk files under ${{ runner.temp }}/brief/in/
+               (each chunk is a JSON array of papers with an id field).
+            2. Translate its abstract into Korean in full — natural academic Korean
+               ("~한다/~이다" 평서체), all physics terminology and LaTeX kept in the
+               original form, sentence for sentence, never summarized.
+            3. Overwrite ${{ runner.temp }}/brief/out/<id>.txt with the translation
+               and nothing else — plain text, no JSON, no quotes, no markdown fences.
+
+            Return ONLY the string "repaired: N papers".
+
+      - name: 재검증
+        if: steps.fetch.outputs.found == 'true' && steps.merge.outputs.ok != 'true'
+        env:
+          DATE: ${{ steps.day.outputs.date }}
+        run: |
+          cd "$BRIEF_WORK"
+          if ! python3 "$GITHUB_WORKSPACE/scripts/merge_ko.py" \
+                 "$GITHUB_WORKSPACE/data/$DATE.json" out papers.json | tee merge.txt; then
+            echo "::error::재번역 후에도 번역이 불완전합니다 — 커밋하지 않습니다."
             exit 1
           fi
-          echo "count=$GOT" >> "$GITHUB_OUTPUT"
 
       - name: 발행
         if: steps.fetch.outputs.found == 'true'
