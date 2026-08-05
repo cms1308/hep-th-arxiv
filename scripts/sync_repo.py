@@ -20,8 +20,12 @@ token = os.environ.get("GH_TOKEN")
 work = pathlib.Path("/home/claude/work/_repo") if token else scripts.parent
 
 def run(*a, **kw):
-    return subprocess.run(a, cwd=kw.get("cwd", work), check=True,
-                          capture_output=True, text=True).stdout.strip()
+    r = subprocess.run(a, cwd=kw.get("cwd", work), capture_output=True, text=True)
+    if r.returncode:
+        # 실패 원인을 삼키지 않는다. 토큰이 섞일 수 있는 remote URL 은 출력하지 않으므로
+        # 서브커맨드 이름과 stderr 만 보여준다.
+        raise SystemExit(f"git {a[1]} 실패 (rc={r.returncode}): {r.stderr.strip()[:800]}")
+    return r.stdout.strip()
 
 if token:
     if work.exists():

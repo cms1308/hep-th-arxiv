@@ -152,9 +152,15 @@ jobs:
         if: steps.fetch.outputs.found == 'true'
         env:
           DATE: ${{ steps.day.outputs.date }}
+          GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name  "arxiv-hep-th-bot"
           git config user.email "noreply@anthropic.com"
+          # 번역 스텝(claude-code-action)이 자체 GitHub 앱 토큰으로 git 자격증명을
+          # 건드리므로, push 전에 origin 을 이 잡의 토큰으로 다시 붙여 둔다.
+          # GITHUB_TOKEN 값은 Actions 로그에서 자동 마스킹된다.
+          git remote set-url origin \
+            "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           DATESTR=$(python3 -c 'import sys,datetime
           d=datetime.date.fromisoformat(sys.argv[1])
           print("%d년 %d월 %d일 (%s)" % (d.year, d.month, d.day, "월화수목금토일"[d.weekday()]))' "$DATE")
