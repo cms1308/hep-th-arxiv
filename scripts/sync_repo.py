@@ -16,7 +16,10 @@ import json, os, subprocess, sys, pathlib, shutil
 repo_slug, papers_path, date, datestr = sys.argv[1:5]
 papers_path = str(pathlib.Path(papers_path).resolve())
 scripts = pathlib.Path(__file__).resolve().parent
-token = os.environ.get("GH_TOKEN")
+# GH_TOKEN 은 clone 모드(브리핑 컨테이너) 스위치다. 다만 GitHub Actions 러너에서는
+# 체크아웃이 이미 있고 /home/claude 경로도 없는데, gh CLI 관례상 GH_TOKEN 이 떠 있기
+# 쉬우므로 clone 모드로 오해하지 않게 막는다.
+token = None if os.environ.get("GITHUB_ACTIONS") == "true" else os.environ.get("GH_TOKEN")
 work = pathlib.Path("/home/claude/work/_repo") if token else scripts.parent
 
 def run(*a, **kw):
