@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""arXiv hep-th 신규 논문 수집기 — GitHub Actions 러너에서만 실행한다.
+"""arXiv hep-th 신규 논문 수집기.
 
 이 스크립트가 arXiv를 직접 호출하는 유일한 지점이다.
-결과는 data/<공지날짜>.json 으로 커밋되고, 브리핑 세션은 그 파일만 읽는다.
+결과는 data/<공지날짜>.json 으로 커밋되고, 이후 단계는 그 파일만 읽는다.
 
 모드:
   (기본)                 arxiv.org/list/hep-th/new 의 확정 목록을 수집

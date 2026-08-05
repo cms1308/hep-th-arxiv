@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
-"""data/<date>.json 을 번역 서브에이전트용 입력 청크로 쪼갠다.
+"""data/<date>.json 을 번역용 입력 청크로 쪼갠다.
 
-Usage: python3 split_chunks.py /home/claude/repo/data/2026-07-28.json [size]
+Usage: BRIEF_WORK=<작업폴더> python3 split_chunks.py data/2026-07-28.json [size]
 출력: $BRIEF_WORK/in/chunk1.json ... (각각 papers 배열)
-BRIEF_WORK 기본값은 /home/claude/work (브리핑 컨테이너).
 """
 import json, os, pathlib, sys
 
@@ -14,7 +13,10 @@ d = json.loads(src.read_text(encoding="utf-8"))
 papers = d["papers"] if isinstance(d, dict) else d
 papers.sort(key=lambda p: p["id"])
 
-indir = pathlib.Path(os.environ.get("BRIEF_WORK", "/home/claude/work")) / "in"
+work = os.environ.get("BRIEF_WORK")
+if not work:
+    raise SystemExit("BRIEF_WORK 환경변수가 필요합니다 (작업 폴더 경로).")
+indir = pathlib.Path(work) / "in"
 indir.mkdir(parents=True, exist_ok=True)
 for f in indir.glob("chunk*.json"):
     f.unlink()

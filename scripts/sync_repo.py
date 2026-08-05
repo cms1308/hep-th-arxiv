@@ -1,44 +1,29 @@
 #!/usr/bin/env python3
-"""Add today's brief to the archive repo, rebuild index.html, commit, push.
+"""Add today's brief to the checkout, rebuild index.html, commit, push.
 
 Usage:
-  GH_TOKEN=... python3 sync_repo.py OWNER/REPO papers.json 2026-06-30 "2026년 6월 30일 (화)"
+  python3 sync_repo.py OWNER/REPO papers.json 2026-06-30 "2026년 6월 30일 (화)"
 
-GH_TOKEN 이 있으면 토큰 URL로 새로 clone 한다 (브리핑 컨테이너).
-없으면 이 스크립트가 들어 있는 체크아웃을 그대로 쓰고 push는 기존 git 자격증명에 맡긴다 (로컬 실행).
-로컬 모드는 트리가 pull 된 상태라고 가정한다 — 호출 쪽에서 먼저 pull 할 것.
+이 스크립트가 들어 있는 체크아웃에서 바로 작업하고, push 는 이미 설정된 git 자격증명에
+맡긴다. 트리가 pull 된 상태라고 가정한다 — 호출 쪽에서 먼저 pull 할 것.
 
 Idempotent: re-running for the same date replaces that day's entry.
 Exits 0 with "no changes" if nothing differs.
 """
-import json, os, subprocess, sys, pathlib, shutil
+import json, subprocess, sys, pathlib
 
 repo_slug, papers_path, date, datestr = sys.argv[1:5]
 papers_path = str(pathlib.Path(papers_path).resolve())
 scripts = pathlib.Path(__file__).resolve().parent
-# GH_TOKEN 은 clone 모드(브리핑 컨테이너) 스위치다. 다만 GitHub Actions 러너에서는
-# 체크아웃이 이미 있고 /home/claude 경로도 없는데, gh CLI 관례상 GH_TOKEN 이 떠 있기
-# 쉬우므로 clone 모드로 오해하지 않게 막는다.
-token = None if os.environ.get("GITHUB_ACTIONS") == "true" else os.environ.get("GH_TOKEN")
-work = pathlib.Path("/home/claude/work/_repo") if token else scripts.parent
+work = scripts.parent
 
 def run(*a, **kw):
     r = subprocess.run(a, cwd=kw.get("cwd", work), capture_output=True, text=True)
     if r.returncode:
-        # 실패 원인을 삼키지 않는다. 토큰이 섞일 수 있는 remote URL 은 출력하지 않으므로
+        # 실패 원인을 삼키지 않는다. remote URL 에 토큰이 섞일 수 있으므로
         # 서브커맨드 이름과 stderr 만 보여준다.
         raise SystemExit(f"git {a[1]} 실패 (rc={r.returncode}): {r.stderr.strip()[:800]}")
     return r.stdout.strip()
-
-if token:
-    if work.exists():
-        shutil.rmtree(work)
-    url = f"https://x-access-token:{token}@github.com/{repo_slug}.git"
-    subprocess.run(["git", "clone", "--depth", "1", url, str(work)],
-                   check=True, capture_output=True, text=True)
-    run("git", "config", "user.email", "noreply@anthropic.com")
-    run("git", "config", "user.name", "arxiv-hep-th-bot")
-    run("git", "checkout", "-B", "main")
 
 (work / "briefs").mkdir(exist_ok=True)
 (work / ".nojekyll").touch()

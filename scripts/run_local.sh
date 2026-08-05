@@ -1,13 +1,11 @@
 #!/bin/bash
 # 로컬(macOS)에서 데일리 브리핑을 처음부터 끝까지 실행한다.
-# launchd 가 매 평일 11:00 KST 에 이걸 부른다. 수동 실행도 같은 명령이다.
+# 평소에는 GitHub Actions(.github/workflows/daily-brief.yml)가 돌린다. 이 스크립트는
+# 정시 실행이 필요하거나 워크플로가 실패한 날 손으로 돌리는 경로다.
 #
-# 브리핑 컨테이너 절차(RUNBOOK.md)와 다른 점:
-#   - arXiv 를 이 머신에서 직접 호출한다. WebFetch 캐시 문제가 없으므로
-#     .trigger push → GitHub Actions → 결과 커밋 폴링 왕복이 통째로 필요 없다.
-#   - 번역은 청크마다 `claude -p` 프로세스를 하나씩 띄워 병렬로 돌린다.
-#     한 세션이 서브에이전트를 부리는 것보다 실패한 청크만 다시 돌리기 쉽다.
-#   - push 는 keychain 에 저장된 git 자격증명을 쓴다. GH_TOKEN 이 필요 없다.
+# 워크플로와 다른 점:
+#   - 번역을 청크마다 `claude -p` 프로세스로 띄워 병렬로 돌린다 (워크플로는 한 번에).
+#   - push 는 keychain 에 저장된 git 자격증명을 쓴다.
 #
 # 실패하면 커밋 없이 0 이 아닌 코드로 종료한다. 로그는 $BRIEF_WORK/logs/<날짜>.log.
 

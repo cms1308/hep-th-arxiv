@@ -207,7 +207,6 @@ jobs:
         if: steps.fetch.outputs.found == 'true'
         env:
           DATE: ${{ steps.day.outputs.date }}
-          # GH_TOKEN 이라는 이름을 쓰면 sync_repo.py 가 clone 모드로 오해한다.
           PUSH_TOKEN: ${{ github.token }}
         run: |
           git config user.name  "arxiv-hep-th-bot"
