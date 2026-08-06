@@ -1,0 +1,133 @@
+{
+ "date": "2026-08-06",
+ "source": "list/new",
+ "count": 18,
+ "papers": [
+  {
+   "id": "2608.04067",
+   "title": "Comment on &#34;Multi-black holes in Bertotti-Robinson spacetime&#34;",
+   "authors": "Gérard Clément",
+   "categories": "hep-th, gr-qc",
+   "abstract": "We point out that the asymptotically Bertotti-Robinson multi-black hole solutions of Einstein-Maxwell theory can be constructed using only three-dimensional sigma-model techniques, without resorting to the monodromy-matrix approach."
+  },
+  {
+   "id": "2608.04080",
+   "title": "Supersymmetry, Supergravity and the Consistency of On-Shell Massive Superamplitudes",
+   "authors": "Timothy Trott",
+   "categories": "hep-th, hep-ph",
+   "abstract": "I study constraints from consistent complex factorisation of $2\\rightarrow 2$ scattering amplitudes in $4d$ and their relationship with supersymmetry. I complete the argument demonstrating that a massless helicity-$3/2$ particle must be a gravitino in a theory of supergravity and derive the structure and couplings of massive supermultiplets from first principles. For massive BPS particles in theories with extended supersymmetry, further constraints on the couplings are derived from consistent factorisation of massive superamplitudes. Among these is the requirement that BPS vector bosons must have couplings conforming to Lie algebra structure constants or generalised Chern-Simons terms. The gravitational coupling is shown to participate and draws the graviphotons into the Lie algebra. All $2\\rightarrow 2$ tree-level amplitudes of massive particles with spin $s\\leq 1$ are calculated in (super)gravity using on-shell methods and the double copy. These are assembled and decomposed into (super)amplitudes with varying amounts of supersymmetry. Finally, I study scattering of BPS gravitinos with unbroken $\\mathcal{N}\\geq 4$ supergravity and show that consistent factorisation leads to the full reconstruction of the super-Higgs mechanism. This argument completely determines the perturbative structure of all $\\mathcal{N}=4$ Minkowski vacua of gauged maximal supergravity. Gravitinos in theories not admitting a super-Higgs mechanism are ruled-out."
+  },
+  {
+   "id": "2608.04097",
+   "title": "A new perspective on non-commutative deformations of field and gauge theories",
+   "authors": "Riccardo Borsato , Tim Meier",
+   "categories": "hep-th",
+   "abstract": "We construct non-commutative deformations of field and gauge theories based on star-products implemented by Drinfel'd twists. We are able to encompass a large family of twists, including those built out of conformal symmetries and supersymmetries. The main idea behind our construction is to work with twists constructed from symmetries of the undeformed theory, that are realised as active symmetry transformations. We argue that our construction amounts to a reformulation of known deformations of gauge theories, and that it significantly extends the range of applicable examples. To ensure consistency with gauge invariance, we also identify a unimodularity condition that is weaker than the one that is normally employed in the literature, so that we can apply twists that would otherwise be left out. Finally, we also prove a planar equivalence theorem stating that the Feynman diagrams of the deformed theories retain an undeformed internal structure, with the twist acting only on their external legs. All these results are important to identify and work with deformations of $\\mathcal N=4$ super Yang-Mills that are proposed to be dual to homogeneous Yang-Baxter deformations of the $AdS_5\\times S^5$ superstring, but the applicability of our construction and results goes beyond that."
+  },
+  {
+   "id": "2608.04107",
+   "title": "Exact Modular Completion of the ABJM Effective Twisted Superpotential",
+   "authors": "Seyed Morteza Hosseini",
+   "categories": "hep-th",
+   "abstract": "The effective twisted superpotential governs the supersymmetric partition functions of three-dimensional $\\mathcal{N}=2$ theories in the Cardy limit and, at large $N$, the gravitational blocks that are glued into the entropy function of supersymmetric $\\mathrm{AdS}_4$ black holes. We determine its on-shell structure for $\\mathrm{U}(N)_k\\times\\mathrm{U}(N)_{-k}$ ABJM theory at the universal twist, using a machine-learning discovery pipeline---physics-informed symbolic regression with integer-relation detection---applied to Bethe-vacuum data of up to $800$ digits. Its perturbative part terminates after two terms, a shifted-rank $3/2$-power and an $N$-independent constant map, which we obtain in closed form for every integer level. Its type-IIA genus expansion admits a closed coefficient formula at arbitrary genus, involving binomial and Bernoulli-number terms, and is asymptotic. For $k=1,2,4$ the entire finite-$N$ remainder is a single absolutely convergent divisor-sum $q$-series, obtained by applying a first-order differential operator to the Eichler integral of a weight-four Eisenstein series on $\\Gamma_0(2)$ or $\\Gamma_0(4)$. This closed form reproduces the data to $\\sim\\!10^{-797}$."
+  },
+  {
+   "id": "2608.04204",
+   "title": "Constants in Sequences of M2-brane Partition Functions",
+   "authors": "Junho Hong",
+   "categories": "hep-th",
+   "abstract": "We determine in closed form the $N$-independent constant terms in the all-order $1/N$ expansions of the topologically twisted index and of the associated Bethe potential for the ABJM theory, as well as the Bethe potential constant of the ADHM theory. We reconstruct these constants analytically from high-precision Bethe-Ansatz numerics, verify them down to the level of non-perturbative corrections, and find them to be closely related to the constant map function $A$ governing the round three-sphere partition function. The resulting expressions for the ADHM and ABJM constants pass the non-trivial test dictated by 3d mirror symmetry. Via recently established factorization relations, they also determine in closed form the $N$-independent constant contribution to the squashed three-sphere partition function, through the first two leading orders in its large-squashing expansion. These constants supply precisely the piece left undetermined in the recent exact results for 3d supersymmetric partition functions to all orders in the $1/N$ expansion, and thereby mark an important step toward completing them, both in field theory and in the dual quantum gravity description."
+  },
+  {
+   "id": "2608.04229",
+   "title": "Boundary Conditions and Entanglement in Anti-de Sitter Space",
+   "authors": "Konstantinos Boutivas , Dimitrios Katsinis , Georgios Pastras , Nathan Smeyers , Nikolaos Tetradis",
+   "categories": "hep-th, gr-qc",
+   "abstract": "We study the entanglement entropy of a conformally coupled scalar field at its ground state in $(3+1)$-dimensional AdS space in global coordinates. We consider spherical entangling surfaces centered at the origin of AdS and allow for general boundary conditions at the conformal boundary. Through numerical and analytical means, we show that the UV-divergent part of the entropy has a universal form, while the UV-finite part is sensitive to the boundary conditions. We determine the dependence of the latter part on mixed boundary conditions that interpolate between Dirichlet and Neumann."
+  },
+  {
+   "id": "2608.04248",
+   "title": "Tilts from 2-Groups",
+   "authors": "Sven Harder , Theodore Jacobson , Zhengdi Sun",
+   "categories": "hep-th, cond-mat.str-el, math-ph",
+   "abstract": "2-group global symmetries intertwine 0-form and 1-form symmetries in an interesting way. We analyze universal constraints on lines which are charged under the 1-form subgroup of a 2-group, and show that they generically break the 0-form symmetry explicitly. This gives rise to a family of line defects parameterized by the broken symmetry generators, whose existence is invariant under the renormalization group flow of the bulk-defect system. The symmetry breaking is enforced by a `family anomaly,' which is a topological obstruction to a symmetric defect. Our main tools are the Wess-Zumino consistency condition and a generalized anomaly inflow formalism for defects and boundaries. For nonabelian continuous 2-groups the family anomaly stems from a higher Berry connection on the moduli space of defects, and constrains response functions that probe the local action of the broken symmetry. In the continuous abelian case we apply differential cohomology to the 2-group background fields to uncover a subtle generalization of the Wess-Zumino condition, while in the discrete case we recast it in terms of the associativity of symmetry defects. We give numerous illustrative examples, computing when possible explicit forms of the tilt operator (which probes the linear response of the defect to the broken symmetry) and its higher analogs, which are crucial for matching the family anomaly. We also discuss universal features such as how symmetry violation by charged line defects is related to symmetry breaking hierarchies in the bulk, and highlight a number of subtle points including the distinction between simple and non-simple lines, and Postnikov class resolution."
+  },
+  {
+   "id": "2608.04356",
+   "title": "Wilson surface correlator in AdS/CFT",
+   "authors": "Andreas Gustavsson",
+   "categories": "hep-th",
+   "abstract": "We use the AdS/CFT correspondence to show that for two spherical Wilson surfaces, both in the fundamental representation of $SU(N)$ gauge group, in the six-dimensional $(2,0)$ theory, in the large $N$ limit there is a first order Gross-Ooguri phase transition at a certain critical separation distance that we obtain numerically."
+  },
+  {
+   "id": "2608.04387",
+   "title": "Tensor Network Formulation of $\\mathcal{PT}$-Symmetric Quantum Field Theory",
+   "authors": "Yasuyuki Hatsuda , Kengo Kikuchi",
+   "categories": "hep-th, hep-lat, math-ph",
+   "abstract": "We develop a non-perturbative analytic tensor network formulation of $\\mathcal{PT}$-symmetric scalar field theories defined on complex integration contours. Applying this formulation to the two-dimensional $\\mathcal{PT}$-symmetric $\\phi^4$ theory at negative quartic coupling, we derive an explicit analytic expression for the initial tensor and show that its components separate into even and odd sectors according to the parity of the sum of the tensor indices. We further formulate the theory on an alternative complex contour and analytically establish, in arbitrary dimensions, an exact finite-volume relation between the lattice partition function defined on this contour and the real part of the analytic continuation of the Hermitian lattice $\\phi^4$ partition function to negative quartic coupling."
+  },
+  {
+   "id": "2608.04522",
+   "title": "Critical and multicritical Kasner scaling in holographic phase transitions",
+   "authors": "Ling-Long Gao , Yan Liu , Hong-Da Lyu",
+   "categories": "hep-th, cond-mat.str-el, gr-qc",
+   "abstract": "We study how holographic phase transitions imprint their scaling laws on the local Kasner geometry inside Einstein-scalar black holes. At fixed double-trace coupling, we derive the near-critical scaling of the deviation of the first-epoch Kasner exponent from the Schwarzschild value: $p_t^{(1)}+\\frac{1}{3} \\propto O^2 \\propto (T_c-T)^{1/r}$, where $O$ denotes the boundary condensate and $r$ labels ordinary criticality ($r=1$), tricriticality ($r=2$), and higher multicriticality ($r\\geq3$). A super-exponential scalar potential generates a sequence of Kasner epochs separated by scalar-field bounces. We further find that any later epoch that can be tracked continuously across the transition inherits the same temperature exponent, while its coefficient depends on the epoch. Numerical solutions confirm these predictions for the ordinary and tricritical cases. Finally, we show analytically that the leading irrelevant exponent of the infrared fixed point governs the low-temperature Kasner scaling, and verify the resulting scaling numerically for the first Kasner exponent."
+  },
+  {
+   "id": "2608.04595",
+   "title": "On the Fermion Level Crossing in the Electroweak Instanton Background",
+   "authors": "P. E. Mogaddam , S. S. Gousheh",
+   "categories": "hep-th",
+   "abstract": "We investigate fermion level crossing in the electroweak instanton background, taking into account the Euclidean-time dependence of the fermion energy throughout our analysis, from the field equations to the spectral flow of fermion energy levels. Modifying the standard fermion ansatzes, we show that, irrespective of the model parameters, the duration over which the fermion energy spectrum flows from one continuum to another corresponds to exactly one unit change in the Chern--Simons number of the instanton. We further demonstrate that incorporating this time dependence is essential for establishing a one-to-one correspondence between the number of fermion zero modes and the instanton winding number, providing a numerical confirmation of the index theorem in the context of instanton backgrounds."
+  },
+  {
+   "id": "2608.04599",
+   "title": "Probe Dependence of the Imaginary Part of HTEE",
+   "authors": "Mohammad Ali-Akbari",
+   "categories": "hep-th",
+   "abstract": "We investigate the holographic timelike entanglement entropy (HTEE) in a five-dimensional anisotropic background, dual to a strongly coupled anisotropic plasma. Using the complex extremal surface method, we compute the HTEE analytically in the high-temperature, small-anisotropy limit $aT \\ll 1$. We consider two different orientations of the boundary timelike interval: one perpendicular to the anisotropy direction and one parallel to it. We find that the imaginary part of the HTEE is not a universal property of the geometry but depends sensitively on the orientation of the extremal surface relative to the anisotropy. This demonstrates that the imaginary part arising from the UV logarithmic divergence is a probe-dependent quantity. Our results suggest that the imaginary part of HTEE can serve as a diagnostic of the coupling between the extremal surface and the anisotropic degrees of freedom of the dual field theory."
+  },
+  {
+   "id": "2608.04665",
+   "title": "Wavefunctions of AdS$_3$ Universes and $T\\bar{T}$-deformed Torus Partition Functions",
+   "authors": "Shinji Hirano",
+   "categories": "hep-th",
+   "abstract": "We study wavefunctions of quantum gravity in asymptotically AdS$_3$ spacetimes and their relation to $T\\bar T$-deformed torus partition functions. We show that the deformed partition function is given by an invertible integral transform of bulk wavefunctions, with a kernel encoding the relation between the $T\\bar T$ coupling and the radial or temporal coordinate in the bulk. The invertibility of the transform allows the bulk wavefunction to be reconstructed from the family of $T\\bar T$-deformed partition functions. In the CFT limit, the kernel effectively localizes at the asymptotic boundary, recovering the standard holographic relation in which the partition function on the torus is determined by the boundary value of the bulk wavefunction. For finite deformation, the kernel shifts the effective holographic screen away from the asymptotic boundary and broadens it into a finite bulk region. A $T\\bar{T}$-deformed partition function at fixed coupling corresponds to a finite-width bulk wavepacket centered around a radial or temporal location set by the deformation scale. In Euclidean signature, the construction arises naturally from wavefunctions of Rindler AdS$_3$, while after a double Wick rotation it admits a Lorentzian interpretation in terms of closed AdS$_3$ torus universes without asymptotic boundaries. Finally, we discuss the extension of the present construction to de Sitter torus universes and its implications for de Sitter holography, and comment on possible generalizations to more general spatial topologies and higher-dimensional spacetimes."
+  },
+  {
+   "id": "2608.04705",
+   "title": "Corrections to the Unruh Effect from Robin Boundary Conditions in Punctured Minkowski Spacetime",
+   "authors": "Nickolas P. Botta , João Paulo M. Pitelli , Ricardo A. Mosna",
+   "categories": "hep-th, gr-qc",
+   "abstract": "We consider a real massless scalar field in punctured Minkowski spacetime, endowed at the removed origin with the stable one-parameter family of Robin boundary conditions $G(0)-\\beta G'(0)=0$, $\\beta\\geq0$. We obtain the boundary-induced part of the static ground-state Wightman function in closed form and study the response of a uniformly accelerated Unruh-DeWitt detector. The puncture breaks the boost symmetry underlying the stationary Unruh response, so the boundary-induced pullback is nonstationary in proper time. The corresponding subtracted detector contribution can either enhance or suppress the ordinary Minkowski response and depends on the Robin parameter, the detector gap, and the portion of the trajectory sampled. For the unshifted, radially aligned trajectory studied in detail, we prove that the boundary-induced pullback is absolutely integrable in the two proper-time variables. Consequently, as the smooth interaction is extended over the full detector history, this contribution approaches a finite limit and remains $O(1)$, producing no additional term linear in the interaction duration. The formal Neumann limit is singular: the boundary-induced two-point function grows logarithmically because of an infrared singularity in the $s$-wave sector, and the numerical response exhibits growth consistent with this asymptotic behavior."
+  },
+  {
+   "id": "2608.04717",
+   "title": "Quantization of Algebraic Varieties Defined by Casimir Polynomials via Matrix Regularization: Fuzzy $S^7$ and Beyond",
+   "authors": "Akifumi Sako",
+   "categories": "hep-th, math-ph",
+   "abstract": "We study the quantization of algebraic varieties defined by equations involving Casimir polynomials of compact semisimple Lie algebras. The Casimir polynomials belong to the Poisson center of the corresponding Lie-Poisson algebra. For this purpose, we employ a recently developed matrix regularization of Lie-Poisson algebras. In particular, using its formulation based on reducible representations, we construct quantizations of these algebraic varieties through their decomposition into coadjoint orbits, including singular orbits. As a concrete example, we present the construction of fuzzy $S^7$ in detail."
+  },
+  {
+   "id": "2608.04745",
+   "title": "Quantum gravity around ultracold black holes from DSSYK",
+   "authors": "Francesca Mariani , Thomas G. Mertens , Jacopo Papalini , Thomas Tappeiner",
+   "categories": "hep-th, gr-qc",
+   "abstract": "We propose a quantum description of the ultracold Reissner-Nordström de Sitter black hole via a specific flat space limit of the double-scaled SYK model. Fluctuations in this regime reduce to flat JT gravity, which is ill-behaved as a quantum system. We show that including the first subleading correction to the dilaton potential breaks the leading order Hagedorn degeneracy but does not resolve the structural problem. Finally, we leverage the gauged description of the sine dilaton gravity model to propose a novel quantization of the near-horizon dynamics of ultracold black holes. This leads to a new proposal for the partition function where states in the asymptotics of the spectrum are suppressed dynamically, and features of a discretized spacetime arise. We obtain a non-perturbative low temperature behavior of the partition function, which is quite different than the cold and Nariai physics. Our result can be interpreted as a dynamical way to enforce cosmic censorship on the quantum system."
+  },
+  {
+   "id": "2608.05071",
+   "title": "Generalized comodule tube algebras for boundary and domain wall defects of (2+1)D topological order",
+   "authors": "Zhian Jia , Sheng Tan",
+   "categories": "hep-th, cond-mat.str-el, math-ph, math.QA",
+   "abstract": "The tube algebra, which carries the structure of a $C^*$ weak Hopf algebra, is a fundamental tool for characterizing topological excitations in topological phases. In this work, we generalize the tube algebra framework to codimension-2 defects in $(2+1)$D gapped phases described by Turaev--Viro--Barrett--Westbury TQFTs, with particular emphasis on Levin--Wen string-net models. We show that such codimension-2 defects are described by a \\emph{defect tube algebra}, which naturally carries the structure of a comodule algebra over the weak Hopf tube algebra associated with the topological excitations. Boundary and domain wall defects are then characterized by the representations of the corresponding boundary and domain wall defect tube algebras. In particular, a domain wall defect tube algebra can be regarded as a generalized Drinfeld double of the tube algebras associated with the two adjacent boundary defects. More generally, for a domain wall joining $N$ bulk phases, the associated domain wall defect tube algebra can be viewed as an $N$-tuple algebra. This perspective extends naturally to general $k$-defects, namely codimension-2 defects joining $k$ codimension-1 defects, for which the resulting generalized tube algebra carries the structure of a multicomodule algebra."
+  },
+  {
+   "id": "2608.05146",
+   "title": "Machine-Learning Search for Lax Connections",
+   "authors": "Osamu Fukushima , Tomohiro Shigemura , Ryosuke Suda , Norihiro Tanahashi , Kentaroh Yoshida",
+   "categories": "hep-th, nlin.SI",
+   "abstract": "We apply a machine learning framework to search for Lax connections in two-dimensional non-linear sigma models using local current data. For the $SU(2)$ principal chiral model and the symmetric coset $S^2 = SU(2)/U(1)$, the method successfully recovers the full spectral-parameter families without using the known spectral curves as training targets. For the non-symmetric coset $T^{1,1}$, the optimization converges to reproducible low-loss maps that distill into a compact block-diagonal ansatz. However, analytic verification shows that this candidate is a ``fake Lax'' connection which satisfies on-shell flatness but fails to encode the two-dimensional equations of motion, whereas its point-particle reduction yields a genuine mechanical Lax pair. These results demonstrate that machine learning can effectively propose candidate ansätze and identify spectral structures, but low flatness loss alone does not certify genuine integrability, underscoring the necessity of analytic validation."
+  }
+ ]
+}
