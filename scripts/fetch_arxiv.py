@@ -12,7 +12,7 @@
 출력 스키마: {date, source, count, papers:[{id, title, authors, categories, abstract}, ...]}
 abstract_ko 는 이후 번역 단계에서 채워진다.
 """
-import argparse, json, os, pathlib, re, sys, time, urllib.parse, urllib.request
+import argparse, html, json, os, pathlib, re, sys, time, urllib.parse, urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 
@@ -89,9 +89,9 @@ def fetch_new_listing():
             s = re.sub(r'''<span[^>]*class=["']descriptor["'][^>]*>.*?</span>''',
                        ' ', s, flags=re.S)
             s = re.sub(r'<[^>]+>', ' ', s)
-            s = (s.replace("&amp;", "&").replace("&lt;", "<").replace("&gt;", ">")
-                  .replace("&quot;", '"').replace("&#39;", "'").replace("&nbsp;", " "))
-            return clean(s)
+            # 손으로 치환하면 &#34; 같은 수치 엔티티가 남고, &amp; 를 먼저 풀어
+            # &amp;lt; 가 이중 디코딩된다. 한 번에 정확히 푸는 표준 함수를 쓴다.
+            return clean(html.unescape(s))
 
         subjects = detag(grab("list-subjects"))
         # "Subjects: High Energy Physics - Theory (hep-th); General Relativity (gr-qc)"
