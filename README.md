@@ -11,4 +11,4 @@
 
 출처: https://arxiv.org/list/hep-th/new · 한국어 abstract는 기계 번역입니다.
 
-수집·번역·발행: GitHub Actions 워크플로 `hep-th 데일리 브리핑` (매 평일 11:17 KST 목표)
+수집·번역·발행: GitHub Actions 워크플로 `hep-th 데일리 브리핑` (매 평일 11:07 KST 목표)
