@@ -13,7 +13,8 @@ name: hep-th 데일리 브리핑
 
 on:
   schedule:
-    - cron: "0 2 * * 1-5"         # 11:00 KST 목표 (밀릴 수 있음)
+    # 정각(:00)은 GitHub Actions 고부하 시간대라 문서가 피하라고 권한다 — :17 로 둔다.
+    - cron: "17 2 * * 1-5"        # 11:17 KST 목표 (밀릴 수 있음)
   workflow_dispatch:
     inputs:
       date:
@@ -73,7 +74,7 @@ jobs:
             if [ -n "$IN_DATE" ]; then
               python3 scripts/fetch_arxiv.py --api --date "$DATE"
             else
-              # --retries N 은 초회 + 재시도 N회다. 아래는 30분 간격 3회(11:00/11:30/12:00).
+              # --retries N 은 초회 + 재시도 N회다. 아래는 30분 간격 3회(11:17/11:47/12:17).
               # arXiv 공지는 20:00 ET — 서머타임에는 09:00 KST, 겨울에는 10:00 KST다.
               # 페이지 반영 지연과 연휴 순연이 있으므로 시각을 가정하지 않고 기다린다.
               python3 scripts/fetch_arxiv.py --expect "$DATE" --retries 2 --retry-wait 1800
