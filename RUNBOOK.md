@@ -4,13 +4,27 @@
 
 | 경로 | 무엇이 | 언제 |
 |---|---|---|
-| `.github/workflows/daily-brief.yml` | 수집·번역·발행 전부 러너에서 | 매 평일 11:07 KST 목표. **주 자동화.** |
-| `scripts/run_local.sh` | 같은 일을 이 맥에서 | 정시 실행이 필요하거나 워크플로가 실패한 날 |
+| `scripts/run_local.sh` (launchd) | 수집·번역·발행 전부 이 맥에서 | 매 평일 11:00 KST 정시. **주 자동화.** |
+| `.github/workflows/daily-brief.yml` | 같은 일을 GitHub 러너에서 | 맥이 꺼져 있던 날의 백업, 과거 날짜 백필 |
+
+**launchd 등록·해제는 더블클릭 두 개로 합니다** — `scripts/자동실행_켜기.command`,
+`scripts/자동실행_끄기.command`. 등록 이름은 `com.cms1308.hep-th-brief`, 상태 확인은
+`launchctl print gui/$UID/com.cms1308.hep-th-brief`.
+
+로컬을 주 경로로 삼은 이유: GitHub 의 schedule 이 이 레포에 사실상 오지 않습니다
+(API 실측 — 2026-07-30 에 3시간 늦게 두 번 발화한 게 전부, 08-06·08-07 은 0건).
+launchd 는 정시에 옵니다. 대신 **맥이 꺼져 있거나 자고 있으면 그 시각엔 못 돌고,
+깨어난 뒤 한 번 실행**됩니다. 맥을 자동으로 깨우려면:
+`sudo pmset repeat wakeorpoweron MTWRF 10:55:00`.
 
 Actions 경로는 Claude Max 구독 OAuth 토큰을 씁니다. `claude setup-token` 으로 발급해
 레포 Secret `CLAUDE_CODE_OAUTH_TOKEN` 에 등록해 두어야 합니다.
 
+두 경로가 같은 날 겹쳐도 안전합니다 — 둘 다 `briefs/<날짜>.html` 이 이미 있으면
+아무것도 하지 않고 종료합니다. 그 날짜를 다시 만들려면 그 파일을 지우고 실행하세요.
+
 `run_local.sh` 의 작업 폴더는 `$BRIEF_WORK` (기본 `~/.hep-th-brief-work`), 로그는 그 아래 `logs/`.
+launchd 가 띄운 실행의 표준출력은 `$BRIEF_WORK/logs/launchd.log` 에도 남습니다.
 
 ## 파이프라인
 

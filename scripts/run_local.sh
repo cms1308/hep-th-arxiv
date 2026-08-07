@@ -37,6 +37,13 @@ say "claude $(claude --version 2>&1 | head -1)"
 say "1/5 git pull"
 git -C "$REPO" pull --rebase -q origin main
 
+# 이미 발행된 날이면 아무것도 하지 않는다 — 워크플로가 먼저 올렸거나 오늘 이미 돌린 경우.
+# (다시 만들려면 briefs/<날짜>.html 을 지우고 실행한다.)
+if [ -f "$REPO/briefs/$TODAY.html" ]; then
+  say "$TODAY 는 이미 발행돼 있습니다 — 종료."
+  exit 0
+fi
+
 # ---------------------------------------------------------------- 2. arXiv 수집
 if [ -f "$REPO/data/$TODAY.json" ]; then
   say "2/5 수집 생략 — data/$TODAY.json 이 이미 있음"
