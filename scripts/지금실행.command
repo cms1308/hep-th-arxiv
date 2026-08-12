@@ -21,11 +21,13 @@ if ! PATH="$HOME/.local/bin:$PATH" command -v claude >/dev/null; then
   fail "claude 명령을 찾지 못했습니다. Claude Code 가 설치돼 있는지 확인하세요."
 fi
 
-# run_local.sh 는 깨끗한 트리를 전제로 git pull --rebase 를 한다. 여기서 먼저 걸러야
-# "cannot pull with rebase" 라는 알아보기 어려운 메시지 대신 이유가 보인다.
-if [ -n "$(git -C "$REPO" status --porcelain)" ]; then
+# run_local.sh 의 git pull --rebase 는 추적 중인 파일에 커밋하지 않은 변경이 있으면
+# 멈춘다. 여기서 먼저 걸러야 "cannot pull with rebase" 대신 이유가 보인다.
+# untracked 는 rebase 를 막지 않으므로 세지 않는다 — 중간에 실패한 실행이 남긴
+# data/<날짜>.json 이 여기 걸리면 다시 돌릴 수가 없다.
+if [ -n "$(git -C "$REPO" status --porcelain --untracked-files=no)" ]; then
   echo "⚠️  레포에 커밋하지 않은 변경이 있습니다:"
-  git -C "$REPO" -c core.quotepath=false status --short | sed 's/^/      /'
+  git -C "$REPO" -c core.quotepath=false status --short --untracked-files=no | sed 's/^/      /'
   echo
   fail "이대로면 git pull 에서 멈춥니다. 변경을 커밋하거나 되돌린 뒤 다시 실행하세요."
 fi

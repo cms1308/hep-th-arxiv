@@ -112,7 +112,7 @@ sys.exit(0 if papers and all(ok(p) for p in papers) else 1)' \
 }
 
 N=$(find "$WORK/in" -name 'chunk*.json' | wc -l | tr -d ' ')
-say "번역 시작 — $N개 청크, model=$MODEL"
+say "번역 시작 — ${N}개 청크, model=$MODEL"
 for i in $(seq 1 "$N"); do translate "$i" || true & done
 wait
 
