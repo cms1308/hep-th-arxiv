@@ -40,6 +40,20 @@ sync_repo.py     build_html → manifest 갱신 → build_index → commit → p
 복사하며 JSON 을 손으로 쓰면 백슬래시·따옴표 이스케이프가 깨집니다
 (실측 2026-08-05: 4청크 중 3청크가 `BAD_JSON`). 합치는 일은 `merge_ko.py` 가 합니다.
 
+## 별표(즐겨찾기)
+
+`assets/stars.js` 하나가 브리핑 페이지의 별표 버튼·`★만 보기` 필터와 `starred.html`
+모아보기를 모두 담당합니다. CSS 주입까지 그 안에서 하므로, 이미 발행된 브리핑에는
+MathJax 태그 앞에 `<script src="../assets/stars.js"></script>` 한 줄만 넣으면 됩니다.
+
+저장소는 브라우저 `localStorage` 의 `hepth:starred` 키뿐입니다 — 서버가 없으므로
+기기·브라우저마다 따로 남고 동기화되지 않습니다. 논문 카드에서 읽은 제목·저자·양쪽
+abstract 를 그대로 저장해 두어, 모아보기 페이지는 아무 것도 받아오지 않고 렌더합니다.
+
+브리핑 스타일시트는 `assets/brief.css` 가 단일 원본이고 `build_html.py` 가 이를 읽어
+페이지에 인라인합니다 (채팅 전달용 `--standalone` 도 자체 완결로 유지하기 위해서).
+`--standalone` 에는 별표 스크립트를 걸지 않습니다 — 외부 파일을 못 찾기 때문입니다.
+
 ## 타이밍
 
 arXiv 공지는 **20:00 ET, 일~목요일** (금·토 없음) — 서머타임이면 09:00 KST,

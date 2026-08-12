@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>arXiv hep-th 데일리 · 별표 모아보기</title>
+<link rel="stylesheet" href="assets/brief.css">
+<style>
+#starred-empty{color:var(--muted);font-size:14px;line-height:1.8;padding:26px 2px}
+.note{max-width:940px;margin:0 auto;padding:0 24px 8px;color:var(--muted);font-size:12.5px}
+</style></head><body>
+<header><div class="wrap">
+<a class="back" href="index.html">← 전체 목록</a>
+<h1>arXiv <span class="dot">hep-th</span> 별표 모아보기</h1>
+<div class="sub">별표한 논문 <b id="starred-count">0</b>편 · 최신 공지일 순</div>
+<div class="controls">
+  <button class="tbtn on" id="tko">한국어</button>
+  <button class="tbtn on" id="ten">English</button>
+</div>
+</div></header>
+<main>
+<div id="starred-list"></div>
+<p id="starred-empty" hidden>아직 별표한 논문이 없습니다.<br>
+각 브리핑 페이지에서 논문 카드 오른쪽 위의 ☆ 를 누르면 여기에 모입니다.</p>
+</main>
+<footer>별표는 이 브라우저에만 저장됩니다(localStorage). 다른 기기·브라우저와 동기화되지 않으며,
+브라우저 저장 데이터를 지우면 함께 사라집니다.</footer>
+<script>
+const tko=document.getElementById('tko'),ten=document.getElementById('ten');
+tko.onclick=()=>{document.body.classList.toggle('hide-ko');tko.classList.toggle('on')};
+ten.onclick=()=>{document.body.classList.toggle('hide-en');ten.classList.toggle('on')};
+</script>
+<script src="assets/stars.js"></script>
+<script>
+window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$']],
+ processEscapes:true,tags:'none'},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code'],
+ ignoreHtmlClass:'meta|authors'},chtml:{scale:0.95},startup:{typeset:true}};
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js"></script>
+</body></html>

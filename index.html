@@ -15,6 +15,10 @@ body{margin:0;background:var(--bg);color:var(--ink);
 h1{margin:0;font-size:27px;letter-spacing:-.025em;font-weight:660}
 h1 .dot{color:var(--accent)}
 .sub{color:var(--muted);font-size:14px;margin-top:8px}
+.starlink{display:inline-block;margin-top:14px;padding:6px 13px;border:1px solid var(--line);
+ background:var(--card);border-radius:999px;color:var(--ink);text-decoration:none;font-size:13px;
+ box-shadow:var(--shadow);transition:.14s}
+.starlink:hover{border-color:var(--accent);color:var(--accent)}
 .stats{display:flex;gap:26px;margin:26px 0 34px;padding:16px 20px;background:var(--card);
  border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow)}
 .stat b{display:block;font-size:22px;font-weight:650;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
@@ -35,6 +39,7 @@ footer a{color:var(--accent)}
 </style></head><body><div class="wrap">
 <h1>arXiv <span class="dot">hep-th</span> 데일리 브리핑</h1>
 <div class="sub">매 평일 arXiv hep-th 신규 제출 논문의 제목 · 저자 · 카테고리 · abstract와 한국어 abstract를 정리한 아카이브입니다.</div>
+<a class="starlink" href="starred.html">★ 별표 모아보기</a>
 <div class="stats">
   <div class="stat"><b>12</b><span>발행 일수</span></div>
   <div class="stat"><b>246</b><span>누적 논문</span></div>
