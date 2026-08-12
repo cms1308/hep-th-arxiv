@@ -6,6 +6,7 @@
 |---|---|---|
 | `scripts/run_local.sh` (launchd) | 수집·번역·발행 전부 이 맥에서 | 매 평일 11:07 KST 정시. **주 자동화.** |
 | `.github/workflows/daily-brief.yml` | 같은 일을 GitHub 러너에서 | 맥이 꺼져 있던 날의 백업, 과거 날짜 백필 |
+| `scripts/지금실행.command` | 같은 일을 지금 한 번 | 손으로 돌릴 때. 더블클릭. |
 
 **launchd 등록·해제는 더블클릭 두 개로 합니다** — `scripts/자동실행_켜기.command`,
 `scripts/자동실행_끄기.command`. 등록 이름은 `com.cms1308.hep-th-brief`, 상태 확인은
