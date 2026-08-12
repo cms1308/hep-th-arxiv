@@ -1,12 +1,14 @@
 #!/bin/bash
-# 더블클릭하면 평일 11:00 에 브리핑이 저절로 돌도록 이 맥에 등록한다.
+# 더블클릭하면 평일 11:07 에 브리핑이 저절로 돌도록 이 맥에 등록한다.
 # 다시 더블클릭해도 안전하다 (덮어쓰기). 끄려면 자동실행_끄기.command 를 더블클릭한다.
 
 set -euo pipefail
 
 LABEL="com.cms1308.hep-th-brief"
+# Actions cron(7 2 * * 1-5)과 같은 시각. run_local.sh 가 여기서부터 30분 간격으로
+# 12:37 까지 재시도한다.
 HOUR=11
-MINUTE=0
+MINUTE=7
 
 REPO="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 RUNNER="$REPO/scripts/run_local.sh"
