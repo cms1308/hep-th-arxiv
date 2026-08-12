@@ -1,0 +1,119 @@
+{
+ "date": "2026-08-12",
+ "source": "list/new",
+ "count": 16,
+ "papers": [
+  {
+   "id": "2608.10009",
+   "title": "Casimir Force in Spacetimes with Torsion",
+   "authors": "M.W. AlMasri",
+   "categories": "hep-th",
+   "abstract": "We compute the Casimir force between perfectly conducting parallel plates in a spacetime endowed with constant axial torsion. Working within an effective field theory framework where torsion couples to the electromagnetic sector via a gauge-invariant Chern--Simons-type interaction, we derive the modified photon dispersion relation and mode spectrum. Using zeta-function regularization, we obtain the vacuum energy and the resulting Casimir pressure to second order in the torsion parameter. Our calculation yields a correction scaling as $\\Delta P/P_0 = -\\frac{5\\xi^2 S_z^2 a^2}{4\\pi^2} + \\order(S_z^4)$, which corresponds to a slight weakening of the attractive Casimir force. We acknowledge a known subtlety in the literature: because the Chern-Simons interaction is a total derivative, some analyses conclude that it should not contribute to the Casimir energy for standard boundary conditions, implying the leading correction is of higher order, $\\order(S_z^4)$. For experimentally accessible plate separations ($a \\sim \\qty{1}{\\micro\\meter}$), the effect remains well below current detection thresholds ($|\\Delta P/P_0| \\lesssim 10^{-30}$) due to stringent bounds on macroscopic torsion from spin-torsion coupling experiments. Nevertheless, the calculation establishes a consistent, gauge-invariant bridge between quantum vacuum phenomena and non-Riemannian geometry. We discuss finite-temperature effects and geometric asymmetries as potential pathways for enhancing sensitivity, while placing the results in the broader context of dynamical torsion, condensed matter analogs, and quantum information protocols. Our results are consistent with the CPT-odd photon sector of the Standard-Model Extension and provide a geometric interpretation of Lorentz-violating coefficients in terms of spacetime torsion."
+  },
+  {
+   "id": "2608.10060",
+   "title": "Complexity measures in holographic cascading theories with multiscale dynamics",
+   "authors": "Carlos Nunez , Juan F. Pedraza , Javier G. Subils",
+   "categories": "hep-th",
+   "abstract": "Using the gravitational duals, we perform a systematic study of two notions of complexity in a family of three-dimensional gauge theories with rich infrared structure. For thermofield double states, we employ the complexity=volume prescription, which relates computational complexity to the volume of the dual Einstein-Rosen bridge. For one particle states created by the insertion of a local operator on the vacuum, we study their spreading in Krylov space, encoded holographically by the radial momentum of bulk excitations. We investigate these two notions of complexity across the parameter space of the theories, focusing on the two limiting values of a tunable parameter. Near the limit where the theories flow close to an intermediate conformal fixed point, both notions reveal distinct manifestations of ``walking'' dynamics. Near the opposite limit, computational complexity is largely insensitive to the confining nature of the ground state, whereas the frequency of oscillations in the Krylov spread complexity -- set by the emerging infrared scale -- is sensitive to the presence of confinement."
+  },
+  {
+   "id": "2608.10072",
+   "title": "Recursion Coefficients and Krylov Dynamics in Polynomial Random Matrix Models",
+   "authors": "Juan F. Pedraza , Le-Chen Qu",
+   "categories": "hep-th, math-ph, quant-ph",
+   "abstract": "We study the recursion coefficients of orthogonal polynomials and their associated Krylov dynamics in random matrix models with high-degree and possibly asymmetric polynomial potentials. We develop a moment recursion method that, when combined with the recursive algorithm, provides an efficient construction of the recursion coefficients. We also obtain their large-$n$ asymptotic behavior for general asymmetric potentials; for $Nw_d=1$, the leading asymptotic form of $R_n$ reproduces Freud's conjecture. We apply this framework to an asymmetric quartic potential and to the double-scaled Sachdev-Ye-Kitaev (DSSYK) model. In both models, the recursion functions capture the overall qualitative behavior of the recursion coefficients, and the gradient catastrophes of the recursion functions are associated with ``chaotic'' transition regions in the recursion coefficients. For the quartic potential, such regions can occur in both $R_n$ and $S_n$, whereas the DSSYK model can exhibit multiple transition regions in $R_n$, with the recursion function remaining accurate in the smooth intervals between them. Finally, we compute the corresponding spread complexity and find that transition regions do not qualitatively modify its behavior, while a two branch structure produces early time oscillations followed by monotonic growth."
+  },
+  {
+   "id": "2608.10082",
+   "title": "Tetra-quadric CY Threefold and Assisted Fibre Inflation",
+   "authors": "Swagata Bhattacharyya , George K. Leontaris , Pramod Shukla",
+   "categories": "hep-th",
+   "abstract": "In the context of type IIB superstring compactification, we demonstrate the assisted fibre inflation proposal for a four-field model realized using the orientifold of a tetra-quadric Calabi-Yau (CY) threefold. This CY threefold has an underlying permutation symmetry $S_4$ and belongs to both the list of CY threefolds, namely the Kreuzer-Skarke (KS) database as well as the Complete Intersection Calabi-Yau (CICY) database. After fixing the overall volume modulus of the CY threefold using the framework of perturbative large volume scenario, there are three Kähler moduli which remain flat and assist in driving fibre inflation via sub-leading corrections. In a particular benchmark model, we show that the effective inflaton shift of around $5.7$ M$_p$, as needed for driving fibre inflation, can be successfully shared by three inflaton moduli which need to be individually shifted by nearly $2.2$ M$_p$ only ! The main motivation for the work is to show that the effective large field excursions of the inflaton field is possible without the need of pushing the individual volume moduli towards a large super-Planckian excursion or close to the boundary of the Kähler cone which may create various subsequent challenges for the effective field theory and supergravity approximations, especially in Swiss-Cheese based models of fibre inflation."
+  },
+  {
+   "id": "2608.10085",
+   "title": "Approximate locality, black hole complementarity and overlapping qubits",
+   "authors": "ChunJun Cao , Gong Cheng , Alexander Jahn , Thomas Koutsikos",
+   "categories": "hep-th, quant-ph",
+   "abstract": "We construct a toy model of an evaporating black hole using approximately local degrees of freedom acting on ``overlapping\" qubits in which a version of black hole complementarity arises naturally. The operators corresponding to the radiation and the interior are identified as two distinct representations of the same fundamental algebra, thereby preventing the exact factorization of the Hilbert space into interior and exterior and avoiding the conventional no-cloning violations. We show how this toy model captures several qualitative and quantitative features of black hole evaporation and how the ability to account for this ``overlap\" in the entropy calculation leads to the recovery of a Page curve."
+  },
+  {
+   "id": "2608.10133",
+   "title": "Towards a Proof of Mass Gap in 3d Yang-Mills Theory",
+   "authors": "V.P. Nair",
+   "categories": "hep-th",
+   "abstract": "We give the outlines of a proof for the existence of a mass gap for the 3d Yang-Mills theory in terms of an inequality on the eigenvalues of the Laplacian on the gauge-invariant configuration space."
+  },
+  {
+   "id": "2608.10348",
+   "title": "Holographic Complexity as a Probe of Boundary Entropy in AdS/BCFT",
+   "authors": "Fabiano F. Santos",
+   "categories": "hep-th",
+   "abstract": "This work establishes a formal bridge between the organizational principles of TQFTs and the AdS/BCFT correspondence, interpreting end of the world EOW branes as physical interfaces carrying boundary-state data. By developing a dictionary that maps cobordism composition to holographic sewing, we show that the Euclidean action and the Ryu and Takayanagi prescription consistently isolate the universal boundary entropy (log g). Applying the Complexity-Action proposal, we demonstrate that a relative renormalization prescription extracts this same universal contribution from the Wheeler and DeWitt action. Finally, we extend the analysis to BTZ black holes, where the late-time complexity growth is shown to encode both the thermal interior dynamics and the universal information of the boundary conditions via the brane tension."
+  },
+  {
+   "id": "2608.10667",
+   "title": "Tachyon couplings from S-matrix elements in bosonic string theory",
+   "authors": "Mohammad R. Garousi",
+   "categories": "hep-th",
+   "abstract": "We introduce a systematic framework for constructing spacetime and D-brane effective actions in bosonic string theory, encompassing both tachyon and massless modes. The actions are required to be gauge invariant and compatible with the expansion of sphere- and disk-level S-matrix elements. Our central proposal stipulates that, for each closed- or open-string channel, S-matrix poles involving an odd number of tachyons must be reproduced via an expansion in the effective action, whereas those with an even number of tachyons must be matched exactly. This criterion imposes strong selection rules: the bulk action contains only even powers of closed-string tachyon fields, and the D-brane action only even powers of open-string tachyon fields. In contrast, couplings of closed-string tachyons to D-branes are less constrained and allow both even and odd field multiplicities. As a concrete application, we analyze the disk-level amplitude involving two closed-string tachyons and demonstrate that the resulting linear and quadratic tachyon-D-brane interactions coincide precisely with those of type 0 theory. This is consistent with the duality between the orbifold of type 0 theory and the compactification of bosonic string theory on \\(T^{16}\\)."
+  },
+  {
+   "id": "2608.10833",
+   "title": "False vacuum decay around black holes: calculation from first principles in the (3+1)-dimensional case",
+   "authors": "Ratmir Gazizov , Dmitry Gorbunov , Dmitry Levkov",
+   "categories": "hep-th",
+   "abstract": "In $(3+1)$ spacetime dimensions, we numerically calculate the suppression exponent of the false vacuum decay probability in the presence of a thermal bath and a black hole."
+  },
+  {
+   "id": "2608.10840",
+   "title": "Monodromy defects in ABJM theory and integrability",
+   "authors": "Charlotte Kristjansen , Andrey Shusharin",
+   "categories": "hep-th",
+   "abstract": "We establish that supersymmetric monodromy defects in ABJM theory, also known as vortex loops, define integrable boundary states of the underlying alternating SU(4) spin chain. Exploiting the KT relation within the framework of the algebraic Bethe ansatz, we derive a closed-form expression for the leading-order one-point functions of non- protected operators in the presence of these defects. As a special case, our result reproduces the spin-chain overlap governing the three-point functions of two maximal giant gravitons and a single tiny graviton. We furthermore investigate the quantization of the theory in the defect background and compute the first quantum correction to the one-point functions in the simplest setting. Finally, we discuss possible extensions of our overlap formula."
+  },
+  {
+   "id": "2608.10861",
+   "title": "Anomalous symmetries in Kähler geometry",
+   "authors": "Dmitri Bykov , Andrew Kuzovchikov",
+   "categories": "hep-th, math-ph, math.DG",
+   "abstract": "We initiate a study of centrally extended ($\\textit{anomalous}$) symmetries in Kähler geometry, focusing on the simplest, and most ubiquitous, Abelian case. In particular, we provide a local description of the geometry admitting such isometries. A long-standing no-go theorem asserts that there is an obstruction to gauging such symmetries in the purely Kähler framework. Utilizing the language of sypersymmetry, we then show that these symmetries may be gauged within the setup of generalized Kähler geometry. Our results may be applied to quotients, T-dualities, etc."
+  },
+  {
+   "id": "2608.10871",
+   "title": "Gravitational Faraday rotation, gravitational spin Hall effect, and spin-refined causality analysis from Magnusian matrix in effective field theories of gravity",
+   "authors": "Kibok Jeong , Jung-Wook Kim , Soochang Lee",
+   "categories": "hep-th, gr-qc",
+   "abstract": "The effects of black hole's spin in effective field theories (EFTs) of gravity are explored through observables of wave scattering on black hole backgrounds in the geometric optics approximation. The considered observables are polarisation rotation angle, wavenumber kick (or deflection angle), and (Shapiro/Wigner--Smith) time delay, each of which are related to gravitational Faraday rotation, gravitational spin Hall effect, and infrared causality. The observables are computed from scattering amplitudes through the Magnusian formalism, where the Magnusian is promoted to a matrix to account for helicity information. It is found that (1) the gravitational spin Hall effect in EFTs of gravity are qualitatively different from that of general relativity due to \"noncommutative\" wavenumber kicks, and (2) black hole's spin slightly enhances the causality constraints on EFT coefficients."
+  },
+  {
+   "id": "2608.10925",
+   "title": "A fermion primer",
+   "authors": "Loriano Bonora , Roberto Soldati",
+   "categories": "hep-th",
+   "abstract": "This is a review paper intended to illustrate a few critical issues concerning Dirac, Weyl and Majorana fermions and their differences. The first part consists in basic introductions to fermions, and more in detail to fermions in 4d, focusing in particular in what differentiate the three type of fermions: chirality, helicity, mass, field equations, properties under discrete symmetry transformations, Actions, Observables. On this basis we tackle a series of challenging and sometime controversial problems: the non-existence of Weyl fermion propagators, and the ways to circumvent it; the regularizations for Weyl fermion amplitudes, in particular the appropriateness of using the PV regularization; the definition of a functional integral for Weyl fermion, the difference between Weyl and massless Majorana fermions and the difference between the Dirac and Majorana mass terms. Most notably we come to the conclusion that the trick of replacing the non-existing Weyl fermion propagator with a massless Dirac one, although it may yield in some cases correct results, is flawed at the very origin by a logical loophole. We then show which is the correct way to proceed in this case. We consider also the topic of applying the Wick rotation at the classical Action level for Weyl fermions and conclude that this procedure leads to a nonequivalent theory. Finally, although anomalies are not the central focus here, we have deemed it useful to summarily review the relation, and its cohomological basis, that exists between the lack of a Weyl fermion propagator (non-invertibility of the Weyl-Dirac operator) and the appearance of dangerous anomalies in the theory."
+  },
+  {
+   "id": "2608.10982",
+   "title": "Vortices of the Hitchin Equations",
+   "authors": "Nicholas S. Manton",
+   "categories": "hep-th, math-ph",
+   "abstract": "The vortices that appear in Hitchin's pioneering study of Higgs bundles are interpreted as a new version of the abelian Higgs vortices more familiar to theoretical physicists. Their conformal covariance is made explicit."
+  },
+  {
+   "id": "2608.11086",
+   "title": "Distance-Higuchi Bounds on Inflationary Field Ranges and Lifetimes",
+   "authors": "Luis A. Anchordoqui , Ignatios Antoniadis , Alek Bedroya",
+   "categories": "hep-th",
+   "abstract": "We show that quasi-de Sitter inflation driven by a nearly flat scalar potential has a finite polynomial lifespan dictated by the interplay between the swampland Distance Conjecture and the generalized Higuchi bound. By analyzing classical scalar rolling and quantum stochastic diffusion, we demonstrate that for any arbitrarily high but fixed statistical confidence, a universe cannot live longer than $\\sim \\min\\left\\{\\ln(\\frac{1}{H})\\frac{\\sqrt V}{V'},V^{-\\frac{d-1}{2}}\\ln^2(\\frac{1}{H})\\right\\}$ in reduced Planck units while remaining Higuchi-consistent, where $H$ is the Hubble parameter, $V$ is the scalar potential, $d$ is the number of spacetime dimensions, and prime denotes derivative with respect to the scalar field. This bound despite being weaker than the Trans-Planckian Censorship Conjecture, which has been argued for classical cosmologies that flow to the asymptotic of the field space without tunneling, is powerful given its minimal quantum gravity input and applicability to all points in the moduli space."
+  },
+  {
+   "id": "2608.11129",
+   "title": "Moment of Inertia of an Interacting Bose Gas",
+   "authors": "Aleksandar Gecic , Victor E. Ambrus , Kenji Fukushima",
+   "categories": "hep-th, nucl-th",
+   "abstract": "The response of many-body quantum systems to rotation can be characterized by the moment of inertia. For a classical gas, the moment of inertia can be expressed as the integral of the enthalpy density multiplied by the squared radial distance from the rotation axis. In quantum field theory, the finite rotation in the grand canonical ensemble demands the causality bound. This constraint imposes technical challenges in treating transverse momenta discretized with the Bessel function zeros. However, we define the moment of inertia in the limit of zero angular velocity, in which the causality constraint is irrelevant and ordinary quantum field theoretical techniques can be applied. We evaluate the moment of inertia in the $\\phi^4$ theory and find that, surprisingly, the interacting effects including the ring-diagram resummation are consistent with the classical expectation and the moment of inertia density remains proportional to the enthalpy density."
+  }
+ ]
+}
