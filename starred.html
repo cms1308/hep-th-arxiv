@@ -17,6 +17,7 @@
 </div>
 </div></header>
 <main>
+<div id="sync-panel"></div>
 <div id="starred-list"></div>
 <p id="starred-empty" hidden>아직 별표한 논문이 없습니다.<br>
 각 브리핑 페이지에서 논문 카드 오른쪽 위의 ☆ 를 누르면 여기에 모입니다.</p>
@@ -29,6 +30,7 @@ tko.onclick=()=>{document.body.classList.toggle('hide-ko');tko.classList.toggle(
 ten.onclick=()=>{document.body.classList.toggle('hide-en');ten.classList.toggle('on')};
 </script>
 <script src="assets/stars.js"></script>
+<script src="assets/star-sync.js"></script>
 <script>
 window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$']],
  processEscapes:true,tags:'none'},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code'],

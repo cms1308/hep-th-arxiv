@@ -42,7 +42,9 @@ for i, p in enumerate(papers, 1):
 
 brief_css = (pathlib.Path(__file__).resolve().parent.parent / "assets" / "brief.css").read_text()
 # standalone(채팅 전달용)은 자체 완결이어야 하므로 외부 스크립트를 걸지 않는다.
-stars = "" if standalone else '<script src="../assets/stars.js"></script>\n'
+stars = "" if standalone else (
+    '<script src="../assets/stars.js"></script>\n'
+    '<script src="../assets/star-sync.js"></script>\n')
 
 back = "" if standalone else '<a class="back" href="../index.html">← 전체 목록</a>'
 

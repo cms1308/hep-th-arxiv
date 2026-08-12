@@ -1,7 +1,15 @@
 /* 별표(즐겨찾기) — 브리핑 페이지와 모아보기 페이지가 함께 쓰는 클라이언트 전용 스크립트.
  *
- * 저장소는 브라우저 localStorage 뿐입니다. 서버가 없으므로 별표는 그 브라우저에만
- * 남고, 다른 기기와 동기화되지 않습니다.
+ * 저장소는 브라우저 localStorage 입니다. 기기 간 동기화는 star-sync.js 가 선택적으로
+ * 얹어 주며, 그게 없어도 이 파일만으로 별표는 그 브라우저 안에서 온전히 동작합니다.
+ *
+ * 저장 모양 (hepth:starred):
+ *   { version: 1,
+ *     papers:  { "<arXiv id>": { id, title, ..., ts } },   ts = 별표한 시각(ms)
+ *     removed: { "<arXiv id>": ts } }                      해제한 시각 = 삭제 표시
+ *
+ * 삭제 표시를 남기는 이유: 동기화할 때 "여기 없음" 과 "여기서 뗐음" 을 구별해야
+ * 한쪽에서 뗀 별표가 다른 기기의 목록에서 되살아나지 않습니다.
  *
  * 이미 발행된 브리핑에도 <script> 한 줄만 넣으면 되도록 CSS 주입과 버튼 생성까지
  * 이 파일 안에서 합니다. 브리핑 HTML 의 본문 구조는 건드리지 않습니다.
@@ -19,26 +27,53 @@
     return !!e && typeof e === 'object' && typeof e.id === 'string' && e.id !== '';
   };
 
-  var readAll = function () {
+  var emptyState = function () {
+    return { version: 1, papers: {}, removed: {} };
+  };
+
+  /* 키는 항상 항목의 arXiv id 로 정규화한다 — 그래야 어떤 화면에서든 id 하나로 지운다. */
+  var cleanPapers = function (raw) {
+    var papers = {};
+    if (!raw || typeof raw !== 'object') return papers;
+    Object.keys(raw).forEach(function (key) {
+      var entry = raw[key];
+      if (isValidEntry(entry)) papers[entry.id] = entry;
+    });
+    return papers;
+  };
+
+  var cleanRemoved = function (raw) {
+    var removed = {};
+    if (!raw || typeof raw !== 'object') return removed;
+    Object.keys(raw).forEach(function (id) {
+      var ts = raw[id];
+      if (typeof ts === 'number' && isFinite(ts)) removed[id] = ts;
+    });
+    return removed;
+  };
+
+  var normalize = function (parsed) {
+    if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) return emptyState();
+    /* 삭제 표시가 없던 옛 저장본은 통째로 papers 였다. */
+    var isLegacy = !parsed.papers && !parsed.removed;
+    return {
+      version: 1,
+      papers: cleanPapers(isLegacy ? parsed : parsed.papers),
+      removed: cleanRemoved(isLegacy ? null : parsed.removed)
+    };
+  };
+
+  var readState = function () {
     try {
       var raw = window.localStorage.getItem(STORAGE_KEY);
-      var parsed = raw ? JSON.parse(raw) : null;
-      if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) return {};
-      /* 키는 항상 항목의 arXiv id 로 정규화한다 — 그래야 어떤 화면에서든
-         id 하나로 지울 수 있다. */
-      var clean = {};
-      Object.keys(parsed).forEach(function (key) {
-        var entry = parsed[key];
-        if (isValidEntry(entry)) clean[entry.id] = entry;
-      });
-      return clean;
+      return normalize(raw ? JSON.parse(raw) : null);
     } catch (err) {
       console.warn('[stars] 저장된 별표를 읽지 못했습니다:', err);
-      return {};
+      return emptyState();
     }
   };
 
-  var writeAll = function (next) {
+  var writeState = function (next) {
     try {
       window.localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
       return true;
@@ -50,27 +85,67 @@
     }
   };
 
+  var listeners = [];
+  var notify = function (origin) {
+    listeners.forEach(function (fn) {
+      try { fn(origin); } catch (err) { console.warn('[stars] 갱신 처리 실패:', err); }
+    });
+  };
+
+  var without = function (obj, id) {
+    var next = {};
+    Object.keys(obj).forEach(function (key) { if (key !== id) next[key] = obj[key]; });
+    return next;
+  };
+
   var StarStore = {
-    all: readAll,
-    add: function (paper) {
-      var current = readAll();
-      var next = Object.assign({}, current);
-      next[paper.id] = Object.assign({}, paper);
-      return writeAll(next);
+    state: readState,
+
+    papers: function () { return readState().papers; },
+
+    has: function (id) {
+      return Object.prototype.hasOwnProperty.call(readState().papers, id);
     },
-    remove: function (id) {
-      var current = readAll();
-      if (!Object.prototype.hasOwnProperty.call(current, id)) return true;
-      var next = {};
-      Object.keys(current).forEach(function (key) {
-        if (key !== id) next[key] = current[key];
-      });
-      return writeAll(next);
+
+    add: function (paper, now) {
+      var current = readState();
+      var entry = Object.assign({}, paper, { ts: now || Date.now() });
+      var next = {
+        version: 1,
+        papers: Object.assign({}, current.papers, (function () {
+          var one = {}; one[entry.id] = entry; return one;
+        })()),
+        removed: without(current.removed, entry.id)
+      };
+      if (!writeState(next)) return false;
+      notify('local');
+      return true;
     },
+
+    remove: function (id, now) {
+      var current = readState();
+      var removed = Object.assign({}, current.removed);
+      removed[id] = now || Date.now();
+      var next = { version: 1, papers: without(current.papers, id), removed: removed };
+      if (!writeState(next)) return false;
+      notify('local');
+      return true;
+    },
+
+    /* 동기화가 합쳐 온 결과를 통째로 갈아끼운다. origin='remote' 라 다시 밀어올리지 않는다. */
+    replaceState: function (state, origin) {
+      var next = normalize(state);
+      if (!writeState(next)) return false;
+      notify(origin || 'remote');
+      return true;
+    },
+
+    onChange: function (fn) { listeners.push(fn); },
+
     /* 최신 공지일 먼저, 같은 날 안에서는 브리핑에 실린 순서대로. */
     list: function () {
-      var all = readAll();
-      return Object.keys(all).map(function (id) { return all[id]; }).sort(function (a, b) {
+      var papers = readState().papers;
+      return Object.keys(papers).map(function (id) { return papers[id]; }).sort(function (a, b) {
         var da = a.date || '', db = b.date || '';
         if (da !== db) return da < db ? 1 : -1;
         return (a.n || 0) - (b.n || 0);
@@ -142,14 +217,18 @@
 
   /* ---------- 브리핑 페이지 ---------- */
 
+  var paintButton = function (btn, starred) {
+    btn.textContent = starred ? STAR_ON : STAR_OFF;
+    btn.setAttribute('aria-pressed', starred ? 'true' : 'false');
+    btn.title = starred ? '별표 해제' : '별표';
+  };
+
   var makeStarButton = function (starred) {
     var btn = document.createElement('button');
     btn.type = 'button';
     btn.className = 'starbtn';
-    btn.textContent = starred ? STAR_ON : STAR_OFF;
-    btn.setAttribute('aria-pressed', starred ? 'true' : 'false');
     btn.setAttribute('aria-label', '별표');
-    btn.title = starred ? '별표 해제' : '별표';
+    paintButton(btn, starred);
     return btn;
   };
 
@@ -163,35 +242,31 @@
     var controls = document.querySelector('.controls');
     var filterBtn = null;
     var emptyMsg = null;
+    var buttons = [];
 
-    var countStarred = function () {
-      return document.querySelectorAll('.card.starred').length;
+    var repaint = function () {
+      var saved = StarStore.papers();
+      var count = 0;
+      buttons.forEach(function (item) {
+        var starred = Object.prototype.hasOwnProperty.call(saved, item.paper.id);
+        if (starred) count++;
+        item.card.classList.toggle('starred', starred);
+        paintButton(item.btn, starred);
+      });
+      if (filterBtn) filterBtn.textContent = '★만 보기 (' + count + ')';
+      if (emptyMsg) emptyMsg.classList.toggle('show', count === 0);
     };
 
-    var refresh = function () {
-      var n = countStarred();
-      if (filterBtn) filterBtn.textContent = '★만 보기 (' + n + ')';
-      if (emptyMsg) emptyMsg.classList.toggle('show', n === 0);
-    };
-
-    var saved = StarStore.all();
     Array.prototype.forEach.call(cards, function (card, i) {
       var paper = papers[i];
       if (!paper) return;
-      var starred = Object.prototype.hasOwnProperty.call(saved, paper.id);
-      card.classList.toggle('starred', starred);
-      var btn = makeStarButton(starred);
+      var btn = makeStarButton(false);
       btn.addEventListener('click', function () {
         var on = !card.classList.contains('starred');
-        var ok = on ? StarStore.add(paper) : StarStore.remove(paper.id);
-        if (!ok) return;
-        card.classList.toggle('starred', on);
-        btn.textContent = on ? STAR_ON : STAR_OFF;
-        btn.setAttribute('aria-pressed', on ? 'true' : 'false');
-        btn.title = on ? '별표 해제' : '별표';
-        refresh();
+        if (on ? StarStore.add(paper) : StarStore.remove(paper.id)) repaint();
       });
       card.appendChild(btn);
+      buttons.push({ card: card, btn: btn, paper: paper });
     });
 
     var main = document.querySelector('main');
@@ -207,8 +282,7 @@
       filterBtn.type = 'button';
       filterBtn.className = 'tbtn';
       filterBtn.addEventListener('click', function () {
-        var on = document.body.classList.toggle('only-starred');
-        filterBtn.classList.toggle('on', on);
+        filterBtn.classList.toggle('on', document.body.classList.toggle('only-starred'));
       });
       controls.appendChild(filterBtn);
 
@@ -219,7 +293,8 @@
       controls.appendChild(link);
     }
 
-    refresh();
+    repaint();
+    StarStore.onChange(function (origin) { if (origin !== 'local') repaint(); });
   };
 
   /* ---------- 모아보기 페이지 ---------- */
@@ -282,11 +357,19 @@
     return card;
   };
 
+  var typeset = function (root) {
+    /* 보통은 이 스크립트가 MathJax 라이브러리보다 먼저 실행되므로 MathJax 의 startup
+       조판이 방금 만든 카드까지 함께 처리한다. 이미 로드가 끝난 뒤라면 새 카드만 조판한다. */
+    var mj = window.MathJax;
+    if (!mj || !mj.startup || !mj.startup.promise) return;
+    mj.startup.promise
+      .then(function () { return mj.typesetPromise([root]); })
+      .catch(function (err) { console.warn('[stars] 수식 조판 실패:', err); });
+  };
+
   var initStarredPage = function (root) {
     var countEl = document.getElementById('starred-count');
     var emptyEl = document.getElementById('starred-empty');
-
-    var papers = StarStore.list();
 
     var refresh = function () {
       var left = root.querySelectorAll('.card').length;
@@ -294,20 +377,17 @@
       if (emptyEl) emptyEl.hidden = left > 0;
     };
 
-    papers.forEach(function (paper) {
-      root.appendChild(starredCard(paper, refresh));
-    });
-    refresh();
+    var render = function () {
+      root.textContent = '';
+      StarStore.list().forEach(function (paper) {
+        root.appendChild(starredCard(paper, refresh));
+      });
+      refresh();
+      typeset(root);
+    };
 
-    /* 보통은 이 스크립트가 MathJax 라이브러리보다 먼저 실행되므로 MathJax 의
-       startup 조판이 방금 만든 카드까지 함께 처리한다. 이미 로드가 끝난 뒤라면
-       (startup.promise 가 있을 때만) 새 카드만 따로 조판한다. */
-    var mj = window.MathJax;
-    if (mj && mj.startup && mj.startup.promise) {
-      mj.startup.promise
-        .then(function () { return mj.typesetPromise([root]); })
-        .catch(function (err) { console.warn('[stars] 수식 조판 실패:', err); });
-    }
+    render();
+    StarStore.onChange(function (origin) { if (origin !== 'local') render(); });
   };
 
   /* ---------- 진입점 ---------- */
