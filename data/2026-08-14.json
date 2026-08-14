@@ -1,0 +1,112 @@
+{
+ "date": "2026-08-14",
+ "source": "list/new",
+ "count": 15,
+ "papers": [
+  {
+   "id": "2608.12460",
+   "title": "A Lapse in the Cosmological Constant Problem with Bulk Dynamics",
+   "authors": "Justin Khoury , Benjamin Muntz , Antonio Padilla",
+   "categories": "hep-th, gr-qc",
+   "abstract": "We have previously proposed a new approach to the cosmological constant problem based on anisotropic scaling in a compact extra dimension. In the ultra-local $z=0$ limit, the interplay between a projectable lapse, foliation-preserving diffeomorphisms, and higher-form fluxes renders the gravitational field equations insensitive to radiative corrections to the matter vacuum energy. Here we extend this framework beyond the ultra-local limit by introducing $z=1$ deformations that restore dynamics along the compact direction. We show that vacuum-energy cancellation persists at the level of the background equations, while generic extrinsic-curvature couplings propagate an additional scalar ghost. A healthy quadratic spectrum selects the Fierz-Pauli relation between these couplings. This motivates a particularly simple realization in terms of five-dimensional Einstein gravity, a top-form flux, and a spacelike khoron scalar field that dynamically defines a preferred projectable foliation. In this covariant formulation, the global constraint arises from an auxiliary einbein on the space of khoron leaves, and constant shifts of the renormalized matter vacuum energy cancel algebraically from the intrinsic Einstein equations. Finally, allowing matter to propagate around the compact dimension generates finite, topology-sensitive Casimir contributions that are not automatically removed by the mechanism. Suppressing these contributions requires additional spectral conditions on the propagating bulk degrees of freedom."
+  },
+  {
+   "id": "2608.12472",
+   "title": "Stabilizer complexity and the Python's lunch",
+   "authors": "Abhirup Bhattacharya , Jatin Narde , Onkar Parrikar , Suprakash Paul",
+   "categories": "hep-th, quant-ph",
+   "abstract": "In this note, we study the stabilizer complexity of the reduced density matrix corresponding to one side of a partially entangled thermal (PET) state with fixed energy boundary conditions in a holographic CFT. In particular, we study Wigner negativity, an operationally meaningful magic monotone which can be interpreted as the complexity of classically simulating any quantum circuit preparation of the reduced state on the subregion. Using assumptions on the pseudorandomness of the CFT spectrum and the heavy operator insertion, we observe that the Wigner negativity of the PET state relative to the microcanonical density matrix at the given energy is given by $\\exp\\left[\\frac{1}{8G_N}(A_{\\text{out}} - A_{\\text{min}})\\right]$, where $A_{\\text{out}}$ is the area of the outer extremal surface, while $A_{\\text{min}}$ is the area of the minimal extremal surface. Thus, the stabilizer complexity of the reduced density matrix on the boundary subregion is $O(1)$ in the absence of a python's lunch, but gets exponentially enhanced in the presence of a python's lunch in the bulk geometry."
+  },
+  {
+   "id": "2608.12481",
+   "title": "Constraints on the $O(n)$ model from a negative number of flavors",
+   "authors": "Daniele Artico , Jasper Roosmale Nepveu",
+   "categories": "hep-th, hep-ph",
+   "abstract": "Treating the number of flavors $n$ as a variable in the $O(n)$ model leads to non-perturbative constraints on the spectrum of operators. Using the duality between $O(n)$ and $Sp(-n)$, we extend these relations to negative even values of $n$ and we make them explicit by decomposing operators with general flavor structure into irreducible representations. In perturbation theory, we exploit this structure to reveal novel degeneracies in the scaling dimensions of different operators, which persist for arbitrary $n$. This allows us to derive the two-loop anomalous dimension of any $\\phi^k$-type operator from existing results without additional loop calculations. The same mechanism dictates patterns in renormalization group mixing matrices, yielding new non-renormalization results in a specific operator basis. We comment on extending this framework to relations between operator product expansion coefficients and to analogous constraints arising from evanescence under continuation in the number of spacetime dimensions."
+  },
+  {
+   "id": "2608.12512",
+   "title": "Type III von Neumann Algebras are Magical",
+   "authors": "Mudassir Moosa",
+   "categories": "hep-th, math-ph, quant-ph",
+   "abstract": "The number of non-Clifford gates needed to perform a task, or simply \\textit{magic}, is a resource for fault-tolerant quantum computation. Von Neumann algebras provide a formal mathematical structure to describe infinite-dimensional quantum systems, such as those in quantum field theory or quantum statistical mechanics. A particularly important class of von Neumann algebras is called Type III algebras, for which the standard notions of finite-dimensional systems such as density matrices and traces break down. In this work, we argue that Type III von Neumann algebras fundamentally require an infinite amount of magic. Specifically, we consider the thermodynamic limit of finite-dimensional quantum systems, such as lattice systems, and show that if the states in the thermodynamic limit possess only a bounded amount of magic, the resulting local von Neumann algebra cannot be of Type III. Our result has direct implications for the quantum simulations of quantum field theories, for which the algebra of a local subregion is known to be of Type III."
+  },
+  {
+   "id": "2608.12622",
+   "title": "Edge physics and the Casimir interaction in Maxwell--Chern--Simons theory on a strip",
+   "authors": "Nicola Maggiore",
+   "categories": "hep-th, cond-mat.mes-hall",
+   "abstract": "We study Maxwell--Chern--Simons theories on a strip $\\mathcal M=\\mathbb R^{1,1}\\times[0,h]$ within the Symanzik framework for quantum field theory with boundaries. We add the most general local boundary functional within the quadratic one-tangential-derivative truncation adopted throughout the paper and derive the admissible boundary conditions from locality and the variational principle, with gauge symmetry implemented through boundary Ward identities. The strip supports two boundary $U(1)$ current algebras, with opposite levels fixed by the Chern--Simons coupling $\\kappa$ and by boundary orientation, while edge velocities depend on local boundary couplings. They are equal and opposite on the flip-symmetric branch, which is the natural choice for a spatially symmetric strip. The same boundary data determine the reflection coefficients for bulk modes and yield a closed determinant (scattering) representation of the finite interaction energy. In the Maxwell limit ($\\kappa=0$) the inter-edge interaction is long-ranged and produces a power-law Casimir force, whereas in Maxwell--Chern--Simons theory the topological mass $m=\\kappa g^2$ generates Yukawa suppression at large separations $mh\\gg1$. The determinant form also gives analytic control of the asymptotic regimes and separates topological boundary data (levels and anomaly inflow) from dynamical bulk effects (dispersion, boundary mixing and Casimir interaction)."
+  },
+  {
+   "id": "2608.12850",
+   "title": "D4-branes wrapped on topological disks from matter-coupled F(4) gauged supergravity",
+   "authors": "Patharadanai Nuchino , Parinya Karndumri",
+   "categories": "hep-th",
+   "abstract": "We study a number of supersymmetric $AdS_4\\times \\Sigma$ solutions with $\\Sigma$ being a topological disk with non-trivial $U(1)$ holonomy on the boundary or a ``half-spindle'' from matter-coupled $F(4)$ gauged supergravity. The gauged supergravity is coupled to three vector multiplets with $SO(3)\\times SO(3)$ gauge group. The resulting solutions preserve eight supercharges and $SO(2)\\times SO(2)$ or $SO(2)_{\\text{diag}}$ symmetries and are expected to be dual to $N=2$ SCFTs in three dimensions arising from compactifications of five-dimensional $N=2$ SCFT on a half-spindle. All of the solutions lie within the $U(1)\\times U(1)$ subsector of the matter-coupled $F(4)$ gauged supergravity that can be embedded in massive type IIA theory. After uplifted to ten dimensions, the solutions can be interpreted as a system of D4-D8-branes wrapped on $\\Sigma$. Some of the solutions are asymptotic to a locally $AdS_6$ geometry and can be identified as codimension-2 conformal defects within the $N=2$ SCFT in five dimensions. For these solutions, the circle inside $\\Sigma$ decompactifies in the $AdS_6$ limit rendering the holographic free energy infinite. There also exist solutions with finite free energy in the dual three-dimensional SCFTs. In addition, we show that the results both extend the previously known solutions and provide a novel class of solutions."
+  },
+  {
+   "id": "2608.13105",
+   "title": "Limits of the inverse scattering problem",
+   "authors": "Matvei Fedin , Kirill Gubarev , Andrey Morozov",
+   "categories": "hep-th, math-ph",
+   "abstract": "The main goal of tomography is the reconstruction of density function out of its line integrals (integral measurements of this density along x-ray lines). Such construction is possible and known as inverse x-ray/Radon transformations. We are interested in generalization of this problem to the case of particles. For this we need to limit the speed of these particles, otherwise the problem is reduced to the previous one. The question we discuss in this paper is how low can this speed be depending on the parameters of the studied potential. We study this problem using simple theoretical examples and Machine Learning pipeline to restore the potential."
+  },
+  {
+   "id": "2608.13117",
+   "title": "Exact Evaluation of Lattice-Regularized Scalar Field Vacuum Amplitude via Site Permutations",
+   "authors": "Vadim Asnin",
+   "categories": "hep-th",
+   "abstract": "A novel approach to a computation of vacuum amplitude for a single scalar field in any number of dimensions with arbitrary potential on a lattice is proposed. The computation involves symmetrization of kinetic exponential factor in the path integral over all permutations of lattice sites and Waring decomposition of the symmetrized expression."
+  },
+  {
+   "id": "2608.13155",
+   "title": "Single-Variable Solutions in Supergravity",
+   "authors": "W. A. Sabra , R. Slim",
+   "categories": "hep-th, gr-qc",
+   "abstract": "We construct four families of spacetime metrics depending on a single variable for a broad class of $D$-dimensional gravitational theories coupled to scalar and Abelian gauge fields. As applications of the general formalism, we derive one-variable solutions of ungauged $\\mathcal{N}=2$, $D=4$ supergravity coupled to vector multiplets. We also obtain explicit solutions for a consistent truncation of $\\mathcal{N}=8$, $D=4$ supergravity, as well as for theories whose scalar fields parametrize the symmetric coset manifolds $SL(N,\\mathbb{R})/SO(N,\\mathbb{R})$. In all cases, the geometry of the scalar manifold plays a central role in determining the structure of the resulting solutions with nontrivial scalar and gauge field configurations."
+  },
+  {
+   "id": "2608.13174",
+   "title": "Lee-Yang paradigm of phase transition in eigenstate thermalized systems",
+   "authors": "Yongjiang Xu , Weixin Sun , Chushun Tian , Huajia Wang",
+   "categories": "hep-th",
+   "abstract": "As phase transitions in isolated quantum systems remain elusive, here we show how a thermodynamic-like phase transition, falling into the Lee-Yang paradigm, can arise in systems displaying eigenstate thermalization. Specifically, we show that in holographic conformal field theories, the eigenstate expectation of the auto-correlation function can be mapped to the partition function ${\\cal Z}_{gauge}(z)$ of a virtual interacting instanton gas, with the conformal mapping of the imaginary time: $z=1-e^{-\\tau}$ and the central charge $c$ mimicking the instanton fugacity and volume, respectively. We find that akin to the Lee-Yang paradigm, for $c\\to\\infty$ a pair of complex conjugate zeros of ${\\cal Z}_{gauge}(z)$ move to the real axis located at the famous forbidden singularity. Passing through the singularity the system transits from the low- to high-fugacity phase, accompanied by dramatic changes in scaling behaviors of the free energy and dominant microscopic configurations. Our findings indicate that physics of phase transitions from eigenstate thermalization is very rich."
+  },
+  {
+   "id": "2608.13246",
+   "title": "Phase transition from eigenstate thermalization: forbidden singularity and instanton proliferation via AGT correspondence",
+   "authors": "Yongjiang Xu , Weixin Sun , Chushun Tian , Huajia Wang",
+   "categories": "hep-th",
+   "abstract": "In theoretical physics, finding connections between problems that appear in distinct contexts is an important way to leapfrog progresses, often by illuminating deep aspects that may otherwise seem obscure. In this paper, we consider in 2d CFTs the phenomenon of forbidden singularities in auto-correlation functions -- a key signature of eigenstate thermalization. We show that they correspond to phase transitions in the context of eigenstates. The connection is made explicit by utilizing the AGT correspondence, which relates eigenstate auto-correlations to the Nekrasov partition functions describing an instanton gas of the $\\mathcal{N}=2$ SUSY gauge theories. We show that by taking the counter-part of the heavy-light limit, two phases emerge for the instanton gas. They are dominated by configurations represented by string-like Young tableaux with distinct structures and thermodynamic properties, which bare resemblance to the confined and the deconfined phases. A phase transition occurs as instantons proliferate from one side, in a manner that mimics the Lee-Yang theory. We work out the critical fugacity and find it corresponding exactly to the forbidden singularity."
+  },
+  {
+   "id": "2608.13300",
+   "title": "3d $\\mathcal{N}=$ 4 rank-0 SCFT from punctured lens space",
+   "authors": "Sungjoon Kim",
+   "categories": "hep-th",
+   "abstract": "{\\it Gang-Kim-Stubbs} theory $\\mathcal{T}_n$ --- a pioneering 3d bulk description of $M(2n+3,2)$ Virasoro minimal model as $\\mathcal{N}=4$ rank-0 superconformal field theory upon topological A-twist --- is derived from the compactification of a pair of parallel M5-branes on {\\it lens space} $L(2n+3,2)$ with a single vertex removed. From this perspective, we propose a family of 3d $\\mathcal{N}=2$ abelian gauge theories arising from the punctured $L(2n+3,1)$ lens space whose infrared phases realize the unitary member in the Galois orbit of $M(2n+3,2)$ modular tensor category. We also conjecture self-mirror rank-0 fixed points from amphichirality condition of the lens space."
+  },
+  {
+   "id": "2608.13301",
+   "title": "Frame-dependency of the confinement temperature in a strongly-coupled plasma under rotation: a holographic description",
+   "authors": "Nelson R. F. Braga , Alexsandre L. Ferreira Jr",
+   "categories": "hep-th, hep-ph",
+   "abstract": "Recently, it was demonstrated that the disagreement between lattice calculations and holographic models, regarding rotational effects in the quark-gluon plasma (QGP), occurs due to different choices of reference frames. While a static observer measures a confinement temperature that decreases with rotation, one in a co-rotating frame finds the opposite behavior. Both results are correct, and a comprehension of the frame-dependency of the critical temperature is a significant step in the description of the QGP under rotation. In this article, we generalize this previous holographic result by describing the plasma through the most general Myers-Perry black hole solution. This breaks the spherical symmetry present in the equal angular momentum case, considered before. As a consequence, the local temperature measured by a co-rotating observer has a non-trivial angular dependence: it can decrease, increase or even behave non-monotonically when rotational velocity increases."
+  },
+  {
+   "id": "2608.13319",
+   "title": "Holographic Renormalization for String-Derived Lovelock--Horndeski Theory",
+   "authors": "Tianhao Wu",
+   "categories": "hep-th, gr-qc",
+   "abstract": "String-derived higher-curvature scalar--tensor gravities encode microscopic coupling data in boundary response, raising the question of whether holographic observables can reconstruct the underlying higher-dimensional parameters. We answer this question for the five-dimensional string-derived Lovelock--Horndeski (SDLH) theory on its exact linear-dilaton asymptotically locally AdS branch, constructing the renormalized generating functional for an arbitrary boundary metric and spacetime-dependent scalar source. A boundary-covariant radial hierarchy unifies the variational problem, local backreaction, logarithmic obstruction, finite one-point functions, and Ward identities. Two response determinants organize the recursion, resonant obstructions, and metric--scalar mixing. The Weyl anomaly condenses into an Euler density, a Weyl-squared density, and a single curvature--scalar square whose paired variations generate the metric and scalar obstructions. The resulting renormalized functional carries string-selected coupling data into boundary geometry, operator response, anomaly coefficients, and a calculable interface with gravitational observables. On the regular branch, four scalar-normalization-invariant holographic combinations admit a global rational inverse to the continuous reduced couplings. At fixed compactification dimension the map has maximal rank, while the curvature-anomaly sum reconstructs the higher-dimensional Gauss--Bonnet coefficient without sign ambiguity. Holographic response thus provides an explicit, overdetermined boundary fingerprint of the underlying string reduction."
+  },
+  {
+   "id": "2608.13557",
+   "title": "Localised Horizons and Holographic Thermodynamics: Supercooling in the 1/D Expansion",
+   "authors": "Prateek Agrawal , Gaurang Ramakant Kane , Vazha Loladze",
+   "categories": "hep-th, hep-lat, hep-ph",
+   "abstract": "In holography, four-dimensional confining gauge theories are often modelled by five-dimensional Einstein--scalar gravity by choosing a specific form of the scalar potential. In a large class of non-conformal theories, we show that a predictive structure emerges for the thermal confinement transition by generalising the gravitational dual to $D+1$ dimensions and using a $1/D$ expansion. These results are independent of the details of the scalar potential, hinting towards universality. The black brane geometry dual to the deconfined phase can be analytically constructed due to its effects being localised near the horizon at leading order. The solution does not exist below a minimal temperature $T_{\\rm min}$ and the maximum possible supercooling in the transition $\\epsilon_{\\rm sc} = 1-T_{\\rm min}/T_{\\rm c}$ is generically suppressed by a factor of $1/D^2$. Remarkably, the maximum supercooling at the leading order is set by the speed of sound in the deconfined phase of the gauge theory at the critical temperature, $\\epsilon_{\\rm sc}=c_s^2(T_{\\rm c})/2$. These predictions agree with explicit calculations in an exponential superpotential, improved holography, and the thermal transition in $\\mathcal{N}=4$ super Yang--Mills on a sphere."
+  }
+ ]
+}
