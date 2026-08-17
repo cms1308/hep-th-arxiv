@@ -1,0 +1,112 @@
+{
+ "date": "2026-08-17",
+ "source": "list/new",
+ "count": 15,
+ "papers": [
+  {
+   "id": "2608.13643",
+   "title": "Quasinormal modes as exterior probes of black hole interiors in our Universe",
+   "authors": "Sašo Grozdanov , Vita Movrin , Samuel Valach",
+   "categories": "hep-th, astro-ph.HE, gr-qc",
+   "abstract": "We consider a scenario in which a black hole is enclosed in a reflecting timelike cavity and linearly perturbed. For the resulting quasinormal spectra of gravitational, electromagnetic, and other perturbations, in conjunction with our arXiv:2606.11297 , we establish a thermal product formula and derive a universal asymptotic expression for high quasinormal overtones. Both results hold in asymptotically flat, de Sitter, and Anti-de Sitter spacetimes (known previously). This spectral signature directly encodes information about the black hole interior and its singularity, and is, at least in principle, accessible to an observer outside the event horizon. We then propose a concrete observational setup in which accreting plasma plays the role of a partially transmissive mirror. For small, hypothetical, primordial black holes, we argue that one may thereby be able to extract concrete information about the black hole interior from electromagnetic waves in the radiowave spectrum."
+  },
+  {
+   "id": "2608.13647",
+   "title": "Localizing Momentum Waves on Mazes",
+   "authors": "Tobi Ramella , Nicholas P. Warner",
+   "categories": "hep-th",
+   "abstract": "We examine the proposal and analysis of arXiv:2404.14477 for putting momentum waves on mazes of intersecting M2 and M5 branes by computing a family of simple examples of momentum waves on pure M5 branes. We re-analyze the BPS equations for the near-brane M5-P system with the prescribed supersymmetry structure of the full M2-M5-P system and show that the general linear system obtained in arXiv:2404.14477 captures all of the null momentum waves on the simpler M5-P system. Despite the absence of explicit M2 branes in our examples, we find that the momentum waves still localize on an AdS$_3$ factor of the AdS$_7$ associated with M5 branes, showing that the supersymmetry prescription still reflects the M2-M5-P structure. This momentum localization takes two forms: explicit singular sources and smooth, localized bump functions reflecting ''momentum migration'' that is a feature of other microstate geometries. The simple, physical form of the momentum localization in our examples supports the broader proposal in arXiv:2404.14477 that independent momentum waves can localize at each brane intersection. We suggest further generalizations of momentum waves at brane intersections that could have important implications in holography."
+  },
+  {
+   "id": "2608.13731",
+   "title": "Properties of holographic superconductors from Machine Learning",
+   "authors": "Aliou Togo , Yang Yu , Kaniba Mady Keita , Jian-Pin Wu , Younouss Ham`eye Dicko",
+   "categories": "hep-th, cond-mat.supr-con",
+   "abstract": "We investigate holographic superconductors using modern optimisation techniques inspired by machine learning. The critical temperature is obtained by minimising the variational functional for the eigenvalue $\\lambda^2$ with two complementary trial functions: a simple cosine ansatz $F(z)=\\cos(a z)$ and a flexible exponential polynomial $F(z)=\\exp(\\sum_{n=2}^{N} a_n z^n)$, both of which automatically satisfy the standard boundary conditions. For the cosine ansatz, we perform a one-parameter minimisation and obtain $\\lambda^2(\\Delta)$ and $T_c/\\sqrt{\\rho}$ over a wide range of $\\Delta$, including the exact values at $\\Delta=1$ and $\\Delta=2$ to high accuracy. The exponential polynomial ansatz, with up to 19 coefficients, is optimised using a multi-start L-BFGS-B algorithm with warm-starting, yielding even better agreement with known exact results. Our numerical data for $\\lambda^2(\\Delta)$ and $T_c/\\sqrt{\\rho}$ match the analytical predictions from the literature, confirming the robustness of the variational approach. This work; therefore, demonstrates that a combination of analytic trial functions and modern numerical optimisation provides a powerful, flexible, and efficient tool for exploring holographic superconductors, and can be readily extended to include backreaction or other sectors in this field."
+  },
+  {
+   "id": "2608.13776",
+   "title": "Dependence of Critical Exponents Accuracy on the Number of Fields in the O(N) -Invariant ϕ^4 Model",
+   "authors": "Abouzeid M. Shalaby",
+   "categories": "hep-th",
+   "abstract": "The study of large-$N$ cases of the $O(N)$-symmetric model at criticality has attracted significant attention in recent years. In particular, a recent high-precision Monte Carlo study ( Physical Review B 105, 054428 (2022)) reported the most accurate estimates to date for the critical exponents $\\nu$, $\\eta$, and $\\omega$ for $N \\ge4$. Within the framework of the renormalization group (RG)---the cornerstone of the modern theory of critical phenomena---powerful computational approaches such as the $\\varepsilon$-expansion and non-perturbative RG are available. Since the effective expansion parameter in the $\\varepsilon$-expansion, $\\sigma = \\frac{3}{N+8}$, decreases with increasing N, one expects resummation techniques to become progressively more accurate in the large-N regime. To test this expectation, we apply the entire-hypergeometric resummation algorithm developed by Shalaby et al. to the recently obtained seven-loop divergent $\\varepsilon$-series for $N \\ge 4$, yielding high-precision estimates for $\\nu$, $\\eta$, and $\\omega$ . Our analysis confirms the anticipated improvement in accuracy with increasing N. To assess the significance of these results, we note that at the same seven-loop order the $O(2)$ case exhibits errors that are an order of magnitude larger than those obtained from experiment, Monte Carlo simulations, and conformal-field-theory analysis. In contrast, for sufficiently large N, the errors in the present work are of the same order of magnitude as those from Monte Carlo and non-perturbative RG methods, demonstrating the strong predictive power of our resummation approach in the large-N regime."
+  },
+  {
+   "id": "2608.13801",
+   "title": "Unfolding the Exotic Supergravity Multiplet",
+   "authors": "Carlo Iazeolla , Per Sundell , Brenno Carlini Vallilo",
+   "categories": "hep-th",
+   "abstract": "We provide an unfolded formulation of linearised 6D exotic supergravity with manifest superconformal symmetry including conformal duality transformations. The construction is based on a superoscillator realisation of the metaplectic supergroup $MOSp(16|16)$ containing the Howe dual pair $MOSp(8^\\ast|8)\\times SU(2)$. Exotic graviton potentials arise in conformally dual pairs of two-forms in direct products of $SU(2)$-triplets and supertraceless graded-symmetric rank-two supertensors of $OSp(8^\\ast|8)$ generated from a hypercharge by the supercharges, providing an analogue of the adjoint representation of $\\mathfrak{psu}(2,2|4)$. The potentials are sourced via relative Chevalley-Eilenberg cocycles by a conformally dual pair of chiral and anti-chiral Weyl zero-forms valued in $SO(1,1)\\times Spin(1,5)\\times USp(8)$-covariant monomorphic restrictions of an extended supersingleton, i.e., an infinite-dimensional $SU(2)$-invariant Hermitian left-module of $MOSp(8^\\ast|8)$ containing various irreps associated with different boundary conditions, including the unitarizable exotic supergravity multiplet. Two natural quadratic observables are i) an on-shell closed zero-form built from the chiral Weyl zero-form and its dual, akin to the on-shell value of the second Chern class on the internal twistor $Z$-space of 4D Vasiliev systems; and ii) an off-shell topological six-form built from the conformally dual pair of two-form potentials, reducing on-shell to a generating function for chiral two-point functions in super-Poincaré backgrounds."
+  },
+  {
+   "id": "2608.13943",
+   "title": "Investigation of the black-hole quantum atmosphere from the effective proper temperature",
+   "authors": "Sojeong Cheong , Wontae Kim",
+   "categories": "hep-th, gr-qc",
+   "abstract": "Hawking radiation may be regarded as originating at the event horizon; however, its spatial origin can instead be distributed over a finite region outside the horizon. In this paper, using an effective proper temperature, we investigate the quantum atmosphere within a tractable model based on the two-dimensional radial sector of $D$-dimensional Schwarzschild black holes. In the Hartle--Hawking state, the proper temperature is derived from the first law of thermodynamics in the presence of the conformal anomaly associated with Hawking radiation. In the Unruh state, we decompose the proper temperature into two chiral temperatures, $T_{\\rm L}$ and $T_{\\rm R}$, associated with the ingoing and outgoing fluxes, respectively. Demonstrating $T_{\\rm R}$ as the effective proper temperature characterizing the outgoing Hawking flux with the proper temperature in the Hartle-Hawking state, we define the atmospheric radius effectively as the radial position at which the effective proper temperature attains its maximum. We then numerically compute the atmospheric radius of the quantum atmosphere for various spacetime dimensions and show that it decreases monotonically as the number of spacetime dimensions increases. In the large-dimensional limit, we find that the atmospheric radius remains separated from the horizon by a finite radial factor, indicating that the quantum atmosphere can persist as an extended exterior region in any dimension."
+  },
+  {
+   "id": "2608.14193",
+   "title": "Dirac, Majorana, and Weyl Spinors in Arbitrary Dimension and Signature",
+   "authors": "Jan Hajer",
+   "categories": "hep-th, hep-ph",
+   "abstract": "Fermionic field types in arbitrary signature are often inferred from complex Spin representations alone, which obscures distinctions associated with real structures, disconnected spacetime reflections, and action-level bilinear constraints. We give a convention-explicit classification that treats the full real Clifford algebra and its even subalgebra separately, thereby distinguishing pinors from spinors and Pin-equivariant Majorana-type structures from structures that are only Spin-equivariant. Adjoint, complex-conjugation, and transposition intertwiners are combined with elementary and collective reflection lifts into a unified sign calculus. The resulting local Clifford classification is organised into thirty-two periodicity sectors determined by the Bott class and the total dimension modulo eight, without including theory-dependent gauge, anomaly, or global constraints. For each sector, we identify the available Dirac, Weyl, Majorana, symplectic Majorana, Majorana-Weyl, and symplectic Majorana-Weyl fields. The existence of an invariant pairing is distinguished from intertwiner compatibility, Grassmann and chiral selection rules, covariant index contraction, and Hermiticity of local bilinear operators."
+  },
+  {
+   "id": "2608.14267",
+   "title": "Classical gravitational scattering with a massive scalar mediator",
+   "authors": "Birgitta Biendarra , Kays Haddad , Jan Plefka",
+   "categories": "hep-th, gr-qc",
+   "abstract": "We consider the classical scattering of two gravitating compact objects in the presence of a massive scalar mediator, providing a simple model of exotic phenomena. Through dimensional analysis, we argue that such a process can only be classical in the presence of gravity, a consequence of which is that perturbing in the coupling of the scalar to a worldline is not separate from the post-Minkowskian expansion. When computing asymptotic observables, the massive mediator complicates the Fourier transforms to impact-parameter space at next-to-leading order. We reduce these to univariate parametric integrals - amenable to numerical integration - and produce analytic results for the linear impulse and the scattering angle to the second post-Minkowskian order. The scattering angle exhibits a resonance when the range of the scalar-mediated force is comparable to the impact parameter, offering a distinctive signature of a massive mediator. In the opposite, large-mass regime we uncover a screening effect: the scalar cloud sourced by each compact object carries negative energy, reducing its gravitational mass by an amount linear in the scalar's mass. Both of these phenomena are next-to-leading-order effects."
+  },
+  {
+   "id": "2608.14308",
+   "title": "Information Spreading in Diffusion Models from Effective Field Theory",
+   "authors": "Navonil Neogi , Nabil Iqbal",
+   "categories": "hep-th, cond-mat.stat-mech",
+   "abstract": "We study score-matching diffusion models with a convolutional architecture. We argue that the inductive bias of locality means that the machinery of effective field theory from physics can be usefully applied to describe the denoising dynamics. We apply this formalism first to a simple toy example which permits an analytical description, and thereafter to MNIST, and show that in both cases, the mutual information between two points grows in a manner predicted by a simple effective field theory of Brownian motion."
+  },
+  {
+   "id": "2608.14384",
+   "title": "Large lumps",
+   "authors": "D. Bazeia , I. Bezerra , M.A. Marques , R. Menezes",
+   "categories": "hep-th, math-ph, nlin.PS",
+   "abstract": "We introduce a procedure to obtain lump solutions via the formation of a kink-antikink pair, consisting of the superposition of kinks whose distance from the origin is controlled by a single parameter $a$. For large values of $a$, a wide plateau appears in the solution, which we call a large lump. The procedure involves the use of a first-order equation that allows the construction of the potential associated with the lump solution. We then investigate several known scalar field models where the parent kinks are capable of giving rise to novel lumps. The lump inherits the tails of the parent kink, allowing for either short-range exponential profiles or long-range profiles characterized by distinct power-law decays. We also show how to verify if an arbitrary lump solution can be obtained via our method and illustrate this possibility with a novel vacuumless lump."
+  },
+  {
+   "id": "2608.14449",
+   "title": "The Phase Space of Gravity on Null Hypersurfaces",
+   "authors": "Luca Ciambelli , Laurent Freidel , Robert G. Leigh",
+   "categories": "hep-th, gr-qc",
+   "abstract": "We construct the bulk kinematical Poisson structure of general relativity on a caustic-free null segment, prior to imposing the Raychaudhuri and Damour constraints. We first show that shifts of the Ehresmann connection, also known as Carroll boosts, are pure gauge in gravity. This allows the Ehresmann connection to be fixed as a background structure and leads to the prime phase space of null gravitational data. The resulting phase space comprises of a spin-0 pair that includes the area and its conjugate, a spin-1 pair including the null direction and its conjugate, and the spin-2 sector encoded in the unimodular transverse metric. We then construct the brackets through a three-stage Dirac reduction implementing a normalization, horizontality, and shear constraints. We find that the spin-2 bracket is non-local and involves an antisymmetric Green kernel for a first-order transport operator along the null generators. The self-brackets of the spin-0 and spin-1 momenta involve, respectively, the vertical and horizontal derivatives of the transverse metric contracted with the spin-2 propagator. We finally provide an independent derivation of the brackets from the explicit realization of the Hamiltonian vector fields of the symplectic form. These results provide the classical canonical arena for studying the null constraint algebra, observables, and quantization."
+  },
+  {
+   "id": "2608.14451",
+   "title": "Four-point functions, Twistors and Supersymmetry in the Symplectic Bi-Grassmannian for CFT$_4$ and AdS$_5$",
+   "authors": "Dhruva K.S",
+   "categories": "hep-th, math-ph",
+   "abstract": "We initiate the study of four point functions in the symplectic bi-Grassmannian framework for four dimensional conformal field theories. We derive factorization formulae analogous to those for scattering amplitudes and bootstrap several examples of AdS$_5$ exchange correlation functions involving scalars, photons, fermions, gluons and gravitons. These correlators are rational functions of the minors of the Grassmannian matrices in contrast to their momentum space counterparts which are much more complicated. We then develop the $GL(2,\\mathbb{R})$ twistor space formalism, deriving the Penrose transform and the twistorial Grassmannian where we find remarkably simple expressions. We also find an elegant and natural extension to $\\mathcal{N}=1$ supersymmetry, deriving the supersymmetric Penrose transform and the super-twistor Grassmannian. Performing a half-Fourier transform from twistor space, we derive the supersymmetric symplectic bi-Grassmannian corresponding to spinor-helicity variables. We test our formalism in the context of AdS$_5$ $\\mathcal{N}=1$ super-Yang Mills theory where we impose consistent factorization and input the bootstrapped four-fermion correlator to obtain those involving gluons, scalars and fermions. Finally, we discuss the application to supergravity theories."
+  },
+  {
+   "id": "2608.14463",
+   "title": "Static and Dynamic perturbations of scalar DBI analogue of a black hole",
+   "authors": "Pedro Meert , Horatiu Nastase",
+   "categories": "hep-th, gr-qc",
+   "abstract": "Perturbations around a spherically symmetric solution of the scalar Dirac-Born-Infeld (DBI) theory obey the equation of motion of a massless scalar field in a curved background with black hole-like properties like finite temperature and an event horizon with zero speed of propagation of information (a black hole analogue). After reviewing some properties of the background geometry for the propagations, we investigate the solutions considering static and dynamic regimes. In the former case we obtain the so-called Love numbers, or more generally scalar polarizability. In the latter case, we employ boundary conditions analogous to the computation of quasi-normal modes, and argue that the background geometry acts as a classical high-pass filter. We therefore provide further evidence that the scalar black hole analogues can be analyzed similarly to a black hole."
+  },
+  {
+   "id": "2608.14512",
+   "title": "Towards a Non-Perturbative Classical Double Copy",
+   "authors": "Kymani Armstrong-Williams",
+   "categories": "hep-th, gr-qc, math-ph",
+   "abstract": "We construct an exact solution-generating correspondence between restricted ansatz sectors of quartic biadjoint scalar theory, complexified $SU(2)$ Yang--Mills theory and four-dimensional general relativity with conformally flat metrics and traceless energy-momentum. A factorised biadjoint field, a Corrigan--Fairlie--'t Hooft--Wilczek gauge potential and a conformal metric are generated by a common scalar seed. Their equations of motion reduce to the same equation of motion under the identification of couplings, which retains the nonlinear dynamics on all three legs of the correspondence. The scalar equation captures only the trace of the Einstein equations; deriving the trace-free part of the Einstein equation additionally yields a source relation between Gravity and Yang-Mills. From this, we construct a non-perturbative classical double copy for the restricted ansatz sectors between quartic biadjoint scalar theory, $SU(2)$ Yang--Mills theory and gravity. We illustrate the dictionary of mappable solutions with rational and constant profiles representing $AdS_4$, planar $dS_4$ and Minkowski space, and with Jacobi-elliptic profiles generating a positive-energy recollapsing branch for negative cosmological constant and a negative-energy bouncing branch for positive cosmological constant. Using these results, we provide a new example of the Kerr-Schild double copy."
+  },
+  {
+   "id": "2608.14541",
+   "title": "Building a Quantum Black Hole Microstate: A Bulk Path Integral for a Heavy Virasoro Primary",
+   "authors": "Chethan Krishnan , Rajdeep Mitra",
+   "categories": "hep-th",
+   "abstract": "Consider level-$k$ $SL(2,R) \\times SL(2,R)$ Chern-Simons theory on a semi-infinite solid cylinder, with a Wilson line in the unitary principal continuous series inserted along the time direction at the center of the spatial disc. We argue that at the $\\tau=0$ cut, this Euclidean path integral prepares the bulk dual of a heavy Virasoro primary above the BTZ threshold, with Drinfel'd-Sokolov (DS) reduction playing a crucial role in converting the affine module into a Virasoro module. Semi-classically, the DS constraint turns into the DS gauge, familiar from asymptotically AdS$_3$ gravity. Together with boundary gravitons, these primaries provide a bulk construction of BTZ black hole microstates at finite $k$. In the large-$k$ WKB limit, the saddle that controls an $individual$ primary is the BTZ black hole with a $singular$ horizon. We study the (grand-)canonical partition function of the microstates with density of states dictated by modular invariance. The temperature and chemical potential then fix the holonomy saddle to be the Euclidean BTZ black hole with a $smoothly$ contractible thermal cycle. A density of heavy primaries growing as $e^{2\\pi\\gamma QP}$ would instead lead to a defect (or excess) saddle, except at the Cardy value $\\gamma=1$ fixed by modular invariance. After analytic continuation, the eternal Lorentzian black hole with a smooth horizon is therefore not just any thermal ensemble, but the ``modular ensemble\" of (semi-classically singular) horizonless microstates. We compute the thermal fluctuations in this ensemble, and reproduce the fluctuations in the area of the form expected from semi-classical general relativity. Ensembles of theories do not play a direct role in any of our discussions. We also note that these microstates, unlike fuzzballs, do $not$ break the isometries of the black hole."
+  }
+ ]
+}
