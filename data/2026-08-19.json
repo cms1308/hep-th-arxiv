@@ -1,0 +1,98 @@
+{
+ "date": "2026-08-19",
+ "source": "list/new",
+ "count": 13,
+ "papers": [
+  {
+   "id": "2608.16982",
+   "title": "A geodesic distance interpretation of Lanczos coefficients",
+   "authors": "Le-Chen Qu",
+   "categories": "hep-th, cond-mat.stat-mech, math-ph",
+   "abstract": "We study the spread complexity of the infinite-temperature thermofield double state in large-$N$ random matrix theory and investigate the physical meaning of its Lanczos coefficients. The leading density of states defines a family of orthogonal polynomials whose recursion coefficients coincide with the Lanczos coefficients of the associated Krylov dynamics. Starting from the Coulomb-gas equation, we derive a pair of nonlinear relations for these coefficients, which we call the Lanczos equations. Since the Lanczos coefficients approach constants at large Krylov index, the spread complexity grows linearly at late times. We further show that the Lanczos coefficients can be interpreted as generating functions for planar maps. For an even potential, the difference $b_{n+1}^2-b_n^2$ generates maps with two legs whose marked legs are separated by the exact geodesic distance $n$. Consequently, the spread complexity acceleration operator equals twice the geodesic generating operator. We illustrate these results in the quartic matrix model, where the expansion in the quartic coupling counts tetravalent planar maps, and in the double-scaled Sachdev--Ye--Kitaev model, where the auxiliary Hilbert space can be identified with the physical chord Hilbert space."
+  },
+  {
+   "id": "2608.16985",
+   "title": "Pure gravity OPE density for genus-two handlebody in $\\text{AdS}_3$",
+   "authors": "Saptaswa Ghosh , Sounak Pal",
+   "categories": "hep-th, math-ph, math.AG",
+   "abstract": "In this work, we compute the operator product expansion density for the genus-two handlebody by exploiting its duality with extremal conformal field theories arXiv:0710.2129 . Using a Poincaré construction, we analytically determine the first- and second-order corrections in the pinching parameter to the genus-two OPE density through a direct inversion of the partition function. As a consistency check, we also compute the genus-one density within the same Poincaré framework and find perfect agreement with the result obtained from the lightcone bootstrap analysis arXiv: 1906.04184 . It is known that, at genus one, the OPE density of extremal CFTs exhibits a negativity pathology for states lying just above the black-hole threshold. We show that this pathology continues to persist at genus two, despite the emergence of a nontrivial inversion kernel. In particular, the OPE density associated with states of both odd and even spin $j_i$ remains negative within a very narrow band above the black-hole threshold. We further analyze the sharp transition from large positive to large negative values of the OPE density across a curve along which the density vanishes."
+  },
+  {
+   "id": "2608.16992",
+   "title": "Bulk Criticality and Boundary Spectra in AdS from Matrix Product States",
+   "authors": "Faizan Bhat",
+   "categories": "hep-th, cond-mat.stat-mech, hep-lat",
+   "abstract": "We study interacting scalar quantum field theories in anti-de Sitter (AdS) space using a tensor-network approach based on matrix product states. We develop methods for extracting low-lying boundary spectra from global-AdS energy levels, probing bulk criticality through finite-size scaling in the AdS radius, and identifying conformal boundary conditions. Applying these methods to scalar $\\phi^4$ theory in $\\mathrm{AdS}_2$, we compute the lowest non-trivial $\\mathbb{Z}_2$-odd and even boundary scaling dimensions non-perturbatively. We then locate the bulk $\\mathbb{Z}_2$ symmetry-breaking transition and extract critical exponents and central charge consistent with the 2D Ising universality class. At the critical point, we determine the low-lying boundary spectrum and use it to identify the $\\mathbb{Z}_2$-preserving free/ordinary Ising conformal boundary condition, thereby characterising both the bulk and boundary universality classes."
+  },
+  {
+   "id": "2608.16997",
+   "title": "Who Writes the Gravitational Second Law of Thermodynamics?",
+   "authors": "V. R. Shajiee , M. M. Sheikh-Jabbari , V. Taghiloo",
+   "categories": "hep-th, gr-qc",
+   "abstract": "We define gravitational entropy as the manifestly integrable surface charge associated with local transverse Lorentz boosts, entirely bypassing the conventional reliance on spacetime diffeomorphisms. Any notion of entropy must satisfy the second law. To answer the question posed in the title, an analogy with Newtonian classical mechanics is instructive: Newton's second law of motion is written by inertial observers who are defined by the first law of mechanics. We show that the second law of gravitational thermodynamics is written by free-fall observers with path parameterization in which the non-affinity of the geodesics is equal to the expansion of their velocity vector field. We then provide a proof of the local second law by studying variations in entropy as viewed by this class of covariantly-defined causal free-fall observers. We show that the entropy variation is strictly non-decreasing, provided the matter sector satisfies the integrated strong energy condition along the observer path."
+  },
+  {
+   "id": "2608.17012",
+   "title": "Statistically Steady Holographic Quantum Turbulence: Hyperuniform Vortex Matter and Crossover",
+   "authors": "Yu-Ping An , Peng-Bo Ding , Zhen-Han Jin , Li Li",
+   "categories": "hep-th, cond-mat.quant-gas, cond-mat.stat-mech, cond-mat.supr-con",
+   "abstract": "A long-standing obstacle in quantum turbulence has been the difficulty of sustaining robust statistical steady states, preventing unambiguous identification of universal vortex organization and kinetic scaling. We construct such a steady state in two-dimensional holographic superfluid turbulence by continuous Landau-instability driving, sustaining ${\\sim}2500$ vortices free from transient artifacts. The topological charge structure factor $S_c(k)$ reveals Class I disordered hyperuniformity with $S_c(k)\\propto k^{\\alpha>1}$ as $k\\to0$, where $k$ is the wavenumber. This constitutes the strongest long-range order of its kind and its first observation in a strongly driven, far-from-equilibrium quantum fluid with topological defects as the organizing principle, establishing a novel non-equilibrium vortex phase. Exploiting this platform, we resolve the scaling controversy: the apparent $k^{-5/3}$ signature in the kinetic energy spectrum is a narrow crossover between the $k^{-1}$ single-vortex and $k^{-3}$ core regimes, not a genuine Kolmogorov inertial range. The real-space second-order structure function provides decisive evidence via $S_2(r)\\propto \\ln r$ where $r$ is the spatial separation, with no $r^{2/3}$ Kolmogorov scaling, ruling out a true inertial cascade. These findings reveal that strongly coupled quantum turbulence lacks an inverse cascade due to the absence of macroscopic Onsager clusters, demonstrating energy transport fundamentally distinct from weakly coupled superfluids."
+  },
+  {
+   "id": "2608.17064",
+   "title": "Robin boundary conditions in global AdS$_4$: exact double-trace thermodynamics and a soft-mode instability",
+   "authors": "David A. Lowe , Juanyi Yang",
+   "categories": "hep-th",
+   "abstract": "We consider a conformally coupled scalar field in four-dimensional global anti-de Sitter space with Robin boundary conditions, parametrized by an angle $\\alpha$. On the boundary cylinder $\\mathbb{R}\\times S^{2}$ these conditions realize the double-trace deformation $\\tfrac12\\lambda\\!\\int O^{2}$ of the dimension-one operator $O$ in the alternate quantization with $\\lambda=\\cot\\alpha/L$. Because the conformal map to one half of the Einstein static universe is exact, the boundary integral equation can be diagonalized, and the deformed two-point function follows in closed form, $\\widehat{\\mathcal G}_{\\alpha}=\\widehat{\\mathcal G}_{N}/(1+\\lambda\\widehat{\\mathcal G}_{N})$. Its poles give the normal-mode spectrum, and its determinant gives the free energy exactly within this Gaussian sector. After three local boundary counterterms, the Casimir energy reaches the stability endpoint with a finite square-root cusp. At any finite coupling the bulk $T^{4}$ and $T^{3}$ terms are independent of $\\alpha$ and cancel in the difference from Neumann, leaving $\\tfrac{\\pi}{3}\\cot\\alpha\\,LT^{2}$ as the leading $\\alpha$-dependent term. All nonanalyticity comes from one static homogeneous mode, which becomes soft at $\\alpha_{\\rm crit}$, in agreement with the known classical stability threshold. The susceptibility diverges with exponent $\\gamma=1$ and the gap closes with exponent $1/2$. Beyond this angle the mode is tachyonic, and a stable phase would require a stabilizing interaction. In the flat-space limit the physical coupling scales to zero at fixed energy, so the Robin dependence survives only in the soft-frequency sector, which we characterize by a meromorphic Mellin transform in the boost weight. The Robin angle thus gives a control parameter for a Gaussian stability endpoint that can be followed exactly, and raises the analogous question for relaxed boundary conditions in AdS gravity."
+  },
+  {
+   "id": "2608.17211",
+   "title": "Variable-mass sine-Gordon with point defects: integrability, soliton transmission, and quasi-conservation",
+   "authors": "A.R. Aguirre , H. Blas , H.F. Callisaya , M.C. de Oliveira",
+   "categories": "hep-th, math-ph, nlin.PS, nlin.SI",
+   "abstract": "We study integrable variable-mass sine-Gordon model (vmSG) with point defects. Using the Lax and Bäcklund-gauge formulations, we construct type-I and type-II defect matrices, derive the corresponding sewing conditions, and generate the bulk and defect contributions to an infinite hierarchy of conserved charges. The lowest members reduce to the standard sine-Gordon energy and momentum in the homogeneous limit, while for inhomogeneous backgrounds they define integrability-generated energy- and momentum-type quantities. Defect compatibility imposes matching conditions on the variable-mass functions across the defect. An analytical transmission factor $z$ characterizes soliton transmission, topological conversion, and absorption/emission processes. We then deform the type-I sewing conditions by parameters $\\alpha$ and $\\beta$ and derive the associated defect anomalies. Consistent one-soliton transmission is recovered for $\\alpha \\beta =1$, whereas for $\\alpha \\beta \\neq 1$ parity-centered kink-kink and kink-antikink transmissions display vanishing lowest order integrated anomalies but no generic vanishing at higher order. Numerical simulations reproduce the integrable transmission/conversion regimes and show that non-integrable defects generate weak radiative tails and lowest order quasi-conserved charges, while quasi-conservation of the higher order charges remains unestablished. These results elucidate how exact defect integrability deforms into charge-dependent quasi-conservation and establish a framework for defect-controlled soliton transport in inhomogeneous media, with potential applications to nonuniform Josephson junctions, magnetic and nonlinear-optical systems, and effective molecular and DNA models."
+  },
+  {
+   "id": "2608.17837",
+   "title": "Elliptic spin Ruijsenaars-Schneider integrable models from 5d $\\mathcal{N}=1$ gauge theories",
+   "authors": "Gleb Arutyunov , Lukas Hardi",
+   "categories": "hep-th, math-ph, nlin.SI",
+   "abstract": "We show that the Coulomb branches of 5d $\\mathcal{N}=1$ necklace quiver gauge theories on $\\mathbb{R}^3 \\times T^2$ are identified with the phase spaces of elliptic spin Ruijsenaars-Schneider models with dynamical inhomogeneities. This identification resolves the long-standing problem of determining a Poisson structure and a quantization of these models. We further show that the resulting quantum system is the integrable system governing supersymmetric indices of 4d $\\mathcal{N}=1$ theories of class $\\mathcal{S}_k$."
+  },
+  {
+   "id": "2608.17877",
+   "title": "A compact analytic formula for the one-loop triangle cosmological correlator",
+   "authors": "Johannes Henn , Jiajie Mei , Qinglin Yang",
+   "categories": "hep-th, astro-ph.CO",
+   "abstract": "We derive a compact analytic formula for the one-loop triangle correlator of conformally coupled scalars in de Sitter space. The result is organised as six leading-singularity prefactors multiplying pure weight-two functions of the six energy variables. It contains forty-two dilogarithms, compared with approximately one hundred and twenty in the previously known closed-form representation, and requires no auxiliary regulator. The dilogarithms occur in Galois-conjugate pairs, making each contribution separately real throughout the physical region. We validate the result numerically. Moreover, we show that its symbol can be derived directly from the dressed integral representation or, independently, bootstrapped from Landau singularities and general consistency conditions. Finally, we show that the correlator (in a suitable normalization) is a Stieltjes function of each squared energy separately and is jointly completely monotone in all six squared energies. These structures suggest a route towards higher-point one-loop cosmological correlators."
+  },
+  {
+   "id": "2608.17898",
+   "title": "Holographic subregion complexity in unbalanced Stückelberg holographic superconductors",
+   "authors": "Yu Shi , Chikun Ding , Yuebing Zhou , Qiyuan Pan , Jiliang Jing",
+   "categories": "hep-th",
+   "abstract": "Within the subregion complexity-volume conjecture, we numerically compare holographic subregion complexity (HSC) and holographic entanglement entropy (HEE) for a strip in unbalanced Stückelberg holographic superconductors. Varying the Stückelberg parameter $\\gamma$ yields both second- and first-order transitions. Both observables signal these transitions, but with markedly different robustness. The qualitative HEE signatures persist across strip widths, and the finite part of HEE remains smaller in the superconducting phase than in the normal phase. The HSC is instead strongly width dependent: its temperature trend is opposite to that of HEE at small $\\ell$ and agrees with it at large $\\ell$. Consequently, the superconducting and normal HSC branches reverse their relative ordering, creating a crossover region where they nearly coincide. There, HSC alone cannot reliably determine the occurrence or order of the transition, and the physical branch must be selected from the grand potential. Thus, HEE provides a more robust diagnostic, whereas HSC is a scale-dependent probe whose interpretation depends explicitly on the subsystem size."
+  },
+  {
+   "id": "2608.17900",
+   "title": "Gravity and Matter from Soldered Chiral Superconnections",
+   "authors": "P. D. Alvarez , J. T. Hartwig , A. Sharma",
+   "categories": "hep-th, gr-qc, math-ph",
+   "abstract": "We present a reformulation of four-dimensional chiral gravity in terms of a chiral gauge connection and a Clifford-valued coframe. The exterior algebra generated by $e^a \\gamma_a$, together with the gauge curvature $F$, provides a natural and systematic construction of gauge-covariant differential forms. We show that suitable combinations of the chiral actions reproduce Einstein--Cartan--Holst gravity with a cosmological term. The original superconnection invariants yield only algebraic fermionic equations, so the fermionic one-forms do not propagate but instead generate a mass-like mixing between the two chiralities. Spinor propagation is supplied by a spinorial BF-type term, which under the matter ansatz reduces to the standard first-order Weyl kinetic action, including the torsion coupling. We also review the symmetry and variational properties of the matter ansatz, including its Lorentz equivariance, its relation to residual supersymmetry and twistor spinors, and the connection between the reduced and unrestricted field equations."
+  },
+  {
+   "id": "2608.17946",
+   "title": "Gravitational Compton scattering at the fifth post-Minkowskian order",
+   "authors": "Giacomo Brunello , Mario Meo , Sid Smith",
+   "categories": "hep-th, gr-qc",
+   "abstract": "Working in the Worldline Quantum Field Theory framework, we obtain the classical gravitational Compton amplitude through the fifth post-Minkowskian order, $\\mathcal{O}(G^5)$. At this order, the point-particle description must be supplemented by the leading static tidal operators. After removing lower-order iterations, we extract the corresponding $N$-matrix element and match it to black-hole perturbation theory. The matching fixes the static tidal Wilson coefficients to zero, providing confirmation of the vanishing static Love numbers of a Schwarzschild black hole."
+  },
+  {
+   "id": "2608.18073",
+   "title": "Analytic Continuation of Conformal Integrals in Momentum Space",
+   "authors": "Jonathan Gräfe , Prashanth Raman , Denis Werth",
+   "categories": "hep-th, math-ph",
+   "abstract": "Conformal symmetry strongly constrains correlation functions. In momentum space, the conformal Ward identities are solved for three-point functions by integrals of a product of three Bessel functions (\"triple-$K$ integrals\"); more generally, integrals of this type (\"multiple-$K$ integrals\"), serve as the building blocks of a wide class of higher-point conformal correlators. These integrals belong to the class of generalised hypergeometric functions, and while their series representations are known in principle, none converges throughout the entire physical region of kinematic space selected by momentum conservation. In this work, we construct series representations adapted to exactly this physical domain. Using the method of brackets, which turns the evaluation of definite integrals into solving a linear system of algebraic equations, we derive various Lauricella-type series representations for multiple-$K$ integrals. For triple-$K$ integrals, conventionally expressed in terms of the Appell $F_4$ function whose series converges only outside the triangle-inequality region, we find instead a compact, two-branch series that converges throughout the entire physical region and for arbitrary scaling dimensions. We then extend this construction to general multiple-$K$ integrals: by introducing a new set of kinematic variables, we build an iterative series representation that converges for all physical kinematic configurations."
+  }
+ ]
+}
