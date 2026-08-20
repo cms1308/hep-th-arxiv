@@ -1,0 +1,133 @@
+{
+ "date": "2026-08-20",
+ "source": "list/new",
+ "count": 18,
+ "papers": [
+  {
+   "id": "2608.18202",
+   "title": "Nonrelativistic Conformal Collider Physics of Multiparticle Point Production",
+   "authors": "Cyuan-Han Chang , Subham Dutta Chowdhury , Ian Moult , Dam Thanh Son",
+   "categories": "hep-th, hep-ph, nucl-th",
+   "abstract": "We define detector operators in the nonrelativistic conformal field theory describing fermions at unitarity. We reduce the problem of computing the momentum distribution and correlation between final particles produced by a local source (\"point-produced\") to the computation of correlation functions involving the detector operators. The general formalism is applied to the point production of three unitary fermions, where we find the momentum and angular distribution of final particles. We discuss a nonrelativistic version of celestial holography, which maps the asymptotic out-state to a quantum wave function in the so-called \"oscillator frame.\""
+  },
+  {
+   "id": "2608.18205",
+   "title": "A generating functional for infrared-safe QED amplitudes",
+   "authors": "Martin Ammon , Konrad Brandts , Federico Capone , Jakob Hollweck",
+   "categories": "hep-th, hep-ph",
+   "abstract": "We construct a generating functional for infrared-finite scattering amplitudes in massive quantum electrodynamics (QED) by including Faddeev-Kulish dressings in a holomorphic coherent-state representation, in the spirit of the construction of Aref'eva-Faddeev-Slavnov (AFS) for the undressed Dyson S-matrix. At tree level, the dressed generating functional reduces to an AFS path integral with dressed boundary conditions."
+  },
+  {
+   "id": "2608.18209",
+   "title": "The $\\mathcal{N}=4$ Bethe Ansatz beyond $\\mathrm{SU}(N)$",
+   "authors": "Marco Fazzi , Kuba Krawczyk",
+   "categories": "hep-th",
+   "abstract": "We solve the Bethe Ansatz equations (BAEs) to evaluate the superconformal index of four-dimensional $\\mathcal{N}=4$ super-Yang--Mills with rank-two gauge algebra, at equal angular momentum fugacities $p=q$. The solutions for $A_2$ are known, and those for $D_2\\cong A_1\\oplus A_1$ follow readily from the (equally known) $A_1$ ones. The first genuinely new case is $B_2\\cong C_2$, for which we obtain the complete solution set in closed form; for the exceptional case $G_2$ our results are numerical, with a single fully rational solution obtained in closed form. To the best of our knowledge, this is the first time any solution, analytic or numerical, has been found in non-$A$-type gauge algebra (for $\\mathcal{N}=4$ or any other $\\mathcal{N}=1$ theory). Along the way we uncover several phenomena absent in type $A$: isolated Weyl-fixed solutions contributing nontrivially to the index; isolated solutions in which at most half of the holonomies have rational coefficients (in contrast with the $A$-type fully rational Hong--Liu family); and solutions whose $|\\omega|\\to0$ limit (with $p=q=:e^{2\\pi i\\omega}$) evades assumptions standardly made in the Cardy-like limit literature, landing on saddles that the usual analysis does not capture, for all types $BC\\!D$. We also clarify the Bethe origin of the finite logarithmic correction to the Cardy expansion: it arises from the orbit size of a BAE solution under the gauge symmetries of the equations, rather than from the one-form center symmetry of the theory, to which the index is insensitive."
+  },
+  {
+   "id": "2608.18210",
+   "title": "$\\mathbb{R}$eal Ambitwistors & Massive Twistors for CFT$_4$",
+   "authors": "Aswini Bala , Sachin Jain , Deep Mazumdar , Adithya A Rao",
+   "categories": "hep-th, math-ph",
+   "abstract": "We develop a real twistor-space formulation of four-dimensional CFT Wightman correlators. We write the conformal generators and little-group constraints in ambitwistor space. The quadric condition $Z\\cdot W$=0 arises naturally from the little-group constraints. We then solve for both the parity-even and parity-odd correlators in the ambitwistor variables. We further establish the connection between the ambitwistor correlators and the ones in the helicity-basis Grassmannian via a half-Fourier transform, and also develop the Penrose transform to recover the corresponding position-space correlators. We notice that for correlators with multiple tensor structures, the Penrose transform yields the full space of conformally invariant structures, but regularizing the associated Schwinger integrals selects the physical correlator. Finally, starting from the covariant Grassmannian formulation, we construct massive twistors that make the little-group symmetries manifest and develop their Penrose transform, which again reproduces the correct position-space correlators."
+  },
+  {
+   "id": "2608.18218",
+   "title": "Five-point spinor-helicity Compton amplitudes in gauge theory and gravity",
+   "authors": "Raikhik Das , Mao Zeng",
+   "categories": "hep-th, gr-qc",
+   "abstract": "We calculate the five-point tree-level Compton amplitudes for minimally coupled spinning matter in gauge theory and gravity in the massive spinor-helicity formalism, using BCFW recursion and KLT relations. The results are written in terms of symmetrized spinor products and are simultaneously valid for a range of matter spins, which directly generalizes the amplitudes of Arkani-Hamed, Huang, and Huang to the five-point case. Unlike the three- and four-point cases, each amplitude can be a sum of two or more distinct spin structures. Spurious poles are manifestly canceled through a mechanism that holds for all massive spins $s\\leq 1$ in gauge theory and $s\\leq 2$ in gravity. While we keep the amplitudes exact, their classical limits are expected to be relevant for binary systems of Kerr black holes in the post-Minkowskian expansion."
+  },
+  {
+   "id": "2608.18284",
+   "title": "Type IIA on Spin(7) manifolds with fluxes",
+   "authors": "Niccolò Cribiori , Arda Hasar , Thomas Van Riet , Timm Wrase",
+   "categories": "hep-th",
+   "abstract": "We initiate a systematic study of compactifications of type II string theory to two dimensions on Ricci-flat spaces with fluxes and sources. We derive universal constraints on such compactifications, and then develop type IIA compactifications on $\\mathrm{Spin}(7)$-holonomy spaces with bulk fluxes whose tadpole is cancelled by $\\mathrm{OF1}$-planes. We derive the resulting two-dimensional $\\mathcal N=(1,1)$ supergravity for a toroidal $\\mathrm{Spin}(7)$ orbifold, and we extend the metric and universal sectors geometrically to general compact $\\mathrm{Spin}(7)$ manifolds. In candidate supersymmetric Minkowski vacua, all untwisted shape modes appear in the flux scalar potential and can in principle be classically stabilised. However, in an explicit toroidal orbifold example flux quantisation together with the tadpole bound may obstruct the existence of candidate vacua supported entirely within the untwisted sector. The string-frame volume in string units is bounded by $7\\chi/192$, so suppressing $\\alpha'$ corrections requires $\\mathrm{Spin}(7)$ manifolds with large Euler characteristic."
+  },
+  {
+   "id": "2608.18345",
+   "title": "A Rotor-Dressed Semiton State in a Monopole--Fermion Model",
+   "authors": "Yuta Hamada",
+   "categories": "hep-th, hep-ph",
+   "abstract": "In four-flavor massless QED with a magnetic monopole, a single incident fermion is scattered into a state carrying a half-integral current vector in each flavor channel, called the semiton. Recently, the semiton has been interpreted as a twisted-sector fermion, but its microscopic Hilbert-space representation has not been fully developed. In this Letter, using a bosonized fermion--rotor model, we construct the semiton state explicitly. This is achieved by first identifying the correct vacuum of the system, and then constructing a unitary operator that shifts the rotor and creates a particle-hole cloud in each flavor channel. The semiton state is obtained by applying this operator to an ordinary fermion state. The resulting state has a localized fermion flavor density in the core region and a half-integral semiton front at the wavepacket. We also show that the state carries the correct $U(1)_M$ charge expectation values and energy-density profile. Our result provides a concrete Hilbert-space realization of the varying-Fock-space interpretation of monopole--fermion scattering, advocated in previous works by the author and collaborators."
+  },
+  {
+   "id": "2608.18566",
+   "title": "Optics and Thermodynamics of Charged BTZ Black Holes with Exotic Matter Sources",
+   "authors": "M. A. Rbah , S. Saoud , R. Sammani , E. H. Saidi , R. Ahl Laamara",
+   "categories": "hep-th",
+   "abstract": "We study a modified charged BTZ black hole in \\((2+1)\\)--dimensional anti-de Sitter spacetime, where the standard geometry is surrounded by quintessence-like anisotropic matter and a cloud of strings. The corresponding metric function incorporates the effects of the electric charge and the two matter sources. The optical analysis reveals that their combined influence gives rise to a stable circular photon orbit, leading to distinctive modifications of photon dynamics and the associated energy emission. The thermodynamic analysis in a finite cavity further shows that the electric charge and exotic matter sources significantly affect the local thermal stability and phase structure of the black hole. The combined effects of these matter sources give rise to a stable photon sphere and novel thermodynamic behavior absent in the standard charged BTZ solution."
+  },
+  {
+   "id": "2608.18570",
+   "title": "Learning Topological Features of $\\widehat Z$-invariants",
+   "authors": "Brandon Robinson , Shimal Harichurn , Fabian Ruehle , Sergei Gukov , Rak-Kyeong Seong , Miranda C. N. Cheng",
+   "categories": "hep-th, cs.LG, math.GT",
+   "abstract": "Machine learning and data analysis techniques have recently emerged as powerful tools for identifying patterns and formulating conjectures in mathematical research, most notably in the field of low-dimensional topology. In this paper, we initiate a systematic approach to handling mathematical data structured as (truncated) infinite $q$-series, or equivalently, infinite series of integers. To apply this data analysis pipeline, we construct a comprehensive dataset of $\\widehat{Z}$-invariants (homological blocks) for plumbed 3-manifolds. We demonstrate that neural networks can reliably extract essential topological information, such as homology class and underlying graph structure, directly from the $q$-series coefficients. A central feature of our methodology is a focus on interpretability; by contrasting local gradient sensitivity with global feature relevance, we reveal that the networks learn to bypass complex topological rules in favor of specific spectral and geometric proxies. Finally, we apply this pipeline to probe homology cobordism, discovering a high-accuracy predictive relationship between the $\\widehat{Z}$-invariant exponents and the Heegaard Floer $d$-invariant (correction term). These results suggest that $\\widehat{Z}$-invariants capture subtle geometric information regarding cobordism equivalences, warranting a new direction for the study of quantum invariants."
+  },
+  {
+   "id": "2608.18603",
+   "title": "Entanglement islands and information recovery from near-extremal regular black holes",
+   "authors": "Ankit Anand , Kimet Jusufi , Amir A. Khodahami , Ahmad Sheykhi",
+   "categories": "hep-th",
+   "abstract": "We investigate the Page curve and information recovery in a near-extremal regular black hole inspired by T-duality, in which the central singularity is resolved by a minimal length scale. By integrating the first law of thermodynamics at fixed minimal length, we obtain a black-hole entropy containing an intrinsically quantum logarithmic correction, while the area-law contribution vanishes in the extremal limit. Consequently, the extremal remnant carries a finite entropy of purely quantum origin. Using the island prescription in the near-horizon regime, we evaluate the generalized entropy of radiation and compare the standard area functional with an alternative functional constructed from the corrected thermodynamic entropy of the black hole. In the near-extremal limit, the latter reduces analytically to the classical extremization problem with an effective coupling, and it places the physical island closer to the outer horizon. Although both prescriptions produce a Page transition, they predict different saturation values and Page times. While the standard functional yields a plateau controlled by the area term, the corrected prescription saturates at the full thermodynamic entropy of the outer horizon and, in the extremal limit, at the logarithmic remnant entropy. Including evaporation and backreaction, the Page curve develops the expected descending branch and asymptotes to the entropy of the cold extremal remnant rather than to zero. Our results indicate that a thermodynamically consistent description of information recovery from regular near-extremal black holes requires incorporating the intrinsic quantum correction to the gravitational entropy."
+  },
+  {
+   "id": "2608.18817",
+   "title": "Spin precession and anomalous dipole couplings in a plane-wave Yang-Mills background",
+   "authors": "V. V. Parazian",
+   "categories": "hep-th",
+   "abstract": "We investigate the fermion spin dynamics and induced dipole interactions in an external Yang-Mills gauge field that represents a non-Abelian plane wave. We use the exact solutions of the Dirac equation in the external gauge field, the exact fermion Green's function, and the renormalized one-loop fermion-gluon vertex in the axial gauge. The exact propagator produces spin-dependent structures proportional to $\\sigma ^{\\mu \\nu }F_{\\mu \\nu }^{a} $. The external field induces spin precession at tree level through a non-Abelian extension of the Bargmann-Michel-Telegdi equation, coupled with Wong color transport. The exact vertex produces a phase-dependent Pauli form factor $F_{2}^{a}\\left( 0;\\varphi ,\\varphi ^{\\prime }\\right) $ beyond tree level, which serves as an anomalous chromomagnetic dipole coupling. For monochromatic two-color noncommuting plane waves, explicit weak-field expressions are derived for the induced Pauli coefficient and the anomalous spin-precession frequency. The commutator term $gf^{abc}A_{\\mu }^{b}A_{\\nu }^{c}$ in this case, generates additional field-strength components and dynamically induced precession axes not present in Abelian backgrounds, resulting in coupled spin-color precession. The exact one-loop coefficient is provided as a harmonic expansion suitable for periodic Yang-Mills waves. Explicit expressions for spin-dependent amplitudes, spin-flip probabilities, and polarization asymmetries are provided. These results establish a direct connection between exact background-field propagators, renormalized vertex functions, anomalous dipole interactions, and observable spin effects in strong non-Abelian gauge fields."
+  },
+  {
+   "id": "2608.18843",
+   "title": "Quantum Effects in Supersymmetric Galilean Yang-Mills",
+   "authors": "Neil Lambert , Joseph Smith",
+   "categories": "hep-th",
+   "abstract": "We study the quantum dynamics of supersymmetric Galilean Yang-Mills (SGYM), with a focus on three dimensions where there is a classical scale symmetry. This is believed to be the worldvolume theory describing D2-branes within type IIA non-relativistic string theory and arises as a non-relativistic limit of maximally supersymmetric (relativistic) Yang-Mills. Unlike the relativistic case, we find that SGYM only admits perturbative dynamical excitations on the Coulomb branch. We show that in three dimensions the classical scale symmetry is broken at one-loop due to logarithmic divergences. These cannot be regulated without introducing additional marginal deformations, and we present evidence that the theory is asymptotically free once these are included. In particular our analysis suggests that three-dimensional SGYM flows to a strongly coupled non-relativistic M2-brane theory."
+  },
+  {
+   "id": "2608.18845",
+   "title": "Non-abelian uni-vector deformations in gauged supergravities and non-abelian Einstein-Maxwell theories",
+   "authors": "Kirill Gubarev , Konstantin Sovit",
+   "categories": "hep-th, gr-qc",
+   "abstract": "We construct non-abelian uni-vector deformations of solutions in non-abelian Einstein\\--Maxwell theories and gauged supergravities, obtained as Scherk--Schwarz reductions of general relativity and double field theory, respectively. We provide examples of deformed backgrounds for both cases. We show that non-abelian deformations in Einstein--Maxwell theories can be presented as coordinate transformations in the parent theory, general relativity, extending the result of arXiv:2508.09637 for abelian uni-vector deformations."
+  },
+  {
+   "id": "2608.18847",
+   "title": "Quantum State of the Asymptotic Gravity Field from BRST Quantization",
+   "authors": "Xavier Calmet , Stephen D. H. Hsu",
+   "categories": "hep-th",
+   "abstract": "We derive the quantum state of the asymptotic linearized gravity field of a compact energy source, using BRST quantization. Barnich has previously derived the quantum state of the U(1) field in QED using the Gauss law constraint. The role of Gauss's law is now played by the linearized Hamiltonian and momentum constraints in gravity. For a static mass source, only the scalar Hamiltonian constraint is shifted. The quantum state corresponding to the static Newton field originates in the non-radiative scalar constraint sector, not in the propagating transverse-traceless graviton sector. We discuss implications for holography and for black hole information: 1. the exact quantum state of the compact source is encoded in the asymptotic quantum state of its gravity field 2. Hawking amplitudes are dependent, via the gravity state outside the horizon, on the black hole internal state."
+  },
+  {
+   "id": "2608.18926",
+   "title": "Non-invertible symmetry and vertex operator algebra outer-automorphism",
+   "authors": "Kazunobu Maruyoshi , Hyejung Moon , Jaewon Song",
+   "categories": "hep-th",
+   "abstract": "We argue that the non-invertible symmetry of $\\mathcal{N}=4$ super Yang-Mills theory, obtained by combining S-duality, half-space gauging, and R-symmetry twist, is realized as an outer-automorphism of the associated vertex operator algebra. Hence, the Schur and Macdonald index of $\\mathcal{N}=4$ super Yang-Mills theory with non-invertible symmetry twist corresponds to the (refined) vacuum character of the associated vertex operator algebra with the outer-automorphism twist. We provide a few checks of our proposal from the large-$N$ limit and by matching the fusion rules, which involve charge conjugation on local operators. The `charged' Schur index indeed matches the outer-automorphism-twisted vacuum character."
+  },
+  {
+   "id": "2608.18959",
+   "title": "Perturbative Hairy Black Branes in the $G_{2}$-Invariant Sector of Dyonic ISO(7) Gauged Supergravity",
+   "authors": "Sangheon Yun",
+   "categories": "hep-th, gr-qc",
+   "abstract": "We construct perturbative black-brane solutions carrying neutral scalar hair in the $G_{2}$-invariant truncation of four-dimensional dyonic $\\mathcal{N}=8$ ISO(7) gauged supergravity, an exact consistent truncation of massive type~IIA supergravity on $S^{6}$. Expanding around the $G_{2}$-symmetric AdS$_{4}$-Schwarzschild black brane in powers of a dimensionless scalar-charge parameter $\\eps$, we show that the perturbation hierarchy reduces, order by order, to a nested sequence of inhomogeneous Legendre equations (demonstrated through second order). The first-order scalar satisfies a Pöschl--Teller equation with exact parameter $\\nu(\\nu+1)=2/3$, giving $\\nu=-\\frac{1}{2}+\\frac{\\sqrt{33}}{6}$, and the first-order metric is fixed algebraically by the same function, $A^{(1)}=-\\tfrac{\\sqrt{7}}{2}\\phi^{(1)}$, so the entire $\\mathcal{O}(\\eps)$ sector is one Legendre function. An identity $\\nu+1=\\Delta_{+}/3$, with $\\Delta_{+}=(3+\\sqrt{33})/2\\approx 4.372$ the conformal dimension of the dual scalar operator, relates the Pöschl-Teller parameter to the AdS/CFT dictionary via the nonlinear Fefferman-Graham map $z \\propto z_{\\mathrm{FG}}^{3}$. The $\\mathcal{O}(\\eps^{2})$ back-reaction yields explicit corrections to the renormalized free energy and Bekenstein-Hawking entropy density at fixed temperature, consistent with the first law; equivalently, at fixed entropy or energy density it \\emph{lowers} the Hawking temperature by $\\delta T/T=\\mathcal{O}(\\eps^{2})$. For the leading transport coefficients the shear viscosity saturates $\\eta/s=1/(4\\pi)$, while the Eling-Oz horizon formula gives a nonzero bulk viscosity $\\zeta/\\eta=\\bigl(\\tfrac{\\Delta_{+}-3}{2}\\bigr)^{2}\\eps^{2}=\\tfrac{3(7-\\sqrt{33})}{8}\\eps^{2}\\approx0.471\\,\\eps^{2}$. With $c_{s}^{2}=\\tfrac12-\\mathcal O(\\eps^{2})<\\tfrac12$, this indicates a softening of the equation of state."
+  },
+  {
+   "id": "2608.19131",
+   "title": "Classical and Quantum Chaos from Foundations to Holography",
+   "authors": "Bhasker Shukla",
+   "categories": "hep-th",
+   "abstract": "These notes develop the diagnostics of chaos from their classical definitions through to holography, in six lectures given at the ST4 Workshop, Chennai Mathematical Institute, in 2026. No prior exposure to chaos theory is assumed. Lectures 1 and 2 define classical chaos geometrically and build the instruments that measure it, every one of which reads a phase-space trajectory. Quantization removes that trajectory, and Lectures 3 and 4 rebuild the instruments from spectra and eigenstates instead: level statistics, random matrix theory, the spectral form factor and eigenstate thermalization, as much the working toolkit for thermalization in many-body physics as for holography. What they return is a classification and a count rather than a rate. Lecture 5 recovers the rate from the squared commutator, treats scrambling as operator growth, follows the commutator to the out-of-time-order correlator, marks where that diagnostic stops being reliable, and reaches the butterfly velocity and the chaos bound. Lecture 6 constructs the eternal black hole, the thermofield double and the shock-wave geometry behind that bound, then follows two probes whose exponents discriminate between backgrounds where the horizon result cannot, one tracking a thermodynamic phase transition, the other resolving an anisotropy induced by a background field. Every lecture closes with exercises. Claude Opus 5, an AI assistant developed by Anthropic, worked as a research assistant under the author's direction."
+  },
+  {
+   "id": "2608.19166",
+   "title": "Maximal Enhancements in Eight-Dimensional Non-Supersymmetric Heterotic Strings",
+   "authors": "Yamato Honda , Justin Kaidi , Yuichi Koga , Yuefeng Liu",
+   "categories": "hep-th",
+   "abstract": "We classify maximally enhanced, rank-preserving non-supersymmetric heterotic strings in eight dimensions by studying orbifolds of supersymmetric heterotic strings on $T^2$. We first review the construction in nine dimensions, where it reproduces the $95$ maximally semisimple enhancement points obtained from previous extended-Dynkin analyses. We then start from the maximally enhanced supersymmetric Narain points in eight dimensions and use Kac's theorem to enumerate candidate order-two inner actions, retaining only those that lift to consistent Narain-lattice shifts. This gives $1210$ maximal enhancement points, of which $71$ are tachyon-free, and $25$ have neither tachyons nor shifted-sector massless scalars. For each entry we determine the gauge algebra and the low-lying scalar and fermion spectra, and for the tachyon-free cases we evaluate the one-loop cosmological constant. For the 25 subcases without shifted-sector massless scalars, we further compute the Hessian of the one-loop potential and test the refined de Sitter swampland conjecture."
+  }
+ ]
+}
