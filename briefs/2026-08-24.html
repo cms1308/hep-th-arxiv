@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>arXiv hep-th 데일리 · 2026년 8월 24일 (월)</title>
+<style>
+:root{
+  --bg:#f7f7f5; --card:#fff; --ink:#1c1b19; --muted:#6b6a66; --line:#e5e3dd;
+  --accent:#6d5ce0; --shadow:0 1px 2px rgba(0,0,0,.04),0 4px 16px rgba(0,0,0,.04);
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#141413;--card:#1d1d1b;--ink:#eceae4;--muted:#9b998f;--line:#2f2f2c;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 4px 16px rgba(0,0,0,.25);}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+ font:16px/1.65 -apple-system,BlinkMacSystemFont,"Pretendard","Apple SD Gothic Neo","Noto Sans KR",Segoe UI,sans-serif;
+ -webkit-font-smoothing:antialiased}
+header{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);
+ backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding:16px 24px 13px}
+.wrap{max-width:940px;margin:0 auto}
+.back{display:inline-block;color:var(--muted);text-decoration:none;font-size:12.5px;margin-bottom:6px}
+.back:hover{color:var(--accent)}
+h1{margin:0;font-size:20px;letter-spacing:-.02em;font-weight:650}
+h1 .dot{color:var(--accent)}
+.sub{color:var(--muted);font-size:13.5px;margin-top:3px}
+.controls{display:flex;gap:8px;align-items:center;margin-top:11px}
+.tbtn{padding:5px 11px;border:1px solid var(--line);background:var(--card);color:var(--muted);
+ border-radius:999px;font-size:12.5px;cursor:pointer;font-family:inherit;transition:.13s}
+.tbtn:hover{border-color:var(--accent);color:var(--ink)}
+.tbtn.on{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+main{max-width:940px;margin:0 auto;padding:22px 24px 80px}
+.card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:12px;
+ padding:20px 22px 18px;margin-bottom:14px;box-shadow:var(--shadow)}
+.num{position:absolute;top:20px;left:-38px;color:var(--muted);font-size:12px;font-variant-numeric:tabular-nums;opacity:.7}
+@media(max-width:1040px){.num{position:static;margin-bottom:4px}}
+.card h2{margin:0 0 8px;font-size:17.5px;line-height:1.4;letter-spacing:-.01em;font-weight:640}
+.card h2 a{color:inherit;text-decoration:none}
+.card h2 a:hover{color:var(--accent)}
+.meta{display:flex;gap:7px;flex-wrap:wrap;align-items:center;font-size:12px;margin-bottom:7px}
+.meta>a{color:var(--accent);text-decoration:none;font-variant-numeric:tabular-nums}
+.meta>a:hover{text-decoration:underline}
+.meta a.pdf{color:var(--muted)}
+.cat{color:var(--c);border:1px solid color-mix(in srgb,var(--c) 35%,transparent);
+ background:color-mix(in srgb,var(--c) 9%,transparent);padding:1px 8px;border-radius:999px;font-size:11.5px;font-weight:500}
+.authors{color:var(--muted);font-size:13.5px;margin-bottom:12px}
+.abs{margin-top:10px;padding-left:13px;border-left:2px solid var(--line)}
+.abs.ko{border-left-color:color-mix(in srgb,var(--accent) 45%,transparent)}
+.abs p{margin:4px 0 0;font-size:14.6px;line-height:1.72;word-break:keep-all;overflow-wrap:anywhere}
+.abs.en p{font-size:13.8px;line-height:1.62;color:var(--muted);word-break:normal}
+.lbl{font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);font-weight:600}
+body.hide-en .abs.en{display:none}
+body.hide-ko .abs.ko{display:none}
+footer{max-width:940px;margin:0 auto;padding:0 24px 40px;color:var(--muted);font-size:12.5px}
+</style></head><body>
+<header><div class="wrap">
+<a class="back" href="../index.html">← 전체 목록</a>
+<h1>arXiv <span class="dot">hep-th</span> 데일리 브리핑</h1>
+<div class="sub">2026년 8월 24일 (월) 공지 · 신규 제출 <b>13</b>편 (cross-list 제외)</div>
+<div class="controls">
+  <button class="tbtn on" id="tko">한국어</button>
+  <button class="tbtn on" id="ten">English</button>
+</div>
+</div></header>
+<main>
+<article class="card">
+  <div class="num">1</div>
+  <h2><a href="https://arxiv.org/abs/2608.20452" target="_blank" rel="noopener">Alakazam: Symbolic Tensor Algebra for Field Theory in Julia</a></h2>
+  <div class="meta">
+    <a href="https://arxiv.org/abs/2608.20452" target="_blank" rel="noopener">arXiv:2608.20452</a>
+    <a class="pdf" href="https://arxiv.org/pdf/2608.20452" target="_blank" rel="noopener">PDF</a>
+    <span class="cat" style="--c:#6d5ce0">hep-th</span><span class="cat" style="--c:#475569">cs.MS</span><span class="cat" style="--c:#475569">cs.SC</span>
+  </div>
+  <div class="authors">Jesse Woods (University of Bern)</div>
+  <div class="abs ko"><span class="lbl">한국어</span><p>우리는 field theory와 quantum mechanics 연구에서 나타나는 tensor 표현식의 symbolic 조작을 수행하기 위한 Julia 패키지인 &quot;Alakazam&quot;을 제시한다. 이는 superspace에서의 계산 지원을 포함하여 spacetime 및 supersymmetric 구조를 연구하기 위한 강력한 도구로 사용될 것이다. 이 패키지는 인덱스의 올리기와 내리기, dummy 인덱스를 포함한 항의 단순화, 치환 패턴, 미분 및 변분 계산, bosonic 및 fermionic grading, gamma matrix 항등식, 그리고 Lie bracket과 commutator 등 다수의 핵심 기능을 구현한다. 우리는 기존 시스템 대비 주목할 만한 속도 개선을 제시한다. 가능한 응용 분야로는 descendant와 invariant에 대한 연구가 있다.</p></div>
+  <div class="abs en"><span class="lbl">Abstract</span><p>We present &quot;Alakazam&quot;, a Julia package for performing symbolic manipulations of tensor expressions arising in the study of field theories and quantum mechanics. This will serve as a powerful tool for studying spacetime and supersymmetric structures, including support for calculations in superspace. The package implements many key features such as raising and lowering indices, simplification of terms with dummy indices, replacement patterns, differential and variational calculus, bosonic and fermionic grading, gamma matrix identities, and Lie brackets and commutators. We present notable speed improvements over established systems. Some possible applications include the study of descendants and invariants.</p></div>
+</article>
+<article class="card">
+  <div class="num">2</div>
+  <h2><a href="https://arxiv.org/abs/2608.20455" target="_blank" rel="noopener">Decomposing Grassmann Monomials for Superfield Expansions</a></h2>
+  <div class="meta">
+    <a href="https://arxiv.org/abs/2608.20455" target="_blank" rel="noopener">arXiv:2608.20455</a>
+    <a class="pdf" href="https://arxiv.org/pdf/2608.20455" target="_blank" rel="noopener">PDF</a>
+    <span class="cat" style="--c:#6d5ce0">hep-th</span><span class="cat" style="--c:#475569">cs.MS</span>
+  </div>
+  <div class="authors">Jesse Woods (University of Bern)</div>
+  <div class="abs ko"><span class="lbl">한국어</span><p>Superspace는 spin 및 flavour 군에 따라 변환할 수 있는 인덱스를 가진 anticommuting Grassmann 좌표를 통해 spacetime을 확장한다. Grassmann monomial을 독립적인 invariant 구조로 분해하는 것은 superfield 전개를 구성하는 데 있어 핵심 단계이지만, extended superspace에서는 점점 더 어려워진다. 우리는 공간 $\Lambda^n(\mathbb{C}^{d_S}\otimes \mathbb{C}^{d_F})$를 분해하기 위한 일반적인 representation-theoretic 절차를 제시하며, 여기서 $d_S$와 $d_F$는 각각 spin 및 flavour 표현의 차원이다. $\mathrm{GL}(m)\downarrow{\mathrm{Sp}(m)}$ 및 $\mathrm{GL}(m)\downarrow{\mathrm{SO}(m)}$에 대한 branching multiplicity는 결정론적 유리 표본점에서의 정확한 Weyl-character 비교를 통해 계산되며, 이는 Littlewood-Richardson modification 규칙을 회피한다. 우리는 character ansatz의 완전성을 확립하고 계산 복잡도를 분석하여, 이것이 Littlewood-Richardson 조합론에 대한 의존성 없이 $n$의 분할 수와 군의 rank에 대해 다항식적임을 보인다. 우리는 결과로 얻어진 분해를 차원 검사를 통해 검증한다. 우리는 임의의 rank를 가진 군에 대해 이 알고리즘을 구현하고 invariant tensor와의 명시적 축약을 산출하는 독립형 Julia 스크립트를 함께 제공한다.</p></div>
+  <div class="abs en"><span class="lbl">Abstract</span><p>Superspace extends spacetime by anticommuting Grassmann coordinates, whose indices may transform under spin and flavour groups. Decomposing Grassmann monomials into independent invariant structures is a central step in constructing superfield expansions, but becomes increasingly difficult in extended superspace. We present a general representation-theoretic procedure for decomposing the space $\Lambda^n(\mathbb{C}^{d_S}\otimes \mathbb{C}^{d_F})$, where $d_S$ and $d_F$ are the dimensions of the spin and flavour representations. The branching multiplicities for $\mathrm{GL}(m)\downarrow{\mathrm{Sp}(m)}$ and $\mathrm{GL}(m)\downarrow{\mathrm{SO}(m)}$ are computed by exact Weyl-character comparison at deterministic rational sample points, avoiding Littlewood-Richardson modification rules. We establish completeness of the character ansatz and analyse the computational complexity, showing that it is polynomial in the number of partitions of $n$ and in the group rank, without dependence on Littlewood-Richardson combinatorics. We validate the resulting decompositions via dimension checks. We provide an accompanying standalone Julia script which implements this algorithm for groups of arbitrary rank, and produces the explicit contractions with invariant tensors.</p></div>
+</article>
+<article class="card">
+  <div class="num">3</div>
+  <h2><a href="https://arxiv.org/abs/2608.20459" target="_blank" rel="noopener">Threshold Corrections in Heterotic String Theory from Conformal Perturbation Theory</a></h2>
+  <div class="meta">
+    <a href="https://arxiv.org/abs/2608.20459" target="_blank" rel="noopener">arXiv:2608.20459</a>
+    <a class="pdf" href="https://arxiv.org/pdf/2608.20459" target="_blank" rel="noopener">PDF</a>
+    <span class="cat" style="--c:#6d5ce0">hep-th</span>
+  </div>
+  <div class="authors">Dilan Nur Demirtaş , Christoph A. Keller , Manki Kim</div>
+  <div class="abs ko"><span class="lbl">한국어</span><p>우리는 heterotic string의 Kähler potential에 대한 one-loop threshold correction을 계산하기 위해 conformal perturbation theory를 사용한다. 이를 위해 우리는 quintic의 Gepner point, 즉 모듈라이 공간에서 매우 stringy한 지점에서 컴팩트화된 이론을 고려한다. correction을 얻기 위해, 우리는 worldsheet 이론의 가장 가벼운 상태들의 weight가 conformal perturbation theory의 이차 order에서 어떻게 이동하는지를 계산한다. 이 접근법은 $\alpha&#x27;$의 모든 order에서 one-loop correction을 얻는 데 사용될 수 있다.</p></div>
+  <div class="abs en"><span class="lbl">Abstract</span><p>We use conformal perturbation theory to compute one-loop threshold corrections to the Kähler potential of the heterotic string. For this we consider the theory compactified at the Gepner point of the quintic, that is at a highly stringy point of its moduli space. To obtain the corrections, we compute how the weights of the lightest states of the worldsheet theory shift at second order in conformal perturbation theory. This approach can be used to obtain the one-loop correction to all orders in $\alpha&#x27;$.</p></div>
+</article>
+<article class="card">
+  <div class="num">4</div>
+  <h2><a href="https://arxiv.org/abs/2608.20529" target="_blank" rel="noopener">Supersymmetric Virasoro Minimal Strings: Unified Perturbative and Non-Perturbative Treatment</a></h2>
+  <div class="meta">
+    <a href="https://arxiv.org/abs/2608.20529" target="_blank" rel="noopener">arXiv:2608.20529</a>
+    <a class="pdf" href="https://arxiv.org/pdf/2608.20529" target="_blank" rel="noopener">PDF</a>
+    <span class="cat" style="--c:#6d5ce0">hep-th</span>
+  </div>
+  <div class="authors">Clifford V. Johnson</div>
+  <div class="abs ko"><span class="lbl">한국어</span><p>알려진 ${N}{=}1$ supersymmetric Virasoro minimal string 이론은 네 가지가 있으며, 이들은 자연스럽게 두 쌍으로 이루어져 0A$^\pm$ 및 0B$^\pm$로 표기된다. 우리는 여기서 이 네 가지 모두가 양의 스펙트럼을 갖는 특정 random matrix model을 기술하는 상미분방정식의 해로 자연스럽게 기술됨을 관찰한다. non-orientable한 두 개의 새로운 추가적인 0A$^-$ 이론들도 이 틀에 의해 자연스럽게 기술된다. 이 정식화는 모든 perturbative amplitude의 간단한 계산을 가능하게 하며, 완전한 non-perturbative 정보 또한 제공한다. 우리의 접근법은 type 0A$^-$가 Ramond vertex insertion의 gas를 포함하도록 변형될 수 있는 이유를 명확히 하며, 우리는 이를 완전히 기술한다. 반면 type 0A$^+$는 그렇지 않다. $c\rightarrow\infty$ 극한에서 0A$^-$ 및 0B$^-$ 모델이 Stanford와 Witten의 익숙한 0A 및 0B JT supergravity로 환원됨이 알려져 있는데, plus 쌍에 대해 같은 극한은 ordinary JT gravity의 non-perturbative completion으로 환원되며, 그중 하나는 이미 알려져 있다. Virasoro minimal string의 대규모의 ${N}{=}2$ 및 ${N}{=}4$ supersymmetric 유사체 또한 동일한 접근법을 사용하여 제안되고 상세히 탐구된다.</p></div>
+  <div class="abs en"><span class="lbl">Abstract</span><p>There are four known ${N}{=}1$ supersymmetric Virasoro minimal string theories, naturally coming in two pairs and labeled as 0A$^\pm$ and 0B$^\pm$. We observe here that all four are naturally described in terms of solutions of an ordinary differential equation that describes certain random matrix models with positive spectra. Two new additional 0A$^-$ theories, which are unorientable, are naturally described by the framework. The formulation allows for simple computation of all perturbative amplitudes, and provides complete non-perturbative information as well. Our approach makes it clear why type 0A$^-$ can be deformed to include a gas of Ramond vertex insertions, which we fully describe, while type 0A$^+$ cannot. While it is known that the $c\rightarrow\infty$ limit reduces the 0A$^-$ and 0B$^-$ models to the familiar 0A and 0B JT supergravities of Stanford and Witten, the same limit for the plus pair reduces to non-perturbative completions of ordinary JT gravity, one of which is known. Large families of ${N}{=}2$ and ${N}{=}4$ supersymmetric analogues of the Virasoro minimal strings are also proposed and explored in detail, using the same approach.</p></div>
+</article>
+<article class="card">
+  <div class="num">5</div>
+  <h2><a href="https://arxiv.org/abs/2608.20599" target="_blank" rel="noopener">From Gross-Manes to Alday-Maldacena</a></h2>
+  <div class="meta">
+    <a href="https://arxiv.org/abs/2608.20599" target="_blank" rel="noopener">arXiv:2608.20599</a>
+    <a class="pdf" href="https://arxiv.org/pdf/2608.20599" target="_blank" rel="noopener">PDF</a>
+    <span class="cat" style="--c:#6d5ce0">hep-th</span>
+  </div>
+  <div class="authors">Leonardo Pipolo de Gioia , Sabrina Pasterski , Pedro Vieira</div>
+  <div class="abs ko"><span class="lbl">한국어</span><p>Minimal surface는 string theory에서 여러 중요한 관측량의 classical limit을 지배한다. 두 가지 기본적인 예는 flat space에서의 고에너지 string scattering에 대한 Gross--Manes saddle과 ${\cal N}=4$ SYM에서 strong coupling 하의 gluon scattering에 대한 Alday--Maldacena surface이다. 이 논문에서 우리는 cusp들을 bulk 깊숙한 작은 영역에서 AdS 경계로 이동시킴으로써 이 두 영역을 보간하는 AdS 내의 null polygonal minimal surface의 한 계열을 연구한다. 우리는 이를 수치적으로, 그리고 흥미로운 단순화 극한에서는 해석적으로 수행한다. 특히 우리는 flat space 주변에서의 leading AdS-radius correction을 유도하고, 그 결과 얻어진 classical amplitude가 Alday, Armanini, Häring, Zhiboedov의 최근 예측과 일치함을 보이며, 이는 그들의 bootstrap 구성에 대한 근본적인 worldsheet 기술을 뒷받침한다.</p></div>
+  <div class="abs en"><span class="lbl">Abstract</span><p>Minimal surfaces govern the classical limit of several important observables in string theory. Two basic examples are the Gross--Manes saddle for high-energy string scattering in flat space and the Alday--Maldacena surface for gluon scattering at strong coupling in ${\cal N}=4$ SYM. In this paper we study a family of null polygonal minimal surfaces in AdS interpolating between these two regimes by moving the cusps from a small region deep in the bulk to the AdS boundary. We do this both numerically and -- in interesting simplifying limits -- analytically. In particular, we derive the leading AdS-radius correction around flat space and show that the resulting classical amplitude agrees with the recent prediction of Alday, Armanini, Häring, and Zhiboedov, supporting an underlying worldsheet description of their bootstrap construction.</p></div>
+</article>
+<article class="card">
+  <div class="num">6</div>
+  <h2><a href="https://arxiv.org/abs/2608.20926" target="_blank" rel="noopener">Finite Weyl polynomials and the approach to Tsirelson&#x27;s bound in relativistic scalar quantum field theory</a></h2>
+  <div class="meta">
+    <a href="https://arxiv.org/abs/2608.20926" target="_blank" rel="noopener">arXiv:2608.20926</a>
+    <a class="pdf" href="https://arxiv.org/pdf/2608.20926" target="_blank" rel="noopener">PDF</a>
+    <span class="cat" style="--c:#6d5ce0">hep-th</span><span class="cat" style="--c:#166534">math-ph</span><span class="cat" style="--c:#1d4ed8">quant-ph</span>
+  </div>
+  <div class="authors">J. G. A. Caribé , M. S. Guimaraes , I. Roditi , S. P. Sorella</div>
+  <div class="abs ko"><span class="lbl">한국어</span><p>우리는 $1+1$ 차원에서 free massive scalar field에 대한 Bell-CHSH inequality를 위해, unitary Weyl 연산자의 유한 다항식인 네 개의 bounded Hermitian 연산자를 구성한다. 이 연산자들은 상보적인 wedge에 국소화되어 있다. odd Weyl harmonics는 각 wedge에서 정확히 anticommute하는 두 개의 axis observable을 제공하며, boost generator의 스펙트럼에서 compact support를 갖는 normalizable packet은 0이 아닌 bandwidth에서 정확한 modular inner product를 제공한다. 결과로 얻어지는 Bell-CHSH correlator는 유한한 이중 합이다. axis당 여섯 개의 Weyl 항을 가진 연산자는 이미 $2.14885$를 준다. $\operatorname{sgn}(\cos(x))$의 정규화된 Fejér approximant를 사용하여, 우리는 유한 다항식 family에 대한 supremum이 $2\sqrt{2}$와 같음을 보이지만, 어떤 유한한 원소도 이를 달성하지는 못한다; degree-$511$ 예시는 $2.80027$을 준다. 우리는 또한 centered quasifree state에서, 네 개의 최종 설정이 개별 quadrature의 bounded function인 Bell-CHSH test는 하나의 공통 Gaussian 표현을 허용하며 따라서 $2$ 이하로 유지됨을 지적한다. finite-Weyl 구성은 Bob의 최종 설정이 서로 commute하지 않는 두 axis observable을 혼합하기 때문에 이러한 제약을 회피한다.</p></div>
+  <div class="abs en"><span class="lbl">Abstract</span><p>We construct four bounded Hermitian operators, each one a finite polynomial in the unitary Weyl operators, for the Bell-CHSH inequality in a free massive scalar field in $1+1$ dimensions. The operators are localized in complementary wedges. Odd Weyl harmonics provide two exactly anticommuting axis observables in each wedge, while normalizable packets with compact support in the spectrum of the boost generator give exact modular inner products at nonvanishing bandwidth. The resulting Bell-CHSH correlator is a finite double sum. An operator with six Weyl terms per axis already gives $2.14885$. Using normalized Fejér approximants of $\operatorname{sgn}(\cos(x))$, we show that the supremum over the finite-polynomial family equals $2\sqrt{2}$, although no finite member attains it; a degree-$511$ example gives $2.80027$. We also point out that, in a centered quasifree state, a Bell-CHSH test whose four final settings are bounded functions of individual quadratures admits one common Gaussian representation and therefore stays below $2$. The finite-Weyl construction avoids this restriction because Bob&#x27;s final settings mix two noncommuting axis observables.</p></div>
+</article>
+<article class="card">
+  <div class="num">7</div>
+  <h2><a href="https://arxiv.org/abs/2608.21116" target="_blank" rel="noopener">Canonical representation of the Snyder-de Sitter algebra with correct flat and commutative limits</a></h2>
+  <div class="meta">
+    <a href="https://arxiv.org/abs/2608.21116" target="_blank" rel="noopener">arXiv:2608.21116</a>
+    <a class="pdf" href="https://arxiv.org/pdf/2608.21116" target="_blank" rel="noopener">PDF</a>
+    <span class="cat" style="--c:#6d5ce0">hep-th</span>
+  </div>
+  <div class="authors">V.G. Kupriyanov , E.L.F. de Lima</div>
+  <div class="abs ko"><span class="lbl">한국어</span><p>Snyder--de Sitter algebra는 curvature parameter $\alpha$와 noncommutativity parameter $\beta$로 특징지어지는 phase-space 기하학의 Lorentz-covariant deformation을 제공한다. 우리는 두 매개변수 모두에서 regular한 이 algebra의 명시적인 canonical (Darboux) 표현을 구성한다. Snyder--de Sitter Poisson bracket과 관련된 symplectic 구조로부터 출발하여, 우리는 물리적인 phase-space 변수와 Darboux 좌표 사이의 canonical 변환을 유도하고, $\alpha$와 $\beta$의 모든 order에서 closed form으로 그 역을 얻는다. 결과로 얻어지는 표현은 flat ($\alpha\to0$) 및 commutative ($\beta\to0$) 극한이 잘 정의되어 있으며, 각각 Snyder 및 de Sitter phase-space algebra로 환원되고, 동시 극한 $(\alpha,\beta)\to(0,0)$은 표준 canonical phase-space 좌표를 준다. 이어서 우리는 이 표현을 Snyder--de Sitter phase space 상에서의 Poisson gauge 변환 구성에 적용한다. 특히 우리는 $\alpha$와 $\beta$에서 모두 regular한 해당 gauge 변환 행렬과 Poisson field strength를 유도한다. 우리의 구성은 Snyder--de Sitter phase space 상에서 정식화된 gauge theory 및 기타 물리계를 연구하기 위한 편리한 틀을 제공한다.</p></div>
+  <div class="abs en"><span class="lbl">Abstract</span><p>The Snyder--de Sitter algebra provides a Lorentz-covariant deformation of phase-space geometry characterized by a curvature parameter $\alpha$ and a noncommutativity parameter $\beta$. We construct an explicit canonical (Darboux) representation of this algebra that is regular in both parameters. Starting from the symplectic structure associated with the Snyder--de Sitter Poisson brackets, we derive the canonical transformation between the physical phase-space variables and Darboux coordinates and obtain its inverse in closed form to all orders in $\alpha$ and $\beta$. The resulting representation has well-defined flat ($\alpha\to0$) and commutative ($\beta\to0$) limits, reducing respectively to the Snyder and de Sitter phase-space algebras, while the simultaneous limit $(\alpha,\beta)\to(0,0)$ yields the standard canonical phase-space coordinates. We then apply this representation to the construction of Poisson gauge transformations on Snyder--de Sitter phase space. In particular, we derive the corresponding gauge transformation matrix and Poisson field strength, both of which are regular in $\alpha$ and $\beta$. Our construction provides a convenient framework for investigating gauge theories and other physical systems formulated on Snyder--de Sitter phase space.</p></div>
+</article>
+<article class="card">
+  <div class="num">8</div>
+  <h2><a href="https://arxiv.org/abs/2608.21121" target="_blank" rel="noopener">Target-space fusion of classical topological defects</a></h2>
+  <div class="meta">
+    <a href="https://arxiv.org/abs/2608.21121" target="_blank" rel="noopener">arXiv:2608.21121</a>
+    <a class="pdf" href="https://arxiv.org/pdf/2608.21121" target="_blank" rel="noopener">PDF</a>
+    <span class="cat" style="--c:#6d5ce0">hep-th</span><span class="cat" style="--c:#166534">math-ph</span>
+  </div>
+  <div class="authors">Saskia Demulder , Chuying Wang</div>
+  <div class="abs ko"><span class="lbl">한국어</span><p>sigma-model defect의 classical fusion은 일반적으로 이들의 worldsheet action을 결합하고 중간 field를 소거함으로써 접근된다. 그러나 이 절차는 결과로 얻어지는 target-space defect나 그것의 가능한 branch를 체계적으로 식별하지 못한다. 우리는 fusion을 target-space defect 데이터의 축소로 정식화함으로써 이 문제를 다룬다. intrinsic two-form의 local descent와 connection의 global descent가 허용되는 branch를 결정한다. $SU(2)$ WZW model에서의 symmetry-preserving bi-brane과 Hopf-fibre T-duality defect에 대해, 이 처방은 알려진 biconjugacy-class branch와 fibre-shift defect의 유한한 family를 재현한다. 여러 branch의 출현은 non-invertible fusion의 classical한 발현을 제공한다. 우리는 나아가 이 틀을 사용하여 global consistency condition을 포함한 TsT 및 T-dual biconjugacy defect를 구성한다. 따라서 이는 classical fusion을 계산하고 알려진 defect로부터 새로운 defect를 구성하기 위한 체계적인 방법을 제공한다.</p></div>
+  <div class="abs en"><span class="lbl">Abstract</span><p>Classical fusion of sigma-model defects is commonly approached by combining their worldsheet actions and eliminating the intermediate fields. This procedure, however, does not systematically identify the resulting target-space defect or its possible branches. We address this problem by formulating fusion as a reduction of the target-space defect data. Local descent of the intrinsic two-form and global descent of the connection determine the admissible branches. For symmetry-preserving bi-branes in the $SU(2)$ WZW model and Hopf-fibre T-duality defects, the prescription reproduces the known biconjugacy-class branches and the finite family of fibre-shift defects. The appearance of several branches provides a classical manifestation of non-invertible fusion. We further use the framework to construct TsT and T-dual biconjugacy defects, including their global consistency conditions. It therefore provides a systematic method for computing classical fusion and constructing new defects from known ones.</p></div>
+</article>
+<article class="card">
+  <div class="num">9</div>
+  <h2><a href="https://arxiv.org/abs/2608.21127" target="_blank" rel="noopener">BMPV black holes in higher-derivative supergravity</a></h2>
+  <div class="meta">
+    <a href="https://arxiv.org/abs/2608.21127" target="_blank" rel="noopener">arXiv:2608.21127</a>
+    <a class="pdf" href="https://arxiv.org/pdf/2608.21127" target="_blank" rel="noopener">PDF</a>
+    <span class="cat" style="--c:#6d5ce0">hep-th</span>
+  </div>
+  <div class="authors">Yide Cai , Sabarenath Jayaprakash , James T. Liu , Yi Pang , Robert J. Saskowski</div>
+  <div class="abs ko"><span class="lbl">한국어</span><p>오차원 STU model에는 다섯 개의 독립적인 four-derivative superinvariant가 존재하며, 그중 두 개는 curvature tensor를 포함하지 않는 vector invariant이다. 우리는 AI의 도움으로 가능해진 계산을 통해, 이 일반적인 four-derivative coupling 집합을 사용하여 correction된 BMPV black hole을 오차원에서 직접 구성한다. 우리는 vector invariant가 해나 entropy를 correction하지 않는 반면, heterotic correction과 관련된 entropy는 최근 결과와 일치함을 발견한다.</p></div>
+  <div class="abs en"><span class="lbl">Abstract</span><p>There are five independent four-derivative superinvariants for the five-dimensional STU model, of which two are vector invariants that do not involve curvature tensors. We construct the corrected BMPV black hole directly in five dimensions with this set of general four-derivative couplings, a computation made possible with the help of AI. We find that the vector invariants do not correct the solution or the entropy, while the entropy associated with the heterotic corrections agrees with recent results.</p></div>
+</article>
+<article class="card">
+  <div class="num">10</div>
+  <h2><a href="https://arxiv.org/abs/2608.21178" target="_blank" rel="noopener">Quantum Horizon Tadpole and Emergence of a de Sitter Interior</a></h2>
+  <div class="meta">
+    <a href="https://arxiv.org/abs/2608.21178" target="_blank" rel="noopener">arXiv:2608.21178</a>
+    <a class="pdf" href="https://arxiv.org/pdf/2608.21178" target="_blank" rel="noopener">PDF</a>
+    <span class="cat" style="--c:#6d5ce0">hep-th</span><span class="cat" style="--c:#0e7490">gr-qc</span><span class="cat" style="--c:#c2410c">hep-ph</span>
+  </div>
+  <div class="authors">Chong-Sun Chu</div>
+  <div class="abs ko"><span class="lbl">한국어</span><p>최근 논문 \cite{Chu:2026dhx}에서, fuzzy sphere의 quantum stability가 크지만 유한한 $N$에서 확립되었다. 또한 matrix 기하학의 scaling fluctuation mode에 대한 tadpole이 확인되었다. 이 논문에서 우리는 이 tadpole이 양의 surface tension을 생성하며, horizon이 고립되어 있을 경우 sphere를 수축시키는 경향이 있음을 보인다. 그러나 horizon이 gravity와 결합되면, tadpole은 bulk 기하학이 general relativity의 junction condition에 따라 조정될 것을 요구한다. static하고 spherically symmetric하며 non-singular한 vacuum interior를 가정하면, pure de Sitter space가 선택된다. 이 matching은 또한 내부의 de Sitter time과 외부의 Schwarzschild time 사이의 흥미로운 large-$N$ soldering 관계를 고정한다. 잠재적인 cosmological한 함의가 논의된다.</p></div>
+  <div class="abs en"><span class="lbl">Abstract</span><p>In a recent paper \cite{Chu:2026dhx}, the quantum stability of the fuzzy sphere was established at large but finite $N$. In addition, a tadpole was identified for the scaling fluctuation mode of the matrix geometry. In this paper, we show that the tadpole generates a positive surface tension and tends to contract the sphere if the horizon is left isolated. However, when the horizon is coupled to gravity, the tadpole requires the bulk geometry to adjust according to the junction condition of general relativity. Assuming a static, spherically symmetric and non-singular vacuum interior, pure de Sitter space is selected. The matching also fixes an intriguing large-$N$ soldering relation between the de Sitter time inside and the Schwarzschild time outside. Potential cosmological implications are discussed.</p></div>
+</article>
+<article class="card">
+  <div class="num">11</div>
+  <h2><a href="https://arxiv.org/abs/2608.21238" target="_blank" rel="noopener">$G_2$-Manifolds from 4d $\mathcal{N}=1$ Quivers</a></h2>
+  <div class="meta">
+    <a href="https://arxiv.org/abs/2608.21238" target="_blank" rel="noopener">arXiv:2608.21238</a>
+    <a class="pdf" href="https://arxiv.org/pdf/2608.21238" target="_blank" rel="noopener">PDF</a>
+    <span class="cat" style="--c:#6d5ce0">hep-th</span><span class="cat" style="--c:#475569">math.DG</span>
+  </div>
+  <div class="authors">Andreas P. Braun , Oscar Lewis , Matteo Sacchi , Sakura Schafer-Nameki</div>
+  <div class="abs ko"><span class="lbl">한국어</span><p>superconformal field theory (SCFT)로 흐르는 4차원 $\mathcal{N}=1$ quiver gauge theory의 quantum field-theoretic 구성에서 영감을 받아, 우리는 M-theory에서 이러한 quiver를 기하학적으로 구현하는 $G_2$-holonomy를 갖는 7차원 다양체를 구성한다. field theory적으로, 4차원 quiver는 6차원 $\mathcal{N}=(1,0)$ SCFT의 flux torus 컴팩트화로부터 얻어진다. 원에 컴팩트화된 6차원 이론은 5차원 KK-theory를 낳으며, 이는 non-compact elliptically fibered Calabi-Yau threefold 상의 M-theory로서 기하학적 실현을 갖는다. field-theoretical 처방을 따라, 이 local geometry들은 원 위에 fibered되어 (topological) $G_2$-holonomy 다양체를 실현한다. 우리는 rank 1 E-string theory와 그것의 4차원 quiver의 경우에 이를 구체적으로 수행하며, $G_2$-holonomy 공간의 새로운 family를 구성한다.</p></div>
+  <div class="abs en"><span class="lbl">Abstract</span><p>Inspired by quantum field-theoretic constructions of 4d $\mathcal{N}=1$ quiver gauge theories that flow to superconformal field theories (SCFTs), we construct 7d manifolds of $G_2$-holonomy, which geometrically engineer these quivers in M-theory. Field theoretically, the 4d quivers are obtained by flux torus compactifications of 6d $\mathcal{N}=(1,0)$ SCFTs. The 6d theory compactified on a circle gives rise to a 5d KK-theory, which has a geometric realization as M-theory on a non-compact elliptically fibered Calabi-Yau threefold. Following the field-theoretical prescription, these local geometries are fibered over a circle to realize (topological) $G_2$-holonomy manifolds. We carry this out concretely in the case of the rank 1 E-string theory and its 4d quivers and construct new families of $G_2$-holonomy spaces.</p></div>
+</article>
+<article class="card">
+  <div class="num">12</div>
+  <h2><a href="https://arxiv.org/abs/2608.21318" target="_blank" rel="noopener">Inclusive Radiation and Backreaction from the Phase-Space S-Matrix</a></h2>
+  <div class="meta">
+    <a href="https://arxiv.org/abs/2608.21318" target="_blank" rel="noopener">arXiv:2608.21318</a>
+    <a class="pdf" href="https://arxiv.org/pdf/2608.21318" target="_blank" rel="noopener">PDF</a>
+    <span class="cat" style="--c:#6d5ce0">hep-th</span><span class="cat" style="--c:#0e7490">gr-qc</span>
+  </div>
+  <div class="authors">Nathan Moynihan</div>
+  <div class="abs ko"><span class="lbl">한국어</span><p>우리는 Dyson S-matrix의 matter 부문이 부분적으로 Weyl 변환되는 반면 radiation 부문은 연산자 값으로 남아 있는, classical scattering에 대한 phase-space 기술을 전개한다. 결과로 얻어지는 S-matrix symbol은 여러 classical 관측량에 대한 공통 기원을 제공한다: 우리는 inclusive waveform, phase-space 상의 classical displacement (즉 impulse와 position shift), 그리고 angular momentum이 동일한 대상의 서로 다른 투영으로서 나타남을 보인다. 우리는 부분적으로 Weyl 변환된 $S$-matrix가 elastic phase와 connected radiation kernel의 항으로 exponential한 조직화를 허용하는 반면, 그것의 inclusive one-point 투영은 classical radiation을 기술하는 waveshape $\alpha_I$를 갖는 coherent 표현을 허용함을 보이며, 이는 우리의 최근 제안을 확장한다. 나아가 우리는 nonlinear gravitational memory가 inclusive coherent waveshape로부터 어떻게 유도될 수 있는지를 명시적으로 보인다. hard scattering 데이터에 대한 waveshape의 의존성은 자연스럽게 waveform 공간 상에 유도된 Berry connection을 포함하는 quantum geometry로 이어지며, 이것이 phase-space displacement에 기여하는 바는 radiation-reaction 효과와 static-field 효과를 모두 포착한다. 우리는 scalar QED와 gravity 모두에서 position shift와 field angular momentum에 대한 static contribution을 유도함으로써 이 구조를 예시한다.</p></div>
+  <div class="abs en"><span class="lbl">Abstract</span><p>We develop a phase-space description of classical scattering in which the matter sector of the Dyson S-matrix is partially Weyl transformed while the radiation sector remains operator valued. The resulting S-matrix symbol provides a common origin for several classical observables: we show that the inclusive waveform, the classical displacement in phase-space (i.e. the impulse and position shift), and the angular momentum arise as different projections of the same object. We show that the partially Weyl-transformed $S$-matrix admits an exponential organisation in terms of an elastic phase and connected radiation kernels, while its inclusive one-point projection admits a coherent representative with waveshape $\alpha_I$ describing classical radiation, extending our recent proposal. Furthermore, we show explicitly how nonlinear gravitational memory can be derived from an inclusive coherent waveshape. The dependence of the waveshape on the hard scattering data naturally leads to a quantum geometry, including an induced Berry connection on the space of waveforms, whose contribution to the phase-space displacement captures both radiation-reaction and static-field effects. We illustrate this structure by deriving static contributions to the position shift and field angular momentum in both scalar QED and gravity.</p></div>
+</article>
+<article class="card">
+  <div class="num">13</div>
+  <h2><a href="https://arxiv.org/abs/2608.21328" target="_blank" rel="noopener">Classical dynamics from QFT via Stratonovich-Weyl correspondence</a></h2>
+  <div class="meta">
+    <a href="https://arxiv.org/abs/2608.21328" target="_blank" rel="noopener">arXiv:2608.21328</a>
+    <a class="pdf" href="https://arxiv.org/pdf/2608.21328" target="_blank" rel="noopener">PDF</a>
+    <span class="cat" style="--c:#6d5ce0">hep-th</span>
+  </div>
+  <div class="authors">Alexander Ochirov , Canxin Shi</div>
+  <div class="abs ko"><span class="lbl">한국어</span><p>우리는 massive body는 phase space 상에서 기술되고 massless radiation은 Fock space에 유지되는, S-matrix로부터 relativistic classical dynamics를 추출하기 위한 정식화를 전개한다. 우리의 정식화는 quantum mechanics의 연산자 정식화와 phase-space 정식화 사이의 Stratonovich-Weyl (SW) correspondence에 의존하며, 이는 SW quantizer에 의해 covariant하게 구현된다. localized된 incoming state에 대해, classical 관측량은 incoming asymptotic trajectory 상에서 평가된 해당 연산자의 SW symbol로 주어진다. S-matrix의 exponential한 형태와 결합하여, 관측량은 Magnus amplitude를 포함하는 nested mixed Dirac/commutator bracket으로 자연스럽게 주어진다. 후자는 S-matrix의 로그의 행렬 원소이며, 우리는 Magnus-amplitude diagram 내에서 retarded propagator의 배치를 제어하는 combinatorial Murua 계수를 계산하기 위한 간단한 알고리즘을 제공한다. 이 그림은 gravitational-wave 물리학 응용에 적합하다.</p></div>
+  <div class="abs en"><span class="lbl">Abstract</span><p>We develop a formalism for extracting relativistic classical dynamics from the S-matrix, in which massive bodies are described on phase space while massless radiation is kept in the Fock space. Our formalism relies on the Stratonovich-Weyl (SW) correspondence between the operator and phase-space formulations of quantum mechanics, as implemented covariantly by the SW quantizer. For localized incoming states, classical observables are given by SW symbols of the appropriate operators evaluated on incoming asymptotic trajectories. In combination with the exponential form of the S-matrix, the observables are naturally given by nested mixed Dirac/commutator brackets involving Magnus amplitudes. The latter are the matrix elements of the logarithm of the S-matrix, and we provide a straightforward algorithm for computing the combinatorial Murua coefficients that control the placement of retarded propagators inside Magnus-amplitude diagrams. This picture is well-suited for gravitational-wave physics applications.</p></div>
+</article></main>
+<footer>arXiv.org hep-th 신규 제출 목록(cross-list 제외)에서 추출. 한국어 abstract는 기계 번역이며 전문 용어는 원문 유지 — 인용 전 원문 확인 권장.</footer>
+<script>
+const tko=document.getElementById('tko'),ten=document.getElementById('ten');
+tko.onclick=()=>{document.body.classList.toggle('hide-ko');tko.classList.toggle('on')};
+ten.onclick=()=>{document.body.classList.toggle('hide-en');ten.classList.toggle('on')};
+</script>
+<script src="../assets/stars.js"></script>
+<script src="../assets/star-sync.js"></script>
+<script>
+window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$']],
+ processEscapes:true,tags:'none'},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code'],
+ ignoreHtmlClass:'meta|authors'},chtml:{scale:0.95},startup:{typeset:true}};
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js"></script>
+</body></html>

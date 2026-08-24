@@ -1,5 +1,16 @@
 [
  {
+  "date": "2026-08-24",
+  "datestr": "2026년 8월 24일 (월)",
+  "file": "briefs/2026-08-24.html",
+  "count": 13,
+  "preview": [
+   "Alakazam: Symbolic Tensor Algebra for Field Theory in Julia",
+   "Decomposing Grassmann Monomials for Superfield Expansions",
+   "Threshold Corrections in Heterotic String Theory from Conformal Perturbation Theory"
+  ]
+ },
+ {
   "date": "2026-08-21",
   "datestr": "2026년 8월 21일 (금)",
   "file": "briefs/2026-08-21.html",

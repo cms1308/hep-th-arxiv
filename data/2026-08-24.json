@@ -1,0 +1,98 @@
+{
+ "date": "2026-08-24",
+ "source": "list/new",
+ "count": 13,
+ "papers": [
+  {
+   "id": "2608.20452",
+   "title": "Alakazam: Symbolic Tensor Algebra for Field Theory in Julia",
+   "authors": "Jesse Woods (University of Bern)",
+   "categories": "hep-th, cs.MS, cs.SC",
+   "abstract": "We present \"Alakazam\", a Julia package for performing symbolic manipulations of tensor expressions arising in the study of field theories and quantum mechanics. This will serve as a powerful tool for studying spacetime and supersymmetric structures, including support for calculations in superspace. The package implements many key features such as raising and lowering indices, simplification of terms with dummy indices, replacement patterns, differential and variational calculus, bosonic and fermionic grading, gamma matrix identities, and Lie brackets and commutators. We present notable speed improvements over established systems. Some possible applications include the study of descendants and invariants."
+  },
+  {
+   "id": "2608.20455",
+   "title": "Decomposing Grassmann Monomials for Superfield Expansions",
+   "authors": "Jesse Woods (University of Bern)",
+   "categories": "hep-th, cs.MS",
+   "abstract": "Superspace extends spacetime by anticommuting Grassmann coordinates, whose indices may transform under spin and flavour groups. Decomposing Grassmann monomials into independent invariant structures is a central step in constructing superfield expansions, but becomes increasingly difficult in extended superspace. We present a general representation-theoretic procedure for decomposing the space $\\Lambda^n(\\mathbb{C}^{d_S}\\otimes \\mathbb{C}^{d_F})$, where $d_S$ and $d_F$ are the dimensions of the spin and flavour representations. The branching multiplicities for $\\mathrm{GL}(m)\\downarrow{\\mathrm{Sp}(m)}$ and $\\mathrm{GL}(m)\\downarrow{\\mathrm{SO}(m)}$ are computed by exact Weyl-character comparison at deterministic rational sample points, avoiding Littlewood-Richardson modification rules. We establish completeness of the character ansatz and analyse the computational complexity, showing that it is polynomial in the number of partitions of $n$ and in the group rank, without dependence on Littlewood-Richardson combinatorics. We validate the resulting decompositions via dimension checks. We provide an accompanying standalone Julia script which implements this algorithm for groups of arbitrary rank, and produces the explicit contractions with invariant tensors."
+  },
+  {
+   "id": "2608.20459",
+   "title": "Threshold Corrections in Heterotic String Theory from Conformal Perturbation Theory",
+   "authors": "Dilan Nur Demirtaş , Christoph A. Keller , Manki Kim",
+   "categories": "hep-th",
+   "abstract": "We use conformal perturbation theory to compute one-loop threshold corrections to the Kähler potential of the heterotic string. For this we consider the theory compactified at the Gepner point of the quintic, that is at a highly stringy point of its moduli space. To obtain the corrections, we compute how the weights of the lightest states of the worldsheet theory shift at second order in conformal perturbation theory. This approach can be used to obtain the one-loop correction to all orders in $\\alpha'$."
+  },
+  {
+   "id": "2608.20529",
+   "title": "Supersymmetric Virasoro Minimal Strings: Unified Perturbative and Non-Perturbative Treatment",
+   "authors": "Clifford V. Johnson",
+   "categories": "hep-th",
+   "abstract": "There are four known ${N}{=}1$ supersymmetric Virasoro minimal string theories, naturally coming in two pairs and labeled as 0A$^\\pm$ and 0B$^\\pm$. We observe here that all four are naturally described in terms of solutions of an ordinary differential equation that describes certain random matrix models with positive spectra. Two new additional 0A$^-$ theories, which are unorientable, are naturally described by the framework. The formulation allows for simple computation of all perturbative amplitudes, and provides complete non-perturbative information as well. Our approach makes it clear why type 0A$^-$ can be deformed to include a gas of Ramond vertex insertions, which we fully describe, while type 0A$^+$ cannot. While it is known that the $c\\rightarrow\\infty$ limit reduces the 0A$^-$ and 0B$^-$ models to the familiar 0A and 0B JT supergravities of Stanford and Witten, the same limit for the plus pair reduces to non-perturbative completions of ordinary JT gravity, one of which is known. Large families of ${N}{=}2$ and ${N}{=}4$ supersymmetric analogues of the Virasoro minimal strings are also proposed and explored in detail, using the same approach."
+  },
+  {
+   "id": "2608.20599",
+   "title": "From Gross-Manes to Alday-Maldacena",
+   "authors": "Leonardo Pipolo de Gioia , Sabrina Pasterski , Pedro Vieira",
+   "categories": "hep-th",
+   "abstract": "Minimal surfaces govern the classical limit of several important observables in string theory. Two basic examples are the Gross--Manes saddle for high-energy string scattering in flat space and the Alday--Maldacena surface for gluon scattering at strong coupling in ${\\cal N}=4$ SYM. In this paper we study a family of null polygonal minimal surfaces in AdS interpolating between these two regimes by moving the cusps from a small region deep in the bulk to the AdS boundary. We do this both numerically and -- in interesting simplifying limits -- analytically. In particular, we derive the leading AdS-radius correction around flat space and show that the resulting classical amplitude agrees with the recent prediction of Alday, Armanini, Häring, and Zhiboedov, supporting an underlying worldsheet description of their bootstrap construction."
+  },
+  {
+   "id": "2608.20926",
+   "title": "Finite Weyl polynomials and the approach to Tsirelson's bound in relativistic scalar quantum field theory",
+   "authors": "J. G. A. Caribé , M. S. Guimaraes , I. Roditi , S. P. Sorella",
+   "categories": "hep-th, math-ph, quant-ph",
+   "abstract": "We construct four bounded Hermitian operators, each one a finite polynomial in the unitary Weyl operators, for the Bell-CHSH inequality in a free massive scalar field in $1+1$ dimensions. The operators are localized in complementary wedges. Odd Weyl harmonics provide two exactly anticommuting axis observables in each wedge, while normalizable packets with compact support in the spectrum of the boost generator give exact modular inner products at nonvanishing bandwidth. The resulting Bell-CHSH correlator is a finite double sum. An operator with six Weyl terms per axis already gives $2.14885$. Using normalized Fejér approximants of $\\operatorname{sgn}(\\cos(x))$, we show that the supremum over the finite-polynomial family equals $2\\sqrt{2}$, although no finite member attains it; a degree-$511$ example gives $2.80027$. We also point out that, in a centered quasifree state, a Bell-CHSH test whose four final settings are bounded functions of individual quadratures admits one common Gaussian representation and therefore stays below $2$. The finite-Weyl construction avoids this restriction because Bob's final settings mix two noncommuting axis observables."
+  },
+  {
+   "id": "2608.21116",
+   "title": "Canonical representation of the Snyder-de Sitter algebra with correct flat and commutative limits",
+   "authors": "V.G. Kupriyanov , E.L.F. de Lima",
+   "categories": "hep-th",
+   "abstract": "The Snyder--de Sitter algebra provides a Lorentz-covariant deformation of phase-space geometry characterized by a curvature parameter $\\alpha$ and a noncommutativity parameter $\\beta$. We construct an explicit canonical (Darboux) representation of this algebra that is regular in both parameters. Starting from the symplectic structure associated with the Snyder--de Sitter Poisson brackets, we derive the canonical transformation between the physical phase-space variables and Darboux coordinates and obtain its inverse in closed form to all orders in $\\alpha$ and $\\beta$. The resulting representation has well-defined flat ($\\alpha\\to0$) and commutative ($\\beta\\to0$) limits, reducing respectively to the Snyder and de Sitter phase-space algebras, while the simultaneous limit $(\\alpha,\\beta)\\to(0,0)$ yields the standard canonical phase-space coordinates. We then apply this representation to the construction of Poisson gauge transformations on Snyder--de Sitter phase space. In particular, we derive the corresponding gauge transformation matrix and Poisson field strength, both of which are regular in $\\alpha$ and $\\beta$. Our construction provides a convenient framework for investigating gauge theories and other physical systems formulated on Snyder--de Sitter phase space."
+  },
+  {
+   "id": "2608.21121",
+   "title": "Target-space fusion of classical topological defects",
+   "authors": "Saskia Demulder , Chuying Wang",
+   "categories": "hep-th, math-ph",
+   "abstract": "Classical fusion of sigma-model defects is commonly approached by combining their worldsheet actions and eliminating the intermediate fields. This procedure, however, does not systematically identify the resulting target-space defect or its possible branches. We address this problem by formulating fusion as a reduction of the target-space defect data. Local descent of the intrinsic two-form and global descent of the connection determine the admissible branches. For symmetry-preserving bi-branes in the $SU(2)$ WZW model and Hopf-fibre T-duality defects, the prescription reproduces the known biconjugacy-class branches and the finite family of fibre-shift defects. The appearance of several branches provides a classical manifestation of non-invertible fusion. We further use the framework to construct TsT and T-dual biconjugacy defects, including their global consistency conditions. It therefore provides a systematic method for computing classical fusion and constructing new defects from known ones."
+  },
+  {
+   "id": "2608.21127",
+   "title": "BMPV black holes in higher-derivative supergravity",
+   "authors": "Yide Cai , Sabarenath Jayaprakash , James T. Liu , Yi Pang , Robert J. Saskowski",
+   "categories": "hep-th",
+   "abstract": "There are five independent four-derivative superinvariants for the five-dimensional STU model, of which two are vector invariants that do not involve curvature tensors. We construct the corrected BMPV black hole directly in five dimensions with this set of general four-derivative couplings, a computation made possible with the help of AI. We find that the vector invariants do not correct the solution or the entropy, while the entropy associated with the heterotic corrections agrees with recent results."
+  },
+  {
+   "id": "2608.21178",
+   "title": "Quantum Horizon Tadpole and Emergence of a de Sitter Interior",
+   "authors": "Chong-Sun Chu",
+   "categories": "hep-th, gr-qc, hep-ph",
+   "abstract": "In a recent paper \\cite{Chu:2026dhx}, the quantum stability of the fuzzy sphere was established at large but finite $N$. In addition, a tadpole was identified for the scaling fluctuation mode of the matrix geometry. In this paper, we show that the tadpole generates a positive surface tension and tends to contract the sphere if the horizon is left isolated. However, when the horizon is coupled to gravity, the tadpole requires the bulk geometry to adjust according to the junction condition of general relativity. Assuming a static, spherically symmetric and non-singular vacuum interior, pure de Sitter space is selected. The matching also fixes an intriguing large-$N$ soldering relation between the de Sitter time inside and the Schwarzschild time outside. Potential cosmological implications are discussed."
+  },
+  {
+   "id": "2608.21238",
+   "title": "$G_2$-Manifolds from 4d $\\mathcal{N}=1$ Quivers",
+   "authors": "Andreas P. Braun , Oscar Lewis , Matteo Sacchi , Sakura Schafer-Nameki",
+   "categories": "hep-th, math.DG",
+   "abstract": "Inspired by quantum field-theoretic constructions of 4d $\\mathcal{N}=1$ quiver gauge theories that flow to superconformal field theories (SCFTs), we construct 7d manifolds of $G_2$-holonomy, which geometrically engineer these quivers in M-theory. Field theoretically, the 4d quivers are obtained by flux torus compactifications of 6d $\\mathcal{N}=(1,0)$ SCFTs. The 6d theory compactified on a circle gives rise to a 5d KK-theory, which has a geometric realization as M-theory on a non-compact elliptically fibered Calabi-Yau threefold. Following the field-theoretical prescription, these local geometries are fibered over a circle to realize (topological) $G_2$-holonomy manifolds. We carry this out concretely in the case of the rank 1 E-string theory and its 4d quivers and construct new families of $G_2$-holonomy spaces."
+  },
+  {
+   "id": "2608.21318",
+   "title": "Inclusive Radiation and Backreaction from the Phase-Space S-Matrix",
+   "authors": "Nathan Moynihan",
+   "categories": "hep-th, gr-qc",
+   "abstract": "We develop a phase-space description of classical scattering in which the matter sector of the Dyson S-matrix is partially Weyl transformed while the radiation sector remains operator valued. The resulting S-matrix symbol provides a common origin for several classical observables: we show that the inclusive waveform, the classical displacement in phase-space (i.e. the impulse and position shift), and the angular momentum arise as different projections of the same object. We show that the partially Weyl-transformed $S$-matrix admits an exponential organisation in terms of an elastic phase and connected radiation kernels, while its inclusive one-point projection admits a coherent representative with waveshape $\\alpha_I$ describing classical radiation, extending our recent proposal. Furthermore, we show explicitly how nonlinear gravitational memory can be derived from an inclusive coherent waveshape. The dependence of the waveshape on the hard scattering data naturally leads to a quantum geometry, including an induced Berry connection on the space of waveforms, whose contribution to the phase-space displacement captures both radiation-reaction and static-field effects. We illustrate this structure by deriving static contributions to the position shift and field angular momentum in both scalar QED and gravity."
+  },
+  {
+   "id": "2608.21328",
+   "title": "Classical dynamics from QFT via Stratonovich-Weyl correspondence",
+   "authors": "Alexander Ochirov , Canxin Shi",
+   "categories": "hep-th",
+   "abstract": "We develop a formalism for extracting relativistic classical dynamics from the S-matrix, in which massive bodies are described on phase space while massless radiation is kept in the Fock space. Our formalism relies on the Stratonovich-Weyl (SW) correspondence between the operator and phase-space formulations of quantum mechanics, as implemented covariantly by the SW quantizer. For localized incoming states, classical observables are given by SW symbols of the appropriate operators evaluated on incoming asymptotic trajectories. In combination with the exponential form of the S-matrix, the observables are naturally given by nested mixed Dirac/commutator brackets involving Magnus amplitudes. The latter are the matrix elements of the logarithm of the S-matrix, and we provide a straightforward algorithm for computing the combinatorial Murua coefficients that control the placement of retarded propagators inside Magnus-amplitude diagrams. This picture is well-suited for gravitational-wave physics applications."
+  }
+ ]
+}
