@@ -1,0 +1,189 @@
+{
+ "date": "2026-08-25",
+ "source": "list/new",
+ "count": 26,
+ "papers": [
+  {
+   "id": "2608.21511",
+   "title": "String stars, small black holes, and the supersymmetric index",
+   "authors": "Erez Y. Urbach",
+   "categories": "hep-th",
+   "abstract": "We discuss aspects of the black hole-string transition as the angular velocity approaches the supersymmetric index $\\beta \\Omega = 2\\pi i$. In this limit, the high-temperature Atick-Witten effective description breaks down. For Heterotic string theory, a new high-temperature description emerges near the index in terms of a Higgsed $SU(2)_L\\times U(1)_R$ supergravity with a magnetic field profile. The Hagedorn instability manifests in the theory as Ambjorn-Olesen W boson condensation, due to the background magnetic field. For type II, a tower of winding strings becomes light near the index, which opens up a new dimension in the T-dual picture. In both cases, a string star solution is found, similar to the Horowitz-Polchinski solution, but decouples at the index $\\beta \\Omega = 2\\pi i$. Considering charged solutions, the string star appears to interpolate between charged black holes and the free string phase. At the index, both the charged black hole and the charged string star phases decouple. This suggests a tension between a smooth black hole-string transition and the existence of a stringy BPS two-charge black hole."
+  },
+  {
+   "id": "2608.21518",
+   "title": "On flat space limits of $AdS_4$ black holes",
+   "authors": "Pedro Vicente Marto , Shradha Ramakrishnan , Stefan Vandoren",
+   "categories": "hep-th",
+   "abstract": "With a view towards understanding flat space holography, we study the flat space limit of asymptotically $AdS_4$ black holes in gauged $\\mathcal{N}=2$ supergravity. Using holographic renormalisation, we carefully analyse the flat space limit of the on-shell action of various black holes in this setting and make explicit the states that contribute to the partition function in this limit. We find several features: large black holes lead to a divergence in the partition function which can be understood as a thermodynamic volume divergence. Meanwhile, semiclassically, small black holes reproduce the partition function of their flat space counterparts, and we clarify the mapping between BPS, (near-)extremal or non-extremal black holes on both sides for charged and rotating solutions. Finally, by studying a suitable flat limit of the BPS Kerr-Newman-$AdS_4$ black hole in M-theory, we obtain a charged BPS solution in flat space. On the dual side, we determine a Carrollian-like limit on the known ABJM partition function on $S^1\\times S^2$ at large $N$, and show that it reproduces the correct entropy of the BPS charged black hole in asymptotically flat space."
+  },
+  {
+   "id": "2608.21523",
+   "title": "What Neural Network Field Theory Can and Cannot Realise on a Computer",
+   "authors": "Thomas R. Harvey",
+   "categories": "hep-th, cs.LG, hep-lat, hep-ph, math-ph",
+   "abstract": "One aim of neural network field theory is to put a quantum or effective field theory on a computer, with the network ensemble itself as the theory. We ask how far that aim can be pushed for a function class regular enough to be computed with. Our main result is a no-go theorem with assumptions that hold for standard network architectures. We use it to separate four versions of neural network field theory, according to whether the defining object is the finite width ensemble or its infinite width limit, and whether the target we want to compute is a quantum or an effective field theory. Neither finite width interpretation is straightforwardly consistent. For finite width ensembles with finite variance at each point, the QFT interpretation fails reflection positivity, while the EFT interpretation establishes no scale separation by which the positivity violation can be placed outside its domain of validity. Of the two limit versions, one can be simulated in full and the other only in part, as only its smeared correlators are computable with a controlled error. As such, at the level of a controlled numerical computation, the QFT and EFT versions cannot be distinguished. One dimension escapes the obstruction, yet reflection positivity is shown to still fail there at every finite width for the cosine network. Two escapes from the theorem remain, giving up either finite variance at a point or exact rotation invariance, and we discuss both of these possibilities."
+  },
+  {
+   "id": "2608.21588",
+   "title": "Neural Network Field Theory at Finite Width",
+   "authors": "Christian Ferko , Aaron Mutchler",
+   "categories": "hep-th, cond-mat.dis-nn, cs.LG",
+   "abstract": "Under mild assumptions, any quantum mechanical (QM) model or quantum field theory (QFT) admits a representation in terms of an ensemble of neural networks with countably many random parameters. We investigate the features of NN-QM and NN-FT models with finitely many parameters, such as a feedforward network of width $N < \\infty$. We find that, generically, such models must violate one of the properties of conventional Euclidean QFTs, such as reflection positivity or cluster decomposition. We present several complementary ways of understanding which features can and cannot be preserved at finite $N$, both in QM and in QFT."
+  },
+  {
+   "id": "2608.21613",
+   "title": "One-Loop Quantum Correction to the Kink Mass in a Lorentz-Violating Scalar Field Theory",
+   "authors": "Reza Moazzemi",
+   "categories": "hep-th",
+   "abstract": "We study the radiative correction to the mass of the $(1+1)$-dimensional $\\lambda\\phi^4$ kink in the presence of an irreducible, spacelike Lorentz-violating interaction. The Lorentz-violating operator is chosen as $-\\frac12 c\\phi^2(u\\!\\cdot\\!\\partial\\phi)^2$ with $u^\\mu=(0,1)$, which is the lowest-order single-scalar operator considered in this class of models that produces effects that cannot be removed by a linear redefinition of coordinates or the field. We perform the one-loop renormalization of the underlying quantum field theory. In contrast with Lorentz-invariant $\\lambda\\phi^4$ theory in two dimensions, the Lorentz-violating theory requires, at this order, both a modified mass counterterm and a nonzero field-strength counterterm. The corrected stability problem contains modified bound and continuum modes, while the continuum phase shift remains unchanged at $O(c)$ with the boundary-condition prescription adopted here. Finally, using the vacuum-subtracted zero-point energy and the counterterm Hamiltonian, we obtain the one-loop kink mass through first order in $c$. We give the finite coefficient in the subtraction prescription implemented in the accompanying thesis calculation, for which the Lorentz-violating contribution is numerically negative."
+  },
+  {
+   "id": "2608.21798",
+   "title": "Heterotic string couplings at order $α'^3$ in NS-NS sector",
+   "authors": "Alireza Pahlavan , Mehdi Ameri , Mohammad R. Garousi",
+   "categories": "hep-th",
+   "abstract": "We utilize the standard T-duality procedure to derive the classical effective action of heterotic string theory at the eight-derivative order within the NS-NS sector, which comprises the metric, the \\(B\\)-field, and the dilaton. Starting from the minimal basis at this order, consisting of 872 even-parity and 477 odd-parity couplings, we perform a dimensional reduction on a circle and impose invariance under T-duality transformations, specifically the Buscher rules supplemented by higher-derivative corrections. This invariance uniquely fixes a subset of the couplings to match those of type II theory up to an overall factor, while the remaining couplings are determined in terms of the coefficients at order \\(\\alpha'\\). For these latter couplings, we adopt both the Metsaev-Tseytlin and Meissner schemes. Subsequently, through field redefinitions, we recast the action into a canonical form in which the dilaton appears solely through the overall factor \\(e^{-2\\Phi}\\). In the Meissner scheme, the pure gravity sector precisely reproduces the known S-matrix results. In both schemes, the pure gravity terms can be expressed as the double trace \\((\\Tr(R^2))^2\\), and when combined with the corresponding Yang-Mills terms \\((\\Tr(F^2))^2\\), they take the unified form \\((\\Tr(R^2-F^2))^2\\), as anticipated in the literature."
+  },
+  {
+   "id": "2608.21865",
+   "title": "Characteristic-cone running from on-shell residues: Identifiability on the physical EFT quotient",
+   "authors": "Renat Gafarov",
+   "categories": "hep-th, gr-qc",
+   "abstract": "We formulate a data-completeness test for extracting low-energy characteristic-cone running from flat-space on-shell renormalization-group residues. In four-dimensional, parity-even Einstein--scalar--Maxwell effective field theory through four derivatives and four external fields, Wilson directions are first placed on the physical EFT quotient and background propagation is represented by a traceless response on the full massless root sector. The response is identifiable from chosen amplitude coordinates precisely when the amplitude kernel lies in the response kernel. For the published opposite-helicity vector--scalar residue we find $\\beta_\\mu C_{\\gamma\\phi}^{(2)}=-55/(96\\pi^2)$ and, after an order-reduced frame translation, the contribution $\\beta_\\mu(r_T-r_\\gamma)=-55/(48\\pi^2M_{\\rm P}^4)$. A finite operator registry gives explicit rank-two incompleteness tests: independent $F^4$ directions split photon polarizations on a magnetic background, while $\\mathcal CFF$ produces an analytic splitting along a principal Weyl axis on a Petrov-I Einstein--scalar background. For the isolated scalar--photon contact, direct Schur reduction finds nonzero raw mixing but no first-order physical off-diagonal entry, by the Maxwell Ward identity. Thus the residue fixes one diagonal cone contribution but does not determine the term-complete characteristic response over the declared admissible coefficient domain."
+  },
+  {
+   "id": "2608.21947",
+   "title": "Perturbative Reconstruction of Self-Adjoint Generators from Bosonic Canonical Commutation Relations: Application to the Null-Surface Formulation",
+   "authors": "C. N. Kozameh",
+   "categories": "hep-th",
+   "abstract": "We study the inverse adjoint problem for a perturbative bosonic outgoing map. Within the polynomial bosonic canonical-commutation-relation (CCR) algebra, we prove a constructive integrability theorem: order-by-order preservation of the CCRs is sufficient to reconstruct recursively a formal self-adjoint generator whose exponential implements the outgoing map by adjoint conjugation. At each order, the Baker--Campbell--Hausdorff contribution determined by previously reconstructed generators is subtracted from the outgoing coefficient, and the remaining homogeneous CCR conditions determine the next generator explicitly. We apply the construction to graviton scattering in the null-surface formulation (NSF), specialized to the flat solution-space sector with Minkowski metric, null generators, affine parameter, and cone measure. The NSF outgoing map preserves the Ashtekar radiative CCRs through (\\delta a_3), corresponding to order (\\varepsilon^2). At this order, the scalar CCR sector uniquely selects the symmetric ordering (c=1) for the nontrivial interacting kernel. The associated linear contraction, generated by the same cubic kernel, cancels the double-contraction contribution from ([\\delta a_2,\\delta a_2^\\dagger]). The theorem then reconstructs the self-adjoint generators (\\delta T_1) and (\\delta T_2), providing a formal perturbative unitary implementation. The resulting canonical organization also separates the direct (2\\to2) contribution into irreducible-loop, one-particle-reducible, and factorized sectors."
+  },
+  {
+   "id": "2608.22013",
+   "title": "Holographic SU(3) color superconductivity at finite baryon chemical potential",
+   "authors": "Xin Zhao , Zhang-Yu Nie , Ya-Peng Hu",
+   "categories": "hep-th, hep-ph",
+   "abstract": "We present a holographic model of SU(3) color superconductivity (CSC) where a global color symmetry is spontaneously broken by a diquark condensate at finite baryon chemical potential. At $\\mu_b=0$, a systematic stability analysis over all SU(3) channels recovers the known SU(2) s+p competition. Based on that, the finite $\\mu_b$ further generalizes the s-wave order to an S1+iS2 structure. We find that $\\mu_b$ enhances the critical temperature of the S1+iS2 phase while suppressing the p-wave -- the latter vanishes beyond a certain $\\mu_b$ when backreaction is included. This opposite trend reshapes the phase diagram: with increasing $\\mu_b$, the balanced S+ phase (S1=S2) takes over the entire color-superconducting region. Our non-Abelian framework provides a concrete holographic description of global SU(3) symmetry breaking, relevant for understanding color-superconducting phases in dense QCD and may offer new insights into the physics of neutron-star interiors."
+  },
+  {
+   "id": "2608.22469",
+   "title": "Thermal propagator of the bosons and fermions fields",
+   "authors": "M. A. A. Ahmed , H. Zainuddin , N. M. Shah",
+   "categories": "hep-th",
+   "abstract": "In a thermodynamic environment, thermal field theory (TFT) describes a large ensemble of interacting particles. This may appear to be the same as in classical statistical mechanics. Therefore, we study the scalar propagator and fermion propagator by considering an arbitrary parameter $\\sigma$ that allows for a path integral description in real-time formalism (RTF). We constructed those propagators which allowed us to know how particles moved from one point to another point in momentum space as well as in mixed space, at finite temperature without a chemical potential."
+  },
+  {
+   "id": "2608.22509",
+   "title": "A second rotational Killing field on gauged D=5 vector multiplet horizons",
+   "authors": "Usman Kayani",
+   "categories": "hep-th, gr-qc",
+   "abstract": "We study supersymmetric near-horizon geometries of gauged D=5 supergravity coupled to vector multiplets, on the branch where the canonical rotational Killing vector $\\tilde V$ of the horizon section $\\mathcal{S}$ is non-vanishing. No rotational symmetry is assumed. On a compact, connected $\\mathcal{S}$ without boundary, a second rotational Killing field, independent of $\\tilde V$, always exists on the open set where $Z$ and $W$ are linearly independent, and extends to an isometry of all of $\\mathcal{S}$, unconditionally if the moduli are constant and under a checkable extension hypothesis otherwise. With $K=Q_{IJ}C^IC^J$ vanishing exactly in the minimal theory, $K\\equiv0$ recovers the known result of Grover, Gutowski, Papadopoulos and Sabra. When $K>0$, $P=Z+W$ vanishes at every critical point of $\\|\\eta_-\\|^2$, and two sub-branches occur, both realised. On the first, $P\\equiv0$, the moduli are constant and the isometry follows by homogeneity, recovering Kunduri and Lucietti local geometries as a consequence of supersymmetry and compactness rather than an ansatz. On the second, $P\\not\\equiv0$, the moduli genuinely vary; closure of the first-order system ($dP=0$) turns the Killing equation for a vector orthogonal to $P$ into a flat rank-two system transported along $P$, solved explicitly by $U=\\|\\eta_-\\|^2(h_YN-h_NY)$. Both sub-branches are non-empty on compact $\\mathcal{S}$: known $U(1)^3$ black holes populate the first, and an explicit compact horizon from the non-static Kunduri-Lucietti family, with $P$ vanishing at two points, populates the second and verifies the extension hypothesis numerically. We also prove $K$ is identically zero or everywhere positive, exclude a hidden Killing-tensor symmetry, and leave the $S^1\\times S^2$ black-ring window $\\tfrac13\\Phi^2<\\chi^2K\\leq\\tfrac43\\Phi^2$ unexcluded on either sub-branch."
+  },
+  {
+   "id": "2608.22609",
+   "title": "Genus-Two Contributions to Late-Time Correlators in JT Gravity",
+   "authors": "Masayoshi Sato",
+   "categories": "hep-th",
+   "abstract": "In this work, we analyze the late-time two-point correlation function in Jackiw--Teitelboim gravity, focusing on the genus-two ($g=2$) contribution associated with two baby universes. Extending the analysis of the single-baby-universe ($g=1$) case, we formulate an amplitude describing the emission and absorption of two baby universes during the evolution of the Hartle--Hawking state. This formulation reduces the problem to a moduli-space integral involving the Weil--Petersson volume $V_{0,3}$. To evaluate this integral, we decompose $V_{0,3}$ into contributions from Kontsevich graphs and extend the no-shortcut condition to the relevant genus-two strip geometries. Combined with the strip approximation, this decomposition reorganizes the moduli-space integral into a finite sum of contributions associated with distinct geometric configurations. We then explicitly evaluate the strip-geometry contributions corresponding to the emission of two baby universes and determine their contribution to the genus-two late-time two-point correlation function. Our results suggest that the strip approximation, together with the no-shortcut condition, provides a useful analytic framework for studying higher-genus geometries containing multiple wormholes."
+  },
+  {
+   "id": "2608.22625",
+   "title": "Higher-spin charges and the $L_Λ w_{1 + \\infty}$ algebra in (A)dS$_4$",
+   "authors": "Lorenzo Di Giacomo , Maitá Micol , Daniele Pranzetti , Ana-Maria Raclariu",
+   "categories": "hep-th",
+   "abstract": "We consider $(3+1)$-dimensional asymptotically locally (anti-)de Sitter ((A)dS$_4$) spacetimes with boundary conditions allowing for gravitational flux. We construct an infinite tower of higher-spin charges as perturbative solutions in the cosmological constant $\\Lambda$ to a hierarchy of evolution equations resulting from an asymptotic expansion of the Einstein equations. We show that these charges canonically realize the $\\Lambda$-deformed $w_{1+\\infty}$ algebra ($L_{\\Lambda} w_{1+\\infty}$) on a restricted gravitational phase space, thereby extending the higher-spin symmetry structure of asymptotically flat spacetimes to asymptotically (A)dS spacetimes. We further construct the curved-space counterparts of conformally soft gravitons directly in terms of spacetime data. We show that they are primaries with respect to an $\\mathfrak{sl}(2,\\mathbb{R})$ subalgebra of the (A)dS$_4$ isometry algebra and that their Poisson brackets with the quadratic higher-spin charges reproduce the $\\Lambda$-deformed celestial operator product expansion proposed by Taylor and Zhu. Our results establish the bulk gravitational origin of the $L_{\\Lambda}w_{1+\\infty}$ symmetry and extend the celestial bulk-boundary dictionary to asymptotically (A)dS$_4$ gravity."
+  },
+  {
+   "id": "2608.22669",
+   "title": "Towards Perturbative Unimodular Poincaré Gauge Theories with Propagating Torsion",
+   "authors": "Arthur F. Vieira , Antonio D. Pereira , Reinhard Alkofer",
+   "categories": "hep-th, gr-qc",
+   "abstract": "We study the one-loop relation between an effective-field-theory extension of Poincaré gauge theories of gravity with propagating torsion and its unimodular counterpart. In the Einstein representation, we consider two representative quadratic torsion subsectors, namely totally antisymmetric (axial) torsion and the vector component of hook-antisymmetric torsion. On maximally symmetric metric backgrounds with vanishing background torsion, the diffeomorphism-invariant and genuine unimodular theories yield identical one-loop determinants in both sectors, reproducing the same local logarithmic divergences. We further examine flat backgrounds with homogeneous axial or vector torsion, where metric-torsion mixing is present. In each case, the torsion-dependent one-loop effective action in unimodular gauge and in the genuine unimodular formulation is controlled by the same physical determinant. Thus, for the actions and backgrounds considered, the unimodular constraint does not modify local one-loop torsion dynamics. We also delineate the limitations of this equivalence and the extensions needed for generic torsionful curved backgrounds."
+  },
+  {
+   "id": "2608.22855",
+   "title": "Bouncing shellworld embedded in charged AdS spacetime",
+   "authors": "Karma P. Sherpa , Rishi Pokhrel , Indra K. P. Chettri , Tanay K. Dey",
+   "categories": "hep-th",
+   "abstract": "We investigate the cosmological evolution of a spherical brane within the shellworld (dark bubble) scenario embedded in a five-dimensional charged AdS bulk spacetime. For zero or small value of the brane cosmological constant, the shellworld universe has a nonsingular bouncing and cyclic nature with the bounce induced by the charge parameter of the bulk spacetime. On large value of the brane cosmological constant, the shellworld undergoes a nonsingular bounce and expands eternally. Under certain conditions, the brane bounces outside the bulk horizons, leading to a geometrical resolution of the Cauchy horizon instability present in standard braneworld models. Furthermore, analysis of linear scalar perturbations reveals that test scalar field modes remain regular and non-divergent across the bounce. Finally, we incorporate uniformly distributed long strings in the bulk and demonstrate that the bounce still persists while avoiding the horizon instability."
+  },
+  {
+   "id": "2608.22952",
+   "title": "A pedagogical introduction to invariant theory and finite-$N$ holography",
+   "authors": "Robert de Mello Koch , Minkyoo Kim , Augustine Larweh Mahu , Anik Rudra",
+   "categories": "hep-th",
+   "abstract": "These lectures provide a pedagogical introduction to the study of finite-$N$ physics of the AdS/CFT correspondence. More specifically we develop the consequences of the trace relations for the space of gauge invariant operators, using powerful methods from invariant theory. Our key conclusions are \\begin{itemize} \\item that the complete set of trace relations can be solved, leaving a non-redundant set of gauge invariant operators, \\item that this non-redundant set can be generated using two types of generators, called primary and secondary invariants, and \\item that the primary invariants acquire a natural interpretation as perturbative gravitational degrees of freedom, while the secondary algebra encodes non-perturbative effects of the dual gravitational theory. \\end{itemize}"
+  },
+  {
+   "id": "2608.23008",
+   "title": "A Combinatorial Origin of Locality",
+   "authors": "Laurentiu Rodina , Giuseppe Sellaroli , Jonathan Valenzuela",
+   "categories": "hep-th",
+   "abstract": "Locality and unitarity are fundamental principles of quantum field theory. For tree-level scattering amplitudes, locality determines which propagator poles may occur together, while unitarity fixes their residues through factorization. Previous uniqueness theorems have repeatedly shown that unitarity can emerge from locality combined with other physical principles. In this Letter we give the first complete all-multiplicity proof for the emergence of locality in this setting. We focus on Tr($\\phi^3$) theory and phrase locality as a problem in geometric combinatorics. Planar propagators are chords of a polygon, and a denominator is local exactly when its chords triangulate the polygon, and non-local otherwise. We show that hidden zeros---regular kinematic conditions on which the amplitude vanishes---enforce pole compatibility and therefore imply a local singularity structure. The proof rests on two ingredients: a graphical \\emph{star test} determines when a chosen zero eliminates a pole product, and a \\emph{smoothing} procedure finds such a zero. Thus, once the planar pole alphabet and denominator bound are specified, locality and unitarity emerge together from a single on-shell principle: hidden zeros. Equivalently, our proof provides a novel characterization of a familiar concept: polygon triangulations are precisely the chord configurations that evade every star test."
+  },
+  {
+   "id": "2608.23069",
+   "title": "Renormalization, cutoff, and gluing for a quartic model with boundary",
+   "authors": "A. V. Ivanov",
+   "categories": "hep-th, math-ph",
+   "abstract": "In this paper, we study the renormalization of a three-dimensional quartic model on a compact connected Riemannian manifold with a boundary. We show that, in addition to the standard shift of the mass parameter, it is necessary to take into account boundary contributions involving singular coefficients. This indicates the need to extend the classical action within the framework of standard renormalization theory. The requirements of consistency regarding the gluing of manifolds lead to renormalization of an operator on the boundary."
+  },
+  {
+   "id": "2608.23077",
+   "title": "Love at the String Scale: Tidal Deformability Across the Black Hole-String Transition",
+   "authors": "Roberto Emparan , Luis Lehner , Stefano Trezzi",
+   "categories": "hep-th",
+   "abstract": "Tidal deformability provides a sensitive probe of the structure of compact objects, and black holes are exceptional in having vanishing static Love numbers in four-dimensional Einstein gravity. We ask what happens to this fine-tuned rigidity across the black hole-string transition, where the same states are expected to admit a weakly coupled description as a self-gravitating highly excited string, or \"string star\". We compute the static tidal Love numbers of the Horowitz-Polchinski (HP) string star for multipoles $\\ell=2,3,4$ in $D=4,5,6$. The response is non-zero in all cases, as in the available $\\alpha'$-corrected black hole results, so the zero-Love structure of four-dimensional Einstein gravity does not survive on either side of the transition. On the string side, however, the response has a distinctive multipolar structure: the Love numbers grow rapidly with $\\ell$, and we show analytically that this growth originates from the competition between the multipolar weight of the tidal field and the exponential tail of the winding condensate, with the result that the radial scale probed by the deformability grows linearly with $\\ell$ at large multipole number. This provides a direct tidal signature of the extended, surface-less nature of the string star. We discuss the comparison with $\\alpha'$-corrected black holes and the limitations of the currently available perturbative results at large $\\ell$."
+  },
+  {
+   "id": "2608.23111",
+   "title": "A Third-Quantized Description of Spacetime Wormholes in AdS/CFT",
+   "authors": "Shinji Hirano",
+   "categories": "hep-th",
+   "abstract": "We propose an extension of AdS/CFT in which quantum gravitational wavefunctions of connected bulk geometries are assembled into a Fock space of universes. Splitting and joining interactions in a third-quantized Hamiltonian then provide a quantum description of changes in bulk connectivity and topology. Reduced phase-space quantization supplies the physical one-universe Hilbert space and a radial Schrödinger evolution with respect to which the topology-changing interactions are ordered. We develop the construction concretely in AdS$_3$ gravity with a torus boundary, where these ingredients can be described explicitly. The light spectrum is treated as fixed, non-normalizable background data, whereas the normalizable states above the black-hole threshold are quantized as dynamical modes. A conventional boundary theory is selected by choosing a coherent state whose universe-field expectation value, together with the fixed background contribution, yields consistent CFT data at the asymptotic boundary. Generic one-universe wavefunctions need not admit such an interpretation. This raises the possibility that CFT-realizable wavefunctions are nongeneric in the gravitational state space and are not closed under arbitrary superpositions of gravitational states. The known two-torus spacetime-wormhole amplitude, which lies at the heart of the factorization problem, provides concrete input for the topology-changing interactions of the third-quantized theory. A complementary cutting-and-gluing description yields an effective ensemble interpretation when the resulting gravitational sectors admit consistent boundary-theory interpretations, without assuming a fundamental ensemble of boundary theories. We also discuss replica wormholes and baby-universe processes within the same framework."
+  },
+  {
+   "id": "2608.23220",
+   "title": "Conformal and Noncommutative Gravity from Gauge Symmetry Breaking and SO(2,16) Unification",
+   "authors": "Stelios Stefas , George Zoupanos",
+   "categories": "hep-th, gr-qc",
+   "abstract": "Motivated by the old idea of treating gravity as a gauge theory, we review the gauge-theoretic construction of Conformal Gravity and of Noncommutative (Fuzzy) Gravity. We then outline how these gauge formulations of gravity can be unified with internal interactions described by an SO(10) Grand Unified Theory, based on the critical observation that the dimension of the tangent-space symmetry group of a curved manifold need not coincide with the spacetime dimension."
+  },
+  {
+   "id": "2608.23243",
+   "title": "Analytical Cosmological Collider at Strong Mixing in Laplace Space",
+   "authors": "Nathan Belrhali , Arthur Poisson , Sébastien Renaux-Petel",
+   "categories": "hep-th, astro-ph.CO, gr-qc",
+   "abstract": "Primordial non-Gaussianities are at their largest when the curvature perturbation is coupled to a massive field by a mixing too strong to be treated perturbatively. We show that this regime, naturally reached in multifield inflation, is solved analytically by the Laplace-space representation we recently introduced, in which every mode becomes a superposition of plane waves weighted by a single kernel. The bispectrum then follows as a rapidly convergent series of elementary functions, in perfect agreement with independent numerical results. We find that the cosmological collider signal at strong mixing is larger than widely believed, with only half of the usual Boltzmann suppression. Its amplitude further grows with the number of time derivatives of the curvature perturbation in the interaction, singling out the most promising observational targets."
+  },
+  {
+   "id": "2608.23298",
+   "title": "The ETH matrix model for DSSYK: non-perturbative corrections and intersection theory",
+   "authors": "Eleonora Alfinito , Matteo Beccaria",
+   "categories": "hep-th",
+   "abstract": "At leading order in the genus expansion the ETH matrix model for DSSYK reproduces its correlators by construction, while its higher-genus corrections are conjectured to capture higher-topology contributions in the dual sine-dilaton gravity -- a correspondence established so far only for the disk and the wormhole. At fixed genus the correlators are built from discrete volumes $N_{g,n}$, polynomial in $q$-deformed zeta values $\\zeta_q(2k)$ with $q=e^{-\\lambda}$, $\\lambda$ being the DSSYK coupling. These lie in the ring of quasimodular forms generated by the Eisenstein series $E_2,E_4,E_6$, whose $S$-duality yields an exact closed form for the leading non-perturbative correction as $\\lambda\\to0$, controlled by $\\widetilde q=e^{-4\\pi^2/\\lambda}$. Known at disk level, this scale is shown here to govern the fixed-genus, higher-boundary amplitudes as well. We show that the term linear in $\\widetilde q$, at leading order in $\\lambda$, is captured entirely by the $q$-deformed Weil--Petersson volumes, and reduces to a finite sum of intersection numbers of $\\kappa$-classes on the moduli space $\\overline{\\mathcal M}_{g,n}$ of stable curves, computable without repeating the topological recursion that produced the $N_{g,n}$. We tabulate it for every $(g,n)$ whose $q$-deformed volume is known in closed form, and extend it to $(3,1),(3,2),(4,1)$, where none is available. The construction is not restricted to leading order: we work out $O(\\widetilde q^2)$ for the same cases."
+  },
+  {
+   "id": "2608.23326",
+   "title": "Perturbative Anomaly Inflow on Orbifolds",
+   "authors": "Hao Y. Zhang",
+   "categories": "hep-th, math-ph",
+   "abstract": "We study perturbative anomaly inflow for effective theories supported on orbifold fixed loci of the internal geometry. Donnelly's equivariant APS theorem gives a fixed-point density, whose degree-\\((d+2)\\) component is identified as the anomaly polynomial of the \\(d\\)-dimensional effective theory. We apply the construction to six-dimensional A-type orbi-instanton theories engineered by \\(N\\) M5-branes probing a transverse \\(\\mathbb{C}^2/\\mathbb{Z}_k\\) singularity at an end-of-the-world M9-brane. For a flat \\(E_8\\) connection specified by \\(\\rho:\\mathbb{Z}_k\\to E_8\\), we compute the non-identity ALE fixed-point class on the M9 wall. Its degree-eight component agrees with the complete Kac-label-dependent remainder conjectured in \\cite{MOTZ}, including the \\(SU(2)_R\\) and tangent-bundle curvatures. Together with the known M5/Hořava--Witten and ALE/Hořava--Witten terms, this reproduces the unflavored tensor-branch anomaly polynomial. This local equality further suggests a complete M-theory corner-inflow interpretation. The same prescription also be extended to include flavor symmetries as the centralizer of \\(E_8\\)."
+  },
+  {
+   "id": "2608.23378",
+   "title": "Landau theory, effective temperature, and tricritical phenomena in a holographic nonequilibrium steady state",
+   "authors": "Motohiro Kanazawa , Masataka Matsumoto , Shin Nakamura",
+   "categories": "hep-th, cond-mat.stat-mech, nucl-th",
+   "abstract": "We investigate the critical exponents $(\\gamma,\\nu)$ at the current-driven tricritical point (TCP) associated with chiral symmetry breaking in a nonequilibrium steady state described by the D3/D7 model. In the symmetry-broken phase, we find that, unlike in the conventional Landau theory, both $\\gamma$ and $\\nu$ can take values different from those predicted by the Landau theory and depend on the path along which the TCP is approached in the phase diagram. However, when the TCP is approached with the ratio of the effective temperature to the heat bath temperature, $T_{*}/T$, held fixed, the critical exponents agree with those of the Landau theory. These results suggest that the critical phenomena at the current-driven TCP may be described by the Landau theory along the $T_{*}/T$-fixed line, whereas a nontrivial extension of the Landau theory is required for a more general description of the critical phenomena along arbitrary paths."
+  },
+  {
+   "id": "2608.23517",
+   "title": "Energy of toroidal M2 brane in flat 11d background",
+   "authors": "Arkady A. Tseytlin , Zihan Wang",
+   "categories": "hep-th",
+   "abstract": "The supermembrane action is non-linear and a priori non-renormalizable. Still, some quantities in this theory may be free of log UV divergences and thus defined unambiguously. To explore this possibility we compute the energy of an M2 brane wrapped on a 2-torus in flat 11d space to two loops in the inverse-tension expansion. The result is free of logarithmic divergences and the same should hold also at higher loop orders. For fermions periodic around both circles the quantum corrections cancel, consistent with the BPS nature of the wrapped M2 brane state. For fermions antiperiodic around one or both circles the energy is a non-trivial function of the radii given by infinite sums of modified Bessel functions. We also compute 3-loop correction to the energy of the bosonic membrane on $\\mathbb R^2\\times S^1$. In contrast to the string case, it contains, besides powers of the 1-loop $\\zeta(3)$ coefficient, a new term proportional to $\\zeta(9)$. Summing contributions of all-loop bubble graphs leads to a simple cubic equation for the membrane energy. The analogous resummation in the Nambu or GS string t case reproduces the familiar exact square-root expression ${\\mathcal E}=\\sqrt{(2\\pi R\\,T_1)^2+m_0^2}$. We find that the bubble-graph part of the membrane energy does not vanish for any value of the radius $R_{11}$. If contributions of other non-trivial diagrams in the supermembrane case do not qualitatively change this conclusion, this would disfavour the conjectured relation between 11d theory on an antiperiodic circle and the strong-coupling limit of type 0A string theory."
+  }
+ ]
+}

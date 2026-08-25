@@ -1,5 +1,16 @@
 [
  {
+  "date": "2026-08-25",
+  "datestr": "2026년 8월 25일 (화)",
+  "file": "briefs/2026-08-25.html",
+  "count": 26,
+  "preview": [
+   "String stars, small black holes, and the supersymmetric index",
+   "On flat space limits of $AdS_4$ black holes",
+   "What Neural Network Field Theory Can and Cannot Realise on a Computer"
+  ]
+ },
+ {
   "date": "2026-08-24",
   "datestr": "2026년 8월 24일 (월)",
   "file": "briefs/2026-08-24.html",
