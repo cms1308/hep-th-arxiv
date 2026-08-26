@@ -1,0 +1,154 @@
+{
+ "date": "2026-08-26",
+ "source": "list/new",
+ "count": 21,
+ "papers": [
+  {
+   "id": "2608.23674",
+   "title": "Non-perturbative news from the conformal window",
+   "authors": "Álvaro Pastor-Gutiérrez",
+   "categories": "hep-th, hep-lat, hep-ph",
+   "abstract": "Dynamical symmetry breaking plays a crucial role in mass and scale generation. In QCD-like theories, its dependence on the number of fermion flavours determines the phase structure and the transition to the conformal regime. In this work, we employ the functional renormalisation group and the generalised flow equation to compute non-perturbative corrections, including momentum dependencies and field invariants essential for an adequate realisation of the global symmetry. As a consequence, the critical gauge coupling required for dynamical chiral symmetry breaking acquires a strong dependence on the number of flavours and increases sharply at $N_f^\\textrm{crit}\\simeq 7.30$ for $N_c=3$. This establishes a new picture of the conformal phase transition that challenges Miransky/BKT scaling and the existence of walking regimes, favours a first-order quantum phase transition, and points towards a critical region with exotic dynamics and symmetric fermion mass gaps."
+  },
+  {
+   "id": "2608.23676",
+   "title": "Wilsonian Cosmology: de Sitter (in)Stability",
+   "authors": "Jean Alexandre , Lucien Heurtier , Silvia Pla",
+   "categories": "hep-th, astro-ph.CO, gr-qc, hep-ph",
+   "abstract": "We develop a (Wilsonian) functional-renormalisation-group framework for scalar cosmology in which quantum fluctuations of a scalar field are coarse-grained on cosmological spacelike hypersurfaces. Integrating out quantum fluctuations with wavelengths smaller than the Hubble radius $H(t)^{-1}$, we obtain an effective scalar potential $U(\\phi(t),H(t))$ that evolves in time. We derive a non-perturbative flow equation for this potential, together with the coupled set of (modified) Friedmann equations. We then apply this formalism to the simplest possible case of a de Sitter vacuum when the scalar field is at rest, in two situations which satisfy exactly our flow equation: $(i)$ A flat potential, for which we find that the only pure de Sitter solution is unstable and corresponds to a saddle point. $(ii)$ A quadratic potential with curvature $m^2>0$, for which we find that the presence of the mass term stabilises the system. The latter case leads to a de Sitter attractor either at the Hubble scale when the mass is larger than the Hubble scale at initial time, or by introducing a new attractor located at $H=m$ in the case the mass is smaller, which may be particularly relevant to the phenomenological study of dark energy and inflation theories."
+  },
+  {
+   "id": "2608.23686",
+   "title": "Color-Kinematics Duality and the Double Copy in Curved Spacetimes",
+   "authors": "Mariana Carrillo González",
+   "categories": "hep-th, astro-ph.CO, gr-qc",
+   "abstract": "The double copy relates gravitational data to gauge-theory data, most sharply through color-kinematics duality for flat-space scattering amplitudes. This review surveys the extent to which this idea can be formulated beyond asymptotically flat backgrounds. After recalling the flat-space ingredients needed for comparison, we describe curved-space constructions for boundary correlators and scattering observables in AdS, dS, and other non-trivial backgrounds. We then review classical and field-level maps, including Kerr--Schild, Weyl, Cotton, twistor, and convolutional double copies. A separate part is devoted to self-dual sectors. Throughout, we emphasize both the common structures that survive from flat space and the obstructions introduced by curvature."
+  },
+  {
+   "id": "2608.23689",
+   "title": "A semiclassical Hilbert space for random matrix theory",
+   "authors": "Abhirup Bhattacharya , Onkar Parrikar , Vivek Singh",
+   "categories": "hep-th, math-ph",
+   "abstract": "We study the one-sided time evolution of thermofield double (TFD) states in random matrix theory, where the Hamiltonian is taken to be a $D\\times D$ random matrix drawn from a unitarily invariant emsemble of Hermitian matrices. We argue that the Krylov basis with the maximally entangled state taken as the initial vector gives a semiclassical Hilbert space description of these TFD states in random matrix theory at any $O(1)$ temperature and time in the $D\\to \\infty$ limit, very analogous to the ``chord Hilbert space'' construction in the double-scaled SYK (DSSYK) model. We study this semiclassical description in detail for ensembles where the spectral density in the $D\\to \\infty$ limit is even, compactly supported on an interval and has square root edges. With a few more conditions on the analytic structure of the spectral density, we observe that the semiclassical Hamiltonian has the same asymptotic behavior at large Krylov depth as that of DSSYK, with the corresponding parameter $\\mathfrak{q}=e^{-\\lambda}$ being related to the location of the nearest zero of the spectral density away from the spectral cut. Furthermore, in a large class of models corresponding to ultraviolet deformations of the DSSYK spectral density, i.e., where the spectrum in the UV is modified while leaving the near-edge behavior unchanged, we show that the semiclassical effective Hamiltonian in the Krylov basis reduces to the Liouville Hamiltonian of JT gravity in a low-energy, continuum limit. This suggests that our semiclassical Hilbert space should be interpreted as the bulk Hilbert space of a dual gravity description."
+  },
+  {
+   "id": "2608.23692",
+   "title": "Exact mutual information for free massless fermions in any dimension",
+   "authors": "Nicolás Abate , Leandro Martinek",
+   "categories": "hep-th",
+   "abstract": "We obtain an exact expression for the Rényi mutual information (RMI) between two spherical regions for a free, massless Dirac field in $d$ spacetime dimensions and for a massless Rarita-Schwinger field in $d=4$. We identify each angular momentum mode in the spherical dimensional reduction of the parent theory with a massive Dirac fermion in two dimensional anti-de Sitter space (AdS). The RMI for each mode can be computed analytically for any Rényi index $n$ in terms of solutions of a Painlevé differential equation. We explore the long and short distance asymptotics of the result, where the sum over modes can be computed explicitly. As a result we are able to find subleading contributions to the long distance expansion in $d$ dimensions for arbitrary $n$, as well as to extract the area and logarithmic coefficients for the case $n=1$ in the short distance regime."
+  },
+  {
+   "id": "2608.23697",
+   "title": "Bremsstrahlung function from Goldstone bosons in AdS$_2$",
+   "authors": "Federico Castellani , Lorenzo Di Pietro , Valentina Forini , Roman Stemplowski",
+   "categories": "hep-th",
+   "abstract": "We study quantum field theory on the AdS$_2$ worldsheet of the fundamental string dual to the half-BPS Wilson line of $\\mathcal{N}=4$ super Yang-Mills. We consider a recently proposed gauge-fixed string fluctuation Lagrangian around the AdS$_2$ minimal surface, and focus on the nonlinearly realized $SO(6)/SO(5)$ symmetry. The boundary two-point function of the associated tilt operators, whose normalization coefficient is proportional the Bremsstrahlung function, can be related to the bulk two-point function of the broken-symmetry Noether current through the boundary operator expansion. We evaluate the one-loop diagrams contributing to the current correlator, discussing the role of dimensional regularization and recovering the known strong-coupling correction to the Bremsstrahlung function directly from AdS$_2$ worldsheet quantum field theory."
+  },
+  {
+   "id": "2608.23709",
+   "title": "Holographic Spread Complexity at Fixed Charge: Routhians, Branes and Strings",
+   "authors": "Dimitrios Chatzis , Madison Hammond , Carlos Nunez , Alfonso V. Ramallo , Ricardo T. Santamaria",
+   "categories": "hep-th",
+   "abstract": "Holographic spread (Krylov) complexity relates the growth of a boundary state's complexity to the proper radial momentum of a probe falling into the bulk. Unitary evolution makes spread complexity an even function of time. We show that this requirement fails whenever a probe carries a conserved Noether charge and is described by its unreduced Lagrangian. The cure is simple and universal: passing to the Routhian of the fixed-charge sector restores the correct short-time behaviour of the complexity. We establish this prescription from first principles and test it across an extensive family of probes: charged particles, non-BPS D-branes with detuned tension and charge, branes excited along internal isometries, worldvolume gauge fields, a fluctuating D0-brane in AdS$_4\\times \\mathbb{CP}^3$ and fundamental strings combining winding with rotation in AdS$_5\\times \\mathrm{S}^5$ complemented by further examples in AdS$_3\\times \\mathrm{S}^3\\times T^4$, ABJM, and the charged Anabalón-Ross background. We then translate these results into Krylov-chain data, extracting Lanczos coefficients and Krylov-number correlators, and propose that complexity for charged, extended probes organises naturally into collective, fluctuation, charge and mixed contributions. This decomposition opens a concrete path toward a genuinely field-theoretic, multi-seed construction of holographic complexity."
+  },
+  {
+   "id": "2608.23753",
+   "title": "Bell-CHSH Violation for a Massless Majorana Field in a Double Cone from Modular Localization",
+   "authors": "S.P. Sorella",
+   "categories": "hep-th, math-ph, quant-ph",
+   "abstract": "We investigate Bell-CHSH correlations for a chiral massless Majorana field localized in a double cone. The conformal modular flow of the associated light-ray interval is converted into translations by a rapidity-like coordinate, and the one-particle scalar product is derived in modular momentum space. Particular attention is paid to the fact that this scalar product carries a Fermi-Dirac weight. Requiring the modular conjugation to be antiunitary with respect to that weighted scalar product fixes the Fourier-space realization of the modular objects. The resulting Tomita-Takesaki operator and its adjoint generate Alice and twisted-dual Bob directions for which all four crossed CAR orthogonality relations follow automatically from modular localization. The Bell problem then reduces to a simple one-function functional. For a Gaussian modular-momentum profile $h_\\sigma(k)=\\exp[-k^2/(2\\sigma^2)]$ the Bell parameter is larger than the classical bound for a broad range of widths and approaches the Tsirelson value analytically, \\[ \\lim_{\\sigma\\to 0^+}{\\it B}(\\sigma)=2\\sqrt2 \\] Thus near-maximal Bell violation is obtained from an explicit sequence of smooth rapidly decreasing profiles concentrated around zero modular momentum, corresponding to the modular spectral value $\\lambda=1$."
+  },
+  {
+   "id": "2608.23770",
+   "title": "General Construction of Time-Dependent Integrable Chiral Field Theories",
+   "authors": "Pradip Kattel",
+   "categories": "hep-th, cond-mat.str-el, math-ph, nlin.SI, quant-ph",
+   "abstract": "We develop a general procedure for constructing time-dependent integrable chiral field theories from autonomous unitary difference-form $S$-matrices satisfying the Yang-Baxter equation. Spectral parameters are transported along the free right- and left-moving characteristics, defining a map from physical spacetime to spectral space on which the two-body scattering data are evaluated. Requiring spatially homogeneous right-left scattering forces the characteristic map to be affine. The inverse Cayley transform then determines the local contact interaction, while evaluation along the affine spectral trajectory fixes its time dependence. Thus, the nonautonomous interaction is determined by the autonomous scattering data together with chiral kinematics and spatial homogeneity, rather than being introduced independently. The Yang--Baxter equation supplies the factorized many-body transport, and on a spatial circle periodicity leads to quantum Knizhnik--Zamolodchikov (qKZ) equations whose compatibility defines a flat discrete transport in spectral space. Pulling the corresponding spectral-space amplitudes back to physical coordinates gives the time-dependent many-body wavefunctions. Rational $SU(N)$, trigonometric $U_q(\\widehat{\\mathfrak{sl}}_2)$, and rational $O(N)$ scattering illustrate how the same mechanism generates distinct nonautonomous interactions. The resulting framework gives a geometric route from autonomous factorized scattering data to time-dependent integrable field theories."
+  },
+  {
+   "id": "2608.23784",
+   "title": "A simple construction of Heat Kernels and conformal anomalies via Fedosov deformation quantization",
+   "authors": "Thomas Basile , Evgeny Skvortsov",
+   "categories": "hep-th",
+   "abstract": "We propose a new approach to the systematic computation of the heat-kernel expansion and, in particular, of conformal anomalies, based on Fedosov deformation quantization. The approach is fully covariant, applies to differential operators of arbitrary order, is amenable to efficient implementation, and yields closed-form expressions. As applications, we compute conformal anomalies in four, six, and eight dimensions, the last being a new result."
+  },
+  {
+   "id": "2608.23975",
+   "title": "Three-Reggeon exchange in $\\mathcal{N}=4$ SYM to leading logarithmic accuracy",
+   "authors": "Claude Duhr , Zhenjie Li , Chi Zhang",
+   "categories": "hep-th",
+   "abstract": "We study eight-point amplitudes in the planar $\\mathcal{N}=4$ Super Yang-Mills theory in multi-Regge kinematics in the Mandelstam region that receives contributions from both two- and three-Reggeon exchange. We use an effective field theory approach to compute the leading contribution from three-Reggeon exchange, and we explicitly evaluate the relevant diagrams up to four loops. We also propose a compact Fourier-Mellin representation for the contribution from two-Reggeon exchange in this region which involves the same ingredients as in other Mandelstam regions and can in principle be evaluated to any desired order in perturbation theory. To validate our proposal, we show that we can reproduce the multi-Regge limit of the known results for octagons up to three loops. We then combine the contributions from two- and three-Reggeon exchange to obtain novel results for octagons in MRK up to next-to-leading-logarithmic accuracy at four loops for the maximally helicity violating (MHV) configuration, and up to three loops for non-MHV contributions. We also discuss how our result can be extended to more particles, and we present the contribution from three-Reggeon exchange for three-loop MHV amplitudes with an arbitrary number of legs."
+  },
+  {
+   "id": "2608.24054",
+   "title": "Note on arithmetic structure of modulus vacua in flux compactifications",
+   "authors": "Yukiya Furuta , Tatsuo Kobayashi , Tomoyasu Kori , Shuhei Miyamoto , Ryusei Nishida , Hajime Otsuka",
+   "categories": "hep-th, hep-ph",
+   "abstract": "We study modulus stabilization by background fluxes. The supersymmetric minima satisfy a holomorphic quadratic equation. As concrete examples, we consider $T^6/(\\mathbb{Z}_2\\times\\mathbb{Z}_2')$ orientifold model and a simple Calabi-Yau compactification. The modulus values show specific patterns. For example, they show the Farey sequence. The void structure appears around modulus vacua with high degeneracies. We find a correlation between the degeneracy and the void area. The modulus vacua are related by discrete Abelian symmetries generated by the Gauss composition law, which includes the CP symmetry. Spontaneous CP violation is also discussed."
+  },
+  {
+   "id": "2608.24064",
+   "title": "The fate of chiral symmetry in two-flavor matrix adjoint QC$_2$D",
+   "authors": "Nirmalendu Acharyya , Prasanjit Aich , Sayan Bhakta , Ranita Mudi , Sachindeo Vaidya",
+   "categories": "hep-th, hep-lat, hep-ph",
+   "abstract": "In the matrix model of two-flavor adjoint QC$_2$D, we study the low-lying states and their properties in the intermediate-to-strong (Yang-Mills) coupling regime. The model has a classical $SU(2)_R$ chiral symmetry and the eigenstates of the Hamiltonian can be organized in its irreps. We construct the energy eigenstates in presence of a chiral chemical potential $c$ using the variational techniques. We find that when $c=0$, the ground state is always a $SU(2)_R$ singlet, irrespective of the coupling strength $g$. However, as $g$ is tuned from intermediate to strong coupling, the system under goes a crossover from a unique to a doubly degenerate ground state. The degeneracy in the strong coupling regime spontaneously breaks the axial $\\mathbb{Z}_8$, while preserving the chiral symmetry. When $c \\neq 0$, we find that there can be level crossings which correspond to quantum phase transitions (QPTs). Depending on the ground state, there are three possible phases. The $SU(2)_R$ symmetry is spontaneously broken in only one of these phases, and this phase can only emerge for intermediate $g$ with moderate values of $c$. In the $g-c$ plane this phase corresponds to a narrow window, outside which $SU(2)_R$ is always preserved."
+  },
+  {
+   "id": "2608.24083",
+   "title": "Mellin space reflections, modularity of elliptic Gamma functions and beyond",
+   "authors": "Yang Lei , Taotao Li",
+   "categories": "hep-th, math-ph",
+   "abstract": "We study modular transformation formulas from the viewpoint of Mellin space. The basic observation is that the functional relation between the Hurwitz zeta function and the polylogarithm can be used to organize modular transformations as reflection identities of Mellin kernels, while the accompanying polynomial anomalies arise from contour deformations. We first illustrate this mechanism for the $q$-$\\theta$ function and then extend it to the elliptic Gamma function. In the latter case, independently Mellin transforming the two elliptic directions leads to a trilinear reflection identity relating the three elliptic Gamma functions appearing in the SL$(3,\\mathbb{Z})$ modular formula, while the associated contour deformation reproduces the cubic Bernoulli polynomial. Further reflection formulas lead to a weighted $q$-Pochhammer type function with a modular transformation analogous to that of the $q$-$\\theta$ function, as well as a transposed trilinear reflection identity analogous to the Mellin space structure underlying the SL$(3,\\mathbb{Z})$ transformation. Our results suggest that Mellin space reflection identities provide a useful organizing principle for constructing and studying modular special functions beyond the standard multiple elliptic Gamma hierarchy."
+  },
+  {
+   "id": "2608.24165",
+   "title": "Unification of Gravity with Internal Interactions: the SO(2,16) Scheme Revisited",
+   "authors": "Stelios Stefas , George Zoupanos",
+   "categories": "hep-th",
+   "abstract": "The starting point of the present work is the observation that the tangent group of a curved manifold need not have the same dimension as the manifold itself. We use this fact to construct Conformal Gravity and its noncommutative (Fuzzy) counterpart as gauge theories, and then to unify both with internal gauge interactions. Specifically, we present a scheme in which conformal gravity, based on gauging the SO(2,4) group, and fuzzy gravity, based on gauging the SO(1,5)$\\times$U(1), are unified with SO(10) internal interactions through the parent group SO(2,16), and we work through the resulting spontaneous symmetry breakings and fermion content in detail. We also discuss the low-energy phenomenology of the scheme, including cosmic-string gravitational-wave signals, and close with a brief outlook: a candidate minimal unification group, a dark-matter candidate suggested by the construction, and the ghost problem common to higher-derivative gravity theories of this type."
+  },
+  {
+   "id": "2608.24266",
+   "title": "Geometric tool kit for higher spin gravity (part III): An introduction to the general theory of connections on fibre bundles",
+   "authors": "Xavier Bekaert",
+   "categories": "hep-th",
+   "abstract": "These notes provides an introduction to a wide variety of notions of connection that appear in the contemporary mathematical literature. Besides the familiar Ehresmann connections on principal bundles and Koszul connections on vector bundles, there is a large zoo of perhaps less familiar notions, most notably Cartan connections on principal bundles and their avatars on tractor bundles, which may deserve more attention for further elucidating higher-spin interactions and symmetries. This review is motivated both by the previous (explicit or implicit) use of these notions of connection in higher-spin gravity and by their potential future applications in this context. Much of the material covered here is also relevant to advanced mathematical topics in gravity, such as the rigorous treatment of conformal geometry (which is of interest for holography) and may help fill gaps left by standard textbooks (most of which typically do not address Cartan connections, tractor calculus, and related topics)."
+  },
+  {
+   "id": "2608.24385",
+   "title": "New RG flows between non-Unitary CFTs from exact massless scattering theories",
+   "authors": "Changrim Ahn , Zoltan Bajnok , Soma Elek",
+   "categories": "hep-th",
+   "abstract": "We construct complete solutions of the massless S-matrix bootstrap equations describing a new infinite family of integrable RG flows from the higher-fusion-level minimal models M(3,2n+3;n) to the non-unitary Virasoro minimal models M(2,2n+3), including a flow from M(3,5) to the Yang--Lee CFT M(2,5) when n=1. We provide strong evidence for this identification by matching conformal perturbation theory around the UV fixed points with the small-volume expansion of the corresponding thermodynamic Bethe ansatz equations. We further show that a family of non-invertible Verlinde defect lines is preserved along the flows."
+  },
+  {
+   "id": "2608.24431",
+   "title": "Real-time thermal photon-photon interactions in the mixed space",
+   "authors": "M. A. A. Ahmed , H. Zainuddin , N. M. Shah , M. Ladrem",
+   "categories": "hep-th",
+   "abstract": "Using the effective Lagrangian for the low-energy/temperature of photon-photon interaction and the lowest-order photon self-energy is calculated in the Real Time Formalism (RTF) for an arbitrary path specified by the $\\sigma$-parameter within the new basis. The causal Green's functions (without chemical potential) for the scalar field are evaluated to derive the usual thermal propagators in the mixed space. It is shown that the symmetric propagator does not depend on $\\sigma-$ parameter. Furthermore, the photon self-energy is used to calculate some electromagnetic properties, such as dielectric tensor and velocity of light from photon self-energy in the mixed space that greatly simplifies calculations in RTF. Their time dependence is investigated, and a comparison between our results and those obtained by other models is discussed."
+  },
+  {
+   "id": "2608.24446",
+   "title": "Dynamical Tidal Response and Love Numbers of Massless Bosonic and Fermionic Perturbations of Kerr--Anti-de Sitter Black Holes",
+   "authors": "Himanshu Buragohain , Prabwal Phukon",
+   "categories": "hep-th",
+   "abstract": "We examine the tidal response of Kerr--Anti-de Sitter black holes using the Teukolsky formalism in a vacuum background. We consider massless perturbations with spin weights $s = 0,\\ \\pm\\frac{1}{2},\\ \\pm1,\\ \\pm\\frac{3}{2},\\ \\pm2$, corresponding to scalar, fermionic, electromagnetic, and gravitational perturbations, respectively. We determine the Tidal Love number using the near-horizon approximation. For asymptotically flat black holes in general relativity, the conservative tidal response vanishes identically. In contrast, we find that the presence of a negative cosmological constant parameter in the Kerr--Anti-de Sitter black holes leads to a non-trivial tidal response, containing both conservative and dissipative contributions. We systematically study the static and dynamical tidal responses of Kerr--Anti-de Sitter black holes. In particular, we examine the behaviour of the conservative and dissipative response coefficients and investigate their dependence on the black-hole rotation parameter and the AdS curvature scale."
+  },
+  {
+   "id": "2608.24448",
+   "title": "Real-time thermal self-energies: In the variational bases and spaces",
+   "authors": "M. A. A. Ahmed , H. Zainuddin , N. M. Shah",
+   "categories": "hep-th",
+   "abstract": "In this work, we introduce a systematic study for studying the scalar propagator and tadpole self-energy by considering an arbitrary parameter $\\sigma$ that allows for a path integral description in real-time formalism (RTF). The closed time path formalism (CTP) and Thermofield Dynamics (TFD) are two popular choices for the parameter $\\sigma$ in the Feynman rules. We have constructed a scalar propagator and a tadpole self-energy in two different bases in the momentum space as well as the mixed space. The results show that the diagonal components of self-energy in both spaces for the 1/2 basis are the same in both approaches within RTF, whereas the other off-diagonal components of self-energy are different because they depend on the path parameter. On the other hand, the diagonal components of self-energy in both spaces for the new basis are not the same in both approaches within RTF, whereas the off-diagonal components of self-energy are vanishing. That means the new basis allows one to reduce the components for the quantities studied, like self-energy or other."
+  },
+  {
+   "id": "2608.24706",
+   "title": "Hagedorn temperature from holography: rotating and charged systems",
+   "authors": "Francesco Bigazzi , Tommaso Canneti , Federico Castellani , Aldo L. Cotrone",
+   "categories": "hep-th",
+   "abstract": "Using the string/field theory correspondence as a tool, we study the dependence of the Hagedorn temperature of strongly coupled, planar gauge theories on angular velocities and chemical potentials for $U(1)$ global currents. Our results are obtained from an interplay of world-sheet semiclassical quantization methods and target space low energy effective ones. The Hagedorn temperature is given as an expansion in the inverse (large) 't Hooft coupling limit. Working to quadratic order in the fluctuations, the world-sheet analysis provides the leading, the next-to-leading and part of the next-to-next-to leading order terms. In particular, it captures the NNLO $\\log 2$ terms which are due to the contributions of non-zero modes to the zero-point energy. These modes are not accounted for by the effective approach, within which they have to be included by hand using suitable educated guesses. On the other hand, the effective methods allow to compute in a relatively easy way the missing NNLO pieces (and even further subleading corrections), which could be accounted for from the world-sheet approach only working at quartic (or higher) order in the fluctuations. We present general results and several examples in various dimensions, including both confining models and conformal field theories on spheres (such as $\\mathcal N=4$ SYM and ABJM) dual to string theories on global $AdS$ spaces."
+  }
+ ]
+}
