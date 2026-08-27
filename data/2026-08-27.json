@@ -1,0 +1,98 @@
+{
+ "date": "2026-08-27",
+ "source": "list/new",
+ "count": 13,
+ "papers": [
+  {
+   "id": "2608.24968",
+   "title": "CFT$_3$ Realizations and Celestial Representation Theory of the $\\mathcal{L}_Λw_{1+\\infty}$ Algebra",
+   "authors": "Bin Zhu",
+   "categories": "hep-th",
+   "abstract": "We study CFT$_3$ realizations and celestial representations of the $\\mathcal{L}_{\\Lambda}w_{1+\\infty}$ algebra. Free scalar and Dirac theories yield the same one-particle light-ray action. This action extends to the critical $O(N)$ model at $N=\\infty$, while regulated moments reproduce the pairwise algebra in the large-but-finite-$N$ correlators studied here. In the celestial hard-graviton module, the projected null conditions select $\\Delta=3$ uniquely, and a closed raising subalgebra annihilates $G^+_3$ exactly. The nonzero-$\\Lambda$ quadratic Casimir has eigenvalue three throughout the hard module, and the exact annihilators and low-spin Ward identities give compatible differential-difference equations for celestial correlators."
+  },
+  {
+   "id": "2608.25000",
+   "title": "Equivariant Localization for N=2 Theories with Hypermultiplets",
+   "authors": "Matthias Dennemann , Jan Manschot",
+   "categories": "hep-th, math.AG",
+   "abstract": "Equivariant localization in the $\\Omega$-background is a powerful technique for the evaluation of the partition function of $\\mathcal{N}=2$ supersymmetric field theory on a toric four-manifold. For the complex projective plane $\\mathbb{CP}^2$, we apply equivariant localization to supersymmetric Yang-Mills theories with gauge groups $SU(2)$ and $SO(3)$ with $N_f$ massive hypermultiplets in the fundamental representation, and the $\\mathcal{N}=2^*$ theory with the hypermultiplet in the adjoint representation. We evaluate equivariant correlation functions, which provide an equivariant extension of intersection numbers of moduli spaces of instantons on $\\mathbb{CP}^2$, such as Euler numbers and Segre invariants. In the non-equivariant limit, we compare our results with the evaluation using low energy field theory and integration over the $u$-plane. Using this comparison, we identify a specific overall factor, which captures the difference between a partition function for gauge group $U(2)$ and $SU(2)$ or $SO(3)$ on a compact four-manifold. We also discuss our results in the context of $S$-duality of the $N_f=4$ and $\\mathcal{N}=2^*$ theory, which includes the triality automorphism group of the flavor group for $N_f=4$."
+  },
+  {
+   "id": "2608.25007",
+   "title": "Remarks on Vafa-Witten theory, or how to sit on a wall",
+   "authors": "Sergei Alexandrov , Aradhita Chattopadhyaya",
+   "categories": "hep-th, math.AG, math.NT",
+   "abstract": "We prove three results about refined $SU(N)$ VW invariants on Hirzebruch surfaces. First, we crucially simplify the modular anomaly equation satisfied by the generating series of these invariants by expressing it in terms of complementary generalized error functions, which requires extending these error functions to their singular loci. Second, we evaluate the variation of the modular completions of the generating series upon change of polarization. Finally, a representation of the generating functions in terms of indefinite theta series allows us to compute VW invariants at the walls of marginal stability, and to express them in terms of the invariants on the two sides of the wall and those of lower ranks. All the results exhibit a universal structure suggesting their wider applicability."
+  },
+  {
+   "id": "2608.25029",
+   "title": "Tropical Open Strings in a Kalb-Ramond Background",
+   "authors": "Sarthak Duary , Vi Hong , Sourav Maji",
+   "categories": "hep-th",
+   "abstract": "We study tropical open strings arising from the analytically continued action of tropological sigma models in the presence of a constant Kalb-Ramond background. We show that the background field separates the theory into a generic sector and a critical sector. In the generic sector, the canonical structure produces a kinematical nonlocal bracket between the transverse and leafwise target-space coordinates. At the critical value of the Kalb-Ramond field, the Legendre map degenerates and the theory develops a primary constraint, requiring quantization by the Dirac-Bergmann procedure. This critical sector has a finite reduced phase-space structure and differs from the naive limit of the generic theory."
+  },
+  {
+   "id": "2608.25183",
+   "title": "Exact All-Level Positivity of the Bosonic Veneziano Amplitude",
+   "authors": "Qi Chen , Yuan Yin",
+   "categories": "hep-th",
+   "abstract": "Tree-level partial-wave unitarity of the open bosonic Veneziano amplitude follows indirectly from the no-ghost theorem, but a direct proof from the beta function has been missing at the critical dimension. We prove nonnegativity at every mass level and spin throughout the sharp range 3 < D <= 26, using a Bessel recurrence that reduces the infinite sign problem to a manifestly positive bulk and a finite exact boundary."
+  },
+  {
+   "id": "2608.25187",
+   "title": "Chaos in Yang-Mills",
+   "authors": "Barel Skuratovsky",
+   "categories": "hep-th",
+   "abstract": "We study the dynamics of pure-gauge SU(N) through the time evolution of a spatial Wilson loop. We compute its out-of-time-order correlator at weak 't Hooft coupling and large N, and propose a framework for the strong-coupling description. We find that operators in pure-gauge Yang-Mills grow only when the group is non-abelian and d>2, and conjecture that pure gauge theories are chaotic only when non-abelian at d>2. Even at weak coupling the correlator's exponent inherits the IR sensitivity of the gluon self-energy imaginary part, which rests on the non-perturbative magnetic scale. We then explore the possibility that the loop's own size supplies that scale, since the loop operator is blind to any momenta softer than 1/2R. With the cutoff imposed that way the exponent changes sign at a critical diameter: smaller loops scramble, larger ones do not, and the scrambling time diverges at the crossing. The transition follows from that cutoff. Further investigation, in particular a first-principles treatment of the thermal decay width, is required to establish whether it is physical."
+  },
+  {
+   "id": "2608.25239",
+   "title": "Single-Minus Graviton Amplitudes from Matrix Theory",
+   "authors": "Alfredo Guevara , Alexandru Lupsasca , Juan Maldacena , Andrew Strominger",
+   "categories": "hep-th, gr-qc",
+   "abstract": "The $n$-point single-minus graviton amplitudes are nonzero in a special kinematic region that preserves some supersymmetry when embedded in supergravity. We compute these amplitudes within the BFSS matrix theory by relating them to an index problem considered by A. Sen. More precisely, the single-minus amplitudes are obtained from an index that counts BPS states in the Coulomb branch of four-dimensional ${\\cal N}=4$ super Yang-Mills. We explicitly check this relation in a specific kinematic region by computing the index using BPS wall-crossing formulae and matching it to the gravity result. We further employ BPS wall-crossing to show that the index satisfies a tower of $w_{1+\\infty}$ soft theorems in any kinematic regime, again matching gravity. Finally, we show that for certain kinematics, the single-minus amplitudes can be realized by scattering a graviton off a plane wave."
+  },
+  {
+   "id": "2608.25287",
+   "title": "Beyond Strong Subadditivity: Holographic Entropy Inequalities Along Renormalization Group Flows",
+   "authors": "Ning Bao , Christian Ferko",
+   "categories": "hep-th",
+   "abstract": "Strong subadditivity (SSA) on a common light cone gives the Casini-Huerta entropic proof of the three-dimensional $F$-theorem. We ask whether holographic entropy inequalities beyond SSA similarly constrain renormalization group flows for which every intermediate theory admits a semiclassical holographic description. For small, disjoint deformations of a common light-cone region, we show that the second-order response of a broad class of balanced holographic inequalities depends only on pairwise correlations already controlled by SSA. A six-party example shows that the full finite inequality nevertheless contains genuinely multipartite information, so its disappearance is a limitation of the second-order expansion rather than of the inequality itself. Two natural finite constructions do not recover the missing information. We nevertheless find two ways in which information beyond SSA survives. A five-party inequality bounds the rate at which a conditional correlation grows as one region is enlarged. Separately, a continuum limit of the odd-cyclic inequalities gives a constraint on the angular shape dependence of entanglement entropy, and Lorentz symmetry relates this constraint to radial evolution. Thus holographic entropy inequalities beyond SSA do constrain entanglement along RG flows, although we do not obtain a second universal analogue of the $F$-function."
+  },
+  {
+   "id": "2608.25438",
+   "title": "Decoupling saddles of the gravitational index and the Farey tail",
+   "authors": "Davide Cassani , Alejandro Ruipérez , Enrico Turetta",
+   "categories": "hep-th",
+   "abstract": "We first construct general saddles of the five-dimensional gravitational supersymmetric index with $S^1\\times\\mathbb{R}^4$ asymptotics, carrying an arbitrary number of electric charges and Gibbons-Hawking centers. We then uplift the three-charge configurations to type IIB supergravity, obtaining solutions asymptotic to $S^1\\times \\mathbb{R}^4\\times S^1\\times {\\rm K}3$, carrying D1-D5-P charges. Upon taking a decoupling limit, these solutions yield asymptotically Euclidean AdS$_3\\times S^3\\times {\\rm K}3$ candidate saddles of the dual CFT$_2$ elliptic genus. We focus on the two-center saddles, which involve three integers specifying an orbifold action. Depending on these integers, the saddles may or may not possess a Euclidean horizon, and may be smooth or exhibit orbifold singularities. We give the on-shell action of these two-center saddles in the appropriate ensemble and establish a precise match with the Farey-tail expansion of the elliptic genus. The horizonless saddles are the Euclidean version of fractional spectral-flow solutions previously discussed in the literature, corresponding to $({\\rm AdS}_3\\times S^3)/\\mathbb{Z}_k$ orbifolds. The black hole saddles are modular images of the horizonless ones. They generalize the well-known ${\\rm SL}(2,\\mathbb{Z})$ family of BTZ black holes by placing it in the background of the $\\mathbb{Z}_k$ orbifold. We also consider the asymptotically AdS$_3\\times S^3$ solutions arising as decoupling limit of five-dimensional black ring and black lens saddles, provide their on-shell action and confirm that they do not contribute to the D1-D5 elliptic genus."
+  },
+  {
+   "id": "2608.25782",
+   "title": "PEE threads and bit-threads in BTZ black brane and finite-cutoff AdS$_3$",
+   "authors": "Debarshi Basu , Ashish Chandra , Qiang Wen",
+   "categories": "hep-th",
+   "abstract": "We develop PEE thread flows for the planar BTZ black brane and finite-cutoff holography. Exact geodesic-distance kernels define source-resolved PEE thread currents whose superposition gives divergenceless bit-thread fields. In BTZ, boundary-boundary and boundary-horizon sectors reproduce the entanglement contour and thermal horizon flux. At finite cutoff, the two-point PEE kernels are smooth and select macroscopic flows that are generically non-geodesic despite being built from geodesic elementary threads. We compare these PEE-selected flows with independent normal-geodesic bit-thread flows and show that they saturate the same RT bottleneck while differing in boundary calibration, endpoint pairing and off-bottleneck structure. The resulting constructions make explicit both the endpoint organization of finite-cutoff entanglement and the nonuniqueness of holographic max flows."
+  },
+  {
+   "id": "2608.25783",
+   "title": "PEE threads and bit threads in gravitational subregions of AdS",
+   "authors": "Debarshi Basu , Qiang Wen",
+   "categories": "hep-th",
+   "abstract": "Motivated by the kinematic-space description of gravitational subregions \\cite{Basu:2026hbg}, we allow partial entanglement entropy (PEE) threads to be sourced not only from the asymptotic boundary, but also from boundaries of subregions. Based on this setup, we develop a framework to construct configurations for PEE threads and bit threads sourced from surfaces in the AdS bulk. The situations we have analyzed include the Poincaré AdS$_3$ and the planar BTZ black brane with an end-of-the-world (EOW) brane, and the entanglement wedges of boundary multi-intervals. We construct novel configurations of PEE threads and bit threads in these situations, which shed new light in our understanding of the AdS$_3$/BCFT$_2$ correspondence and the holography defined in the entanglement wedge motivated by surface/state correspondence. A notable feature we found is that, although the elementary PEE threads are geodesics, the integral curves of the coarse-grained bit-thread current are generically not geodesics. Across the explicit constructions, the integrated source currents reduce to endpoint distance-difference potentials, which make divergencelessness, the norm bound and bottleneck saturation geometrically transparent. Our results clarify how boundary, brane, horizon and RT-surface degrees of freedom participate in holographic entanglement and provide a concrete link between PEE, bit threads, subregion kinematic space and the surface/state correspondence."
+  },
+  {
+   "id": "2608.26017",
+   "title": "Notes on Gepner Construction",
+   "authors": "Kanade Nishikawa , Taizan Watari",
+   "categories": "hep-th",
+   "abstract": "In this note, we describe the Gepner construction purely as orbifold (rather than a beta-prescription or orbifold-like process). This is done by distinguishing orbifolding by a chiral symmetry from that by a left-right diagonal symmetry, and also by exploiting an extra degree of freedom available in orbifolds of Type 0 SCFTs. We also describe by using the Arf theory how the extra freedom in Type 0 SCFT orbifolds in general (not just in the Gepner construction) should be implemented in higher genus amplitudes. This note also determines when a combinatorial data set of a Gepner construction has a mirror Gepner construction, and also provides two thinking frameworks to determine the SCFT vertex operators of the Gepner model SCFTs with phase ambiguity and branch cuts under control."
+  },
+  {
+   "id": "2608.26085",
+   "title": "Massive Ghost Confinement, Dipole Equation and Multipole States in Quadratic Gravity",
+   "authors": "Ichiro Oda",
+   "categories": "hep-th, gr-qc, hep-ph",
+   "abstract": "We investigate the problem of confinement of massive ghost, which violates the unitarity of the physical S-matrix, in quadratic gravity on the basis of a manifestly covariant and local canonical operator formalism. First, we reconsider the manifestly covariant quantization of quadratic gravity in the de Donder gauge (the harmonic gauge) from the viewpoint of dipole fields. Next, we also reconsider a possible mechanism of confinement of the massive ghost and derive an effective Lagrangian for asymptotic fields of a BRST quartet where the asymptotic field corresponding to the massive ghost is found to obey a dipole field equation as in the Froissart model, which is a characteristic feature in our formalism. To understand quantum aspects of our theory, we perform a manifestly covariant quantization of the effective Lagrangian in two different ways based on the three-dimensional Fourier transform and the four-dimensional Fourier transform, and derive the same result that the quantum Fock space is spanned by multipole states."
+  }
+ ]
+}
