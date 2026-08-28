@@ -1,0 +1,133 @@
+{
+ "date": "2026-08-28",
+ "source": "list/new",
+ "count": 18,
+ "papers": [
+  {
+   "id": "2608.26242",
+   "title": "The facts on quantum self-dual Einstein gravity and self-dual Yang-Mills theory",
+   "authors": "Noah Miller",
+   "categories": "hep-th",
+   "abstract": "Self-dual Einstein gravity is a one-loop exact, UV and IR finite, diffeomorphism invariant, non-unitary theory of quantum gravity in four dimensions. The only non-trivial amplitudes are the one-loop-all-plus amplitudes, and they are equal to those of pure Einstein gravity. In these notes we review SDG and SDYM pedagogically. We walk the reader through key calculations, fill in some gaps in the literature, and point out directions for future research. Topics include: derivation of the self-dual actions from the full Einstein gravity/YM actions in lightcone gauge, decoupling of ghosts, Berends-Giele currents, vanishing of tree-level-one-minus amplitudes, celestial $Lw_{1+\\infty}$ symmetry, perturbiners, double-off-shell current calculation of one-loop-all-plus SDYM and SDG amplitudes, dimension shifting, unitarity cuts, the BDPR gravity formula, one-loop color ordering, and the covariant formulations of the self-dual theories as well as their their gauge fixing. We also review some selected results from the celestial holography program, and briefly comment on an all-n expression for the one-loop-one-minus gravity amplitudes."
+  },
+  {
+   "id": "2608.26244",
+   "title": "Renormalization in Liouville gravity and stochastic inflation",
+   "authors": "Jordan Cotler , Victor Ivo , Juan Maldacena",
+   "categories": "hep-th, gr-qc",
+   "abstract": "Motivated by inflation and Liouville theory, we consider random $d$-dimensional geometries characterized by an overall scale factor $ds^2 = e^{2 \\zeta} dx^2 $ given in terms of a random Gaussian field $\\zeta(x)$ with logarithmic correlations. We discuss aspects of the renormalization of the volume element $e^{d \\zeta }$, connecting well-known Liouville theory formulas (KPZ) and inflationary ones. By starting from a fixed physical cutoff and coarse-graining operators to a fixed fiducial cutoff, defined via the flat metric $dx^2$, we provide a direct physical derivation of the KPZ scaling relation. We point out that the same renormalization problem arises in stochastic inflation, where it is modeled by Brownian motion of the inflaton field. We show that the breakdown of the renormalization of the Liouville volume when the fluctuation amplitude exceeds a critical value corresponds to the transition to eternal inflation. In $d = 2$, this matches the familiar $c_m = 1$ barrier in Liouville gravity. We also discuss connections to mathematical probabilistic approaches to random surfaces."
+  },
+  {
+   "id": "2608.26246",
+   "title": "Positivity in energy correlators and the event distribution formula",
+   "authors": "Alexandre Belin , Nathan Borak , Johan Henriksson , Romain Piron , Alexander Zhiboedov",
+   "categories": "hep-th, hep-ph",
+   "abstract": "Energy correlators are universal observables, well defined across a wide range of theories and spacetime dimensions, from gauge theory and conformal field theory to string theory. Energy correlators are constrained by three fundamental properties: pointwise positivity of the energy flux, global positivity originating from their interpretation as state norms in a unitary theory, and energy conservation organizing multi-point energy correlators into an infinite consistent hierarchy. We argue that the most general solution to the infinite hierarchy positivity problem of energy correlators is given by the event distribution formula, which expresses energy correlators as moments of the measure on the space of probability measures on the celestial sphere. We work out in detail implications of positivity for two- and three-point energy correlators and show that it implies nontrivial two-sided bounds on their multipole expansion coefficients. The bounds obtained by requiring consistency of the infinite hierarchy of energy correlators are strictly stronger than those obtained by imposing positivity of the two- and three-point correlators alone. For the low-spin multipole coefficients studied in the paper, the derived bounds are optimal in the sense that their extrema are realized by finite mixtures of finite-particle events. We further demonstrate consequences of positivity in energy correlators in collider physics and conformal field theories."
+  },
+  {
+   "id": "2608.26251",
+   "title": "Why Cooper pairs live in AdS2: a spectral analysis of the Yukawa-SYK model",
+   "authors": "Veronika Carolin Stangier , Jörg Schmalian",
+   "categories": "hep-th, cond-mat.str-el, cond-mat.supr-con",
+   "abstract": "We establish the spectral foundation of the geometric formulation of Cooper pairing in the Yukawa--Sachdev--Ye--Kitaev model. Starting from the large-$N$ bilocal effective action, we derive the Gaussian fluctuation kernel in the even-frequency spin-singlet Cooper channel. Following the construction of Maldacena and Stanford, we determine the kernel eigenvalue $k\\left(h\\right)$ analytically for arbitrary conformal weight $h$ and resolve the pairing fluctuations into the continuous and discrete sectors of the associated de-Sitter space Laplacian. We show that the superconducting instability and the universal low-energy fluctuations near it reside entirely in the continuous scattering sector, while the discrete modes remain non-critical. Expanding the kernel about the lowest continuum mode yields a Klein--Gordon action on ${\\rm dS}_2$, restricted to the continuous spectral subspace. This is precisely the subspace on which the inverse Radon transform to ${\\rm AdS}_2$ is well defined. The projected bilocal Cooper-pair field can therefore be mapped onto a scalar matter field propagating in ${\\rm AdS}_2$, without requiring any further spectral restriction on the bulk theory. Our results provide the missing microscopic justification for the projection implicit in earlier holographic formulations and clarify how a local bulk field emerges from the bilocal pairing theory."
+  },
+  {
+   "id": "2608.26253",
+   "title": "Inner products and closed universes",
+   "authors": "Jordan Cotler , Kristan Jensen",
+   "categories": "hep-th, gr-qc",
+   "abstract": "We study overlaps of late-time states in semiclassical de Sitter quantum gravity. In a family of deformations of de Sitter JT gravity, we compute the no-boundary wavefunction to one-loop and derive the ultralocal late-time measure. The one-universe contribution to the norm is exactly eight times the sphere amplitude, so the pairing used by the Lorentzian measure differs from that implicit in Euclidean gravity. After summing over disconnected final universes, the no-boundary norm exponentiates the one-universe result, giving $\\langle \\!\\langle \\text{HH}|\\text{HH}\\rangle\\!\\rangle \\approx \\exp(8Z_{\\rm sphere})$ rather than the sum over closed geometries, $Z_{\\rm closed}\\approx \\exp(Z_{\\rm sphere})$. We also review an analogous mismatch in Einstein gravity with positive cosmological constant, where the late-time no-boundary norm vanishes at one-loop, differing from the Euclidean sphere amplitude. We discuss the implications for cutting and gluing in perturbative gravity, and features that arise when extending this construction to sums over topologies."
+  },
+  {
+   "id": "2608.26267",
+   "title": "Contact Structure-induced Symplectic Nearly Half-Flat $SU(3)$ Structure in Finite-$N$ Thermal ${\\cal M}$-Theory",
+   "authors": "Aalok Misra",
+   "categories": "hep-th",
+   "abstract": "The ${\\cal M}$-theory dual of thermal QCD-like theories constructed in arXiv:1306.4339 , 2004.07259 involves, as shown in arXiv:2211.13186 , a closed $G_2$-structure seven-fold $\\mathcal{M}_7$ supporting Contact 3-Structures (C3S) that induce a ``transverse'' $SU(3)$-structure. We prove that this induced structure belongs to the symplectic nearly half-flat (S(nearly)HF) class: $d\\omega_\\Phi=0$ exactly, while $d\\Omega_+$ is suppressed as $\\mathcal{O}(e^{-N^{1/3}/\\mathcal{O}(1)})$ in the infrared \"MQGP limit\", leaving $W_\\Phi^{SU(3)}=W_2^-$ as the sole non-vanishing Chiossi--Salamon torsion class and completing the $G$-structure classification of the MQGP dual initiated in arXiv:1507.02692 , 2004.07259 , 2211.13186 . As a physical application, Kaluza--Klein reduction of the eleven-dimensional Hodge dual of the differential of the $G_2$-structure positive three-form on $\\mathcal{M}_7$, organised through the $G_2$/S(nearly)HF torsion data, yields a radial ``magnetic field'' $\\mathcal{B}_{\\rm KK}(r)$ whose squared norm factorises exactly into external and internal factors. $\\mathcal{B}_{\\rm KK}(r)$ satisfies a Bessel-type ODE with a regular singular point at the horizon; normalisability and infrared regularity select $J_2$, with harmonicity of the aforementioned internal factor recovered from the large-$N$ suppression. $\\mathcal{B}_{\\rm KK}$ is related to the magnetic field of the type~IIA flavour $D6$-branes via a non-linear power law, furnishing a top-down holographic mechanism for generating weak magnetic fields in finite-temperature string theory."
+  },
+  {
+   "id": "2608.26284",
+   "title": "Gravitational Compton Amplitude to All Orders in Perturbation Theory",
+   "authors": "Miguel Correia , Giulia Isabella , Anna M. Wolz",
+   "categories": "hep-th, gr-qc",
+   "abstract": "We show how amplitudes from the scattering of gravitational waves off compact objects in worldline effective field theory can be efficiently computed to arbitrary order in Newton's constant $G$. Our approach solves an effective wave equation for the partial-wave amplitude in which Wilson coefficients (tidal Love numbers) enter through boundary conditions at short distances. We then perform the sum over partial waves to obtain the momentum-space Compton amplitude in terms of elliptic polylogarithms. We reproduce recent results through $\\mathcal{O}(G^4)$ and obtain new predictions up to $\\mathcal{O}(G^7)$, with Love numbers first contributing at $\\mathcal{O}(G^5)$. We find the first ultraviolet divergence in a classical gravitational amplitude at $\\mathcal{O}(G^7)$, showing that a pure point-particle description is not consistent in general relativity. Matching to black hole perturbation theory, we show that static Love numbers vanish on-shell and predict subleading non-zero Schwarzschild black hole Love numbers."
+  },
+  {
+   "id": "2608.26333",
+   "title": "Vortex-Antivortex Annihilation from BPS Equations",
+   "authors": "J. P. S. Neto , J. G. F. Campos , A. Mohammadi",
+   "categories": "hep-th",
+   "abstract": "In this work, we introduce a vortex-impurity model that admits BPS configurations containing both vortices and antivortices and allows vortex-antivortex annihilation to be described within the moduli-space approximation. For a suitable class of impurities, the BPS equations can be mapped through a coordinate transformation onto those of the impurity-free Abelian-Higgs model. In particular, we identify nonlocalized impurities that act as mirrors, generating a vortex-antivortex pair symmetrically placed with respect to the impurity. We derive the corresponding moduli-space metric and show that, within the geodesic approximation, the pair approaches the annihilation configuration asymptotically. We further extend the construction to chains and two-dimensional arrays of alternating vortices and antivortices. Finally, we introduce radial bump impurities that produce stretched and compressed vortices with nontrivial internal magnetic structures."
+  },
+  {
+   "id": "2608.26377",
+   "title": "The Capacity of Entanglement and Holographic Entropies at Finite Resources",
+   "authors": "Ning Bao , Jacob March",
+   "categories": "hep-th, quant-ph",
+   "abstract": "The Ryu-Takayanagi formula equates the area of a minimal surface with the von Neumann entropy of a boundary subregion, and leaves two things about that identification open. The first is how sharply a geometry fixes an entropy. Fannes-Audenaert answers with a Hilbert-space dimension, which diverges as the cutoff is removed however close the two states are. We replace it with the capacity of entanglement, the variance of the modular energy, whose square root grows like the square root of the entangling area where the dimensional factor grows like the regulated volume. The bound is dimension-free and saturated, and it makes the ambiguity of the entropy subextensive for any perturbation whose capacity is small compared with $S_{vN}^2$ times the trace norm. The second is what the area means for a single state, since compression and dilution rates are defined only for many copies while a geometry describes one. When a single replica saddle dominates near $\\alpha = 1$, every smooth Rényi entropy at fixed $\\alpha > 1$ agrees with $S_{vN}$ to $\\textit{O}(\\sqrt{S_{vN}})$, as do the smooth min- and max-entropies. The minimal surface therefore fixes every one-shot entropy of the state at once, with large central charge playing the role of large copy number in the asymptotic equipartition property. As a consequence we bound how far outside the holographic entropy cone a holographic state can appear to fall, leaving estimation and certification open."
+  },
+  {
+   "id": "2608.26443",
+   "title": "Scalar QED effective action in dS: implications for primordial magnetogenesis and the running of coupling constants",
+   "authors": "Ehsan Bavarsad , Sang Pyo Kim , Clément Stahl , She-Sheng Xue",
+   "categories": "hep-th",
+   "abstract": "Particles creation and vacuum polarization under the influence of both an electromagnetic field and a de~Sitter (dS) spacetime nonperturbatively probes quantum electrodynamics (QED) and quantum gravitational effects. By applying the gamma-function regularization to the in-out formulation, we find the exact one-loop effective action in the proper-time integral representation for a charged scalar field in a uniform electric field and a parallel magnetic field in a dS spacetime. It reduces to the one-loop scalar QED Weisskopf-Schwinger effective action in the limit of Minkowski spacetime and the one-loop effective action in the pure dS spacetime. After carefully considering the different limiting cases, a striking result concerns the effective strengths of the coupling constants in the pure strong electric field limit. Our study provides further evidence for evolution of Newton's gravitational constant under the influence of the external fields. Remarkably, the analysis of the effective potential shows that the leading order contributions to the vacuum polarization amplitude, depending on the nonminimal coupling threshold, give a nonzero vacuum expectation value of the magnetic field. This mechanism generates a large magnetic field in the early dS stage of the expansion that may imply primordial magnetogenesis."
+  },
+  {
+   "id": "2608.26825",
+   "title": "Quantum Chaos and Spread of States in Krylov Subspace: A Topical Review",
+   "authors": "Hyun-Sik Jeong , Juan F. Pedraza",
+   "categories": "hep-th, nlin.CD, quant-ph",
+   "abstract": "Krylov state complexity, or spread complexity, has emerged as a sharp and versatile diagnostic of quantum chaos, information spreading, and many-body dynamics. Built from the Lanczos algorithm and grounded in the optimal-basis theorem, Krylov complexity thereby provides a robust spectroscopic window into quantum dynamics. A central theme is the characteristic overshoot observed in chaotic systems: a complexity peak in which chaotic evolution drives the state deeper into the Krylov chain than in integrable systems before relaxing to equilibrium. This behavior, tied to random-matrix universality classes of spectral statistics, is illustrated across a broad range of models, including quantum billiards, quantum spin chains, and variants of the SYK model. We also discuss proposed holographic descriptions of Krylov complexity in Einstein gravity, and conclude by outlining future directions and open problems, including time-dependent systems and quantum-field-theoretic formulations. A Mathematica notebook is provided for numerical exploration of Krylov complexity and spectral statistics across models."
+  },
+  {
+   "id": "2608.26881",
+   "title": "The Hydrotope in the Water-Wave Action",
+   "authors": "Qu Cao , Song He , Jirong Jing , Qiupeng Li",
+   "categories": "hep-th",
+   "abstract": "The Hydrotope gives a geometric representation of tree-level water-wave amplitudes with two negative spatial momenta as the volume of a hyperplane slice of a box. We trace the origin of this geometry directly to the water-wave action. Writing the $n$-point contact interaction as $\\mathcal{V}_n=\\sum_{i<j}w_iw_jh_{ij}^{(n)}$, we show that when the two marked momenta have the same sign and every spectator has the opposite sign, the corresponding coefficient is $h_{ij}^{(n)}=2H_n$, where $H_n/(n{-}3)!$ is the Hydrotope volume. More generally, every fixed-pair coefficient admits a denominator-free ordered-flag representation as an oriented sum of $(n{-}3)$-dimensional box volumes. We then sum all two-minus trees by cutting each at the unique vertex joining its two minus branches. The coefficients multiplying minus-minus, minus-plus, and plus-plus frequency bilinears reduce, respectively, to $(2^{n{-}1}{-}2)H_n$, $0$, and $2H_n$, and immediately reproduce the known amplitude $2^{n{-}1}w_1w_2H_n$. Thus, the Hydrotope-and a broader class of related box-slice geometries-is already encoded locally in the water-wave action. This points to further hidden simplicity and geometric structure in general water-wave amplitudes."
+  },
+  {
+   "id": "2608.26997",
+   "title": "Testing holographic computation of entanglement pseudo-entropy in dS\\textsubscript{3}/ICFT\\textsubscript{2}",
+   "authors": "Liang Li",
+   "categories": "hep-th, gr-qc",
+   "abstract": "We establish a bottom-up model for studying the `would-be' de-Sitter/interface CFT (dS/ICFT) correspondence on the gravity side, using the Coleman-De Luccia instanton. After absorbing the region where the inflaton changes dramatically by a brane, the spacetime consists of two de Sitter spacetimes with different radii joined by a brane, which is expected to be dual to an interface CFT provided that the dS/CFT conjecture is correct. Our goal is to analyze existing prescriptions for the holographic computation of pseudo-entropy, i.e. the extremal surface in such a spacetime and argue that some of them would cause parodox with the results expected the universal properties of interface CFT and compare our results with that of Anti de Sitter/interface CFT correspondence (AdS/ICFT) after analytic continuation. We also read off the $g$-function from the entanglement entropy associated with a subregion perpendicular to the interface."
+  },
+  {
+   "id": "2608.27308",
+   "title": "Wess-Zumino gauge for analytic prepotentials of off-shell $\\mathcal{N}=2$ supergravity: bosonic sector",
+   "authors": "Nikita Zaigraev , Julia Zernina",
+   "categories": "hep-th",
+   "abstract": "We present a comprehensive study of the Wess-Zumino gauge for the analytic prepotentials of the off-shell $\\mathcal{N}=2$ Weyl and $\\mathcal{N}=2$ Einstein supergravities (the version with a non-linear tensor compensator). The field redefinitions, the full transformation laws, and the gauge superparameters that preserve the Wess-Zumino gauge are derived. As a concrete application of the obtained results, we examine the component structure of the free hypermultiplet action coupled to $\\mathcal{N}=2$ supergravity. In this work, we restrict our analysis strictly to the bosonic sector."
+  },
+  {
+   "id": "2608.27388",
+   "title": "Quantum Selection of Classical Histories",
+   "authors": "Omer Guleryuz",
+   "categories": "hep-th, astro-ph.CO, gr-qc",
+   "abstract": "Can a finite quantum episode populate a classical future that the same prepared state never reaches deterministically? We show that it can, using inflation as a cosmological laboratory. In our supergravity realization, two classical continuations already exist, but the prepared state reaches only one without noise. A stable entropy direction temporarily becomes light without a tachyonic instability, allowing mode-derived phase-space fluctuations to access the competing continuation. Finite-horizon first passage assigns it a \\(0.33\\)--\\(0.40\\) conditional weight across three nearby CMB-normalized realizations, while suppressing the stochastic source restores its exact deterministic zero. The entropy sector then becomes heavy again, and the selected histories continue classically. A finite quantum episode can thus leave a lasting redistribution among classical futures."
+  },
+  {
+   "id": "2608.27410",
+   "title": "Doubly-scaled planar ${\\cal N} = 4$ SYM \\& Carroll Holography",
+   "authors": "Arjun Bagchi , Prateksh Dhivakar , Alok Laddha , Partha Paul",
+   "categories": "hep-th",
+   "abstract": "Okuda and Penedones (OP) \\cite{Okuda:2010ym} showed the existence of a double scaling limit of four point correlators in ${\\cal N}=4$ Supersymmetric Yang Mills (SYM) theory in four spacetime dimensions (4$d$) dual to the flat space limit of tree-level string amplitude in $\\mathbb{R}^{1,9}$ with external kinematics in $\\mathbb{R}^{1,4}$. In this paper, we show that the resulting boundary correlators can be used to define a 4d Carrollian conformal field theory (CFT) on future null infinity (${\\I}^{+}$). This is done by mapping the set of correlators in ${\\cal N} = 4$ SYM theory (in the double scaling limit) to ${\\I}^{+}$, which is the conformal boundary of all asymptotically flat spacetimes. A Carroll CFT thus emerges in the infinite 't Hooft coupling limit of ${\\cal N} = 4$ SYM theory. We extend the OP analysis to higher point functions and show how the Gram conditions on flat space amplitude put constraints on the double scaling limit of SYM correlators. We then use the soft factorization theorem for dilatonic string amplitude to write a recursion relation for $\\frac{1}{2}$ BPS sector of ${\\cal N} = 4$ SYM theory in the double scaling limit. Finally, we show that the essential ideas underlying such a double scaling limit can be used as a tool-kit to build a class of Carrollian correlators, and hence define a Carrollian CFT, via certain integral transforms of flat space amplitudes of non-gravitational effective field theories."
+  },
+  {
+   "id": "2608.27412",
+   "title": "Casimir operators of $4D\\,, \\mathcal{N}=2$ supersymmetry in the harmonic approach",
+   "authors": "Egor Eremeev , Evgeny Ivanov",
+   "categories": "hep-th, math-ph",
+   "abstract": "We construct Casimir operators of $4D, \\,\\mathcal{N}=2$ supersymmetry algebra in the harmonic superspace approach, and provide the explicit expressions for them in terms of covariant derivatives in the analytic basis. Specifically, the superisospin operator $C_I$ is expressed in terms of new 'long' harmonic derivatives $\\nabla^{\\pm\\pm}, \\nabla^0$ as $C_I = \\frac{1}{4}\\left(\\nabla^0\\right)^2 + \\frac{1}{2}\\left\\{\\nabla^{++},\\nabla^{--}\\right\\}$. These derivatives involve non-local terms with the inverse Box operator $\\Box^{-1}$ and satisfy modified $SU(2)$ algebra relations in which the eigenvalues of $\\nabla^0$ on analytic superfields are shifted by -2 relative to the standard $U(1)$ harmonic charges. We also construct $\\mathcal{N}=2$ superhelicity and super-isohelicity operators relevant to the massless case (with vanishing $\\Box$) and find their eigenvalues for few instructive examples of $4D, \\,\\mathcal{N}=2$ superfield theories."
+  },
+  {
+   "id": "2608.27447",
+   "title": "Proof of the AGT Conjecture at Generic $β$",
+   "authors": "Le-Feng Chen , Kilar Zhang",
+   "categories": "hep-th, math-ph",
+   "abstract": "We give an all-level proof of the four-point $SU(2)$ AGT correspondence with four fundamental hypermultiplets at generic $\\beta=-\\epsilon_1/\\epsilon_2$, by proving an all-level factorization formula for Selberg averages of generalized Jack polynomials. Taking a coefficientwise Jack limit of the generalized Macdonald Pieri rule, we obtain the required one-box matrix elements in the strict Cauchy dual basis. A rational corner-function identity then evaluates the sum over all parent double partitions, while an explicit total derivative of the Selberg kernel yields a triangular recursion on the Dotsenko-Fateev charge balance hyperplane. The unique solution of this recursion is the generalized Kadell formula previously verified only through finite level. Combining this result with the generalized Cauchy identity identifies each double partition term with the corresponding Nekrasov fixed-point contribution."
+  }
+ ]
+}
