@@ -1,0 +1,112 @@
+{
+ "date": "2026-09-07",
+ "source": "list/new",
+ "count": 15,
+ "papers": [
+  {
+   "id": "2609.04302",
+   "title": "Eye-opening bounds on cusps",
+   "authors": "Ryan A. Lanzetta , Ian Moult , Yifan Wang",
+   "categories": "hep-th, cond-mat.str-el",
+   "abstract": "We derive new nonperturbative inequalities on the cusp anomalous dimensions of conformal line defects. We impose reflection positivity, locality, and conformal invariance on a pair of cusps forming an ``eye'' geometry, deriving a novel condition on the cusp anomalous dimension which we refer to as conformal concavity. The resulting constraint is much stronger than the known angular concavity, and our derivation applies also to cusps involving distinct line defects. Remarkably, it directly links the smooth and fusion limits, yielding bounds on defect-changing operator dimensions, Casimir energies, and subleading fusion data. We thus uncover a new quantitative bridge between aspects of the local operator data and the fusion rules of line operators in conformal field theories."
+  },
+  {
+   "id": "2609.04331",
+   "title": "Boundary-Boundary Duality on Regular Black Holes, Supersymmetric Solitons and Holographic Spinning Plasma Disks",
+   "authors": "Andres Anabalon , Horatiu Nastase",
+   "categories": "hep-th",
+   "abstract": "We construct a new family of exact rotating solutions of four-dimensional Einstein--Maxwell theory with negative cosmological constant describing regular spinning AdS black holes and smooth solitons. The geometries are free of curvature singularities and admit open regions of parameter space without closed timelike curves, while supersymmetric limits correspond to causally regular horizonless configurations. A remarkable feature of these solutions is the existence of at least two codimension-one conformal boundaries. The first is Minkowski spacetime, where the expectation value of the energy--momentum tensor describes a finite spinning disk of strongly coupled conformal plasma whose edge rotates at the speed of light. The second boundary is a rotating black-hole geometry with vanishing energy--momentum tensor but non-vanishing Cotton tensor, defining a holographic theory in which the dual graviton is fixed at the boundary. We show that the energy density associated with the dual graviton exactly reproduces that of the plasma after a suitable analytic continuation and the identification of the holographic energy scale with the Lorentz factor of the rotating fluid, providing evidence for a boundary-boundary duality. Indeed, electromagnetic duality exchanges the electric and magnetic currents between the boundary supporting the graviton and that supporting the dual graviton thus providing a generalized mirror symmetry between these boundary theories. Hence, the Lorentz factor is identified with the electromagnetic dual of the renormalization scale. In an appropriate limit, the solutions reduce to the planar Reissner--Nordström--AdS black hole, whereas the supersymmetric solitons have no regular static limit."
+  },
+  {
+   "id": "2609.04342",
+   "title": "Superselected ghost theory: entangled pairs",
+   "authors": "Bob Holdom",
+   "categories": "hep-th",
+   "abstract": "The superselection-rule approach to ghost theories is extended to theories with a nonreal spectrum containing a complex-conjugate pair of poles on the physical sheet. The two excitations are labeled by their respective complex masses, $M$ and $M^*$, and the superselection sectors are labeled by $n$, the difference between the numbers of $M$ and $M^*$ excitations. The corresponding generalized ghost parity $Q$ assigns a phase $e^{in\\alpha}$ to each sector. Under $Q$ superselection, nonvanishing norms occur only in the $n=0$ sector, and the physical state condition $Q^{2}|s\\rangle=|s\\rangle$ projects onto this sector. For a $MM^*$ pair carrying real total energy and momentum, we define a swap operation $R$. The $R$-eigenstates are entangled pairs, and an $R$ superselection rule ensures positive probabilities. We discuss how the optical theorem describes physical cuts through these entangled pairs."
+  },
+  {
+   "id": "2609.04347",
+   "title": "UV/IR scale dependence in a four-derivative scalar field theory",
+   "authors": "Bob Holdom",
+   "categories": "hep-th",
+   "abstract": "An analog of the standard renormalization procedure may be useful for four-derivative theories, and we illustrate it with the four-derivative scalar field theory in the $m\\to0$ limit. The renormalization scale $\\mu$ appears in momentum-dependent logarithms associated with both UV and IR divergences. At one loop, the on-shell scattering amplitude satisfies an analog Callan--Symanzik equation involving the analog beta functions. These functions are determined from the combined UV and IR pole parts of the 1PI functions."
+  },
+  {
+   "id": "2609.04374",
+   "title": "Higher-Dimensional Integrable Scattering",
+   "authors": "Lewis T. Cole",
+   "categories": "hep-th, nlin.SI",
+   "abstract": "This paper describes classical soliton scattering in the 2+1d integrable chiral model, related to the Bogomolny monopole equation and self-dual Yang-Mills, as a case study for higher-dimensional integrable scattering. Extended line solitons exhibit nontrivial scattering with lump solitons and with other line solitons, and $N \\to N$ interactions can be factorised into a series of $2 \\to 2$ interactions. Scattering between parallel line solitons in 3d is related to lump soliton scattering in 2d, allowing for direct comparison with results in 1+1d integrable field theories."
+  },
+  {
+   "id": "2609.04423",
+   "title": "On Quasiparticles within the Refined Gribov-Zwanziger Model",
+   "authors": "Felipe F. Garcia , Marcio A. L. Capri , Bruno W. Mintz",
+   "categories": "hep-th, quant-ph",
+   "abstract": "The problem of the effective excitations of a gauge theory in the nonperturbative regime remains not completely understood. Using the Refined Gribov-Zwanziger (RGZ) theory as effective model for pure gauge Yang-Mills theories, we revisit the quasiparticle (quadratic) excitations of the theory. A novel interpretation of such quasiparticles is proposed, in the case of real mass poles, taking into account the manifest ${\\cal PT}-$symmetry of the RGZ Lagrangian."
+  },
+  {
+   "id": "2609.04621",
+   "title": "Open-Closed-Open Triality for 1/2 BPS Three-Point Functions",
+   "authors": "Keisuke Konosu , Kenta Suzuki",
+   "categories": "hep-th",
+   "abstract": "Open-closed-open triality relates two distinct open string descriptions through a common closed string theory. In this paper, we develop an open-closed-open triality for protected half-BPS three-point functions in four-dimensional $\\mathcal{N}=4$ super Yang-Mills theory. Starting from determinant insertions representing giant gravitons, we formulate a V-type open-string Gaussian three-matrix model and, through a color-flavor transformation, derive an F-type open-string model of three bifundamental matrices forming a triangular quiver. Its closed quiver walks include oriented cubic cycles, a feature absent from the bipartite two-point case. We test the correspondence by deriving exact finite-$N$ single-giant polynomials, recovering the known F-type large-$N$ saddles, and proving the equivalence of the V- and F-type character expansions via an explicit bijection of their combinatorial data. At the closed string corner, connected three-matrix contractions determine three-colored integer Strebel surfaces. We argue that the corresponding target-space construction is naturally described by a barycentrically subdivided Belyi map or a colored Hurwitz constellation."
+  },
+  {
+   "id": "2609.04664",
+   "title": "Hironaka Geometry and Resurgence in Finite-$N$ Matrix Models",
+   "authors": "Robert de Mello Koch , Vinayak Raj , Anik Rudra",
+   "categories": "hep-th",
+   "abstract": "We study how finite-$N$ invariant theory organizes the non-perturbative structure of matrix models. For a model of four traceless Hermitian $2\\times 2$ matrices, the Hironaka decomposition realizes the gauge-invariant configuration space as an eight-sheeted branched cover of the space of primary invariants. We show that ramification points of this cover naturally generate additional saddle points when the action depends only on the primaries. For an explicit rank-two saddle, we compute its action, one-loop normalization and Picard--Lefschetz connection to the perturbative vacuum. The same saddle controls the leading Borel singularity and large-order growth of perturbation theory, while its first fluctuation correction reproduces the first subleading large-order correction with no fitted parameters. Our results provide a concrete link between finite-$N$ invariant geometry and resurgence in matrix models."
+  },
+  {
+   "id": "2609.04839",
+   "title": "Form Factor Alphabets and Antipodal Duality from Cluster Algebras",
+   "authors": "Song He , Jiahao Liu",
+   "categories": "hep-th",
+   "abstract": "We develop a cluster-algebraic description of symbol alphabets for chiral stress-tensor form factors in planar $\\mathcal N=4$ super-Yang--Mills theory. Motivated by unfolding the three-point $C_2$ quiver, we propose a periodic framework for $n$-point form-factor alphabets based on folding a $\\mathrm{Gr}(4,2n)$ quiver with two periods of frozen nodes. At four points, the folding leads to the $\\widetilde{\\mathrm{VI}}$ cluster algebra, which has infinitely many cluster variables. Tropical truncation selects a finite set of rational coordinates and four physical limit rays. The $A_1^{(1)}$ mutation sequences approaching these rays generate the four square roots and the corresponding algebraic-letter spaces. Within the resulting finite set of rational candidates, antipodal closure excludes precisely eight additional letters. On the parity-preserving surface, the antipodal map is realized, after a further folding, by two commuting mutations followed by a relabelling. Furthermore, we find an alternative quiver within the same mutation class that becomes self-antipodal after parity folding, mirroring the antipodal self-duality of the four-point MHV form factor. Its double- and triple-collinear boundaries reproduce, respectively, the $C_2$ algebra of the three-point form factor and the $A_3$ algebra of the six-point amplitude; after folding the latter to $C_2$, the antipodal map exchanges the two $C_2$ boundaries."
+  },
+  {
+   "id": "2609.04844",
+   "title": "What is Classical Null String Theory?",
+   "authors": "M.M. Sheikh-Jabbari , H. Yavartanoo",
+   "categories": "hep-th",
+   "abstract": "We revisit the classical definition of a null string in a D-dimensional Minkowski target space and distinguish a consistent partially-gauged Carrollian sigma-model from the null string theory. The Isberg-Lindström-Sundborg-Theodoridis (ILST) action gauges worldsheet diffeomorphisms and the common Weyl rescaling, but not the independent relative rescaling of the temporal and spatial representatives of the intrinsic Carrollian structure, Carroll-Weyl scaling. A physical string theory requires every local change of worldsheet representative to be gauged, therefore, the Carroll-Weyl symmetry should be gauged in a null string theory. In the minimal realization, the corresponding gauging is obstructed at finite tension, whereas at zero tension it yields an additional first-class constraint and the associated identification of physical configurations along its gauge orbits. The description of the null worldsheet as a congruence of null geodesics provides a complementary target-space interpretation of gauging of the Carroll-Weyl scaling. Our analysis thus provides the supplementary requirements that turns the ILST theory into the null string theory."
+  },
+  {
+   "id": "2609.05004",
+   "title": "de Sitter and S-folds in type IIB from $\\mathcal{N} = 4$ $D = 4$ gauged supergravity",
+   "authors": "Colin Sterckx",
+   "categories": "hep-th",
+   "abstract": "In this paper, we classify the type IIB uplifts of the $\\mathcal{N}=4$ $D=4$ pure $\\text{SO}(4)$-gauged supergravity admitting a dS$_4$ solution. As for their AdS cousins, the internal geometries of these uplifts consist of two $S^2$ fibred over a Riemann surface $\\Sigma$, and are classified by pairs of harmonic functions $h_{1,\\,2}$ on $\\Sigma$, providing a new family of de Sitter solutions in type IIB. Choosing specific functions $h_{1,\\,2}$ on $\\Sigma = \\mathbb{R} \\times I$, we perform an S-fold quotient of the internal space along its non-compact direction. This S-folding allows us to evade the assumptions of the Maldacena-Nunez no-go theorem and provides a classical de Sitter solution of type IIB supergravity with finite and non-vanishing four-dimensional effective Newton constant."
+  },
+  {
+   "id": "2609.05164",
+   "title": "The endless journey towards the horizon of a quantum black hole",
+   "authors": "Victor Franken , Thomas G. Mertens , Bruno de S. L. Torres",
+   "categories": "hep-th, gr-qc",
+   "abstract": "It is a problem of great importance in quantum gravity whether quantum effects lead to nontrivial structure near black hole horizons, and if their interiors are emergent features of a large $N$ limit. We show that the strongly chaotic nature of black holes, captured by random matrix statistics of their spectrum, makes it so that a suitably gravitationally dressed infalling observer takes an infinite amount of proper time to reach the horizon. This makes the black hole interior operationally inaccessible to any outside observer, marking a sharp breakdown of the large $N$ causal structure of black holes in quantum gravity. To model the experience of an infalling observer, we study the response of an infalling particle detector coupled to a matter field in a 2d quantum black hole background, finding a peak in the detector's excitation probability as it enters an infinitely long non-perturbative journey close to the black hole horizon."
+  },
+  {
+   "id": "2609.05211",
+   "title": "CFT characters from localization",
+   "authors": "Lorenz Eberhardt , Duarte Fragoso , Hessel Posthuma",
+   "categories": "hep-th, math-ph, math.RT",
+   "abstract": "We explain a general procedure to compute characters of chiral algebras of 2d (S)CFTs geometrically from their coadjoint orbits, in analogy with the coadjoint orbit method for finite-dimensional Lie groups. We demonstrate that this method can be used to give concise rederivations of the characters of the Virasoro algebra, Kac-Moody algebras, as well as supersymmetric generalizations."
+  },
+  {
+   "id": "2609.05336",
+   "title": "Infrared Memory and Scrambling in a Dynamically Opened Coupled-SYK Majorana Junction",
+   "authors": "Ali Vahedi",
+   "categories": "hep-th, cond-mat.str-el",
+   "abstract": "We study a dynamically opened Majorana junction formed by two coupled Sachdev--Ye--Kitaev (SYK) systems. A time-dependent bilinear coupling drives the system from a nearly decoupled to a strongly hybridized regime, providing an interacting realization of a Majorana shutter. Using a low-frequency analysis of the large-$N$ Keldysh theory around the conformal $q=4$ SYK saddle, we find that the opening retains a strong infrared memory, with the associated anomalous response becoming increasingly sensitive to the infrared cutoff. Exact finite-dimensional simulations of two $N=8$ SYK clusters show enhanced inter-sector entanglement, parity transfer, and cross-sector operator scrambling after the opening. These results connect the infrared structure of conformal SYK dynamics with finite-size many-body scrambling and show how a dynamically opened interacting Majorana system can retain long-wavelength memory beyond the quadratic limit."
+  },
+  {
+   "id": "2609.05409",
+   "title": "Decompactification and the Flat-Space Limit of AdS$_5\\times$ S$^5$ Master Correlators",
+   "authors": "Burkhard Eden , Paul Heslop , Harshal Kulkarni , Arthur Lipstein , Romain Ruzziconi , Akshay Yelleshpur Srikant",
+   "categories": "hep-th",
+   "abstract": "We study the flat-space limit of AdS$_5$/CFT$_4$ holographic correlators while accounting for the simultaneous decompactification of the internal S$^5$. We show that this limit is naturally formulated in terms of master propagators and correlators, which resum the infinite tower of Kaluza--Klein modes. For boundary correlators, the resulting expressions can be interpreted in terms of amplitudes with kinematics restricted to 5d. We then consider master correlators whose external insertions are kept in the AdS$_5\\times$S$^5$ bulk before taking the limit, and argue that they recover flat-space amplitudes with unrestricted kinematics in 10d Minkowski space. Finally, we show that the flat-space limit commutes with the boundary limit if we analytically continue the sphere so that the bulk geometry becomes AdS$_5 \\times$dS$_5$, and the resulting formulae suggest an interpretation in terms of amplitudes in flat space with two time directions and with 10d kinematics satisfying two simultaneous null constraints. We discuss the implications of these constructions for flat-space holography and its relation to the Carrollian limit of the dual CFT."
+  }
+ ]
+}
