@@ -68,6 +68,14 @@ try {
     if (-not $CLAUDE) { throw 'claude 명령을 찾지 못했습니다. Claude Code 가 설치돼 있는지 확인하세요.' }
     say "claude $(& $CLAUDE --version | Select-Object -First 1)"
 
+    # 번역 프로세스를 여러 개 띄우기 전에 CLI 인증을 확인한다.
+    $authOutput = & $CLAUDE auth status
+    $authRc = $LASTEXITCODE
+    try { $auth = ($authOutput -join "`n") | ConvertFrom-Json }
+    catch { throw 'Claude 로그인 상태를 확인하지 못했습니다. 터미널에서 claude auth status 를 확인하세요.' }
+    if ($authRc -ne 0 -or -not $auth.loggedIn) {
+        throw 'Claude Code CLI 로그인이 필요합니다. PowerShell에서 & "$HOME\.local\bin\claude.exe" auth login 을 실행해 로그인한 뒤 지금실행.cmd 를 다시 실행하세요.'
+    }
     # ------------------------------------------------------------ 1. 최신 상태
     say '1/5 git pull'
     $rc = Run-Native git @('-C', $REPO, 'pull', '--rebase', '-q', 'origin', 'main')
