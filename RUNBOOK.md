@@ -27,6 +27,36 @@ Actions 경로는 Claude Max 구독 OAuth 토큰을 씁니다. `claude setup-tok
 `run_local.sh` 의 작업 폴더는 `$BRIEF_WORK` (기본 `~/.hep-th-brief-work`), 로그는 그 아래 `logs/`.
 launchd 가 띄운 실행의 표준출력은 `$BRIEF_WORK/logs/launchd.log` 에도 남습니다.
 
+### Windows
+
+같은 세 가지를 Windows 에서는 `.cmd` 더블클릭으로 합니다. 각 `.cmd` 는 같은 이름의 `.ps1` 을
+부르는 얇은 껍데기이고, 파이프라인 본체는 `scripts/run_local.ps1` (`run_local.sh` 의 이식) 입니다.
+
+| 파일 | 맥 대응 | 무엇이 |
+|---|---|---|
+| `scripts/지금실행.cmd` | `지금실행.command` | 오늘치를 지금 한 번 |
+| `scripts/자동실행_켜기.cmd` | `자동실행_켜기.command` | 작업 스케줄러에 평일 11:07 등록 (이름 `hep-th-brief`) |
+| `scripts/자동실행_끄기.cmd` | `자동실행_끄기.command` | 등록 해제 |
+
+launchd 대신 **작업 스케줄러**를 씁니다. 놓친 시각은 깨어난 뒤 한 번 실행하고(StartWhenAvailable),
+자는 중이면 깨우며(WakeToRun), 배터리 상태에서도 돕니다. "로그온한 사용자 세션에서만" 도는
+작업이라 로그아웃 상태에서는 돌지 않습니다 — Git Credential Manager 와 claude 로그인 정보가
+그 사용자의 것이기 때문입니다. 상태 확인은 `taskschd.msc` 또는
+`Get-ScheduledTaskInfo -TaskName hep-th-brief`.
+
+작업 폴더·로그 위치는 맥과 같습니다 (`%USERPROFILE%\.hep-th-brief-work\logs\<날짜>.log`).
+자동 실행은 창 없이 돌고 출력은 그 로그에만 남습니다.
+
+준비물: Python 3 (`python` 이 PATH 에), Git (자격증명 저장됨, `user.name` 설정됨),
+Claude Code CLI (`irm https://claude.ai/install.ps1 | iex`). Claude 데스크톱 앱에 내장된
+Claude Code 는 `claude` 명령을 제공하지 않으므로 CLI 를 따로 설치해야 합니다.
+
+Windows 에서만 다른 점:
+- Python 이 `open()` 기본 인코딩으로 cp949 를 쓰기 때문에 `run_local.ps1` 이 `PYTHONUTF8=1` 을
+  켭니다. 없으면 `build_html.py` 가 수식 기호(ℓ, → 등)에서 `UnicodeDecodeError` 로 죽습니다.
+- `.ps1` 파일은 반드시 **UTF-8 BOM** 으로 저장합니다. Windows PowerShell 5.1 은 BOM 이 없으면
+  한글을 ANSI 로 읽어 깨뜨립니다. `.cmd` 는 반대로 ASCII 만 씁니다 (cmd 는 OEM 코드페이지로 읽음).
+
 ## 파이프라인
 
 ```
