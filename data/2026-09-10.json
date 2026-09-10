@@ -1,0 +1,112 @@
+{
+ "date": "2026-09-10",
+ "source": "list/new",
+ "count": 15,
+ "papers": [
+  {
+   "id": "2609.09273",
+   "title": "Constant Maps and Exponentially Small Sectors in ABJM Bethe Observables",
+   "authors": "Seyed Morteza Hosseini",
+   "categories": "hep-th",
+   "abstract": "The topologically twisted index of ABJM theory captures the microscopic entropy of magnetically charged supersymmetric $\\mathrm{AdS}_4$ black holes. Building on the companion Letter arXiv:2608.04107 , which reconstructed the finite-rank twisted superpotential at the universal twist, we determine the finite-rank index using high-precision Bethe-vacuum data, physics-informed symbolic regression, and integer relations. The Hessian, effective dilaton, and one-loop factors encode information beyond the on-shell twisted superpotential. The two observables share the same shifted rank. Within a declared finite class, we reconstruct the index constant map from the ABJM $S^3$ constant maps at levels $k$ and $k/2$, the constant map of the twisted superpotential, and elementary terms. We prove that it equals a convergent one-kernel integral for real $k>0$, resumming the large-$k$ expansion, fixing a previously numerical constant, and yielding type-IIA coefficients at arbitrary genus. We also prove that the Clausen expression in arXiv:2608.04107 equals an alternating Euler sum and an absolutely convergent integral, giving closed evaluations for two rational-argument Euler-sum families. At $k=1,2,4$, the exponentially suppressed sectors exhibit arithmetic structure. The reconstructed coefficients of the twisted superpotential obey a divisor-sum formula with a conjectural all-order Eichler-integral series associated with a weight-four Eisenstein form. The index coefficients reduce to two rational generators; one admits modular-product formulas reproducing every available coefficient and suggesting an all-order completion. Conditional on this continuation, modular transformations determine the nearest logarithmic singularity, radius of convergence, and leading coefficient growth. These results provide a finite-$N$ benchmark for quantum gravitational blocks and bulk black hole quantum entropy."
+  },
+  {
+   "id": "2609.09277",
+   "title": "Towards quantum elliptic cohomology from GLSMs",
+   "authors": "Z. Cao , E. Sharpe , H. Zhang",
+   "categories": "hep-th",
+   "abstract": "This paper briefly outlines a proposal for a GLSM Coulomb-branch interpretation of the quantum elliptic cohomology rings currently being developed in mathematics by Bouaziz-Huq-Kuruvilla-Lee. The proposal is modeled on the established GLSM computations of quantum cohomology and quantum K theory of Fano toric varieties, where ring relations arise as critical loci of twisted effective superpotentials. In the case of quantum elliptic cohomology, the natural generalization would be to encode ring relations in Coulomb branch computations in two-dimensional theories obtained by KK reductions from four-dimensional theories, describing OPEs of parallel surface defects, which we review. However, in some basic examples, this interpretation is obstructed by four-dimensional gauge anomalies. In such cases, we provide a classical superpotential whose critical loci generate the expected ring relations, but which is not obtained by KK reduction from four dimensions, though it shares many characteristics with such KK reductions. We describe some simple examples, and make some predictions for the case of gerbes."
+  },
+  {
+   "id": "2609.09282",
+   "title": "Bounds on scattering amplitudes of non-identical scalar particles in 4d",
+   "authors": "Gabriele Ferretti , Denis Karateev , Alessandro Piazza , Marco Serone",
+   "categories": "hep-th, hep-ph, nucl-th",
+   "abstract": "We initiate the study of two-to-two scattering amplitudes involving two distinct scalar particles in $d = 4$ spacetime dimensions using the primal S-matrix bootstrap. We impose a $\\mathbb{Z}_2 \\times \\mathbb{Z}_2$ global symmetry under which the two particles are the lightest ones carrying charges $(-,+)$ and $(+,-)$, guaranteeing their absolute stability and absence of triangular anomalous thresholds. For unequal masses, the presence of a pseudo-physical cut whose discontinuity is not directly constrained by physical unitarity qualitatively changes the bootstrap problem. We find several observables to be unbounded, while others obey non-trivial one-sided bounds or become bounded once another observable is fixed. In the equal-mass limit, where the pseudo-physical region disappears, two-sided bounds are recovered. As a proof of concept, we show that supplying information about the pseudo-physical discontinuity through an Omnès parametrisation also restores boundedness. Our results provide a starting point for future studies of physical processes such as pion-kaon and pion-nucleon scattering."
+  },
+  {
+   "id": "2609.09288",
+   "title": "Cosmological Collider Signals From a Triangle Loop",
+   "authors": "Zhehan Qin , Zhong-Zhi Xianyu",
+   "categories": "hep-th, astro-ph.CO, hep-ph",
+   "abstract": "Triangular loop signals appear frequently in cosmological collider models but their analytical forms remain unknown due to multiple technical challenges. Here, we determine for the first time the leading analytical cosmological collider signals generated by a massive scalar triangle loop in inflationary bispectrum and trispectrum. Combining a directional cutting rule with partial Mellin-Barnes representations, we obtain both the local and nonlocal trispectrum signals in a soft limit and derive the leading signal in the squeezed bispectrum. Remarkably, all these signals are reproduced by the corresponding bubble diagram with a single effective pinched coupling. Signals beyond leading order and cases with arbitrary internal masses, spins, and interactions can be generated within the same framework. Our approach also provides a systematic route to extracting analytical loop signals from general cosmological correlators."
+  },
+  {
+   "id": "2609.09298",
+   "title": "Quantum Elliptic Cohomology From Four-Dimensional Minimal Supersymmetric Gauge Theories",
+   "authors": "Ilka Brunner , Peng Cheng , Hans Jockers",
+   "categories": "hep-th, math-ph, math.AG",
+   "abstract": "In this paper, we study non-perturbative vortex partition functions of four-dimensional N=1 supersymmetric gauge theories on the space-time geometry $T^2 \\times D^2$, and we propose that these partition functions offer a notion of quantum elliptic cohomology. For particular U(1)-gauge theories we calculate these partition functions explicitly by applying equivariant localization methods to Handsaw quiver varieties that realize for this particular class of U(1)-gauge theories the moduli spaces of the non-perturbative vortex sectors. The determined vortex partition functions are annihilated by difference operators, which are interpreted as Ward identities among N=(0,2) BPS surface defects. Compared to lower dimensional gauge theories with four supercharges, anomalies play an essential role for a consistent formulation of the four-dimensional partition functions. In our proposal towards a mathematical formulation of the vortex partition functions in terms of equivariant elliptic cohomology, the gauge theory anomalies relate to geometric properties of the Thom sheaves corresponding to the relevant quasimap moduli spaces. Motivated by the explicit computations we reflect on the existence of a `virtual structure sheaf' on the moduli space of quasimaps for a general mathematical theory of quantum elliptic cohomology."
+  },
+  {
+   "id": "2609.09303",
+   "title": "One-point functions of the Lagrangian in $\\mathcal{N}=4$ SYM with boundaries, defects and interfaces",
+   "authors": "Dongming He , Christoph F. Uhlemann , Paolo Vallarino",
+   "categories": "hep-th",
+   "abstract": "We obtain one-point functions of the ambient Lagrangian $\\mathcal{O}_{\\mathcal{L}}$ in $\\mathcal{N}=4$ SYM with $\\frac{1}{2}$-BPS boundaries, defects and interfaces classified by Gaiotto and Witten, which include maximally supersymmetric Janus interfaces and BCFTs relevant for double holography, as well as for Janus interfaces with reduced supersymmetry. For Janus interfaces we extend recent results capturing $\\langle \\mathcal{O}_{\\mathcal{L}}\\rangle$ in certain limits to exact dependence on $N$ and $\\lambda$, and confirm a non-renormalization conjecture. We also clarify recent results for Janus variants preserving less supersymmetry. For general $\\frac{1}{2}$-BPS Gaiotto-Witten theories with genuine defect degrees of freedom we derive one-point functions using supersymmetric localization, confirm that the results agree with holographic predictions in the appropriate limits, and show that the one-point functions in general exhibit non-trivial coupling dependence."
+  },
+  {
+   "id": "2609.09437",
+   "title": "Determinantal representation of colored HOMFLY for double braids",
+   "authors": "Ya. Kononov , A. Morozov",
+   "categories": "hep-th, math-ph, math.GT",
+   "abstract": "Starting from the known differential expansions, we express the HOMFLY-PT polynomials of twist and antiparallel double-braid knots in rectangular representations \\([r^s]\\) as determinants of \\(r\\times r\\) and \\(s\\times s\\) matrices. We first give an elementary derivation for the figure-eight knot and then re-sum the KNTZ formulas for twist and double-braid evolution. The resulting matrices are constructed from single-hook evolution coefficients and explicit representation-dependent weights. These formulas provide a starting point for investigating possible extensions of knot polynomials to KP/Toda \\(\\tau\\)-functions. Extensions to non-rectangular representations and to more general knot families remain open problems."
+  },
+  {
+   "id": "2609.09550",
+   "title": "On general background of quantum non-invertible symmetry in 2D",
+   "authors": "Jin Chen , Qiang Jia",
+   "categories": "hep-th",
+   "abstract": "We study the dual quantum symmetry $\\mathrm{Rep}(G)$ in the two-dimensional theory $\\widetilde{\\mathfrak{T}}_{\\mathrm{Rep}(G)}$ obtained by gauging a non-abelian symmetry $G$ of $\\mathfrak{T}_G$, where for Lie groups $G$ the gauging is understood as flat gauging. We develop a general framework for computing partition functions of $\\widetilde{\\mathfrak{T}}_{\\mathrm{Rep}(G)}$ in arbitrary non-invertible symmetry backgrounds, represented by topological defect networks of $\\mathrm{Rep}(G)$, in terms of the partition functions of the original theory $\\mathfrak{T}_G$. We also derive the inverse transformation, expressing partition functions of $\\mathfrak{T}_G$ in $G$ backgrounds in terms of those of $\\widetilde{\\mathfrak{T}}_{\\mathrm{Rep}(G)}$. We test the framework in several examples, including finite groups with multiplicity-free and higher-multiplicity fusion rules, and discuss a formal extension to compact Lie groups, focusing on $\\mathrm{Rep}(SU(2))$."
+  },
+  {
+   "id": "2609.09954",
+   "title": "The Geometry of Gravitational Radiation",
+   "authors": "Jelle Hartong",
+   "categories": "hep-th",
+   "abstract": "We consider 4-dimensional asymptotically flat vacuum spacetimes near future null infinity endowed with the most general allowable Carroll geometry. We show that the near-boundary radial expansion (to a certain order) can be organised in terms of connections that can be obtained by gauging the conformal Carroll algebra. The only non-vanishing curvatures in this gauging procedure are those that are associated with the special conformal generators and we will refer to these as the $K$-curvatures. The vanishing of these $K$-curvatures defines an asymptotic vacuum spacetime and we use this to construct a boundary (i.e. Carroll) covariant expression for the vacuum (soft) shear in terms of two boundary Carroll scalar fields. The $K$-curvatures transform in a hierarchical fashion into one another under Carroll boosts. This leads to a classification of 4 types of spacetimes: vacuum, strongly and weakly non-radiative, and radiative spacetimes. It is shown that the $K$-curvatures correspond to 5 of the 10 Weyl tensor components at leading order in their $1/r$ expansion. We furthermore observe that one of the $K$-curvatures is equal to the recently found Carroll boost anomaly. Finally, we show that the Bondi loss equations for the boundary energy-momentum-news complex can be cast into a form involving another energy-momentum tensor with vanishing energy flux that is traceless and whose non-conservation is entirely captured by the $K$-curvatures. The BMS currents can be obtained by contracting this latter energy-momentum tensor with a Carroll conformal Killing vector."
+  },
+  {
+   "id": "2609.10027",
+   "title": "Entanglement Entropy of Interacting Scalar Theories on Fuzzy Spaces",
+   "authors": "A.Allouche , D.Dou",
+   "categories": "hep-th, gr-qc, quant-ph",
+   "abstract": "We investigate the impact of self-interactions on the Rényi and entanglement entropies of a scalar field on $(2+1)$-dimensional spacetimes, whose spatial sections are modeled by fuzzy spaces, specifically the fuzzy sphere and the fuzzy disc. We compute the first-order perturbative correction induced by a $\\lambda\\phi^4$ interaction using the Green's function approach. In contrast to the free theory, where the entanglement entropy is dominated by degrees of freedom near the entangling boundary and obeys an area law, we find that the interaction correction has an extensive bulk contribution, receiving significant contributions from degrees of freedom throughout the fuzzy space. For the fuzzy sphere, the correction exhibits strong infrared sensitivity associated with the zero mode. We isolate and resolve this zero-mode IR divergence by projecting out the zero mode, thereby obtaining a physically meaningful quantity. In the commutative continuum limit, the interaction correction has the same degree of UV divergence as the free entropy but does not obey a pure area law. Furthermore, we analyze the Moyal plane limit, where the interaction correction exhibits a distinct IR divergence. We discuss the physical origin of these extensive bulk features and examine their possible connection to the celebrated UV/IR mixing phenomenon in noncommutative quantum field theories."
+  },
+  {
+   "id": "2609.10134",
+   "title": "Quantum tunneling from perturbation theory revisited",
+   "authors": "Hiroshi Suzuki",
+   "categories": "hep-th, hep-lat",
+   "abstract": "In the late 1990s, Suzuki and Yasuta proposed a compact formula that extracts the decay rate per unit volume of a false vacuum in the $D$-dimensional $O(N)$ $\\lambda(\\phi^2)^2$ theory with an unbounded potential from conventional perturbative coefficients of the vacuum energy density, i.e., vacuum bubble diagrams. The idea was to identify the imaginary part arising from the Borel integral along the discontinuity of the Borel transform with that of the vacuum energy density. While the formula works quite well for~$D=1$, i.e., quantum mechanics, its validity remained unclear for~$D\\geq2$ because only the first three perturbative coefficients for~$D=2$ were available and the result showed no sign of convergence. In the present paper, we reexamine this approach using the first seven nontrivial perturbative coefficients (up to nine loops) for~$D=2$ and~$N=1$ obtained by Serone, Spada, and~Villadoro. Introducing two tunable parameters in the finite-order truncated Borel transform following these authors, we find that the imaginary part converges as the perturbative order increases, with the last few orders agreeing to within a few percent. In the intermediate range of the coupling constant, $3\\lesssim\\widetilde{g}\\lesssim8$, this approach yields an imaginary part rather close to the leading-order semi-classical approximation with the one-loop determinant; it is $10$--$20\\%$ larger than the semi-classical result with the two-loop correction computed by Malatesta, Parisi, and~Rizzo."
+  },
+  {
+   "id": "2609.10272",
+   "title": "Unorientable supersymmetric compactifications of M-theory",
+   "authors": "Ilarion V. Melnikov , Ruben Minasian",
+   "categories": "hep-th",
+   "abstract": "We discuss orbifold compactifications of the type II string, where the orbifold combines a free action on a base manifold and the $(-1)^{\\boldsymbol{F}_{\\text{L}}}$ symmetry which acts by -1 on left-moving Ramond sectors. Such backgrounds can preserve minimal supersymmetry and lift to M-theory compactification on smooth unorientable manifolds."
+  },
+  {
+   "id": "2609.10329",
+   "title": "An Effective $S$-Matrix Approach to Low-Frequency Waveforms from Black Hole Mergers",
+   "authors": "Katsuki Aoki , Feng-Yin Cheng , Andrea Cristofoli , Yu-tin Huang , Hyun Jeong",
+   "categories": "hep-th",
+   "abstract": "We develop an on-shell description of low-frequency gravitational waveforms from black-hole mergers beyond leading order. Treating the strongly coupled merger as effective hard $S$-matrix data, we organize its long-wavelength response using soft theorems and the KMOC formalism. At next-to-leading order, the quantum soft theorem contains logarithmic terms absent from the classical soft theorem. We show that these extra terms cancel in the full KMOC in-in observable between the one-loop radiative amplitude and the corresponding graviton cut, leaving precisely the classical logarithmic contributions associated with gravitational drag and early-time acceleration. We also identify the $1/\\omega$ corrections from remnant recoil and Christodoulou non-linear memory. These results reveal a hierarchy of merger information accessible at low frequency: logarithmic tails depend only on asymptotic hard data, recoil probes total radiated momentum, while non-linear memory probes the angular distribution of the emitted radiation."
+  },
+  {
+   "id": "2609.10432",
+   "title": "Null String Holography, Null Strings Probe Projective Boundary of Their Target Spaces",
+   "authors": "M.M. Sheikh-Jabbari , H. Yavartanoo",
+   "categories": "hep-th",
+   "abstract": "We prove that the \\textit{minimal null string theory} on background manifold ${\\cal M}$ is classically equivalent to the ILST theory on the projective boundary of $\\mathcal M$, ${\\mathcal B}_{_{\\text{P}}}={\\partial_{_{\\text{P}}}\\mathcal{M}}$. We conjecture that this equivalence also holds as quantum level, which we dub \\textit{null string holography}. In particular, we show classical null string theory on Poincaré patch of $D$ dimensional Anti de Sitter (AdS$_D$) background is described by ILST on $D-1$ dimensional Minkowski background, paralleling the celebrated AdS/CFT. Null strings on cosmological patch of dS$_D$ is governed by ILST on $D-1$ dimensional flat Euclidean space. For null strings on $D$ dimensional Minkowski space, depending on the coordinate patch used, the projective boundary where the ``dual'' ILST theory resides, can by dS$_{D-1}$, $D-1$ dimensional Carrollian space and $D-1$ dimensional hyperboloid, respectively including spacelike asymptotic boundary $\\iota^0$, asymptotic null boundaries ${\\cal I}^\\pm$ and timelike infinities $\\iota^\\pm$. We comment on physical implications of the null string holography on black hole backgrounds whose projective boundary includes horizons."
+  },
+  {
+   "id": "2609.10535",
+   "title": "For Whom Does Bell Hold?",
+   "authors": "Daniel Green , Kshitij Gupta , Qiya Zhang",
+   "categories": "hep-th, quant-ph",
+   "abstract": "Violations of Bell's inequalities offer a definitive signal of non-classical (quantum) behavior in local deterministic systems. Yet, in many physical settings where quantum mechanics is expected to play an important role, one cannot construct a Bell-type test using the available observables. Cosmology offers one concrete example, where cosmic structure may have originated from quantum vacuum fluctuations yet all observations are effectively classical. Nevertheless, recent work suggests that quantum and classical time evolution may still be differentiated by the pattern of statistical correlations of these observables. In this paper, we explore and generalize the use of correlations as Bell-type test of the nature of time evolution. We show that quantum vacuum fluctuations of closed systems undergoing Hamiltonian evolution produce unique correlations that are not mimicked by classical Hamiltonian systems. Correlations in the quantum vacuum are generally time-independent and are controlled by the energy gap between the ground and exited states. Classical systems exhibit apparent poles at physical frequencies that do not arise in the quantum vacuum. As one approaches the poles, the evolution becomes dominated by a resonant Hamiltonian giving rise to time dependent correlations that eventually decay through dephasing. Finally, we show that this behavior is distinct from other signals of quantum evolution, including applications to quantum optics, quantum walks, and quantum search."
+  }
+ ]
+}
