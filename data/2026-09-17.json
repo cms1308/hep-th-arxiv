@@ -1,0 +1,182 @@
+{
+ "date": "2026-09-17",
+ "source": "list/new",
+ "count": 25,
+ "papers": [
+  {
+   "id": "2609.17656",
+   "title": "The Kerr/CFT energy gap",
+   "authors": "Robert Penna",
+   "categories": "hep-th, gr-qc",
+   "abstract": "Noether charges in gravity are always defined with respect to a reference metric, but the near-horizon extremal Kerr (NHEK) solution does not come with an obvious choice of reference metric (it is not asymptotically flat, for example). We discuss a one parameter generalization of the NHEK solution due to Kinnersley and Kelley which interpolates between NHEK and an analytically continued version of Minkowski spacetime. We use this interpolating family of solutions to compute the conformal energy of NHEK above the Minkowski reference metric. We find an interesting order of limits issue when computing the conformal energy of the Minkowski vacuum and we discuss a few natural prescriptions for fixing it, including one motivated by the Kerr/CFT correspondence."
+  },
+  {
+   "id": "2609.17657",
+   "title": "Quantum Dynamics of Probe Particles in Thermal Fields and the Emergence of Stochastic Dynamics",
+   "authors": "Bruno Scheihing-Hitschfeld",
+   "categories": "hep-th, cond-mat.stat-mech, quant-ph",
+   "abstract": "Starting from a general Hamiltonian describing the quantum dynamics of probe particles interacting with a set of environment degrees of freedom, we derive the quantum master equation with which the reduced density matrix of a probe particle evolves, the general equilibration condition that they satisfy when the environment is prepared in a thermal state -- encoded in a KMS property for line operators extended in real time -- and the Langevin description that emerges. The novelty of our results resides in their generality: We do not assume a specific form of the environment self-coupling, of the environment operator that couples the particle to it, of the statistics of its correlation functions, whether the statistics of the momentum transfer is Gaussian or not, or whether the probe particles move relativistically. Our results only require that spacetime translations, parity and time reversal be symmetries of the Hamiltonian, and that there exists a separation of scales between those characterizing the dispersion relation of the probe particle and those of the environment. We also discuss the limiting case in which Gaussian Brownian motion emerges. Overall, our results constitute a first-principles derivation of what properties of the underlying quantum field theory govern the energy loss and momentum fluctuations of probe particles."
+  },
+  {
+   "id": "2609.17660",
+   "title": "Bosonic String Amplitudes From Ribbon Graphs",
+   "authors": "Sam Christian , Ben Mazel , Yuchen Wang , Xi Yin , Yutai Zhang",
+   "categories": "hep-th",
+   "abstract": "We develop a method for numerically computing higher genus CFT correlators and string amplitudes based on Kontsevich's ribbon graph parametrization of the moduli space $\\mathcal{M}_{g,n}$ of punctured Riemann surfaces. Using this method, we compute the compact boson partition function up to genus 6 as well as the moduli space integrand for bosonic string vacuum amplitudes up to genus 3. Our results pass a number of nontrivial numerical checks. In particular, the moduli space integrand of bosonic string amplitudes reproduce the Igusa cusp forms at genera 2 and 3."
+  },
+  {
+   "id": "2609.17663",
+   "title": "Full Eigenstate Thermalization in Quantum Field Theory and Gravitational Scrambling",
+   "authors": "Ricardo Espíndola , Viktor Jahnke",
+   "categories": "hep-th, cond-mat.stat-mech, quant-ph",
+   "abstract": "Using thermal analyticity, we derive directional large-frequency bounds on the smooth functions entering full eigenstate thermalization in continuum quantum field theory. The strongest directions reproduce the scales previously identified for lattice systems, while the complete analyticity domain reveals an asymmetric multifrequency structure. Thermal conformal correlators saturate the second- and third-order bounds, and the leading gravitational Regge contribution saturates the strongest fourth-order direction."
+  },
+  {
+   "id": "2609.17666",
+   "title": "Representation Theory of Three-dimensional Corner Symmetries",
+   "authors": "Giulio Neri , Ludovic Varrin",
+   "categories": "hep-th, math-ph",
+   "abstract": "We study the representation theory of the three-dimensional extended corner symmetry group associated with a circular corner. Using induced representation techniques, we construct families of representations of the infinite-dimensional corner symmetry group and analyze their unitarity and irreducibility. We also determine the maximal central extension of the symmetry group and construct the corresponding projective representations. The analysis is motivated by the role that corner symmetries play in quantum gravity, where boundary degrees of freedom --- acted upon by the corner transformations --- are expected to encode aspects of the quantum structure of spacetime. In three dimensions, the representation-theoretic structures that emerge are closely related to symmetry groups and quantum theories that already appeared as central to the study of gravity. This work provides a first step toward a systematic description of quantum gravitational corner degrees of freedom in three dimensions."
+  },
+  {
+   "id": "2609.17669",
+   "title": "Full Eigenstate Thermalization in Quantum Field Theory: Free Cumulants and Gravitational Scrambling",
+   "authors": "Ricardo Espíndola , Viktor Jahnke",
+   "categories": "hep-th, cond-mat.stat-mech, quant-ph",
+   "abstract": "Using thermal analyticity, we derive directional large-frequency bounds on the smooth functions entering full eigenstate thermalization in continuum quantum field theory. The strongest directions reproduce the scales previously identified for lattice systems, while the complete analyticity domain reveals a broader asymmetric multifrequency structure. In thermal two-dimensional conformal field theory, exact two- and three-point functions saturate the corresponding bounds. At fourth order, where genuine dynamical information first appears, we show that the holographic CFTs studied here saturate the strongest full-ETH bounds. These results establish a direct connection between full ETH, free cumulants, and gravitational scrambling, and are consistent with the emergence of asymptotic freeness realized by the gravitational scrambling algebra."
+  },
+  {
+   "id": "2609.17724",
+   "title": "Fixed Points, Floquet Entanglement Asymmetry, and Quantum Mpemba Effects",
+   "authors": "Jayashish Das , Filiberto Ares , Arnab Kundu",
+   "categories": "hep-th, cond-mat.stat-mech, quant-ph",
+   "abstract": "We investigate the dynamics of entanglement asymmetry in periodically driven two-dimensional conformal field theories with a global U$(1)$ symmetry, using a dynamical-system description based on iterated conformal maps, in particular Möbius maps. Starting from a symmetry-breaking excited state prepared by a local operator insertion, we show that a broad range of nonequilibrium phenomena, including local symmetry restoration, the quantum Mpemba effect, and its inverse, admit a simple geometric description in terms of the invariant data of the conformal map. We explicitly demonstrate this using Möbius maps, for which the invariant structure is described by the conjugacy classes. In particular, the dynamics of entanglement asymmetry is determined by the relative positions of the state-preparing operator insertion, the subsystem, and the fixed points, yielding distinct patterns of growth, decay, oscillation, and saturation. We further argue that this geometric picture extends to general holomorphic maps, establishing the conformal-map dynamics as a natural framework for organizing the phenomenology of entanglement asymmetry in periodically driven two-dimensional conformal field theories."
+  },
+  {
+   "id": "2609.17858",
+   "title": "Matter Swapping between Two Branes: A Local Type IIB D3-D7-D3 Realization of Charged-Fermion Mixing via E3 Instantons",
+   "authors": "Michaël Sarrazin",
+   "categories": "hep-th, hep-ph",
+   "abstract": "Effective infrared two-sheeted descriptions of fermion mixing between braneworlds have emerged in several distinct realizations and lead to testable matter-swapping effects, motivating low-energy searches and cosmological applications. The recurrence of the same low-energy fermion operator motivates asking whether this structure can also arise from a D-brane mechanism. We construct a local Type IIB D3$_+$-D7-D3$_-$/E3 realization in which direct interbrane mixing is perturbatively forbidden but generated non-perturbatively by a suitable E3 instanton sector. The resulting low-energy interaction reproduces the characteristic pseudoscalar structure of the two-sheeted fermion operator, together with its scalar companion, while D7 Wilson transport provides the required gauge-invariant relative connection. The construction therefore provides a local string realization of the same operator structure, subject to the stated instanton and zero-mode conditions. The analysis further provides a concrete model-building roadmap toward a compact phenomenological realization: the compactification must achieve electromagnetic sequestering of the two fermion sectors and support a sufficiently light non-uniform D7 gauge mode capable of mediating a long-range relative interaction. In such a complete compactification, the mixing parameter $g$ would in principle become computable from microscopic string data and directly testable against low-energy constraints."
+  },
+  {
+   "id": "2609.17861",
+   "title": "Six Particles, Infinite Optimism: Towards Positivity Bounds for Six-Point Amplitudes",
+   "authors": "Stefan Kremminger , Andrew J. Tolley",
+   "categories": "hep-th, gr-qc, math-ph",
+   "abstract": "The systematic generalisation of the well-established $S$-matrix positivity and bootstrap bounds from $2 \\to 2$ scattering processes to higher-point amplitudes has, to date, remained elusive. To address this, we consider a large class of tree-level UV-completions of a single-scalar EFT. Specifically, we consider the most general renormalisable $N$-scalar theory in $D=4$. By explicitly computing tree-level amplitudes for four-, five- and six-point scattering and expanding at low energies, we can search for positivity relations among the expansion coefficients. We find that quite generally positivity bounds are unavailable due to contamination from a specific class of Feynman diagrams that are linear in sign-indefinite cubic couplings. However, by isolating a sector of the full crossing-symmetric low-energy amplitude that is unaffected by these sign-indefinite cubic couplings, we find that selected six-, five- and four-point Wilson coefficients organise into positive semi-definite matrices. While a violation of these positivity statements only implies that a given EFT is inconsistent with our class of UV completions, the result helps to guide towards what more general positivity bounds for higher-point interactions could, and could not, look like."
+  },
+  {
+   "id": "2609.17917",
+   "title": "Smooth cutoffs and analytic continuation in Casimir physics",
+   "authors": "Lucía N. Helou , Francisco D. Mazzitelli",
+   "categories": "hep-th",
+   "abstract": "Divergent series arising in the computation of Casimir energies admit two seemingly different treatments: a physically motivated regularization and subtraction procedure, and formal analytic continuation methods that assign finite values directly to divergent expressions. The agreement between these approaches for the Casimir energy between parallel plates is well known, but its origin is often left implicit. In this work, we provide a unified framework that makes this equivalence transparent. Building on Tao's theory of smoothed sums, we show that the introduction of a smooth cutoff leads to an asymptotic expansion whose finite, regulator-independent part is universally determined by the analytic continuation of the associated Dirichlet series. This identification follows from a Mellin-transform representation, in which divergences and finite contributions are encoded in the pole structure of the integrand. We extend this approach to a class of series relevant to Casimir problems. In this setting, we show that logarithmic divergences arise from pole coincidences, and we obtain a natural decomposition of the result into universal and cutoff-dependent terms, mirroring the structure of renormalization in quantum field theory."
+  },
+  {
+   "id": "2609.18028",
+   "title": "Central charge and black hole entropy for regular extremal black-bounce spacetimes",
+   "authors": "Xu Ye , Shan-Ping Wu , Yu-Kun Zhang , Shao-Wen Wei",
+   "categories": "hep-th, gr-qc",
+   "abstract": "The Bekenstein-Hawking entropy, proportional to one quarter of the horizon area, is fundamental in black hole thermodynamics and can also be understood via the AdS/CFT correspondence, such as the 3D BTZ black hole and 2D CFT. In this work, we adopt the Kerr/CFT approach to analyze the central charge and black hole entropy for regular extremal black-bounce spacetimes, including the counterparts of the Kerr, Kerr-Newman, and Reissner-Nordström black holes. These spacetimes are free of curvature singularities at $r=0$. We derive the near horizon geometries of these spacetimes and find that they exhibit enhanced symmetry, namely SL$(2,\\mathbb{R})\\times \\mathrm{U}(1)$ or SL$(2,\\mathbb{R}) \\times \\mathrm{SO}(3)$. By imposing appropriate boundary conditions, we analyze their asymptotic symmetry groups, which contain diffeomorphisms as well as the $\\mathrm{U}(1)_{\\rm gauge}$ symmetry arising from the electromagnetic field. We then extract the central charge from the charge algebra and evaluate the left-moving temperature of the Frolov-Thorne vacuum. It is worth emphasizing that in the black-bounce Kerr-Newman case, the central charge from the electromagnetic contribution vanishes. Furthermore, in the black-bounce Reissner-Nordström case, we uplift the 4D geometry to a 5D configuration by incorporating a $\\mathrm{U}(1)$ gauge fiber. Our results show that the microscopic entropy calculated from the Cardy formula is consistent with the Bekenstein-Hawking entropy. This agreement suggests that the Kerr/CFT approach remains valid for certain regular spacetimes without curvature singularities, thereby providing a microscopic statistical understanding of black hole entropy."
+  },
+  {
+   "id": "2609.18074",
+   "title": "Vacuum Structure of Maximally Supersymmetric Two-Dimensional Gauge Theories",
+   "authors": "Richard Eager",
+   "categories": "hep-th, math.RT",
+   "abstract": "We study the vacuum structure of maximally supersymmetric Yang--Mills theory in two dimensions. At low energies, the theory decomposes into superselection sectors consisting of orbifold conformal field theories and massive vacua. The sectors are indexed by the cuspidal data appearing in Lusztig's generalized Springer correspondence. This suggests an enhancement of the correspondence to holomorphic factorization algebras."
+  },
+  {
+   "id": "2609.18225",
+   "title": "Growing Einstein-Rosen Bridge with Multi-partite Entanglement",
+   "authors": "Takanori Anegawa , Akihiro Miyata , Shota Suzuki , Kotaro Tamaoka",
+   "categories": "hep-th, cond-mat.stat-mech, gr-qc, quant-ph",
+   "abstract": "Can quantum entanglement continue to grow even after the entanglement entropies of subsystems have saturated? We address this question using genuine multi-entropy, which probes multi-partite entanglement structure beyond bipartite entanglement. In a two-sided BTZ black hole, this quantity grows linearly with time after every subsystem entropy of a fixed tripartition has saturated, extending the interval in which entanglement detects Einstein-Rosen bridge growth. The result refines the ER=EPR relation by identifying multi-partite structure invisible to ordinary entanglement entropies. Some spin-chain models and the spatially partitioned Sachdev-Ye-Kitaev (SYK) model exhibit distinct transients, while the late-time plateau values in holography, the SYK model, and Haar-random states share a universal behaviour."
+  },
+  {
+   "id": "2609.18277",
+   "title": "Reduction of the six-dimensional $q$-form fields to the four-dimensional fields by coupling with gravity",
+   "authors": "Yong-Tao Lu , Heng Guo , Qun Wei , Bing Wei",
+   "categories": "hep-th, gr-qc, hep-ph",
+   "abstract": "In this paper, we investigate the localization of various $q$-form fields on a codimension-two brane. In particular, the $0$-form scalar field, the $1$-form $U(1)$ gauge vector field, and the $2$-form Kalb-Ramond field are considered with gravitational coupling, where a coupling function $F(R)$ is introduced into the six-dimensional actions of these fields. The function $F(R)$ depends on the scalar curvature of the bulk. Within this framework, we find that the massless modes of different $q$-form fields can be localized on the thick brane for positive values of the coupling parameters $t_1$ and $t_2$. For the massive modes, the different $q$-form fields exhibit similar localization properties determined by the coupling parameter $t_2$. When $0<t_2<v^2/24$, the massive modes of these fields cannot be localized on the brane, while they may exist as the resonant modes. In the case $t_2=v^2/24$, a finite number of massive modes can be localized on the thick brane, and the number of localized modes increases with the coupling parameter $t_1$. Finally, when $t_2>v^2/24$, the effective potentials associated with the Kaluza-Klein modes of these $q$-form fields form infinitely deep potential wells, so that all massive modes can be localized on the brane. Moreover, the tachyonic massive modes can always be excluded for different $q$-form fields."
+  },
+  {
+   "id": "2609.18295",
+   "title": "Turbulent gravitational waves",
+   "authors": "Giulio Taiocchi , Christiana Pantelidou , Miguel Zilhão",
+   "categories": "hep-th",
+   "abstract": "We construct turbulent gravitational wakes in asymptotically AdS$_4$ spacetimes by solving the full non-linear Einstein equations in the characteristic formulation. Specifically, we show that a localized boundary deformation acting on a boosted black brane generates a wake whose boundary dynamics exhibit the formation of coherent vortical structures that are advected downstream by the background flow. Analysing a wake propagating along the x direction, we show that it displays the characteristic self-similar scaling of classical turbulent wakes. We then identify the geometric imprint of the wake on the horizon area density, the traceless horizon extrinsic curvature, and bulk metric perturbations, finding coherent structures that extend from the asymptotic boundary to the horizon. These results provide the first study of turbulent gravitational wakes in four-dimensional asymptotically AdS spacetimes."
+  },
+  {
+   "id": "2609.18410",
+   "title": "Differential equations for Dotsenko--Fateev integrals: the case of degenerate fields $Φ_{n,1}$",
+   "authors": "Aleksandra Ivanova",
+   "categories": "hep-th, math-ph",
+   "abstract": "We study higher-order differential equations corresponding to integrals of the Dotsenko--Fateev type and associated with four-point correlation functions with degenerate fields $\\Phi_{n,1}$. We determine the general structure and coefficients of the equations in terms of the integral parameters $ \\{ A,B,C,g \\} $. In particular, special cases of these equations in CFT are used for verification. In addition, the relationship between higher-order differential equations and hypergeometric operators is established."
+  },
+  {
+   "id": "2609.18528",
+   "title": "Schwinger stability of T-duality-inspired extremal black holes",
+   "authors": "Chiang-Mei Chen , Kimet Jusufi , Douglas Singleton",
+   "categories": "hep-th, gr-qc",
+   "abstract": "We study the near-horizon charged-scalar instability associated with Schwinger pair production in the charged regular black hole geometry of the zero-point-length T-duality prescription. Using the same effective geometry and regularized gauge potential, we construct the extremal branch, its ${\\rm AdS}_2 \\times S^2$ near-horizon throat, and the charged-scalar instability threshold for a general form factor. For the explicit T-duality form factor the extremal branch terminates at $r_\\mathrm{ext} = \\sqrt2 \\, l_0$, where the extremal charge and the near-horizon electric field vanish while the ${\\rm AdS}_2$ radius remains finite at $\\sqrt3 \\, l_0$. At this endpoint the exact near-horizon instability parameter is negative. In the semiclassical regime the corresponding charge-to-mass threshold diverges as the endpoint is approached. Thus, for each fixed massive species with finite $q/m$, a sufficiently near-endpoint portion of the extremal branch is free of the local charged-scalar instability. For comparison, the Ayón-Beato-García (ABG) Einstein-nonlinear-electrodynamics solution has a nonvanishing extremal near-horizon electric field. For an additional minimally coupled charged-scalar probe, the corresponding local Schwinger threshold remains finite. Thus the divergent near-endpoint Schwinger barrier found in the T-duality branch is not a generic consequence of regularity."
+  },
+  {
+   "id": "2609.18566",
+   "title": "Deep learning emergent spacetime from fermionic spectral functions in holography",
+   "authors": "Koji Hashimoto , Hyun-Sik Jeong , Keun-Young Kim , Daichi Takeda , Kwan Yun",
+   "categories": "hep-th, cond-mat.str-el, cs.LG",
+   "abstract": "We present a physics-informed machine learning framework based on Neural Ordinary Differential Equations that solves the holographic inverse problem: reconstructing the bulk spacetime and gauge field of a charged AdS black hole directly from boundary fermionic spectral functions. Encoding the UV asymptotics, horizon regularity, and zero temperature extremality as hard constraints in the neural network architecture, our framework reliably reconstructs the extremal Reissner-Nordström AdS geometry across three quantum critical regimes set by the $U(1)$ probe charge---non-Fermi liquid, marginal Fermi liquid (strange metal), and Fermi-liquid-like states---and can jointly infer the probe charge itself to sub-percent accuracy. Relaxing the near-AdS boundary constraint uncovers a geometrical degeneracy: bulk profiles that differ throughout the radial direction but share the same near-horizon $AdS_2 \\times \\mathbb{R}^2$ data reproduce identical spectral functions near the Fermi surface. This isospectral non-uniqueness is precisely the bulk degeneracy expected on general holographic grounds at zero temperature, and its spontaneous emergence across independent training runs shows that the network isolates the IR CFT universality rather than overfitting a single UV completion."
+  },
+  {
+   "id": "2609.18668",
+   "title": "The geometry of multiloop Feynman Integrals from the Scattering Facet",
+   "authors": "José Ríos-Sánchez , Germán Rodrigo",
+   "categories": "hep-th",
+   "abstract": "The Scattering Facet (SF) of the Cosmological Polytope is a positive geometry defined from a Feynman diagram and encoding its combinatorics. Its canonical differential form reproduces the result of the integration over the energy components of loop momenta in scalar Feynman integrals, and is therefore closely related to the Loop-Tree Duality (LTD). In this article, we present a novel description of the SF as a base-fiber geometry. The fibers are a family of polytopes called deformed graphical zonotopes, which have a natural interpretation in terms of the causal evolution of the underlying Feynman diagram, and capture interesting information on scattering amplitudes. This decomposition of the SF induces a description of the canonical form leading to the so-called causal representation. Moreover, it provides new mathematical tools that allow us to characterize all its regular triangulations. Canonical forms obtained from these triangulations correspond to spanning tree representations, matching the original LTD amplitudes expressed as a sum over spanning trees. This geometrical viewpoint provides us with new methods to obtain the causal and spanning tree representations, without the need of performing any integration."
+  },
+  {
+   "id": "2609.18791",
+   "title": "Carrollian axion electrodynamics",
+   "authors": "Hemant Rathi , Ashish Shukla",
+   "categories": "hep-th, cond-mat.str-el, hep-ph, math-ph",
+   "abstract": "We construct theories of Carrollian electromagnetism coupled to an axion field. Obtained by performing a $c \\to 0$ expansion of axion electrodynamics, these are of two types: electric and magnetic. We derive the Lagrangians and work out the general classical solutions for both. While the electric theory has the axion effectively decoupled from the electromagnetic fields, the magnetic theory is endowed with a nontrivial axion coupling that leads to interesting phenomenology. In particular, a Carrollian analogue of the Witten effect, wherein a magnetic monopole in the presence of a constant non-vanishing axion acquires an electric charge and becomes a dyon, is present in the magnetic theory. At the same time, the linear magnetoelectric effect vanishes entirely, a conclusion we establish by performing a thorough Dirac-Bergmann analysis of the constraint structure of the magnetic theory and a proper identification of its physical phase space."
+  },
+  {
+   "id": "2609.18831",
+   "title": "Auxiliary Field Deformations of the Lambda Model",
+   "authors": "Christian Ferko , Cian Luke Martin , Pranat Sharma",
+   "categories": "hep-th, nlin.SI",
+   "abstract": "Many examples of integrable sigma models admit families of integrable deformations that involve coupling the undeformed ``seed'' theory to auxiliary fields with algebraic equations of motion. In this work, we apply this paradigm to the case where the seed theory is the lambda model, which interpolates between the Wess-Zumino-Witten model and the non-Abelian T-dual of the principal chiral model. We present an auxiliary field deformation of the lambda model and exhibit a Lax connection whose flatness is equivalent to the remaining equations of motion after imposing the algebraic field equations. We also carry out a Hamiltonian analysis of the deformed theory, verifying that it obeys the assumptions of theorems in arXiv:2605.18213 which guarantee both (i) that the model enjoys the Maillet structure that ensures involution of its conserved charges, and (ii) that the theory possesses a classical Yangian. Thus, as in other cases, the auxiliary field deformation of the lambda model changes its classical dynamics while leaving the integrable structure essentially unchanged."
+  },
+  {
+   "id": "2609.18884",
+   "title": "The Geometry of the CKM matrix, the Standard Model and RG fixed points",
+   "authors": "Brian P. Dolan , Charles Nash",
+   "categories": "hep-th",
+   "abstract": "We investigate the geometry of the Fermion mixing matrix in the Standard Model. The principal structure studied is the CKM matrix, $V$, viewed as an element of the double coset space $M$, where $M=T\\backslash SU(3)/T$, and $T=U(1)\\times U(1)$. The space $M$ is given a Riemannian metric, and has both point singularities, which it is shown correspond to the known renormalization group fixed points, and line singularities connecting the fixed points. A key discrete object inducing many of these properties is the Weyl group, $W$, of $SU(3)$, $W$ being the symmetric group $S_3$, which appears in the guise of the vertices of a hexagon in $V$."
+  },
+  {
+   "id": "2609.18944",
+   "title": "Reading Topological Hair from Black-Hole Entanglement",
+   "authors": "Kumar Ghosh",
+   "categories": "hep-th, gr-qc, quant-ph",
+   "abstract": "Black-hole hair can affect boundary mixed-state entanglement through local stress-energy and through topological information invisible to the classical metric. We separate these channels for a Nielsen--Olesen vortex on a nonrotating BTZ black hole. A superselection theorem shows that Shannon sector entropy cancels from the Markov gap, while standard $U(1)$ symmetry-resolved reflected entropy in a thermal $U(1)_k$ CFT is equipartitioned at leading order, excluding a universal $\\log|n|$ term in the imbalance-resolved gap. We therefore define a Wilson-threaded reflected moment in a probe $U(1)_k$ Chern--Simons completion coupled to the compact vortex-flux class. In a reflected-replica sector with linking number $\\nu$, its normalised phase is $2\\pi\\kappa pn\\nu/k$, where $\\kappa\\in\\mathbb Z$ is the mixed topological coupling; for $\\gcd(\\kappa\\nu,k)=1$, a discrete Fourier transform reconstructs $n\\bmod k$. The RT connectivity transition switches the specified linked contour on or off, whereas the independent scale $\\ell_\\star r_+/L^2=1.128378\\ldots$ determines the direction of the vortex-induced shift of that transition. The charged-moment modulus and the ordinary Markov gap remain geometric observables and are computed from a horizon-anchored Einstein-Abelian-Higgs solution with a complete first-variation kernel including the motion of the entanglement-wedge cross-section endpoints. This phase and modulus separation distinguishes topological hair from gravitational dressing without assigning an unsupported winding-dependent entropy."
+  },
+  {
+   "id": "2609.19056",
+   "title": "Majoron dark matter detection via hybrid magnon transmon qubit system",
+   "authors": "Le Bin Ho , Do Thi Huong",
+   "categories": "hep-th",
+   "abstract": "Ultralight Majorons are well-motivated dark-matter candidates that can couple to electron spins, generating an oscillating pseudo-magnetic field. We propose a hybrid magnon-qubit haloscope that exploits this interaction to search for Majoron dark matter. In our scheme, the Majoron field resonantly drives the Kittel mode of a ferrimagnetic yttrium iron garnet (YIG) sphere, producing a collective magnon response enhanced by the large spin ensemble. The resulting magnon population is transduced to a superconducting transmon qubit through a cavity-mediated dispersive interaction and detected using quantum-nondemolition Ramsey interferometry. Using experimentally demonstrated parameters for magnon-cavity-qubit systems, we derive the Majoron-induced signal, evaluate the projected sensitivity, and analyze the corresponding mass-scan strategy enabled by magnetic-field tuning, benchmarking the projected reach against existing laboratory and astrophysical constraints on the axion/Majoron-electron coupling. Our results establish hybrid magnon-qubit architectures as a promising quantum-sensing platform for searches for Majoron dark matter and, more generally, ultralight bosonic fields coupled to electronic spins."
+  },
+  {
+   "id": "2609.19075",
+   "title": "When duality changes the poles: $SL(2,\\mathbb{Z})$ transformations of linear response EFTs",
+   "authors": "Andrea Amoretti , Daniel K. Brattan , Jonas Rongen",
+   "categories": "hep-th",
+   "abstract": "We study how $SL(2,\\mathbb Z)$ transformations act on pole-truncated linear-response effective theories in $(2+1)$ dimensions. For correlators meromorphic within a finite low-frequency domain, the EFT data include both derivative-expanded transport coefficients and the retained non-hydrodynamic poles. Since the $S$-trans\\-for\\-mation inverts the optical conductivity and exchanges its poles and zeros, it does not necessarily commute with the infrared truncation. We derive explicit maps for static susceptibilities, the Einstein relation and AC transport coefficients. In the purely hydrodynamic sector the map closes on the original transport data, while in quasihydrodynamic regimes the transformed pole positions and, in general, residues constitute additional infrared data. We test the construction in the alternatively quantised D3/D5 probe-brane system, where an EFT retaining one original gapped pole can correspond to transformed EFTs retaining zero, one or two. The holographic results verify the analytic maps and exhibit an inverse-Drude conductivity at large values of the control parameter."
+  }
+ ]
+}
