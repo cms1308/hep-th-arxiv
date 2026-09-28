@@ -1,0 +1,119 @@
+{
+ "date": "2026-09-28",
+ "source": "list/new",
+ "count": 16,
+ "papers": [
+  {
+   "id": "2609.30362",
+   "title": "Informational and algebraic renormalization group",
+   "authors": "Takato Mori , Teruaki Nagasawa",
+   "categories": "hep-th, cond-mat.stat-mech, cond-mat.str-el, quant-ph",
+   "abstract": "Renormalization group (RG) is a core concept in physics from statistical mechanics to quantum field theory, yet its schemes differ widely between field theory and many-body physics. We formulate the Wilsonian RG as a quantum channel, whose Kraus representation yields pure conditional trajectories for pure inputs and recovers mixed-state flows upon averaging. We then develop an algebraic extension applicable beyond the usual momentum-space, factorized setting: the low-energy algebra is constructed from the one-particle spectrum, and coarse graining is a conditional expectation onto it. We further construct a resource theory of RG whose free states are fixed points. Under stated assumptions, the resulting relative-entropy monotone is proportional to $c-c_{\\rm IR}$ to quadratic order along a single stable RG direction near a two-dimensional IR fixed point. We also introduce a complementary measure of the UV information discarded by coarse graining, establish its monotonicity for successive coarse-graining maps, and discuss its holographic realization."
+  },
+  {
+   "id": "2609.30369",
+   "title": "Entanglement transitions in holographic conformal interfaces",
+   "authors": "Evangelos Afxonidis , Rotem Berman , Ignacio Carreño Bolla , Shira Chapman , Carlos Hoyos , Osher Shoval",
+   "categories": "hep-th, cond-mat.stat-mech, cond-mat.str-el, quant-ph",
+   "abstract": "We study entanglement transitions for pairs of disjoint intervals in two-dimensional holographic interface conformal field theories. We consider several holographic models with equal central charges on the two sides of the interface: thin-wall geometries with one and two branes, the Janus solution, and the super-Janus solution. We first discuss the finite interface contribution to the entanglement entropy of a single interval, distinguishing intervals that cross the interface from those that lie entirely on one side. We then use the mutual information to locate the transition between connected and disconnected Ryu--Takayanagi geodesic configurations for two intervals. When the interface lies between the two intervals, increasing the boundary entropy $\\log g$, which provides a measure of interface strength in the models considered here, generally decreases the critical separation at which the connected configuration ceases to dominate. When both intervals lie on the same side of the interface, the behavior is model dependent: the connected phase persists to larger separations in the Janus and super-Janus models, while the critical separation is unchanged in the thin-wall models. Thus, as diagnosed by the two-interval transition, the interface weakens correlations across the interface while preserving or enhancing correlations between regions on the same side. We also identify a universal ``Silver Blaze'' configuration, in which the interface lies inside one of the intervals and the transition occurs at the same location as in a CFT without an interface, independently of the interface parameters and of the holographic model. This universality follows from a cancellation between crossing and non-crossing interface contributions to the mutual information."
+  },
+  {
+   "id": "2609.30370",
+   "title": "Tracing out massive fields in cosmology",
+   "authors": "Guanhao Sun , Sam S.C. Wong",
+   "categories": "hep-th, astro-ph.CO, hep-ph",
+   "abstract": "Cosmological correlators are calculated through the in-in formalism in (quasi-)de Sitter background. Its effective description is best represented by a reduced density matrix. In this work, we study how integrating out a massive field in de Sitter space determines the reduced density matrix of a light field at a finite observation time. Starting from a quasi-single-field model with non-linear couplings, we first evaluate the massive field wavefunctional at fixed final value and then trace over this value. The trace generates branch-mixing terms which are generally present in the Schwinger--Keldysh description. For a conformally coupled massive field, we show explicitly that the light field bispectrum from the effective description agrees with a full theory calculation. This example also shows that decay of a field at the future boundary does not by itself justify discarding its contribution to the trace. We discuss the differences between an exact nonlocal effective description and the local effective field theory obtained through a large mass expansion. We then identify which local cubic terms affect the late-time probability and which contribute only a wavefunctional phase. Finally, we organize the resulting kernels by response, noise, and Schwinger--Keldysh consistency conditions, and discuss the symmetry constraints on the reduced density matrix."
+  },
+  {
+   "id": "2609.30371",
+   "title": "Boundaries of the compact free boson through edge modes and boundary SymTFT",
+   "authors": "Daniel Robbins , Subham Roy , Hassaan Saleem",
+   "categories": "hep-th",
+   "abstract": "We study boundary conditions of the compact free boson theory by coupling the bulk scalar to one-dimensional topological edge modes. We show that a single compact edge mode realizes the Dirichlet family, while a two field system realizes the Neumann family; more general compact edge theories can describe superpositions of boundary conditions and reproduce the expected boundary operator spectra. We then study this system in the framework of boundary SymTFT. We show that the edge mode theories of Dirichlet and Neumann boundaries are encoded in the degrees of freedom localized on the corners and the choice of polarization on the topological face of the boundary SymTFT. We further show that the T-duality defect exchanges the data associated with the Dirichlet and Neumann configurations. Finally, we explore extensions involving non-compact edge modes and multiple bulk fields, obtaining continuous boundary spectra in the first case and mixed boundary conditions in the second."
+  },
+  {
+   "id": "2609.30426",
+   "title": "Classification of Conformal Supersymmetric Deformations of Schwarzschild Spacetime via Super Poisson-Lie T-duality/Plurality",
+   "authors": "Ali Eghbali , Meysam Hosseinpour-Sadid , Adel Rezaei-Aghdam",
+   "categories": "hep-th",
+   "abstract": "This paper investigates conformal supersymmetric deformations of Schwarzschild spacetime through the framework of super Poisson-Lie T-duality/plurality. We first study super non-Abelian T-duality in $\\sigma$-models featuring a Schwarzschild metric coupled to two fermionic fields. This is realized by describing the original four-dimensional geometry and its dual counterpart via semi-Abelian Drinfeld superdoubles generated by the Lie superalgebras $({\\C}^3 +{\\A})$, ${\\C}^3 \\oplus {\\A}_{1,1}$ and $(2{ \\A}_{1,1}+2{ \\A})^0$, supplemented by two spectator fields. We enforce the vanishing of one-loop beta-function equations for both original and dual models to guarantee UV finiteness at quantum level; this procedure necessitates the inclusion of the dilaton field alongside the metric and the Kalb-Ramond field ($B$-field) already present in the classical action. We further study the curvature invariants, singularity structure, and superisometries, and compare the resulting supergeometries, with particular emphasis on their fermionic parts and $B$-fields. Starting from the decompositions of semi-Abelian Drinfeld superdoubles associated with the $({\\C}^3 +{\\A})$ and ${\\C}^3 \\oplus {\\A}_{1,1}$ Lie superalgebras, we derive the conformal duality/plurality chains for four-dimensional string backgrounds, characterized by a Schwarzschild metric coupled to two fermions. Our results span an interesting spectrum of super Poisson-Lie T-dual $\\sigma$-models described by Lie superalgebras with two bosonic and two fermionic generators. These are all non-trivial and interesting examples of super Poisson-Lie T-dual models which help in the intent of providing a general classification of four-dimensional geometries describing supergravity backgrounds."
+  },
+  {
+   "id": "2609.30453",
+   "title": "de Sitter Spacetime: Geometry, Causal Structure, and Quantum Fields",
+   "authors": "Azadeh Maleknejad , Ethan Richardson",
+   "categories": "hep-th, gr-qc",
+   "abstract": "de~Sitter spacetime plays a central role in modern cosmology, providing an excellent approximation to both inflation and the present accelerated expansion. It also offers a particularly simple setting in which gravity, spacetime symmetry, and quantum field theory depart qualitatively from their Minkowski-space counterparts. These lecture notes introduce de Sitter spacetime, from its geometry and symmetries to quantum fields and perturbations on a fixed \\(3+1\\)-dimensional de Sitter background. We cover coordinate systems, causal structure, unitary representations, particle production in time-dependent backgrounds, and cosmological perturbations, with emphasis on physical interpretation, applications to cosmology, and how curvature reshapes the notions of mass, vacuum, particles, and late-time observables."
+  },
+  {
+   "id": "2609.30473",
+   "title": "Divergences in Nonpolynomial Quantum Field Theories",
+   "authors": "Galib Hoq , Thomas Curtright",
+   "categories": "hep-th, math-ph",
+   "abstract": "The structure of divergences in several nonpolynomial scalar quantum field theories are investigated. Various $n$-point Green functions for nonpolynomial theories are calculated and their renormalization is analyzed, with special regard for the nonpolynomial $\\left|\\phi\\right|^{3}$ theory in $4$ spacetime dimensions."
+  },
+  {
+   "id": "2609.30754",
+   "title": "Genuine Multi-Entropy of Fully Symmetric Gaussian States",
+   "authors": "Hugo A. Camargo , Mitsuhiro Nishida",
+   "categories": "hep-th, cond-mat.stat-mech, quant-ph",
+   "abstract": "We study the tri-partite genuine Rényi multi-entropy of fully symmetric Gaussian states as a function of the squeezing parameter for different total number of bosonic modes under different subsystem configurations. Exact results for a few modes are obtained, and we conjecture an asymptotic formula at the limit of large squeezing parameter as a function of the replica index $n$, while also finding subleading subsystem-size dependent terms for $n=3$ under a specific tripartition. We analytically show that the genuine $n=2$ Rényi multi-entropy of any pure bosonic Gaussian states is zero for any number of modes and for any tripartition. Furthermore, to investigate the dependence on subsystem size, we plot the curve of genuine Rényi multi-entropy as a function of the number of modes in the subsystems while keeping the total number of modes fixed. We discuss differences and similarities between this result and studies of the multi-entropy curve for Haar random states. In particular, we identify a subsystem size configuration related with the multi-entropy time in an evaporating black hole for which the behavior of the genuine multi-entropy changes."
+  },
+  {
+   "id": "2609.30964",
+   "title": "Dyonic edge modes in Abelian gauge theory",
+   "authors": "Keito Shimizu , Sotaro Sugishita",
+   "categories": "hep-th",
+   "abstract": "We find new boundary conditions in four-dimensional Abelian gauge theory with general Chern--Simons boundary couplings. The boundary conditions allow dyonic edge modes and physical boundary symmetries. In particular, one of the new boundary conditions makes both electric and magnetic charges physical. We also study how our boundary conditions and charges transform under the $\\mathrm{SL}(2,\\mathbb Z)$ duality."
+  },
+  {
+   "id": "2609.31055",
+   "title": "Hilbert space in the flat limit of AdS/CFT. I. Massive particles",
+   "authors": "Kevin Nguyen",
+   "categories": "hep-th",
+   "abstract": "The flat limit of AdS$_4$ spacetime corresponds, at the level of the symmetry algebra, to the Inönü--Wigner contraction $\\mathfrak{so}(2,3) \\to \\mathfrak{iso}(1,3)$. We describe the emergence of the Hilbert space of massive scattering states of arbitrary integer spin $s$ from unitary lowest-weight representations $\\mathcal{D}(\\Delta,s)$ of the conformal group, using a basis of `pseudo-momentum' states first introduced by Fronsdal. These states nicely reduce to Wigner's momentum eigenstates in the limit of vanishing AdS curvature radius $\\ell \\to \\infty$, at fixed $m=\\Delta/\\ell$. A simple conformal map relates this description to conformal fields in $\\mathbb{R}^3$ familiar from radial quantization, with the interior and exterior of the unit ball respectively corresponding to outgoing and ingoing momenta. Under the contraction, and upon appropriate rescaling, the inner product on $\\mathcal{D}(\\Delta,s)$ converges to the standard Lorentz-invariant inner product of Wigner's massive particles, so that unitarity is preserved throughout. The contraction to massless particles is briefly discussed here, and will be treated in detail in a forthcoming paper."
+  },
+  {
+   "id": "2609.31237",
+   "title": "Conformal correlator systems",
+   "authors": "Sylvain Ribault",
+   "categories": "hep-th",
+   "abstract": "In critical limits of statistical models, there exist non-local correlators that are conformally covariant without belonging to a conformal field theory. To describe such correlators, we define conformal correlator systems, whose axioms are weaker than those of CFT. As a result, $N$-point correlators are determined by $4$-point correlators, instead of $3$-point correlators in CFT. In two dimensions, conformal spins may take arbitrary complex values, leading to correlators with nontrivial monodromies. We show that sphere $4$-point correlators and torus $1$-point correlators obey nontrivial monodromy constraints. We construct correlators with abelian monodromies in free bosonic theories and in critical loop models."
+  },
+  {
+   "id": "2609.31273",
+   "title": "Revisiting three-dimensional GLSMs and K-theoretic I-functions",
+   "authors": "Taro Kimura , Yinda Li , Xiaohan Yan",
+   "categories": "hep-th, math.AG",
+   "abstract": "We revisit the correspondence between three-dimensional gauged linear sigma models and K-theoretic Gromov-Witten theory. We show that the K-theoretic Hori-Vafa formula for the grassmannian arises from the three-dimensional gauge theory upon including an appropriate anomaly-cancellation factor. Furthermore, we derive K-theoretic I-functions for isotropic grassmannians by incorporating symmetric and anti-symmetric tensor representation fields together with suitable boundary conditions."
+  },
+  {
+   "id": "2609.31309",
+   "title": "Fate of Bouncing Singularities at Finite $G_N$",
+   "authors": "Zohar Komargodski",
+   "categories": "hep-th",
+   "abstract": "The gravity approximation to a thermal two-point function can develop a complex-time singularity associated with a trajectory that reaches the black-hole singularity. We show that the corresponding singularity is absent at finite $G_N$. This is done by extending Conformal Field Theory analyticity properties to the second sheet (and to the universal cover). We also put two different upper bounds on the amplitude of the correlator at the would-be singularity, by certain finite partial sums, and by a certain partition function on a manifold with nontrivial topology, where two thermal geometries are glued. We discuss the possible implications for the black hole singularity."
+  },
+  {
+   "id": "2609.31438",
+   "title": "Saddling Timelike Liouville Theory",
+   "authors": "Emilie Despontin",
+   "categories": "hep-th",
+   "abstract": "The two-sphere partition function of timelike Liouville theory admits two complementary semi-classical descriptions whose relation presents a non-perturbative puzzle. A direct path-integral expansion around the round two-sphere saddle reproduces the perturbative small-$\\beta$ expansion, with $\\beta$ the Liouville coupling, of the analytically continued Dorn-Otto-Zamolodchikov-Zamolodchikov (DOZZ) formula, while the latter contains an additional oscillatory factor suggestive of a second saddle contribution. We investigate the origin of this factor in the Liouville zero-mode sector using Picard-Lefschetz theory. Taking as input the Hankel-type contour motivated by the inverse-Gamma representation of the zero-mode integral, we determine its Lefschetz-thimble decomposition depending on $\\beta$. For $0<\\beta<1$, it precisely reproduces the saddle structure encoded in the analytically continued DOZZ result. We identify the integration contour as the source of the difference between the zero-mode saddle descriptions. As $\\beta$ approaches $1$, the zero-mode saddle moves to the boundary of field space, while for $\\beta>1$ the same contour is represented by a single contributing thimble. We further relate this Stokes reorganisation to recent probabilistic constructions of timelike Liouville theory."
+  },
+  {
+   "id": "2609.31504",
+   "title": "Bound States in 2d Yukawa Theory from Hamiltonian Truncation",
+   "authors": "Olivier Delouche , Kara Farnsworth , Francesco Riva",
+   "categories": "hep-th, cond-mat.str-el, hep-lat, hep-ph",
+   "abstract": "We study the spectrum of two-dimensional Yukawa theory using Hamiltonian truncation, with a focus on bound states. We extend the framework of Hamiltonian truncation effective theory to include fermions and logarithmic UV divergences. With these corrections, the energy levels converge as a function of the cutoff with the scaling predicted by power counting. We identify a strategy to follow the evolution of fermion-antifermion bound states from weak to strong coupling, and investigate its binding energy, finding good agreement with finite-volume perturbation theory at weak coupling. Finally, we explore the heavy-scalar regime toward the massive Thirring/Sine-Gordon limit, recovering the expected weak-coupling behavior and outlining how the calculation can be extended toward this limit."
+  },
+  {
+   "id": "2609.31576",
+   "title": "Bootstrapping Holographic Theories in the Planar Limit",
+   "authors": "Shai M. Chester , Daniele R. Pavarini , Alessandro Piazza",
+   "categories": "hep-th",
+   "abstract": "We combine the numerical conformal bootstrap with supersymmetric localization to constrain the spectrum of holographic superconformal field theories in the planar large $N$ limit for finite 't Hooft coupling $\\lambda$. We consider the stress tensor multiplet four-point function in $\\mathcal{N}=4$ $SU(N)$ super-Yang-Mills (SYM), which is holographically dual to closed string scattering, as well as the flavor multiplet correlator in a certain \\( 4d \\) $\\mathcal{N}=2$ $U\\!Sp(2N)$ gauge theory with $SO(8)$ flavor symmetry, which is dual to open string scattering. In both cases, we combine dispersive sum rules with integrated constraints from supersymmetric localization to compute an upper bound on the scaling dimension of the lowest scalar single-trace operator for all $\\lambda$. For $\\mathcal{N}=4$ SYM, we find that our bounds are close to the known integrability result for all $\\lambda$. For the $\\mathcal{N}=2$ theory, where integrability is not yet available, we find that our bounds are close to weak and strong coupling predictions in the relevant regimes."
+  }
+ ]
+}
