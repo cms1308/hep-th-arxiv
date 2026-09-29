@@ -162,7 +162,7 @@ Return ONLY the string "chunk$i done: N papers". Do not return paper content.
 
     # 청크의 모든 논문이 비어 있지 않은 out\<id>.txt 를 갖고 있는지 확인한다.
     function Test-ChunkOk([int]$i) {
-        $papers = @(Get-Content "$WORK\in\chunk$i.json" -Raw -Encoding UTF8 | ConvertFrom-Json)
+        $papers = @(Get-Content "$WORK\in\chunk$i.json" -Raw -Encoding UTF8 | ConvertFrom-Json | ForEach-Object { $_ })
         if ($papers.Count -eq 0) { return $false }
         foreach ($p in $papers) {
             $f = "$WORK\out\$($p.id).txt"
@@ -196,7 +196,7 @@ Return ONLY the string "chunk$i done: N papers". Do not return paper content.
         say "청크 로그: $WORK\logs\$TODAY-chunk*.out"
         exit 1
     }
-    $GOT = @(Get-Content "$WORK\papers.json" -Raw -Encoding UTF8 | ConvertFrom-Json).Count
+    $GOT = @(Get-Content "$WORK\papers.json" -Raw -Encoding UTF8 | ConvertFrom-Json | ForEach-Object { $_ }).Count
 
     # ------------------------------------------------------------ 5. 커밋·푸시
     $d = [DateTime]::ParseExact($TODAY, 'yyyy-MM-dd', $null)
