@@ -1,0 +1,224 @@
+{
+ "date": "2026-10-01",
+ "source": "list/new",
+ "count": 31,
+ "papers": [
+  {
+   "id": "2609.38209",
+   "title": "Dear Quantizers, Stochastic $\\approx$ Brane",
+   "authors": "Justin Kulp",
+   "categories": "hep-th, math-ph",
+   "abstract": "Stochastic quantization formulates $d$-dimensional Euclidean QFT as the equilibrium limit of a $(d+1)$-dimensional Langevin system. Using the supersymmetric formulation of stochastic systems, we apply techniques from Morse theory to study Langevin dynamics. We interpret stochastic quantization as the absolutization of a relative QFT by a bulk cohomological topological Equilibrium TFT (\"EqmTFT\"), and relate its enriched Neumann boundary data to the $d$-dimensional BV/BRST complex. Analytic continuation reveals connections to the A-model and non-relativistic and Carrollian limits."
+  },
+  {
+   "id": "2609.38273",
+   "title": "Construction of mirror pairs of Berglund-Hubsch Calabi-Yau orbifolds of loop-type polynomials",
+   "authors": "Maxim Malyutin",
+   "categories": "hep-th",
+   "abstract": "In this paper, an algorithm for constructing orbifolds of Calabi-Yau manifolds of the Berglund-Hubsch-Krawitz (BHK) type and their mirror pairs for loop-type polynomials is proposed and applied. A complete enumeration of loop polynomials satisfying the Calabi-Yau condition was carried out, yielding 216 unique polynomials. For each polynomial, the Euler characteristics, the numbers of generations and singlets were computed, and the twisted sector states were analyzed using Roan's generalized combinatorial construction. It was established that Roan pairs are absent for all studied configurations, indicating a zero contribution of the twisted sectors to the difference in Hodge numbers upon resolving the orbifold singularities. The primary physical result of this work is the discovery of two configurations with diagonal exponents $\\{74, 3, 3, 5, 3\\}$ and $\\{74, 3, 5, 3, 3\\}$, for which the number of quark and lepton generations is precisely three ($N_{\\text{gen}} = 3$), which is of key interest for constructing phenomenologically realistic models of particle physics."
+  },
+  {
+   "id": "2609.38301",
+   "title": "Detectors in Nonrelativistic Conformal Field Theories",
+   "authors": "Cyuan-Han Chang , Subham Dutta Chowdhury , Ian Moult , Dam Thanh Son",
+   "categories": "hep-th, hep-ph, nucl-th",
+   "abstract": "Correlations in asymptotic fluxes provide one of the primary experimental means of studying physical systems. In the context of relativistic QFT, the formalization of such experiments in terms of detector operators has led to significant progress. Motivated by these successes, in this paper we initiate a study of detector operators in nonrelativistic conformal field theories (NRCFTs). In NRCFTs, fluxes are distributed in both angle and velocity, making the natural detector operator the energy flux differential in velocity, $\\mathcal{E}_v(\\hat{n})$. We provide non-perturbative definitions of these operators in NRCFTs, and study their symmetries and algebra. We calculate one-point functions of these detector observables in a variety of few and many body states of representative NRCFTs, including free fermions, as well as fermions at unitarity. In interacting three-body states, they exhibit a remarkably rich behavior reflective of the Efimov three-body wave-function, including the formation of an enhanced \"jet\" structure due to the presence of resonant interactions. We use these detectors to derive a nonrelativistic generalization of the Hofman-Maldacena conformal collider bounds by arguing for positivity of $\\mathcal{E}_v(\\hat{n})$, and imposing this in spin 1 states. We outline a number of future directions for the study of detectors in NRCFTs, and discuss how they can be measured in a variety of experimental platforms from cold atoms to low energy neutron experiments."
+  },
+  {
+   "id": "2609.38302",
+   "title": "Scale-Covariant Holography",
+   "authors": "Nikolay Bobev , Pieter Bomans , Fridrik Freyr Gautason",
+   "categories": "hep-th",
+   "abstract": "We explore a vast landscape of scale-covariant string backgrounds that arise from the backreaction of D$p$-branes. In a convenient Weyl frame the metric has an AdS factor and the dilaton has a non-trivial profile. This structure provides a notion of scale covariance that facilitates a holographic analysis and provides a window into the dynamics of the dual strongly coupled non-conformal gauge theory. We present different classes of supergravity solutions of this kind and discuss their dual field theory interpretation. We find several new supersymmetric backgrounds arising from D2-branes by utilizing four-dimensional gauged supergravity, D$p$-branes wrapped on compact manifolds, and infinite families constructed directly in ten dimensions. We construct holographic RG flows between some of the new supersymmetric backgrounds and compute the spectrum of low-lying local operators. Holography determines the form of observables such as the thermal free energy and scalar two-point functions, predictions which could be tested on the lattice."
+  },
+  {
+   "id": "2609.38307",
+   "title": "Quantum Gravity Principles for 4d $\\mathcal{N}=2$ Supergravity Theories and Asymptotic Hodge Theory",
+   "authors": "Lukas Kaufmann , Timo Weigand",
+   "categories": "hep-th",
+   "abstract": "We study the behaviour of general four-dimensional N=2 supergravity theories near boundaries at infinity of the vector multiplet moduli space, with a focus on a clear distinction between properties that follow from supergravity alone rather than from a consistent UV completion in quantum gravity. The basis for our analysis is the appearance of a real variation of polarised Hodge structure governing the vector multiplet moduli space of N=2 supergravity, combined with very recent advances in the mathematics literature. The resulting classification of infinite distance degenerations exactly agrees, at the level of gauge couplings, with a possible interpretation of the limits as decompactification limits to five or six dimensions or as weakly coupled string limits, as expected from a quantum gravity perspective. This observation extends previous results found in the context of string compactifications on Calabi--Yau varieties and, remarkably, holds for general four-dimensional N=2 supergravity theories regardless of a UV completion. We furthermore show the existence of a Kähler basis in which the triple couplings of the prepotential are non-negative, irrespective of a geometric origin of the supergravity theory. Finally we propose two non-trivial constraints for a four-dimensional N=2 supergravity to be compatible with quantum gravity: Integrality of the Hodge structure as a necessary condition for the completeness hypothesis and the existence of a simple normal crossing compactification of the moduli space to ensure compatibility of the weakly coupled asymptotic gravitational duality frames."
+  },
+  {
+   "id": "2609.38308",
+   "title": "Bootstrapping Weakly Broken Gauge Theories in (A)dS",
+   "authors": "Daniel Baumann , Kurt Hinterbichler , Callum R. T. Jones , Nathan Meurrens",
+   "categories": "hep-th",
+   "abstract": "We develop a bootstrap approach for weakly broken gauge theories in (anti-)de Sitter space, focusing on cases in which the conservation of the dual boundary current is broken by a double-trace operator. Integrating the corresponding Ward identity, we derive pseudo-charge conservation identities that contain fixed nonlocal contributions as integrals of three-point functions. These identities impose consistency conditions on the space of allowed theories. As an illustrative example, we study Yang-Mills theory in AdS with symmetry-breaking boundary conditions for charged matter and show that the pseudo-charge conservation identities constrain the mixing between the two quantization sectors. We then apply the framework to the Higgs mechanism for gravity in two AdS spaces with a common boundary, coupled so that the corresponding stress tensors are not separately conserved. In this setting, the ordinary charge conservation identities recover the factorization into two independent CFTs, whereas the pseudo-charge conservation identities hold for arbitrary values of the symmetry-breaking parameter. Finally, for conformal gravity in de Sitter space, we constrain the interactions between the graviton and the partially massless spin-2 field, both in the minimal theory and in the presence of additional scalar or vector matter, finding agreement with the predictions of the corresponding bulk theories."
+  },
+  {
+   "id": "2609.38311",
+   "title": "A New Approach to Black Hole Thermodynamics in General EMD-like Theories",
+   "authors": "Peng-Yu Wu , H. Lu",
+   "categories": "hep-th, gr-qc",
+   "abstract": "We consider general EMD-like theories involving arbitrary numbers of both Maxwell fields and dilatonic scalars. We study charged black holes and derive several algebraic and differential relations among the thermodynamic quantities, scalar charges and the non-extremal parameter. These allow us to obtain two sets of master equations of thermodynamic quantities, depending on the choice of basic variables parameterizing the system. Solutions to either set of the master equations give rise to all the thermodynamic quantities, without constructing black hole solutions. We obtain all the thermodynamic quantities perturbatively in the power series expansions of charges, which we then verify using perturbative black hole solutions up to and including the quartic order in charges."
+  },
+  {
+   "id": "2609.38313",
+   "title": "Holographic Krylov spread complexity for a confining multi-charge AdS soliton",
+   "authors": "Dimitrios Chatzis , Madison Hammond , Ricardo T. Santamaria , Jonathan Whittle",
+   "categories": "hep-th",
+   "abstract": "We study holographic spread complexity for a Type IIB solution dual to a deformation of $\\mathcal{N} = 4$ SYM that flows to a confining (2+1)-dimensional supersymmetric theory in the IR. We use the proposal that relates the rate of change of spread complexity of local operators with the proper momentum of an infalling probe particle in the bulk. We analyse two cases: a probe particle falling radially and a probe falling radially while rotating with conserved angular momentum. We elaborate on how to define the proper coordinate in the presence of a conserved Noether charge using the Routhian. The trajectories for the probes were studied numerically, revealing an oscillatory behaviour of the complexity."
+  },
+  {
+   "id": "2609.38318",
+   "title": "Energy Transmission Across Holographic Conformal Interfaces in General Dimensions",
+   "authors": "Igal Arav , Theodore Bertrand , Shira Chapman , Giuseppe Policastro , Sebastian Waeber",
+   "categories": "hep-th, cond-mat.stat-mech, cond-mat.str-el, gr-qc",
+   "abstract": "Energy transport across conformal interfaces is universal in two spacetime dimensions, but its higher-dimensional counterpart has remained largely unexplored. In higher dimensions, scattering can depend on additional kinematic data, such as the angle of incidence, and conformal symmetry is far less restrictive. We use gravitational holography to study this problem. For a broad class of AdS$_d$-sliced domain-wall geometries, we derive a closed-form expression for the energy transmission coefficient in terms of the bulk warp factor. Our formula reproduces known two-dimensional holographic results and extends them to arbitrary dimension. Within this class, we establish different aspects of higher-dimensional universality. In particular, we show that the transmission is independent of the incidence angle and of the profile of the incident perturbation. We also derive bounds on transmission controlled by central-charge-like quantities characterizing the number of degrees of freedom of the theories on the two sides of the interface. This provides the first explicit result for reflection and transmission across conformal interfaces in higher dimensions, where no CFT-based results are currently available."
+  },
+  {
+   "id": "2609.38336",
+   "title": "Scaling similarity and generalised conformal symmetry in D2-brane holography",
+   "authors": "Andrea Conti , Adolfo Guarino , Ricardo Stuardo",
+   "categories": "hep-th",
+   "abstract": "We study D2-brane holography within the purely dilatonic sector of four-dimensional maximal ISO(7)-gauged supergravity, obtained as a consistent truncation of type IIA supergravity on S$^6$. In the dual frame, the four-dimensional Lagrangian resulting from the reduction of the massless IIA theory exhibits scaling similarity, thus reflecting the generalised conformal symmetry of the dual three-dimensional maximally supersymmetric Yang-Mills theory. Using an auxiliary spacetime construction, we show that the holographic CFT$_3$ fixed points and RG-flows known in the massive IIA theory have natural counterparts in the massless IIA theory: QFT$_3$s with generalised conformal symmetry connected by generalised RG-flows, which we construct numerically. We also revisit the Coulomb branch solutions and propose an extension of Gubser's singularity criterion to supergravity theories exhibiting scaling similarity."
+  },
+  {
+   "id": "2609.38496",
+   "title": "Leading Logarithms in the Effective Theory of Gravity: corrections to the scalar mass",
+   "authors": "Diana V. Mysliaeva , Kirill M. Semenov-Tian-Shansky , Dmitrii V. Vasilev , Alexey Vladimirov",
+   "categories": "hep-th, gr-qc",
+   "abstract": "In a low-energy effective field theory (EFT), scaling logarithmic terms arise from the renormalization of higher-dimensional couplings that absorb divergences generated by loop integrals with lower-order vertices. Consequently, leading logarithms (LLs) are generated entirely by the leading-order Lagrangian, rendering them universal low-energy predictions. Adapting techniques developed for chiral perturbation theory, we analyze the series of LLs in the EFT of general relativity. As a concrete application, we compute LL corrections to the scalar pole mass up to three-loop order and demonstrate that they can be determined recursively to arbitrary loop order. To confirm the physical validity of our results, we carry out the calculation using a general gauge-fixing parameter and explicitly verify its complete cancellation in the physical observable."
+  },
+  {
+   "id": "2609.38557",
+   "title": "Symmetry-Restoring Counter-terms in Massive Gauge Theories with Non-Anticommuting $γ_5$ via Gauge-Invariant Sector Decomposition",
+   "authors": "Andrea Quadri",
+   "categories": "hep-th, hep-ph",
+   "abstract": "We compute the one-loop breaking of the Slavnov-Taylor (ST) identities in a massive Abelian chiral gauge theory with spontaneous symmetry breaking, regularized in the Breitenlohner-Maison-`t Hooft-Veltman (BMHV) scheme. We also provide the one-loop finite counter-terms required to restore the one-loop ST identities. The recent formulation of spontaneously broken models based on the Fröhlich-Morchio-Strocchi (FMS) gauge-invariant and dynamical (i.e. propagating inside loops) fields is used. The proposed algebraic approach holds true to all orders in the loop expansion and allows for a consistent decomposition of the ST breaking into independent sectors. By using cohomological techniques we eventually constrain the dependence of the ST breaking on the vacuum expectation value of the Higgs field. This yields a set of differential equations that provide a useful check of the mass-dependent terms in the ST breaking terms in the broken phase. They can be generalized to the non-Abelian case, both in the gauge-invariant formalism and in the conventional one. In the massless limit we find agreement with previous calculations present in the literature."
+  },
+  {
+   "id": "2609.38700",
+   "title": "Non-Semisimple Integrability and Dynamical Limits",
+   "authors": "Anton Pribytok",
+   "categories": "hep-th, math-ph",
+   "abstract": "We investigate Jordan structure and dynamical limits in six families of integrable spin-$\\frac{1}{2}$ chains obtained from the boost automorphism method. Local operator algebras connect nilpotent evolution on finite periodic chains to central defects in spectral additivity, polynomial unipotent $R$-matrices and constant braid limits. For conservative endpoint erosion, we determine the characteristic and minimal polynomials and show that the Jordan partition can change while both polynomials remain unchanged. We also identify the deletion limits that distinguish the parity obstruction to removing signs by diagonal similarity in Class 5 from the parity nilpotent dependence in Class 6. Matching expansions and fragmentation recursions yield exact amplitudes and survival probabilities for processes with killing. In addition, we establish criteria excluding conservative Markov realizations and determine which conservative completions of specified reaction densities admit regular $R$-matrices of difference form."
+  },
+  {
+   "id": "2609.38815",
+   "title": "Relative entropy of entanglement and tripartite minimal surface",
+   "authors": "Takato Mori , Beni Yoshida",
+   "categories": "hep-th, gr-qc, math-ph, quant-ph",
+   "abstract": "We propose a holographic dual of the relative entropy of entanglement for a boundary tripartition $A:B:C$. Our proposal is that, at the leading order, \\begin{align} E_R(\\rho_{AB}) = \\frac{1}{4G_N}\\Big[\\mathrm{Area}(\\Gamma_{\\min}) - \\mathrm{Area}(\\gamma_{AB})\\Big] \\notag \\end{align} where $\\Gamma_{\\min}$ is the minimal bulk tripartition surface and $\\gamma_{AB}$ is the minimal surface homologous to $AB$. For a general random tensor network, we prove the corresponding upper bound by constructing a separable state associated with $\\Gamma_{\\min}$ and evaluating its relative entropy. We also establish the matching lower bound rigorously for networks of one, two, and three Haar random tensors by bounding the maximal tripartite product-state overlap. In appropriate geometries, the minimal tripartition surface can form a nontrivial tri-junction resembling the Mercedes logo. The proof proceeds by sequential optimization over candidate product states, which has a natural geometric interpretation as a local search for the minimal tripartition surface."
+  },
+  {
+   "id": "2609.39085",
+   "title": "Complex Phase Structure of Kerr-AdS$_5$ Black Holes: Critical Saddles and Fisher Zeros",
+   "authors": "Bum-Hoon Lee , Hocheol Lee , Somyadip Thakur",
+   "categories": "hep-th, gr-qc",
+   "abstract": "We study the complex saddle structure of singly rotating Kerr--AdS$_5$ black holes using a two-variable reduced model in the grand canonical ensemble at fixed angular velocity, $\\Omega$. The small and large black hole saddles merge at a critical point where one Takagi singular value of the complex Hessian vanishes, identifying the soft mode associated with the merger. This merger remains distinct from the Hawking--Page transition throughout the physical domain $|\\Omega| < 1$. For the reduced integral with the standard measure, we show that thermal AdS dominates uniformly in a complex neighborhood of each real merger point when Newton's constant $G$ is sufficiently small. Consequently, this neighborhood contains no zeros of the partition function, even though the local saddle merger is described by Airy-type behavior. The Fisher zeros instead accumulate near the Hawking--Page coexistence line, with spacing of order $G$, through interference between thermal AdS and the large black hole saddle. We also show that the real quasi-Euclidean Kerr--AdS$_5$ family satisfies a strict asymptotic Kontsevich--Segal--Witten (KSW) phase bound for $|\\Omega| < 1$, with the merger point lying inside the allowed domain. In the fixed angular momentum extended ensemble, two such merger points combine into a cusp with a contour-dependent Pearcey approximation. These results distinguish local saddle degeneracies from global phase coexistence and clarify the different roles of Takagi modes, phase transitions, and zeros of the partition function in the complex black hole saddle structure."
+  },
+  {
+   "id": "2609.39253",
+   "title": "Gravitational multipoles, antipodal matching relations, and the logarithmic soft graviton theorem",
+   "authors": "Geoffrey Compère , Dima Fontaine , Wen-Bin Liu , Kevin Nguyen",
+   "categories": "hep-th, gr-qc",
+   "abstract": "We derive the classical logarithmic soft graviton theorem for the scattering of massive particles in four-dimensional asymptotically flat spacetime using a position-space analysis of the Weyl tensor. Starting from the Iyer-Damour multipole solution in harmonic gauge, we obtain an infinite tower of antipodal matching relations across spatial infinity for all five Newman-Penrose Weyl scalars, at linear order in $G$ and for the leading matter-induced logarithms at order $G^2$. We connect the relation relevant to the logarithmic soft theorem to the radiative-gauge formulation of Boschetti-Campiglia and Compère-Robert. We then compute the required asymptotic fields directly from scattering data, including matter contributions and nonlinear effects responsible for graviton drag. Combining these results with the Newman-Penrose evolution equations yields position-space proofs of the classical leading and logarithmic soft graviton theorems, independently confirming the frequency-space derivation of the latter originally performed by Laddha and Sen."
+  },
+  {
+   "id": "2609.39288",
+   "title": "Near-horizon soft theorems from local Ward identities",
+   "authors": "Jin-Peng Zhuge , Peng Cheng",
+   "categories": "hep-th, gr-qc",
+   "abstract": "We develop a unified formulation of leading soft photon theorems for nondegenerate static spherical horizons. By fixing the photon mode normalization from the horizon symplectic form, we obtain a common angular soft factor whose sign follows from the boundary orientation. We determine the geometric coefficients in the local angular and momentum representations for a chosen radial normalization. The charge balance includes horizon endpoint data and contributions from other boundaries. This formulation brings black hole and cosmological horizons into a common description. Applying the same construction to Yang-Mills fields yields the corresponding tree-level soft gluon theorem. These results identify the common soft structure underlying different horizon geometries."
+  },
+  {
+   "id": "2609.39459",
+   "title": "Soliton like solutions of $λϕ^4$ theory in de Sitter space",
+   "authors": "D. V. Diakonov",
+   "categories": "hep-th, gr-qc",
+   "abstract": "We study classical solutions of a scalar field with quartic potential in de Sitter space-time. Using the ansatz $\\phi=F(X\\cdot\\xi)$, via embeding coordinate $X_\\alpha$ of the ambiend space we find several families of analytic solutions classified by the causal character of the constant vector $\\xi$. For time-like $\\xi$, the solutions are globally regular and describe either global oscillations around a minimum or global vacuum transition; for space-like $\\xi$, they are singular in the global patch but regular in the open slicing. In the Poincaré patch they correspond to contracting bubbles. We compute the classical actions of these solition which are finite only in spacetime dimensions $D \\le 5$. We show that the $D=4$ global vacuum transition solution has the radiation equation of state $w=1/3$. In $D=4$ global vacuum transition solution, the retarded Green's function acquires a growing tail as compared to the Green's function on top of vacuum, implying that the transition amplifies the signal at late times."
+  },
+  {
+   "id": "2609.39470",
+   "title": "Dispersion relation, propagation features and canonical gauge structure of GNLED",
+   "authors": "Abedennour Dib , José A. Helayël-Neto , Tomislav Prokopec , Alessandro D.A.M. Spallicci , Youssef Temmam",
+   "categories": "hep-th, gr-qc, hep-ph",
+   "abstract": "We investigate the propagation properties and canonical gauge structure of Generalised Non-Linear Electrodynamics (GNLED) in the presence of a non-dynamical background field. Starting from the quadratic photon sector of the theory, we perform a field redefinition that converts the background-induced derivative coupling into a mass-like contribution characterized by the vector \\(V_\\mu=\\partial_\\mu\\alpha/\\alpha\\) where $\\alpha= \\sqrt{\\left.\\frac{\\partial\\mathcal{L}}{\\partial \\mathcal{F}}\\right|_B}$. For a constant background, we derive the corresponding dispersion relation and show that, for a purely space-like \\(V_\\mu\\), the propagating mode obeys \\(\\omega^2=\\|\\vec k\\|^2+\\|\\vec V\\|^2\\), defining an effective mass scale \\(m_{\\rm eff}=|\\vec{V}|\\) and a finite rest frequency. The resulting phase and group velocities exhibit the characteristic dispersive behaviour of a gapped mode, with subluminal group velocity and superluminal phase velocity. We then construct the propagator and show that the massive pole resides in the transverse sector, while the longitudinal singularity is associated with gauge fixing. A complete Hamiltonian analysis yields two first-class constraints and only two physical degrees of freedom, demonstrating that the effective mass does not introduce an additional polarisation. The associated gauge transformation is a deformed Abelian \\(U(1)\\) symmetry. Finally, we show that the Hamiltonian is positive definite for purely space-like backgrounds."
+  },
+  {
+   "id": "2609.39506",
+   "title": "Nonperturbative Dyson--Schwinger equations in QCD: a first approximation",
+   "authors": "Vladimir Dzhunushaliev , Vladimir Folomeev",
+   "categories": "hep-th",
+   "abstract": "We consider a procedure for nonperturbative quantization based on an infinite system of nonperturbative Dyson--Schwinger equations. We propose a first approximation for truncating this infinite system of equations in the static case. The main ideas underlying this approximation are as follows: (a) the two-point Green's functions of vacuum gauge fields are factorized by introducing scalar fields; (b) in the non-vacuum case, the degrees of freedom of the $SU(3)$ gauge field can be divided into ``almost classical'' and ``almost quantum'' degrees of freedom; (c) the four-point Green's functions of the gauge fields are represented as bilinear combinations of two-point Green's functions; (d) an approximation for the three-point Green's function describing the interaction between quarks and gauge fields is proposed, which leads to the splitting of the original Dirac equation for the quark-field operators into two equations, one describing the expectation value of the fermion field and the other acquiring a nonlinear term and serving to describe a condensate composed of sea quarks bound by the vacuum gauge field. We consider the choice of gauge appropriate for this approximation to nonperturbative quantization. We point out that the emergence of a nonlinear Dirac equation within this approximation may lead to a mass gap in the energy spectrum of solutions of the corresponding systems of equations. The issue of the emergence of ``dimensional transmutation'' within this approximation is also discussed. We provide arguments in favor of the statement that the ``closure constants'' appearing in the finite truncation and giving rise to ``dimensional transmutation'' should survive in the transition to the infinite system of Dyson--Schwinger equations. An analogy between nonperturbative quantization and the stochastic theory of turbulence is also discussed."
+  },
+  {
+   "id": "2609.39691",
+   "title": "Light-Ray Supersymmetry, BMS Algebras and the Averaged Null Energy Condition",
+   "authors": "Dhruva K.S",
+   "categories": "hep-th",
+   "abstract": "We show that the light-ray algebra of unitary supersymmetric Lorentzian conformal field theories contains a universal supersymmetric generalized $\\mathfrak{bms}$ algebra. We construct parallel light-ray operators using the supersymmetry current, $R-$symmetry current and the stress tensor supported on a co-dimension one null hypersurface and determine their graded commutators in $d=3,4$ to verify this claim. Our construction only relies on global supersymmetry and fundamental physical principles such as microcausality, unitarity and Lorentz invariance and thus applies to strongly coupled theories. As a corollary, we show that the averaged null energy operator is a positive operator using the local supersymmetry algebra on the null sheet, providing a supersymmetric derivation of the averaged null energy condition (ANEC). Finally, we verify our results in free massless supersymmetric theories and present arguments to support that the local supersymmetry continues to ensure the ANEC is satisfied even in general supersymmetric quantum field theories."
+  },
+  {
+   "id": "2609.39760",
+   "title": "Fractional Superfluid Vortices and Worldsheet Wess--Zumino--Witten Models in Two-Color QCD and $Sp(2N)$ Gauge Theories",
+   "authors": "Muneto Nitta",
+   "categories": "hep-th, hep-lat, hep-ph",
+   "abstract": "We study superfluid vortices in two-color QCD and more general pseudoreal gauge theories with even flavor number $N_f=2m$ at finite baryon density. The antisymmetric diquark condensate admits fractional minimal vortices with baryon-phase winding $\\nu=1/m$, corresponding to $1/m$ of the conventional circulation quantum, each localizing an $Sp(2)\\simeq SU(2)$ core sector. For vortices embedded in mutually orthogonal flavor planes, the leading-order chiral action factorizes exactly. Off-diagonal flavor zero modes are non-normalizable at finite separation but become localized at coincidence, enhancing the normalizable sector from $[Sp(2)]^m$ to $Sp(2m)$. For fundamental fermions of an $Sp(2N)$ gauge theory, the bulk Wess--Zumino--Witten (WZW) term descends compatibly: a cluster of $n$ coincident minimal vortices carries an $Sp(2n)_N$ WZW theory, while a flavor-symmetric vortex with positive integer baryon-phase winding $\\nu$ carries $Sp(2m)_{N\\nu}$. At unit winding this yields the vortex map to $Sp(2m)_N$, with central charge $c=Nm(2m+1)/(N+m+1)$ at the WZW fixed point, and suggests a broader nonsupersymmetric four-dimensional/two-dimensional correspondence."
+  },
+  {
+   "id": "2609.39769",
+   "title": "AI for BMN Strings",
+   "authors": "Min-xin Huang",
+   "categories": "hep-th",
+   "abstract": "With the assistance of AI (Artificial Intelligence) tools, we revisit some mathematically well-formulated problems from our previous studies of BMN (Berenstein-Maldacena-Nastase) strings on type IIB string theory pp-wave background. These mathematical problems have important physical implications, relating to the computations of higher-genus critical superstring amplitudes, possible estimate of the cosmological constant. We make significant progress on some problems, while others remain unresolved."
+  },
+  {
+   "id": "2609.39893",
+   "title": "Light non-vacuum BMS$_3$ blocks at order $1/c_{M}$",
+   "authors": "Boyang Yu",
+   "categories": "hep-th",
+   "abstract": "We derive a closed expression for the $1/c_{M}$ correction to highest-weight BMS$_3$ blocks with four light external primaries of generic weights and non-vacuum exchange. With $c_L$ and all operator weights held fixed, we prove that the global sector and descendants containing exactly one non-global generator $L_{-n}$ or $M_{-n}$ with $n\\geq2$ suffice through this order. This truncation reduces the intrinsic calculation to global blocks and their derivatives, whose contributions we resum for nonzero exchanged boost weight $\\xi_{p}$. For pairwise identical external operators, we independently reproduce the correction through the introduction of boundary gravitons in the normalized three-point functions in the shadow representation, while keeping the exchanged two-point function fixed. The analogous prescription also reproduces the known non-vacuum Virasoro correction at order $1/c$. For the same external configuration, a formal ultra-relativistic contraction of Virasoro blocks with one flipped chiral representation provides a further check: it yields the same correction, and we prove that contraction commutes with extraction of the $1/c_{M}$ coefficient at each fixed descendant level. The degenerate exchange with $\\xi_{p}=0$ requires a separate quotient construction and is not obtained as a smooth limit of the generic block, which we discuss in the appendix."
+  },
+  {
+   "id": "2609.39930",
+   "title": "Large gaps and BTZ entropy in modular spectra with positive integer degeneracies",
+   "authors": "Chi-Ming Chang , Reiko Liu , Wen-Jie Ma",
+   "categories": "hep-th",
+   "abstract": "We construct modular-invariant torus partition functions with a unique vacuum, discrete energy levels and positive integer degeneracies by recursively repairing the Maloney--Witten--Keller modular completion of the Virasoro vacuum. Exact modular repairs and finite moment matching discretize successive spectral bands while preserving earlier levels and controlling convergence. For $c_L=c_R=c$ and $a=(c-1)/12$, the construction realizes primary dimension gaps $\\Delta_1=(1+\\kappa)a$ for sufficiently small fixed $\\kappa>0$, and $\\Delta_1=a+\\delta$ for any fixed $\\delta\\ge0$, at every sufficiently large real $c$. Every nonvacuum primary satisfies $h,\\bar h\\ge(c-1)/24$. In the fixed-$\\delta$ family, spectra can be chosen whose densities of states, smoothed with a fixed nonnegative normalized smooth kernel of compact support, match the correspondingly smoothed prediction of a single perturbative BTZ saddle through every fixed finite order in $1/c$. The count includes all spins and Virasoro descendants. Its logarithm reproduces the Bekenstein--Hawking entropy and its corrections at every fixed positive $E/c$, where $E=\\Delta-c/12$. This includes $0<E<c/12$, where thermal AdS dominates the canonical ensemble."
+  },
+  {
+   "id": "2609.39944",
+   "title": "Greybody factors of large Gauss-Bonnet d-dimensional black holes",
+   "authors": "Filipe Moura , João Rodrigues",
+   "categories": "hep-th, gr-qc",
+   "abstract": "We compute analytically greybody factors for d-dimensional large spherically symmetric black holes with Gauss-Bonnet corrections in the high frequency limit. Our calculations include both the eikonal limit, where the real part of the frequency of the scattered wave is much larger than the imaginary part, and the highly damped case,where the imaginary part of the frequency is much larger than the real part, addressing the emission of gravitons and test scalar fields, and yielding full transmission and reflection scattering coefficients. We consider tensorial, vectorial and scalar gravitational perturbations, obtaining the same result for the three cases in the highly damped limit, but not in the eikonal limit."
+  },
+  {
+   "id": "2609.40025",
+   "title": "Nilpotent Symmetries and Conserved Charges: BRST-Quantized Version of the 4D Abelian 2-Form Gauge Theory",
+   "authors": "R. P. Malik",
+   "categories": "hep-th",
+   "abstract": "We focus on the Becchi-Rouet-Stora-Tyutin (BRST) quantized version of the four (3 + 1)-dimensional (4D) free Abelian 2-form gauge theory and (i) discuss its infinitesimal, continuous and off-shell nilpotent (anti-)BRST and (anti-)co-BRST symmetry transformations, and (ii) derive the corresponding Noether conserved (anti-)BRST and (anti-)co-BRST charges. We demonstrate that these charges are not invariant under the above nilpotent symmetry transformations. We systematically derive the modified versions of the above Noether charges which are found to be invariant under the above symmetry transformations. As a consequence, both types of the above charges anticommute with each-other which proves their linear independence. We also derive the (anti-)BRST and (anti-)co-BRST invariant Curci-Ferrari (CF) type restrictions from the algebraic structures of the Noether conserved charges. In all the above proofs and derivations, we take into account the deep mathematical relationship that exists between the infinitesimal and continuous symmetry transformations and their generators as the Noether conserved charges."
+  },
+  {
+   "id": "2609.40081",
+   "title": "Quantum corrections to the Casimir effect in a scalar Hořava-Lifshitz theory with rough plates at low temperature",
+   "authors": "Claudio Bórquez , Byron Droguett",
+   "categories": "hep-th, math-ph",
+   "abstract": "We investigate the Casimir effect of a massive, self-interacting real scalar field with quartic coupling in a $(3+1)$-dimensional Hořava-Lifshitz-type theory, subject to rough boundaries obeying Dirichlet boundary conditions. Using the effective action and generalized $\\zeta$-function approach, we derive the renormalized effective potential, incorporating anisotropic scaling, boundary roughness, and temperature in the low-temperature regime. We determine the topological mass at one-loop order and the Casimir energy up to two loops. In the massless limit, the topological mass and the two-loop Casimir contribution exhibit infrared divergences for odd values $z>1$, associated with the absence of an intrinsic mass scale, while the one-loop Casimir energy remains finite. For $z=1$, the standard relativistic Dirichlet result is recovered in the zero-temperature and vanishing-roughness limits."
+  },
+  {
+   "id": "2609.40183",
+   "title": "Lie Algebra Saddles in the IKKT Matrix Model and Criteria for the Emergence of Time",
+   "authors": "Henry Liao",
+   "categories": "hep-th",
+   "abstract": "In the IKKT matrix model, the dimension, geometry, and metric signature of spacetime must emerge from the matrix dynamics. We classify the Lie-algebraic saddles of the model: classical solutions in which the ten Hermitian matrices realize a finite-dimensional real Lie algebra in a unitary representation. For this class the equations of motion collapse to a single algebraic equation for a symmetric bilinear form $h$ on the algebra, and the signature of the emergent spacetime can be read off from $h$. Two facts control the outcome. First, when the complexified algebra is simple, a Casimir obstruction allows only $h=0$; this explains why fuzzy spheres and the expanding-universe solutions need mass terms or infrared regulators. Second, semisimple algebras admit saddles only through couplings between distinct simple ideals; such saddles first appear in six dimensions and reach every signature only from twelve. These facts yield criteria for the emergence of time. Every nondegenerate Lorentzian saddle in at most eleven dimensions---hence every Lorentzian background of the ten-dimensional model---has a nonzero solvable radical. The only nontrivial possibility of the semisimple part is the Lorentz algebra $\\mathfrak{so}(1,3)$, which is purely spacelike, and every timelike direction has a component in the radical. When the semisimple part is nontrivial, it acts on the radical only from ten dimensions on; at ten dimensions, the radical must be abelian and must carry the Weyl-spinor representation, which solves the Lorentzian equations of motion; a nonabelian radical first appears in eleven dimensions. As a result, space can be semisimple; time must be solvable."
+  },
+  {
+   "id": "2609.40291",
+   "title": "The classical limit of the Magnus expansion",
+   "authors": "Andreas Brandhuber , Graham R. Brown , Sebastien MacDonald , Paolo Pichini , Gabriele Travaglini , Pablo Vives Matasan",
+   "categories": "hep-th, gr-qc, math-ph, math.CO",
+   "abstract": "We uncover a connection between the classical limit of the Magnus expansion in quantum field theory and the Malvenuto-Reutenauer Hopf algebra of permutations. We study a cubic scalar theory describing a massive particle coupled to massless scalar quanta, which captures the propagator structure relevant to classical scattering in gravity and scalar QED. Using a Schwinger parametrisation of the massive propagators, we compute the classical limit of Magnus amplitudes at tree level in this theory. First, we prove that all hyperclassical contributions cancel at the level of the Schwinger proper-time integrand, before integration. Then, we show that the classical Magnus amplitude precisely matches expectations from worldline quantum field theory. Both results rely on cancellations of disconnected diagrams which we relate to the Hopf algebra, specifically to the action of the adjoint first Eulerian projector, which annihilates the shuffle products associated with disconnected contributions. Moreover, the worldline diagrams include generic directed-tree topologies, whereas the field-theory diagrams only include directed chains. The correspondence we establish between the two therefore leads to a new formula for generic Murua coefficients in terms of simpler directed chain coefficients. Finally, we observe a suggestive connection between Magnus amplitudes and the web-mixing matrices governing the exponentiation of multiple Wilson lines."
+  },
+  {
+   "id": "2609.40326",
+   "title": "Four-loop beta function in N=2 supersymmetric Yang-Mills theory, dimensional reduction, and treatment of $γ_5$",
+   "authors": "M.A. Bezuglov , B.A. Kniehl , V.N. Velizhanin",
+   "categories": "hep-th, hep-ph",
+   "abstract": "Adopting the dimensional-reduction scheme, we diagrammatically compute, at four loops, the beta function of N=2 supersymmetric Yang-Mills theory, which is well known to vanish beyond one loop. This provides a formidable testbed for both the treatment of the problematic $\\gamma_5$ Dirac matrix in D dimensions and the implementation of the dimensional-reduction scheme. In the use of the reading-point method of $\\gamma_5$, being preferable for convenience, specific details of implementation start to matter at four loops. We thus rigorously validate these implementation issues, which have previously been advocated for the calculation of the gauge-coupling beta functions at four loops in the Standard Model."
+  }
+ ]
+}
