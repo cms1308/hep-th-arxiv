@@ -43,6 +43,49 @@ Start-Transcript -Path $LOG -Append | Out-Null
 
 function say([string]$msg) { Write-Host ("[{0}] {1}" -f (Get-KstNow).ToString('HH:mm:ss'), $msg) }
 
+# ---------------------------------------------------------------- 실패 알림
+# 자동 실행은 창 없이 돌기 때문에 실패해도 로그에만 남는다. 실패하면 두 가지를 한다:
+#   1. 이 PC 에 Windows 토스트 알림 (알림 센터에 남는다).
+#   2. GitHub Actions 백업 워크플로를 바로 띄운다. 로컬만의 문제(로그인 만료 등)면 러너가
+#      대신 발행하고, 러너도 실패하면 워크플로가 brief-failure 이슈를 열어 메일이 온다.
+#      gh 로 직접 이슈를 열지 않는 이유: 내 계정으로 연 이슈는 GitHub 이 나에게 메일을 보내지 않는다.
+# 알림 자체의 실패는 삼킨다 — 원래 오류를 가리면 안 된다.
+$script:CanHandOff = $true   # 커밋 단계에 들어가면 false (로컬 커밋과 러너 커밋이 겹치지 않게)
+
+function Show-Toast([string]$title, [string]$text) {
+    try {
+        [void][Windows.UI.Notifications.ToastNotificationManager, Windows.UI.Notifications, ContentType = WindowsRuntime]
+        [void][Windows.Data.Xml.Dom.XmlDocument, Windows.Data.Xml.Dom.XmlDocument, ContentType = WindowsRuntime]
+        $esc = [System.Security.SecurityElement]
+        $xml = New-Object Windows.Data.Xml.Dom.XmlDocument
+        $xml.LoadXml("<toast duration='long'><visual><binding template='ToastGeneric'>" +
+                     "<text>$($esc::Escape($title))</text><text>$($esc::Escape($text))</text>" +
+                     "</binding></visual></toast>")
+        # 등록된 AppUserModelID 가 있어야 토스트가 뜬다 — Windows PowerShell 의 것을 빌려 쓴다.
+        $appId = '{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\WindowsPowerShell\v1.0\powershell.exe'
+        $toast = New-Object Windows.UI.Notifications.ToastNotification $xml
+        [Windows.UI.Notifications.ToastNotificationManager]::CreateToastNotifier($appId).Show($toast)
+    } catch { say "  (토스트 알림 실패: $($_.Exception.Message))" }
+}
+
+function Send-FailureAlert([string]$reason) {
+    # 청크가 전부 몇 초 만에 죽는 흔한 원인은 CLI 로그인 만료다. 로그에서 찾아 바로 알려 준다.
+    $authFail = Select-String -Path "$WORK\logs\$TODAY-chunk*.out" -Pattern 'Failed to authenticate' `
+                    -SimpleMatch -List -ErrorAction SilentlyContinue
+    if ($authFail) { $reason = 'Claude CLI 로그인 만료 — PowerShell 에서 claude 실행 후 /login' }
+
+    $handoff = ''
+    if ($script:CanHandOff) {
+        $gh = (Get-Command gh -ErrorAction SilentlyContinue).Source
+        if ($gh) {
+            $rc = Run-Native $gh @('workflow', 'run', 'daily-brief.yml', '--repo', $SLUG, '--ref', 'main')
+            if ($rc) { say "  (Actions 백업 실행 실패 rc=$rc)" }
+            else     { say '  Actions 백업 워크플로를 띄웠습니다.'; $handoff = ' · Actions 백업 실행함' }
+        } else { say '  (gh 가 없어 Actions 백업을 띄우지 못함)' }
+    }
+    Show-Toast "hep-th 브리핑 실패: $TODAY" "$reason$handoff`n로그: $LOG"
+}
+
 # 네이티브 명령을 돌리고 종료 코드를 돌려준다. 표준출력·표준오류를 한 줄씩 화면과 로그에 남긴다.
 # Start-Transcript 는 네이티브 명령의 출력을 그냥은 기록하지 않고, 2>&1 은 $ErrorActionPreference=Stop
 # 아래서 stderr 첫 줄에 스크립트를 죽인다 — 그래서 잠시 Continue 로 내리고 Write-Host 로 흘린다.
@@ -192,9 +235,8 @@ Return ONLY the string "chunk$i done: N papers". Do not return paper content.
     $report | ForEach-Object { Write-Host $_ }
     [System.IO.File]::WriteAllLines("$WORK\logs\$TODAY-merge.txt", [string[]]$report, $utf8)
     if ($mergeRc) {
-        say '중단 — 번역이 불완전합니다. 커밋하지 않습니다.'
         say "청크 로그: $WORK\logs\$TODAY-chunk*.out"
-        exit 1
+        throw '번역이 불완전합니다. 커밋하지 않습니다.'
     }
     $GOT = @(Get-Content "$WORK\papers.json" -Raw -Encoding UTF8 | ConvertFrom-Json | ForEach-Object { $_ }).Count
 
@@ -203,6 +245,7 @@ Return ONLY the string "chunk$i done: N papers". Do not return paper content.
     $DATESTR = '{0}년 {1}월 {2}일 ({3})' -f $d.Year, $d.Month, $d.Day, '월화수목금토일'[([int]$d.DayOfWeek + 6) % 7]
 
     say "5/5 빌드·커밋·푸시 — $DATESTR, ${GOT}편"
+    $script:CanHandOff = $false
     $rc = Run-Native $PY @("$REPO\scripts\sync_repo.py", $SLUG, "$WORK\papers.json", $TODAY, $DATESTR)
     if ($rc) { throw "sync_repo.py 실패 (rc=$rc)" }
     say '완료 — https://cms1308.github.io/hep-th-arxiv/'
@@ -210,6 +253,7 @@ Return ONLY the string "chunk$i done: N papers". Do not return paper content.
 }
 catch {
     say "오류: $($_.Exception.Message)"
+    Send-FailureAlert $_.Exception.Message
     exit 1
 }
 finally {

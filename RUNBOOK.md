@@ -47,6 +47,15 @@ launchd 대신 **작업 스케줄러**를 씁니다. 놓친 시각은 깨어난 
 작업 폴더·로그 위치는 맥과 같습니다 (`%USERPROFILE%\.hep-th-brief-work\logs\<날짜>.log`).
 자동 실행은 창 없이 돌고 출력은 그 로그에만 남습니다.
 
+실패하면(0편 종료는 제외) `run_local.ps1` 이 두 가지를 합니다:
+1. Windows 토스트 알림 — 원인 한 줄과 로그 경로. 청크 로그에 `Failed to authenticate` 가
+   있으면 "Claude CLI 로그인 만료" 로 바꿔 보여 줍니다 (`claude auth status` 는 refresh 가
+   깨진 만료 토큰도 `loggedIn` 으로 보고하므로 사전 확인으로는 못 잡습니다).
+2. `gh workflow run` 으로 Actions 백업을 즉시 띄움 — 로컬만의 문제면 러너가 대신 발행하고,
+   러너도 실패하면 워크플로가 `brief-failure` 이슈를 열어 메일이 옵니다. (내 계정으로 `gh issue
+   create` 를 하면 GitHub 이 나에게 메일을 보내지 않아서 이 경로를 씁니다.) 커밋 단계(5/5)
+   이후의 실패에서는 로컬 커밋과 겹치지 않도록 띄우지 않습니다. `gh` 가 로그인돼 있어야 합니다.
+
 준비물: Python 3 (`python` 이 PATH 에), Git (자격증명 저장됨, `user.name` 설정됨),
 Claude Code CLI (`irm https://claude.ai/install.ps1 | iex`). Claude 데스크톱 앱에 내장된
 Claude Code 는 `claude` 명령을 제공하지 않으므로 CLI 를 따로 설치해야 합니다.
