@@ -1,5 +1,16 @@
 [
  {
+  "date": "2026-10-12",
+  "datestr": "2026년 10월 12일 (월)",
+  "file": "briefs/2026-10-12.html",
+  "count": 31,
+  "preview": [
+   "Lattice Monte Carlo of $λϕ^4$ on Euclidean de Sitter",
+   "Proving the OSV conjecture with the gravitational path integral",
+   "GLSMs for non-polynomial deformations and generalized complete intersection Calabi-Yau manifolds"
+  ]
+ },
+ {
   "date": "2026-10-09",
   "datestr": "2026년 10월 9일 (금)",
   "file": "briefs/2026-10-09.html",
