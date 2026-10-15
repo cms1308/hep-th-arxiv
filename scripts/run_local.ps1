@@ -1,5 +1,6 @@
 ﻿# 로컬(Windows)에서 데일리 브리핑을 처음부터 끝까지 실행한다 — run_local.sh 의 Windows 판.
-# 평소에는 자동실행_켜기.cmd 로 등록한 작업 스케줄러가 평일 11:07 에 이 파일을 부른다.
+# 평소에는 자동실행_켜기.cmd 로 등록한 작업 스케줄러가 평일 11:07 과 로그인 직후에
+# -NotBefore 를 붙여 이 파일을 부른다.
 # 손으로 돌릴 때는 지금실행.cmd 를 더블클릭한다 (준비 확인을 먼저 한 뒤 여기로 온다).
 #
 # run_local.sh 와 같은 순서·같은 규칙:
@@ -15,6 +16,12 @@
 #
 # 이 파일은 UTF-8 (BOM 포함) 으로 저장해야 한다 — Windows PowerShell 5.1 은 BOM 이 없으면
 # 한글을 ANSI 로 읽어 깨뜨린다.
+
+param(
+    # 작업 스케줄러가 넘기는 "HH:mm". 주말이거나 이 PC 시각으로 그 전이면 아무것도 하지 않는다.
+    # 로그인 트리거가 정시 전·주말에 불렀을 때 거르는 용도 — 손으로 돌릴 때는 넘기지 않는다.
+    [string]$NotBefore
+)
 
 $ErrorActionPreference = 'Stop'
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
@@ -104,6 +111,17 @@ function Run-Native {
 
 try {
     say "===== hep-th 브리핑 $TODAY ====="
+
+    # 정시 전이면 그날은 11:07 트리거가 맡고, 주말에는 새 공지가 없다.
+    # 트리거와 같은 시계(이 PC 의 현지 시각)로 비교한다.
+    if ($NotBefore) {
+        $now = Get-Date
+        if ($now.DayOfWeek -in [DayOfWeek]::Saturday, [DayOfWeek]::Sunday -or
+            $now.TimeOfDay -lt [TimeSpan]::Parse($NotBefore)) {
+            say "자동실행은 평일 $NotBefore 이후에만 돕니다 — 종료."
+            exit 0
+        }
+    }
 
     $PY = (Get-Command python -ErrorAction SilentlyContinue).Source
     if (-not $PY) { throw 'python 을 찾지 못했습니다. Python 3 을 설치하고 PATH 에 추가하세요.' }

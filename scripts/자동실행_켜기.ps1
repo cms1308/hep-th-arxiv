@@ -1,5 +1,5 @@
-﻿# 자동실행_켜기.cmd 를 더블클릭하면 이 파일이 실행된다 — 평일 11:07 에 브리핑이 저절로
-# 돌도록 이 PC 의 작업 스케줄러에 등록한다. (macOS 의 launchd 등록에 해당.)
+﻿# 자동실행_켜기.cmd 를 더블클릭하면 이 파일이 실행된다 — 평일 11:07 (과 로그인 직후) 에
+# 브리핑이 저절로 돌도록 이 PC 의 작업 스케줄러에 등록한다. (macOS 의 launchd 등록에 해당.)
 # 다시 더블클릭해도 안전하다 (덮어쓰기). 끄려면 자동실행_끄기.cmd 를 더블클릭한다.
 # (UTF-8 BOM 으로 저장할 것 — Windows PowerShell 5.1 은 BOM 이 없으면 한글을 깨뜨린다.)
 
@@ -42,13 +42,24 @@ if ((Get-TimeZone).Id -ne 'Korea Standard Time') {
 New-Item -ItemType Directory -Force (Join-Path $WORK 'logs') | Out-Null
 
 # ---------------------------------------------------------------- 등록
-# 창 없이 돈다. 표준출력은 run_local.ps1 이 $WORK\logs\<날짜>.log 에 직접 남긴다.
-$action = New-ScheduledTaskAction -Execute 'powershell.exe' `
-    -Argument "-NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File `"$RUNNER`""
-
+$me = [System.Security.Principal.WindowsIdentity]::GetCurrent().Name
 $at = [DateTime]::Today.AddHours($HOUR).AddMinutes($MINUTE)
-$trigger = New-ScheduledTaskTrigger -Weekly -At $at `
+
+# 창 없이 돈다. 표준출력은 run_local.ps1 이 $WORK\logs\<날짜>.log 에 직접 남긴다.
+# 두 트리거가 같은 명령을 부르므로 run_local.ps1 이 -NotBefore 로 로그인 트리거를 거른다 —
+# 주말이거나 정시 전이면 바로 끝낸다. 5분 당긴 것은 정시 트리거가 몇 초 일찍 와도 걸리지 않게.
+$notBefore = $at.AddMinutes(-5).ToString('HH:mm')
+$action = New-ScheduledTaskAction -Execute 'powershell.exe' `
+    -Argument "-NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File `"$RUNNER`" -NotBefore $notBefore"
+
+$weekly = New-ScheduledTaskTrigger -Weekly -At $at `
     -DaysOfWeek Monday, Tuesday, Wednesday, Thursday, Friday
+
+# 로그인 직후에도 한 번 돈다. 업데이트 재시작 뒤 잠금 화면에 머물러 정시를 놓친 날을 따라잡는다
+# (실측 2026-10-15). StartWhenAvailable 은 로그아웃 상태로 놓친 정시를 로그인 뒤 돌려 주지 않는다.
+# 이미 발행된 날은 run_local.ps1 이 git pull 뒤 바로 끝낸다. 지연은 네트워크가 붙을 시간.
+$logon = New-ScheduledTaskTrigger -AtLogOn -User $me
+$logon.Delay = 'PT2M'
 
 # StartWhenAvailable: 꺼져 있거나 자던 시각을 놓치면 깨어난 뒤 한 번 돌린다 (launchd 와 같음).
 # WakeToRun: 자는 중이면 깨운다 (pmset repeat wakeorpoweron 에 해당. 완전히 꺼진 PC 는 못 켠다).
@@ -59,20 +70,20 @@ $settings = New-ScheduledTaskSettingsSet -StartWhenAvailable -WakeToRun `
 
 # 로그온한 사용자 세션에서 돈다 — Git Credential Manager · claude 로그인 정보가 이 사용자의
 # 것이기 때문. 로그아웃 상태에서는 돌지 않는다 (맥에서 로그아웃 상태와 같음).
-$me = [System.Security.Principal.WindowsIdentity]::GetCurrent().Name
 $principal = New-ScheduledTaskPrincipal -UserId $me -LogonType Interactive -RunLevel Limited
 
-Register-ScheduledTask -TaskName $LABEL -Action $action -Trigger $trigger `
+Register-ScheduledTask -TaskName $LABEL -Action $action -Trigger $weekly, $logon `
     -Settings $settings -Principal $principal -Force | Out-Null
 
 Write-Host '✅ 켰습니다.'
 Write-Host
-Write-Host ("   언제      평일(월~금) 오전 {0}:{1:d2}" -f $HOUR, $MINUTE)
+Write-Host ("   언제      평일(월~금) 오전 {0}:{1:d2}, 그리고 그 이후 로그인할 때" -f $HOUR, $MINUTE)
 Write-Host '   무엇을    arXiv hep-th 신규 논문 수집 → 한국어 번역 → 사이트 발행'
 Write-Host '   결과      https://cms1308.github.io/hep-th-arxiv/'
 Write-Host "   기록      $WORK\logs\"
 Write-Host
 Write-Host '   PC 가 꺼져 있거나 자고 있으면 그 시각엔 못 돌고, 깨어난 뒤 한 번 돕니다.'
+Write-Host '   로그아웃(잠금 화면) 상태로 놓친 날은 로그인하고 2분 뒤에 돕니다.'
 Write-Host '   상태 확인은 작업 스케줄러(taskschd.msc) 의 "hep-th-brief" 항목에서 합니다.'
 Write-Host '   끄려면 scripts\자동실행_끄기.cmd 를 더블클릭하세요.'
 Write-Host

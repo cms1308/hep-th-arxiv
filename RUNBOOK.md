@@ -35,7 +35,7 @@ launchd 가 띄운 실행의 표준출력은 `$BRIEF_WORK/logs/launchd.log` 에�
 | 파일 | 맥 대응 | 무엇이 |
 |---|---|---|
 | `scripts/지금실행.cmd` | `지금실행.command` | 오늘치를 지금 한 번 |
-| `scripts/자동실행_켜기.cmd` | `자동실행_켜기.command` | 작업 스케줄러에 평일 11:07 등록 (이름 `hep-th-brief`) |
+| `scripts/자동실행_켜기.cmd` | `자동실행_켜기.command` | 작업 스케줄러에 평일 11:07 + 로그인 시 등록 (이름 `hep-th-brief`) |
 | `scripts/자동실행_끄기.cmd` | `자동실행_끄기.command` | 등록 해제 |
 
 launchd 대신 **작업 스케줄러**를 씁니다. 놓친 시각은 깨어난 뒤 한 번 실행하고(StartWhenAvailable),
@@ -43,6 +43,14 @@ launchd 대신 **작업 스케줄러**를 씁니다. 놓친 시각은 깨어난 
 작업이라 로그아웃 상태에서는 돌지 않습니다 — Git Credential Manager 와 claude 로그인 정보가
 그 사용자의 것이기 때문입니다. 상태 확인은 `taskschd.msc` 또는
 `Get-ScheduledTaskInfo -TaskName hep-th-brief`.
+
+그래서 같은 작업에 **로그인 트리거**(로그인 2분 뒤)를 하나 더 둡니다. Windows 업데이트가 낮에
+재시작하고 잠금 화면에 머무르면 11:07 을 놓치는데, StartWhenAvailable 은 이렇게 로그아웃 상태로
+놓친 실행을 로그인 뒤에 돌려 주지 않기 때문입니다 (실측 2026-10-15). 두 트리거 모두
+`run_local.ps1 -NotBefore 11:02` 를 부르고, 주말이거나 그 시각 전이면 바로 끝납니다 — 정시 전의
+로그인은 11:07 트리거에 맡깁니다. 이미 발행된 날은 `git pull` 뒤 바로 끝납니다. 같은 작업이라
+`MultipleInstances IgnoreNew` 로 두 트리거가 겹쳐 돌지 않습니다. `지금실행.cmd` 는 `-NotBefore` 를
+넘기지 않으므로 언제든 돕니다.
 
 작업 폴더·로그 위치는 맥과 같습니다 (`%USERPROFILE%\.hep-th-brief-work\logs\<날짜>.log`).
 자동 실행은 창 없이 돌고 출력은 그 로그에만 남습니다.
