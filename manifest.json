@@ -1,5 +1,16 @@
 [
  {
+  "date": "2026-10-16",
+  "datestr": "2026년 10월 16일 (금)",
+  "file": "briefs/2026-10-16.html",
+  "count": 23,
+  "preview": [
+   "Worldsheet string theory on $\\mathrm{AdS}_3 \\times \\mathbf{S}^3 \\times \\mathrm{K3}$",
+   "An SYK wormhole under the microscope",
+   "Region bounds, error margins and certified positivity in the numerical conformal bootstrap; Or the first mathematically rigorous bounds on the 3d Ising CFT critical exponents"
+  ]
+ },
+ {
   "date": "2026-10-15",
   "datestr": "2026년 10월 15일 (목)",
   "file": "briefs/2026-10-15.html",
