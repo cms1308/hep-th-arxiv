@@ -1,12 +1,11 @@
 #!/bin/bash
-# 더블클릭하면 평일 11:07 에 브리핑이 저절로 돌도록 이 맥에 등록한다.
+# 더블클릭하면 평일 11:07~23:37 에 30분마다 브리핑을 확인하도록 등록한다.
 # 다시 더블클릭해도 안전하다 (덮어쓰기). 끄려면 자동실행_끄기.command 를 더블클릭한다.
 
 set -euo pipefail
 
 LABEL="com.cms1308.hep-th-brief"
-# Actions cron(7 2 * * 1-5)과 같은 시각. run_local.sh 가 여기서부터 30분 간격으로
-# 12:37 까지 재시도한다.
+# Actions 와 같은 간격. 한 번 수집하고, 갱신 전이면 다음 트리거에서 재확인한다.
 HOUR=11
 MINUTE=7
 
@@ -48,18 +47,23 @@ mkdir -p "$HOME/Library/LaunchAgents" "$WORK/logs"
   <array>
     <string>/bin/bash</string>
     <string>$RUNNER</string>
+    <string>--scheduled</string>
   </array>
   <key>StartCalendarInterval</key>
   <array>
 XML
   for day in 1 2 3 4 5; do
-    echo "    <dict><key>Weekday</key><integer>$day</integer>"
-    echo "          <key>Hour</key><integer>$HOUR</integer>"
-    echo "          <key>Minute</key><integer>$MINUTE</integer></dict>"
+    for hour in $(seq "$HOUR" 23); do
+      for minute in "$MINUTE" 37; do
+        echo "    <dict><key>Weekday</key><integer>$day</integer>"
+        echo "          <key>Hour</key><integer>$hour</integer>"
+        echo "          <key>Minute</key><integer>$minute</integer></dict>"
+      done
+    done
   done
   cat <<XML
   </array>
-  <key>RunAtLoad</key><false/>
+  <key>RunAtLoad</key><true/>
   <key>StandardOutPath</key><string>$WORK/logs/launchd.log</string>
   <key>StandardErrorPath</key><string>$WORK/logs/launchd.log</string>
 </dict>
@@ -76,7 +80,7 @@ launchctl enable "gui/$UID/$LABEL"
 
 echo "✅ 켰습니다."
 echo
-echo "   언제      평일(월~금) 오전 $(printf '%d:%02d' "$HOUR" "$MINUTE")"
+echo "   언제      평일(월~금) 11:07~23:37, 30분마다 확인. 이미 발행했으면 바로 종료."
 echo "   무엇을    arXiv hep-th 신규 논문 수집 → 한국어 번역 → 사이트 발행"
 echo "   결과      https://cms1308.github.io/hep-th-arxiv/"
 echo "   기록      $WORK/logs/"

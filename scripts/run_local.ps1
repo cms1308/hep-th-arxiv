@@ -1,5 +1,5 @@
 ﻿# 로컬(Windows)에서 데일리 브리핑을 처음부터 끝까지 실행한다 — run_local.sh 의 Windows 판.
-# 평소에는 자동실행_켜기.cmd 로 등록한 작업 스케줄러가 평일 11:07 과 로그인 직후에
+# 평소에는 작업 스케줄러가 평일 11:07~23:37 에 30분마다, 로그인 직후에
 # -NotBefore 를 붙여 이 파일을 부른다.
 # 손으로 돌릴 때는 지금실행.cmd 를 더블클릭한다 (준비 확인을 먼저 한 뒤 여기로 온다).
 #
@@ -123,6 +123,18 @@ try {
         }
     }
 
+    # ------------------------------------------------------------ 1. 최신 상태
+    say '1/5 git pull'
+    $rc = Run-Native git @('-C', $REPO, 'pull', '--rebase', '-q', 'origin', 'main')
+    if ($rc) { throw "git pull 실패 (rc=$rc)" }
+
+    # 이미 발행된 날이면 아무것도 하지 않는다 — 워크플로가 먼저 올렸거나 오늘 이미 돌린 경우.
+    # (다시 만들려면 briefs\<날짜>.html 을 지우고 실행한다.)
+    if (Test-Path "$REPO\briefs\$TODAY.html") {
+        say "$TODAY 는 이미 발행돼 있습니다 — 종료."
+        exit 0
+    }
+
     $PY = (Get-Command python -ErrorAction SilentlyContinue).Source
     if (-not $PY) { throw 'python 을 찾지 못했습니다. Python 3 을 설치하고 PATH 에 추가하세요.' }
     $CLAUDE = (Get-Command claude -ErrorAction SilentlyContinue).Source
@@ -137,31 +149,23 @@ try {
     if ($authRc -ne 0 -or -not $auth.loggedIn) {
         throw 'Claude Code CLI 로그인이 필요합니다. PowerShell에서 & "$HOME\.local\bin\claude.exe" auth login 을 실행해 로그인한 뒤 지금실행.cmd 를 다시 실행하세요.'
     }
-    # ------------------------------------------------------------ 1. 최신 상태
-    say '1/5 git pull'
-    $rc = Run-Native git @('-C', $REPO, 'pull', '--rebase', '-q', 'origin', 'main')
-    if ($rc) { throw "git pull 실패 (rc=$rc)" }
-
-    # 이미 발행된 날이면 아무것도 하지 않는다 — 워크플로가 먼저 올렸거나 오늘 이미 돌린 경우.
-    # (다시 만들려면 briefs\<날짜>.html 을 지우고 실행한다.)
-    if (Test-Path "$REPO\briefs\$TODAY.html") {
-        say "$TODAY 는 이미 발행돼 있습니다 — 종료."
-        exit 0
-    }
-
     # ------------------------------------------------------------ 2. arXiv 수집
     if (Test-Path "$REPO\data\$TODAY.json") {
         say "2/5 수집 생략 — data\$TODAY.json 이 이미 있음"
     } else {
         say '2/5 arXiv 수집'
+        $fetchRetries = if ($NotBefore) { '0' } else { '3' }
         $rc = Run-Native $PY @("$REPO\scripts\fetch_arxiv.py", '--expect', $TODAY,
-                               '--retries', '3', '--retry-wait', '1800', '--outdir', "$REPO\data")
+                               '--retries', $fetchRetries, '--retry-wait', '1800', '--outdir', "$REPO\data")
         if ($rc) { throw "fetch_arxiv.py 실패 (rc=$rc)" }
     }
 
     # fetch_arxiv.py 는 0편이면 파일을 쓰지 않는다 — 주말이거나 아직 공지 전.
     if (-not (Test-Path "$REPO\data\$TODAY.json")) {
-        say '신규 0편 — 주말이거나 아직 공지 전입니다. 커밋 없이 종료.'
+        if ($NotBefore -and (Get-KstNow).TimeOfDay -ge [TimeSpan]::Parse('23:30')) {
+            throw '오늘 목록을 마지막 확인까지 받지 못해 미발행 상태입니다. arXiv 공지 지연·휴일 여부를 확인하세요.'
+        }
+        say '오늘 목록 대기 중 — 발행 보류. 자동실행은 23:37까지 30분마다 다시 확인합니다.'
         exit 0
     }
 

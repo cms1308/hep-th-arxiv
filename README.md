@@ -11,4 +11,6 @@
 
 출처: https://arxiv.org/list/hep-th/new · 한국어 abstract는 기계 번역입니다.
 
-수집·번역·발행: GitHub Actions 워크플로 `hep-th 데일리 브리핑` (매 평일 11:07 KST 목표)
+수집·번역·발행: 로컬 예약 실행 + GitHub Actions 워크플로 `hep-th 데일리 브리핑`.
+매 평일 11:07~23:37 KST에 30분마다 확인하며, 발행한 날은 바로 종료합니다.
+마지막 확인까지 미발행이면 알림을 남깁니다. 설정과 로그 확인 방법은 [RUNBOOK.md](RUNBOOK.md)를 참고하세요.

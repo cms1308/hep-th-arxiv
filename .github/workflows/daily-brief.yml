@@ -13,8 +13,8 @@ name: hep-th 데일리 브리핑
 
 on:
   schedule:
-    # 정각(:00)은 GitHub Actions 고부하 시간대라 문서가 피하라고 권한다 — :17 로 둔다.
-    - cron: "7 2 * * 1-5"         # 11:07 KST 목표 (밀릴 수 있음)
+    # KST 평일 11:07~23:37, 30분마다 재확인. 이미 발행된 날짜는 바로 종료한다.
+    - cron: "7,37 2-14 * * 1-5"
   workflow_dispatch:
     inputs:
       date:
@@ -74,10 +74,8 @@ jobs:
             if [ -n "$IN_DATE" ]; then
               python3 scripts/fetch_arxiv.py --api --date "$DATE"
             else
-              # --retries N 은 초회 + 재시도 N회다. 아래는 30분 간격 4회(11:07/11:37/12:07/12:37).
-              # arXiv 공지는 20:00 ET — 서머타임에는 09:00 KST, 겨울에는 10:00 KST다.
-              # 페이지 반영 지연과 연휴 순연이 있으므로 시각을 가정하지 않고 기다린다.
-              python3 scripts/fetch_arxiv.py --expect "$DATE" --retries 3 --retry-wait 1800
+              # 이번 실행에서는 한 번만 확인한다. 갱신 전이면 다음 cron 에서 재확인한다.
+              python3 scripts/fetch_arxiv.py --expect "$DATE" --retries 0
             fi
           else
             echo "data/$DATE.json 이 이미 있습니다 — 수집 생략"
@@ -87,7 +85,11 @@ jobs:
             echo "found=true" >> "$GITHUB_OUTPUT"
           else
             echo "found=false" >> "$GITHUB_OUTPUT"
-            echo "신규 0편 — 커밋 없이 종료합니다."
+            echo "오늘 목록 대기 중 — 다음 예약 실행에서 다시 확인합니다."
+            if [ "$(TZ=Asia/Seoul date +%H%M)" -ge 2330 ]; then
+              echo "::error::마지막 확인까지 미발행 상태입니다. arXiv 공지 지연·휴일 여부를 확인하세요."
+              exit 1
+            fi
           fi
 
       - name: 청크 분할

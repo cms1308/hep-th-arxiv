@@ -31,6 +31,14 @@ exec > >(tee -a "$LOG") 2>&1
 say() { echo "[$(TZ=Asia/Seoul date +%T)] $*"; }
 
 say "===== hep-th 브리핑 $TODAY ====="
+FETCH_RETRIES=3
+if [ "${1:-}" = '--scheduled' ]; then
+  if [ "$(date +%u)" -ge 6 ] || [ "$(date +%H%M)" -lt 1102 ]; then
+    say "자동실행은 평일 11:02 이후에만 돕니다 — 종료."
+    exit 0
+  fi
+  FETCH_RETRIES=0
+fi
 say "claude $(claude --version 2>&1 | head -1)"
 
 # ---------------------------------------------------------------- 1. 최신 상태
@@ -50,12 +58,16 @@ if [ -f "$REPO/data/$TODAY.json" ]; then
 else
   say "2/5 arXiv 수집"
   "$PY" "$REPO/scripts/fetch_arxiv.py" --expect "$TODAY" \
-        --retries 3 --retry-wait 1800 --outdir "$REPO/data"
+        --retries "$FETCH_RETRIES" --retry-wait 1800 --outdir "$REPO/data"
 fi
 
 # fetch_arxiv.py 는 0편이면 파일을 쓰지 않는다 — 주말이거나 아직 공지 전.
 if [ ! -f "$REPO/data/$TODAY.json" ]; then
-  say "신규 0편 — 주말이거나 아직 공지 전입니다. 커밋 없이 종료."
+  if [ "${1:-}" = '--scheduled' ] && [ "$(TZ=Asia/Seoul date +%H%M)" -ge 2330 ]; then
+    say "오류: 마지막 확인까지 미발행 상태입니다. arXiv 공지 지연·휴일 여부를 확인하세요."
+    exit 1
+  fi
+  say "오늘 목록 대기 중 — 발행 보류. 자동실행은 23:37까지 30분마다 다시 확인합니다."
   exit 0
 fi
 

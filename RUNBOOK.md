@@ -4,7 +4,7 @@
 
 | 경로 | 무엇이 | 언제 |
 |---|---|---|
-| `scripts/run_local.sh` (launchd) | 수집·번역·발행 전부 이 맥에서 | 매 평일 11:07 KST 정시. **주 자동화.** |
+| `scripts/run_local.sh` (launchd) | 수집·번역·발행 전부 이 맥에서 | 매 평일 11:07~23:37 KST, 30분마다 확인. **주 자동화.** |
 | `.github/workflows/daily-brief.yml` | 같은 일을 GitHub 러너에서 | 맥이 꺼져 있던 날의 백업, 과거 날짜 백필 |
 | `scripts/지금실행.command` | 같은 일을 지금 한 번 | 손으로 돌릴 때. 더블클릭. |
 
@@ -35,7 +35,7 @@ launchd 가 띄운 실행의 표준출력은 `$BRIEF_WORK/logs/launchd.log` 에�
 | 파일 | 맥 대응 | 무엇이 |
 |---|---|---|
 | `scripts/지금실행.cmd` | `지금실행.command` | 오늘치를 지금 한 번 |
-| `scripts/자동실행_켜기.cmd` | `자동실행_켜기.command` | 작업 스케줄러에 평일 11:07 + 로그인 시 등록 (이름 `hep-th-brief`) |
+| `scripts/자동실행_켜기.cmd` | `자동실행_켜기.command` | 작업 스케줄러에 평일 11:07~23:37 (30분 간격) + 로그인 시 등록 (이름 `hep-th-brief`) |
 | `scripts/자동실행_끄기.cmd` | `자동실행_끄기.command` | 등록 해제 |
 
 launchd 대신 **작업 스케줄러**를 씁니다. 놓친 시각은 깨어난 뒤 한 번 실행하고(StartWhenAvailable),
@@ -128,10 +128,24 @@ arXiv 가 문서화하지 않았고 실제로 지연이 있습니다. 연휴에�
 ([Availability of submissions](https://info.arxiv.org/help/availability.html) ·
 [arxiv.org/localtime](https://arxiv.org/localtime))
 
-그래서 시각을 가정하지 않습니다. `fetch_arxiv.py --expect <날짜>` 가 받아온 목록이
-이미 저장된 다른 날짜와 동일하면 "아직 갱신 전" 으로 보고 재시도합니다
-(현재 30분 간격 4회: 11:07 / 11:37 / 12:07 / 12:37). 재시도는 한 프로세스 안에서
-`sleep` 으로 기다리는 것이고, launchd 발화 자체는 11:07 한 번뿐입니다.
+그래서 시각을 가정하지 않습니다. `fetch_arxiv.py --expect <날짜>` 는 페이지에 적힌
+실제 공지 날짜를 먼저 확인합니다. 저장된 전날 파일이 없어도 다른 날짜의 논문을 오늘치로
+발행하지 않습니다. 날짜 표기·신규 제출 절·편수가 깨지면 오류로 처리합니다.
+
+Windows 작업 스케줄러·macOS launchd·Actions 모두 평일 **11:07~23:37, 30분마다**
+다시 확인합니다. 예약 실행은 `--retries 0` 으로 한 번만 수집하고, 갱신 전이면 다음 실행에
+맡깁니다. 이미 발행한 날짜는 즉시 종료합니다. Windows 의 `MultipleInstances IgnoreNew`,
+launchd 의 단일 작업, Actions 의 concurrency 설정으로 같은 경로의 중복 실행을 막습니다.
+수동 실행은 기존처럼 30분 간격 4회까지 기다립니다.
+
+마지막 확인(23:30 이후)까지 미발행이면 정상 종료로 숨기지 않습니다. Windows 는 기존
+실패 알림·Actions 백업 경로를 실행하고, Actions 는 실패 이슈를 남깁니다. 공휴일이나 공지
+순연도 이 알림에 포함되므로 원본을 확인해야 합니다. PC 가 꺼져 있으면 로컬 실행은
+불가능하고 Actions cron 도 지연될 수 있습니다.
+
+스케줄 변경 후에는 해당 기기에서 `scripts/자동실행_켜기.cmd` 또는
+`scripts/자동실행_켜기.command` 를 한 번 실행해 등록을 갱신하세요.
+2026-10-20 Windows 등록은 수정한 스케줄로 갱신했습니다.
 
 GitHub schedule 도 정시에 오지 않습니다 (실측: 00:35 UTC cron 이 03:41·04:36 UTC 발화,
 미발화한 날도 있었음). 늦게 발화해도 `--expect` 덕분에 날짜는 어긋나지 않습니다.
@@ -158,7 +172,7 @@ python3 scripts/fetch_arxiv.py --api --date 2026-07-20 --from 202607161800 --to 
   `CLAUDE_CODE_OAUTH_TOKEN` 갱신.
 - **`MISSING` / `SHORT_KO`** → 번역 누락·부실. 워크플로가 해당 논문만 자동 재번역하고
   재검증합니다. 재번역 후에도 실패하면 로그의 arXiv id 를 확인하세요.
-- **12:37 까지 전날 목록** → 커밋 없이 조용히 종료합니다 (공지 순연이거나 휴일).
-  알림은 가지 않으므로, 브리핑이 안 올라온 날은 Actions 탭 로그를 보세요.
+- **아직 전날 목록** → 그 실행은 발행을 보류하고 23:37까지 30분마다 재확인합니다.
+  마지막 확인까지 미발행이면 실패 알림을 남깁니다. 공지 순연·휴일 여부도 확인하세요.
 - **커밋은 됐는데 push 실패** → `sync_repo.py` 가 git stderr 를 그대로 출력합니다.
   번역 스텝이 git 자격증명을 건드리므로 발행 스텝에서 origin 인증을 다시 붙입니다.

@@ -45,7 +45,7 @@ def clean(s):
 
 
 # ------------------------------------------------------------- /list/new 모드
-def fetch_new_listing():
+def fetch_new_listing(expected_date=None):
     """arxiv.org/list/hep-th/new 의 'New submissions' 절만 파싱한다.
 
     이 페이지는 공지가 나면 갱신되는 확정 목록이다. 갱신 시각은 날마다 흔들리므로
@@ -54,12 +54,27 @@ def fetch_new_listing():
     """
     html_text = get(NEW_URL).decode("utf-8", "replace")
 
+    return parse_new_listing(html_text, expected_date)
+
+
+def parse_new_listing(html_text, expected_date=None):
+    """페이지의 실제 공지 날짜를 검증한 뒤 신규 제출만 읽는다."""
+    heading = re.search(r'Showing new listings for [A-Za-z]+, (\d{1,2}) ([A-Za-z]+) (\d{4})', html_text)
+    if not heading:
+        raise ValueError('arXiv 공지 날짜를 찾지 못했습니다 (페이지 구조 변경?)')
+    day, month, year = heading.groups()
+    months = 'January February March April May June July August September October November December'.split()
+    listing_date = datetime(int(year), months.index(month) + 1, int(day)).date().isoformat()
+    print(f'  [date] arXiv 실제 공지일 {listing_date}, 기대 날짜 {expected_date or listing_date}')
+    if expected_date and listing_date != expected_date:
+        print('  기대 날짜의 목록이 아닙니다 — 다음 확인 때 다시 수집합니다.')
+        return []
+
     # 절 경계는 <h3> 로 잡는다. 페이지 상단 목차에도 'Cross-lists' 문구가 있어
     # 단순 문자열 검색으로는 본문이 통째로 잘린다.
     ms = re.search(r'<h3[^>]*>\s*New submissions', html_text, re.I)
     if not ms:
-        print("::warning::'New submissions' 절을 찾지 못했습니다 (페이지 구조 변경?)")
-        return []
+        raise ValueError("New submissions 절을 찾지 못했습니다 (페이지 구조 변경?)")
     start = ms.end()
     nxt = re.search(r'<h3[^>]*>', html_text[start:], re.I)
     cut = start + nxt.start() if nxt else len(html_text)
@@ -108,6 +123,8 @@ def fetch_new_listing():
     for p in papers:
         if p["id"] not in seen:
             seen.add(p["id"]); uniq.append(p)
+    if declared is None or len(uniq) != declared:
+        raise ValueError(f'신규 제출 파싱 불일치: 페이지 {declared}편, 파싱 {len(uniq)}편')
     return uniq
 
 
@@ -209,16 +226,17 @@ def main():
         date = a.expect or a.date or datetime.now(KST).date().isoformat()
         source = "list/new"
         for attempt in range(1, a.retries + 2):
-            papers = fetch_new_listing()
+            papers = fetch_new_listing(date)
             stale = stale_against(papers, a.outdir, date)
             print(f"/list/new 수집 {attempt}회차: {len(papers)}편 (공지일 {date} 로 기록)")
-            if not stale:
+            if papers and not stale:
                 break
+            reason = f'{stale} 와 동일한 목록' if stale else '기대 날짜의 신규 목록 없음'
             if attempt > a.retries:
-                print(f"::warning::{stale} 와 동일한 목록입니다. 아직 공지 전으로 보입니다.")
+                print(f'::warning::{reason}. 발행을 보류합니다. 예약 실행은 다음 확인 때 재시도합니다.')
                 papers = []
                 break
-            print(f"  {stale} 와 동일 — 아직 갱신 전. {a.retry_wait}s 후 재시도")
+            print(f'  {reason}. {a.retry_wait}s 후 재시도')
             time.sleep(a.retry_wait)
 
     papers.sort(key=lambda p: p["id"])
