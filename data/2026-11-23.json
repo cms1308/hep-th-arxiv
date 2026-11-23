@@ -1,0 +1,126 @@
+{
+ "date": "2026-11-23",
+ "source": "list/new",
+ "count": 17,
+ "papers": [
+  {
+   "id": "2611.26679",
+   "title": "Feynman integrals, coactions and Lie-algebra representations",
+   "authors": "Emiel Claasen , Mehregan Doroudiani , Claude Duhr , Axel Kleinschmidt , Franca Lippert , Oliver Schlotterer , Yoann Sohnle",
+   "categories": "hep-th, math.AG, math.NT",
+   "abstract": "We outline a link between canonical differential equations of Feynman integrals and matrix representations of flat connections taking values in certain Lie algebras. Leveraging insights from string theory and properties of periods associated with these Lie algebras, we deduce single-valued solutions to the differential equations and coactions for the integrals. We introduce a novel form of the differential equations which connects with the representation theory of the Lie algebras and may depart from $\\varepsilon$-factorisation in a controlled way. We illustrate the formalism through relevant examples."
+  },
+  {
+   "id": "2611.26687",
+   "title": "A matrix model of an M5--brane on a plane--wave background",
+   "authors": "Carmine Montella",
+   "categories": "hep-th",
+   "abstract": "We construct the maximally supersymmetric deformation of the recently proposed $\\mathcal{A}_6$ matrix model on a plane--wave background. We derive the same theory independently, by reducing the light--cone M5--brane on a five--sphere in this background to its lowest harmonics, including the dynamics of its chiral two--form and of its fermions. We then classify all its classical vacua. We show that one of them is the fivebrane giant graviton, and that its fluctuations form a single $\\mathfrak{su}(2|4)$ multiplet, which reproduces the $\\ell=1$ level of the spherical transverse fivebrane identified in the large $N$ limit of BMN theory. Moreover, the dynamical tensor supports new families of vacua, where the flux balances the size of the brane, and whose spectrum contains that of a fuzzy membrane. Finally, we show that BLG theory sits inside the model, both on a Coulomb branch of the massless theory and around the giant graviton of the massive one, where the two membranes are polarized into the fivebrane."
+  },
+  {
+   "id": "2611.26694",
+   "title": "Onset of quantum chaos in a family of two-dimensional conformal field theories",
+   "authors": "Felix M. Haehl , Moshe Rozali",
+   "categories": "hep-th, nlin.CD",
+   "abstract": "We exhibit random matrix statistics in the scaling dimensions of non-BPS primary operators in a family of two-dimensional conformal field theories. Specifically, we consider the sigma model with K3 target space and $\\mathcal N=(4,4)$ supersymmetry in a neighborhood of the Kummer orbifold point $\\mathbb T^4/\\mathbb Z_2$. At the free-fermion radius, the spin-zero spectrum of the $\\mathbb Z_2^4$-invariant sector is exactly degenerate at integer energies. The exactly marginal blow-up deformations that preserve this symmetry form a four-dimensional space, whose directions we parametrize by unit quaternions. Along each deformation direction, we compute the first-order splitting of the degenerate levels, i.e., the leading anomalous dimensions as the coupling goes to zero. In sectors where all exact symmetries are resolved, including a hidden $\\mathbb Z_2$ at the even levels, the non-zero first-order shifts along a generic direction follow the Gaussian orthogonal ensemble (GOE), as we verify by computing several spectral diagnostics. We compare quantitatively with the well-known singlet deformation, which has enhanced symmetry: even after all its known symmetries are resolved, its first-order spectrum has exact degeneracies, its gap ratio approaches the GOE value only slowly as the energy increases, and its unfolded spectrum lacks the long-range rigidity of the GOE."
+  },
+  {
+   "id": "2611.27002",
+   "title": "Energy and Charge Transmission at Conformal Interfaces: Relations and Bounds",
+   "authors": "Yuma Furuta , Yuya Kusuki , Toshiki Onagi , Yin Tang",
+   "categories": "hep-th, cond-mat.str-el",
+   "abstract": "Symmetry constrains how independently energy and charge can pass through a conformal interface. For interfaces between Wess--Zumino--Witten (WZW) models $G_{k_L}$ and $G_{k_R}$ preserving the diagonal affine algebra, we derive an exact relation between the energy and charge transmission coefficients, $c_{LR}=2(\\dim G)k_{LR}/(k_L+k_R+2h^\\vee)$. Together with positivity of outgoing energy, this relation excludes complete energy transmission at unequal levels. With additional bulk degrees of freedom, the equality is replaced by bounds controlled by the coset central charges. Complete transmission from a lower-level WZW model then imposes a lower bound on the coset central charge on the other side. In linear response, the relation fixes the ratio of thermal to charge conductance to the harmonic mean of the two bulk ratios, independently of the interface, while coset sectors bound the thermal conductance at fixed charge conductance. This interface-independent ratio is a generalized Wiedemann--Franz law for conformal interfaces between WZW models. The charge transmission coefficient $k_{LR}$ also governs equilibrium charge fluctuations and fixes the leading quadratic dependence of the boundary-condition-changing operator's scaling dimension on the rotation angle."
+  },
+  {
+   "id": "2611.27021",
+   "title": "Perturbative $S$-matrix Unitarity in Higher-Derivative Theory of Fermions",
+   "authors": "Yugo Abe , Takeo Inami , Keisuke Izumi , Shinsuke Kawai",
+   "categories": "hep-th",
+   "abstract": "We construct a higher-derivative fermion theory with four-Fermi interactions. In quantum field theory, it is conjectured that good high-energy behavior of tree-level scattering amplitudes implies renormalizability, a notion referred to as the tree-unitarity criterion. To investigate whether this criterion is satisfied in a higher-derivative fermion theory, we examine the structure of the $S$-matrix in detail. Owing to the higher-derivative kinetic term, the mass dimension of the spinor field differs from that of a conventional fermion, rendering four-Fermi interactions renormalizable at the cost of introducing ghost states. We show that, unlike bosonic ghosts, fermionic ghosts inevitably give rise to negative-norm states regardless of the sign of their energy eigenvalues. We further demonstrate that, in contrast to conventional four-Fermi theories, the higher-derivative four-Fermi theory satisfies perturbative $S$-matrix unitarity. In light of the tree-unitarity criterion, these results provide supporting evidence for the renormalizability of higher-derivative fermion theories and generalize our previous findings on higher-derivative scalar theories to the fermionic case."
+  },
+  {
+   "id": "2611.27134",
+   "title": "String breaking in a (1+1)-dimensional $e^+e^-$ collider",
+   "authors": "Ross Dempsey , Anna-Maria E. Glück , Silviu S. Pufu , Benjamin T. Søgaard",
+   "categories": "hep-th, hep-lat",
+   "abstract": "In this paper, we develop a framework for studying solitons in $(1+1)$-dimensional gauge theories using tensor networks, and we apply it to simulate $e^+e^-$ collisions in the massive Schwinger model. We work at $\\theta = \\pi$ and at a bare fermion mass exceeding the critical value; in this regime, there are two degenerate vacua, and the $e^+$ and $e^-$ particles are realized as soliton states interpolating between them. We carefully explain how to find and characterize such soliton states using infinite tensor network methods, and then exhibit real-time simulations of their collisions. These collisions involve the formation of an energetic flux string, and we demonstrate that our final states are superpositions of elastic and string-breaking trajectories."
+  },
+  {
+   "id": "2611.27378",
+   "title": "Pairing and modular: Generalized electrons and quasiholes inside the $\\boxtimes$ of topological orders",
+   "authors": "Yoshiki Fukusumi , Yuma Furuta",
+   "categories": "hep-th, cond-mat.str-el, math-ph, math.QA",
+   "abstract": "We study the relationship between the pair creation mechanism in physics and the pairing ($\\boxtimes_{\\mathbf{A}_{\\text{ub}}}$) in mathematics, focusing on the modular and algebraic properties. We provide a way to couple two topologically ordered systems, $\\mathbf{A}$ and $\\mathbf{A'}$ sharing the common (non-group-like) structure $\\mathbf{A}_{\\text{ub}}=\\overline{\\mathbf{A'}_{\\text{ub}}}$, through the nonabelian anyon analog of the pair creation mechanism denoted as $\\mathbf{A}_{\\text{ub},\\boxtimes}=\\mathbf{A}_{\\text{ub}}\\boxtimes \\mathbf{A'}_{\\text{ub}}$. We identify $\\mathbf{A}_{\\text{ub},\\boxtimes}$ as the generalized version of electron operators in general topological orders or hidden current with (half-)integer spin involving the conformal embeddings. We provide a way to construct $\\mathbf{A}_{\\text{ub},\\boxtimes}$ as the hidden topological operator and identify $\\mathbf{A}\\boxtimes_{\\mathbf{A}_{\\text{ub}}}\\mathbf{A'}$, a general class of topoloical orders, as the $\\mathbf{A}_{\\text{ub},\\boxtimes}$-extended symmetry topological field theory. We also conjecture a series of underlying (unexplored) modular invariants, connecting the conformal embedding and the pairing."
+  },
+  {
+   "id": "2611.27411",
+   "title": "Neural variational Skyrmions as a topological benchmark: emergent symmetry, precision energies and KAN--MLP comparison",
+   "authors": "Koji Hashimoto , Masaki Murata , Gakuto Ogiwara",
+   "categories": "hep-th, cs.LG, nucl-th, physics.comp-ph",
+   "abstract": "We propose the three-dimensional Skyrme model as a topological benchmark for neural variational methods and construct fully three-dimensional Skyrmions with baryon number $B=1,\\ldots,4$ without imposing a symmetry ansatz, with high precision. For $B=2,3,4$, the relaxation of these Skyrmions starts from $B$ unit-charge lumps with random positions and orientations, which carry no symmetry information. The known toroidal, tetrahedral, and cubic Skyrmions nevertheless emerge spontaneously. The resulting variational energies for $B=1,\\ldots,4$ lie slightly below the published reference values. The neural method highlights the high accuracy for retaining the topological charge, differing from $B$ by at most $10^{-6}$ in the highest-precision solutions. Our numerical method goes through physical constraint tests such as the Derrick virial relation and the Faddeev--Bogomolny bound, together with evaluation / verification through independent quadratures and resolution sweeps. We then compare Kolmogorov--Arnold networks (KANs) with multilayer perceptrons (MLPs) in more than a thousand training runs, both with and without a rational-map ansatz. With default settings, KANs appear markedly superior, but most of the gap disappears once the MLP activation function and learning rate are tuned. KANs remain more parameter-efficient and more robust at fixed epoch budget, while MLPs with the tuned activation function perform at least as well at fixed wall-clock time. We also argue that continuous gradient descent cannot smoothly change the topological sector of our neural field, clarifying the origin of topological freezing observed in our neural variational solvers. Our results on the neural methods applied to Skyrmions pave a research ground for AI-agentic benchmarks for classical topological solitons, toward AI-assisted soliton physics."
+  },
+  {
+   "id": "2611.27437",
+   "title": "Gauging background isometries of the ILST null string",
+   "authors": "Ulf Lindström",
+   "categories": "hep-th",
+   "abstract": "We present a general gauging of a subalgebra, $\\mathfrak h$, of the isometries $\\mathfrak g$ of the background geometry for the ILST string (e-Print: hep-th/9307108 [hep-th]). We discuss which of the isometries in $\\mathfrak g$ survive the gauging as symmetries. The gauged symmetry does not in general involve transformations of the vector density V. There is thus a corresponding contraction of the algebra of constraints as compared to the flat background and it no longer represent the full Carroll-Weyl algebra. This algebra of constraints is derived and discussed, partly in an appendix. The gauging of isometries sets the stage for a reduction, or quotient construction, leading to a new null string on the space of orbits of the gauge group. We illustrate this by deriving the ILST string in $AdS$ background as a quotient of a model in SO(d,2) background by a SO(d,1) isometry, in group space"
+  },
+  {
+   "id": "2611.27464",
+   "title": "The $a$-function in fractional dimensions",
+   "authors": "I. Jack , D.R.T. Jones",
+   "categories": "hep-th",
+   "abstract": "We consider the $\\beta$-functions for both scalar, and supersymmetric chiral scalar, field theories with a general $n$th-order self-interaction, in their critical dimensions, which are in general non-integer. We perform a full computation up to fourth order in the coupling in the supersymmetric case, and a partial one in the scalar case. We then demonstrate the existence of an $a$-function, related to the $\\beta$-functions by a gradient flow with a positive-definite metric, through fourth order in the coupling in the supersymmetric case; and show that all our fourth-order results in the scalar case are consistent with a similar property holding there too."
+  },
+  {
+   "id": "2611.27482",
+   "title": "Polarized IKKT holography: bulk realization of BPS operators",
+   "authors": "Franz Ciceri , Aymeric Proust , Henning Samtleben",
+   "categories": "hep-th",
+   "abstract": "We study the holographic imprint of polarization in the lowest BPS multiplet of the IKKT matrix model. On the matrix model side, the deformation requires operator mixing and broken-symmetry Ward identities to organize the surviving operators into an irreducible atypical multiplet of the $F(4)$ superalgebra. In the bulk, we use one-dimensional maximal gauged supergravity to identify the analytic half-BPS background with $F(4)$ symmetry whose boundary behavior matches the IKKT polarization. We solve the linearized bosonic and fermionic equations around this background and its undeformed counterpart exactly, and extract the independent asymptotic data. The supersymmetry transformations of these data reproduce the matrix model multiplets, thus establishing a bulk realization of this BPS operator structure."
+  },
+  {
+   "id": "2611.27488",
+   "title": "BMS Charges from Null Hypersurfaces",
+   "authors": "Martina Adamo , Luca Ciambelli , Felipe Diaz , Michael Imseis , Leonardo Sanhueza , Simone Speziale",
+   "categories": "hep-th, gr-qc",
+   "abstract": "We show how the gravitational dynamics, phase space and Noether charges of the BMS group at future null infinity $\\mathscr{I}^+$ can be derived as limits of their analogues on null hypersurfaces at finite distance. The Bondi mass-loss and angular-momentum evolution equations arise as limits of the Raychaudhuri and Damour constraints. The Ashtekar--Streubel (aka Wald--Zoupas) symplectic potential arises as a specific member of a two-parameter family of null-boundary symplectic potentials, corresponding to the Dirichlet (aka canonical) polarization, while the other members differ by field-space exact terms, leading to the same radiative pre-symplectic structure but potentially different BMS fluxes. Deriving the BMS charges requires additional care, since BMS generators extended into the bulk are generally not tangent to the null hypersurfaces. After accounting for this and the associated anomalies, the renormalized canonical charges still contain an additional soft contribution. The prescription of a covariant boundary Lagrangian determines a corner improvement that removes this term and recovers the standard BMS charges."
+  },
+  {
+   "id": "2611.27546",
+   "title": "Banana D-modules",
+   "authors": "Giacomo Brunello , Wojciech Flieger , Yoshiaki Goto , Saiei-Jaeyeong Matsubara-Heo , Nobuki Takayama",
+   "categories": "hep-th, math-ph",
+   "abstract": "We study the holonomic $D$-module whose solutions are generic-mass banana Feynman integrals with complex propagator powers and spacetime dimension. We call this the banana $D$-module. Two properties of the banana $D$-module are studied: its holonomic rank and the irreducibility of the monodromy representation. This is achieved by relating the banana $D$-module to Lauricella $F_{C}$ hypergeometric systems. Further, we expand the generic-mass banana Feynman integral and the associated discontinuity integral in terms of series solutions. Finally, we analyze the Pfaffian system arising from the banana $D$-module and construct an explicit $d\\log$ representation in the equal-mass specialization."
+  },
+  {
+   "id": "2611.27573",
+   "title": "The Kerr Metric in Canonical Harmonic Coordinates to All Orders",
+   "authors": "Amina Sadu , Pierre Vanhove",
+   "categories": "hep-th, gr-qc",
+   "abstract": "We give in closed form the transformation from Boyer--Lindquist coordinates to the canonical harmonic coordinates of the Kerr metric, to all orders in Newton's constant and in the spin. This is the canonical harmonic chart selected by the MPM prescription and by the harmonic-gauge Einstein recursion sourced by the Kerr multipoles, with the residual homogeneous freedom fixed by the boundary conditions. The chart is the real, time-reversal-covariant combination of the two radial harmonic functions underlying the Cook--Scheel coordinates, which differ from it by a definite residual harmonic transformation. The proof rests on a classification of the residual harmonic freedom. Rotational covariance, parity, time reversal and analyticity in the spin allow a decaying homogeneous solution beyond the linear field only in the spatial components at third post-Minkowskian order, with angular degree $\\ell=p+2$ at spin order $a^p$. This sector is a pure gauge mode, equivalent to an MPM gauge moment. The exact chart selects the representative in which this third-PM homogeneous mode vanishes; imposing the same condition on the recursion removes the only residual ambiguity and fixes its solution uniquely. As a consequence, the canonical MPM iteration needs no finite-part regularisation and no harmonicity correction at any order. We give the exact gothic metric and the post-Minkowskian coefficients in closed form through fifth order, where an arctangent function first appears at fourth order. We find agreement with recent canonical MPM and amplitude-based results at fourth order, and we verify the construction in exact arithmetic through fifth order and twelfth order in the spin, with code made publicly available."
+  },
+  {
+   "id": "2611.27611",
+   "title": "Cosmological Correlators with Triple Massive Exchanges",
+   "authors": "Shuntaro Aoki , Lucas Pinol , Zhehan Qin , Fumiya Sano , Masahide Yamaguchi , Yuhang Zhu",
+   "categories": "hep-th, astro-ph.CO, gr-qc, hep-ph",
+   "abstract": "Among all tree-level contributions to the primordial bispectrum, the triple exchange of massive scalars is the most challenging. In this paper we present an analytical formula for this bispectrum in the form of a double series, which allows the three exchanged fields to have different masses and converges throughout the whole physical region. We obtain it by expanding the mixed propagator with the softest momentum, so that the triple exchange becomes a sum of integrals over two mixed propagators. Each of these integrals satisfies a differential equation and is fixed by its value at equal momentum. We further show that the squeezed limit follows directly from this formula and takes a simple and compact form."
+  },
+  {
+   "id": "2611.27739",
+   "title": "Bulk Wilson Loops from $\\mathscr{I}$",
+   "authors": "James Drummond , Bruno Giménez Umbert , Prahar Mitra",
+   "categories": "hep-th",
+   "abstract": "A Carrollian description of four-dimensional Yang-Mills theory on partially complexified future null infinity was recently proposed by Opreij, Skinner and Wang in arXiv:2604.09771 . In this paper, we give a new form of the Carrollian Yang-Mills kinetic action on real future null infinity, and recover the logarithmic two-point function found by arXiv:2604.09771 . We then extend the Carrollian description of Yang-Mills beyond scattering amplitudes by studying the expectation value of a null polygonal Wilson loop in Minkowski spacetime. We propose a boundary operator given by the trace of a cyclic product of holomorphic frames on the good cuts associated with the polygon's vertices. At order $g^2$, we show analytically that the boundary calculation reproduces the rational bulk integrand obtained from a self-dual Lagrangian insertion."
+  },
+  {
+   "id": "2611.27861",
+   "title": "Brane Tilings and Polygons with Two Interior Points",
+   "authors": "Rak-Kyeong Seong",
+   "categories": "hep-th, math-ph, math.AG",
+   "abstract": "We fully classify the brane tilings and the 4d N=1 supersymmetric quiver gauge theories corresponding to toric Calabi-Yau 3-folds whose toric diagrams are convex lattice polygons with two interior lattice points. There are 45 such polygons up to GL(2,Z) transformations and lattice translations: 5 triangles, 19 quadrilaterals, 16 pentagons and 5 hexagons. We identify all 323 toric phases corresponding to these toric Calabi-Yau 3-folds. For every toric phase, we present the brane tiling with its quiver and superpotential, the perfect matching matrix and the F- and D-term charge matrices. For each brane tiling, we study the mesonic moduli space of the corresponding abelian 4d N=1 theory through its Hilbert series and plethystic logarithm, and identify its generators and their leading relations. We also identify the mesonic global symmetry for each brane tiling and determine the superconformal U(1)R charges."
+  }
+ ]
+}
